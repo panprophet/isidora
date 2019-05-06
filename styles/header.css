@@ -39,8 +39,18 @@
 }
 .footer {
   width: 100%;
+  height: 800px;
+  position: relative;
+  overflow: hidden;
+  z-index: 0;
 }
-.footer-bottom {
-  height: 3.4375rem;
-  background-color: #291644;
+.footer-container {
+  width: 100%;
+}
+.footer-container-top {
+  height: 300px;
+}
+.footer-container-bottom {
+  height: 200px;
+  background-color: #F4F4F5;
 }

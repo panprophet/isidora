@@ -1,5 +1,20 @@
+@font-face {
+  font-family: Metropolis;
+  font-weight: 300;
+  src: url('../assets/font/Metropolis-Regular.otf');
+}
+@font-face {
+  font-family: Metropolis;
+  font-weight: 400;
+  src: url('../assets/font/Metropolis-Medium.otf');
+}
+@font-face {
+  font-family: Metropolis;
+  font-weight: 500;
+  src: url('../assets/font/Metropolis-Bold.otf');
+}
 * {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Metropolis', sans-serif;
   font-weight: 300;
   font-size: 16px;
   line-height: 16px;
@@ -179,6 +194,17 @@ a:active {
 .font-purple--menu {
   color: #291644;
   transition: color 0.8s ease-in-out;
+}
+.font-purple--invert {
+  color: #291644;
+  opacity: 0.5;
+}
+.font-purple--invert a {
+  color: #291644;
+  opacity: 0.5;
+}
+.font-purple--invert a:hover {
+  opacity: 1;
 }
 .font-white {
   color: #FFFFFF;
@@ -785,6 +811,9 @@ a:active {
 .background-grey-light {
   background-color: #F6F6F6;
 }
+.background-grey-lighter {
+  background-color: #F4F4F5;
+}
 .background-white {
   background-color: #FFFFFF;
 }
@@ -1193,6 +1222,9 @@ a:active {
   .padding-xl--left-135 {
     padding-left: 8.438rem;
   }
+  .padding-xl--left-115 {
+    padding-left: 7.1875rem;
+  }
   .padding-xl--left-90 {
     padding-left: 5.625rem;
   }
@@ -1213,6 +1245,9 @@ a:active {
   }
   .padding-xl--right-135 {
     padding-right: 8.438rem;
+  }
+  .padding-xl--right-115 {
+    padding-right: 7.1875rem;
   }
   .padding-xl--right-90 {
     padding-right: 5.625rem;
@@ -1908,8 +1943,18 @@ a:active {
 }
 .footer {
   width: 100%;
+  height: 800px;
+  position: relative;
+  overflow: hidden;
+  z-index: 0;
 }
-.footer-bottom {
-  height: 3.4375rem;
-  background-color: #291644;
+.footer-container {
+  width: 100%;
+}
+.footer-container-top {
+  height: 300px;
+}
+.footer-container-bottom {
+  height: 200px;
+  background-color: #F4F4F5;
 }

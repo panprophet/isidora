@@ -107,6 +107,17 @@
       color: @purple;
       transition: color 0.8s ease-in-out;
     }
+    &--invert {
+      color: @purple;
+      opacity: 0.5;
+      a {
+        color: @purple;
+        opacity: 0.5;
+        &:hover {
+          opacity: 1;
+        }
+      }
+    }
   }
   &-white {
     color: @white;

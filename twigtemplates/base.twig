@@ -54,7 +54,7 @@
             </div>
         </div>
     </div>
-    <div class="menu-second font-14 font-white flex justify-content-between align-items-center">
+    <div class="menu-second font-14 font-white flex justify-content-between align-items-center" id="secondmenu">
         <div class="menu-second--left flex align-items-center margin-xxl--left-52">
             <span class="margin-xxl--right-28">
                 <svg class="logo-white" id="logo" width="37" height="41" viewBox="0 0 37 41" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -104,12 +104,12 @@
         </div>
         <div class="menu-second--right font-white--menu flex align-items-center margin-xxl--right-52" id="menusecond">
             <div class="menu-second--right-links">
-                <span class="margin-xxl--left-52"><a href="#">O meni</a></span>
-                <span class="margin-xxl--left-52"><a href="#">Radionica</a></span>
-                <span class="margin-xxl--left-52"><a href="#">Mršavljenje</a></span>
-                <span class="margin-xxl--left-52"><a href="#">Psihoterapija</a></span>
-                <span class="margin-xxl--left-52"><a href="#">Video</a></span>
-                <span class="margin-xxl--left-52"><a href="#">Blog</a></span>
+                <span class="margin-xxl--left-52 margin-xl--left-40"><a href="#">O meni</a></span>
+                <span class="margin-xxl--left-52 margin-xl--left-40"><a href="#">Radionica</a></span>
+                <span class="margin-xxl--left-52 margin-xl--left-40"><a href="#">Mršavljenje</a></span>
+                <span class="margin-xxl--left-52 margin-xl--left-40"><a href="#">Psihoterapija</a></span>
+                <span class="margin-xxl--left-52 margin-xl--left-40"><a href="#">Video</a></span>
+                <span class="margin-xxl--left-52 margin-xl--left-40"><a href="#">Blog</a></span>
             </div>
             <div class="menu-second--right-kontakt flex align-items-center margin-xxl--left-52">
                 <span>
@@ -124,10 +124,11 @@
 
 {% block content %}{% endblock %}
 
-    <footer class="footer">
-        <div class="footer-top flex align-items-center padding-xxl--top-200 padding-xxl--bottom-100 padding-xl--top-160 padding-xl--bottom-70">
-            <div class="footer-top--left margin-xxl--left-135 margin-xl--left-80 w-50">
-                <div class="footer-top--left-logo flex align-items-center margin-xxl--bottom-80">
+    <footer class="footer" id="footer">
+      <div class="footer-container" id="footercont">
+        <div class="footer-container-top flex align-items-center padding-xxl--top-200 padding-xxl--bottom-100 padding-xl--top-160 padding-xl--bottom-70">
+            <div class="footer-container-top--left margin-xxl--left-135 margin-xl--left-70 w-50">
+                <div class="footer-container-top--left-logo flex align-items-center margin-xxl--bottom-80">
                      <span class="margin-xxl--right-28">
                         <svg class="logo-purple" width="37" height="41" viewBox="0 0 37 41" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M14.8341 8.5037C17.2496 8.5037 19.2104 6.59865 19.2104 4.25185C19.2104 1.90505 17.2496 0 14.8341 0C12.4186 0 10.4578 1.90505 10.4578 4.25185C10.4578 6.59865 12.4186 8.5037 14.8341 8.5037Z"/>
@@ -173,7 +174,7 @@
                         </svg>
                     </span>
                 </div>
-                <div class="footer-top--left-links flex align-items-center font-14 font-purple margin-xxl--bottom-80">
+                <div class="footer-container-top--left-links flex align-items-center font-14 font-purple margin-xxl--bottom-80">
                     <span class="margin-xxl--right-52"><a href="#">O meni</a></span>
                     <span class="margin-xxl--right-52"><a href="#">Radionica</a></span>
                     <span class="margin-xxl--right-52"><a href="#">Mršavljenje</a></span>
@@ -181,7 +182,7 @@
                     <span class="margin-xxl--right-52"><a href="#">Video</a></span>
                     <span><a href="#">Blog</a></span>
                 </div>
-                <div class="footer-top--left-kontakt">
+                <div class="footer-container-top--left-kontakt">
                     <div class="font-14 font-purple margin-xxl--bottom-38">
                         <span class="margin-xxl--right-48" style="color: #5F6469;">Socialne mreze</span>
                         <span class="margin-xxl--right-14"><a class="font-bold" href="#">Facebook</a></span>
@@ -193,18 +194,30 @@
                     <div class="font-14 font-purple"><a href="#">Zakazivanje termina</a></div>
                 </div>
             </div>
-            <div class="footer-top--right margin-xxl--left-135 margin-xl--left-80 w-50">
-                <div class="footer-top--right-title"></div>
-                <form class="footer-top--form">
+            <div class="footer-container-top--right margin-xxl--left-135 margin-xl--left-70 w-50">
+                <div class="footer-container-top--right-title"></div>
+                <form class="footer-container-top--form">
                     <div class="font-24 font-purple font-bold margin-xxl--bottom-48">Newsletter</div>
                     <input class="input-form font-14 font-purple margin-xxl--bottom-24 w-60" name="email" type="email" placeholder="youremail@gmail.com"/>
-                    <div class="footer-top--form-text font-16 font-purple margin-xxl--bottom-32">Prijavi se i prvi saznaj sve o najnovijim radionicama, kursevima i poklonima!</div>
+                    <div class="footer-container-top--form-text font-16 font-purple margin-xxl--bottom-32">Prijavi se i prvi saznaj sve o najnovijim radionicama, kursevima i poklonima!</div>
                     <button class="button-midd"><a class="font-white font-14" href="#">Pošalji</a></button>
 
                 </form>
             </div>
         </div>
-        <div class="footer-bottom"></div>
+        <div class="footer-container-bottom flex flex-column justify-content-center w-100">
+          <div class="margin-xxl--left-135 margin-xl--left-70 margin-xxl--bottom-48 w-100 font-purple font-18 font-bold">Meni</div>
+          <div class="flex align-items-center margin-xxl--left-135 margin-xl--left-70 w-100">
+            <span class="margin-xxl--right-52 font-purple--invert font-14"><a href="#">O meni</a></span>
+            <span class="margin-xxl--right-52 font-purple--invert font-14"><a href="#">Radionica</a></span>
+            <span class="margin-xxl--right-52 font-purple--invert font-14"><a href="#">Mršavljenje</a></span>
+            <span class="margin-xxl--right-52 font-purple--invert font-14"><a href="#">Blog</a></span>
+            <span class="margin-xxl--right-52 font-purple--invert font-14"><a href="#">Video</a></span>
+            <span class="margin-xxl--right-52 font-purple--invert font-14"><a href="#">Kontakt</a></span>
+            <span class="margin-xxl--right-52 font-purple--invert font-14"><a href="#">Psihoterapija</a></span>
+          </div>
+        </div>
+      </div>
     </footer>
 
     <script src="https://code.jquery.com/jquery-3.3.1.js"  crossorigin="anonymous"></script>
@@ -242,5 +255,6 @@
 
    </script>
     <script src="./js/logowork.js"> </script>
+    <script src="./js/footerwork.js"> </script>
 </body>
 </html>

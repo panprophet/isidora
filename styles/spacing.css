@@ -392,6 +392,9 @@
   .padding-xl--left-135 {
     padding-left: 8.438rem;
   }
+  .padding-xl--left-115 {
+    padding-left: 7.1875rem;
+  }
   .padding-xl--left-90 {
     padding-left: 5.625rem;
   }
@@ -412,6 +415,9 @@
   }
   .padding-xl--right-135 {
     padding-right: 8.438rem;
+  }
+  .padding-xl--right-115 {
+    padding-right: 7.1875rem;
   }
   .padding-xl--right-90 {
     padding-right: 5.625rem;

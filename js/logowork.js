@@ -1,19 +1,31 @@
-let first = document.getElementById("first");
-let second = document.getElementById("second");
+let first;
+let second;
+let footer;
+let footerCont;
+
 
 let menusecond = document.getElementById("menusecond");
 
-let firstTop = first.getBoundingClientRect();
-let secondTop = second.getBoundingClientRect();
+let firstTop;
+let secondTop;
+let footerTop;
 
 let winPosition = 0;
+document.addEventListener( 'DOMContentLoaded', () => {
+  first = document.getElementById("first");
+  second = document.getElementById("second");
+  footer = document.getElementById("footer");
+  footerCont = document.getElementById("footercont");
 
+  firstTop = first.getBoundingClientRect();
+  secondTop = second.getBoundingClientRect();
+  footerTop = footer.getBoundingClientRect();
+  footerContTop = footerCont.getBoundingClientRect();
+
+});
 window.addEventListener("scroll", function(e) {
   winPosition = window.scrollY;
-  console.log(firstTop.bottom, secondTop.top, winPosition);
   if(firstTop.bottom >= winPosition - 10) {
-    console.log('first in');
-
     if(this.document.getElementById('logo').classList.contains("logo-purple")){
       this.document.getElementById('logo').classList.remove("logo-purple");
       this.document.getElementById('logo').classList.add("logo-white");
@@ -25,8 +37,6 @@ window.addEventListener("scroll", function(e) {
     }
   }
   if(secondTop.top - 60 <= winPosition) {
-    console.log('second in');
-
     if(this.document.getElementById('logo').classList.contains("logo-white")){
       this.document.getElementById('logo').classList.remove("logo-white");
       this.document.getElementById('logo').classList.add("logo-purple");
@@ -36,6 +46,9 @@ window.addEventListener("scroll", function(e) {
       this.document.getElementById('contacticon').classList.add("logo-purple");
       menuFontColor();
     }
+  }
+  if(winPosition <= footerTop.top) {
+    footerCont.style.marginTop =  "" + (1.5*(winPosition-secondTop.bottom)) + "px";
   }
 });
 
