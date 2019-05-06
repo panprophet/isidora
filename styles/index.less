@@ -1,0 +1,42 @@
+@import 'variables';
+
+.upoznaj_sebe{
+    &-left {
+        &-text{
+            border-left: 0.188rem solid @purple;
+        }
+    }
+    &-right{
+        background-image: url('../assets/images/krug-1.svg');
+        background-position: left;
+        background-size: cover;
+        background-repeat: no-repeat;
+        &-1{
+            background-image: url('../assets/images/krug-0.svg');
+            background-position: left;
+            background-size: cover;
+            background-repeat: no-repeat;
+            width: 97%;
+            height: 100%;
+            float: right;
+            &-2{
+                background-image: url('../assets/images/krug-2.svg');
+                background-position: left;
+                background-size: cover;
+                background-repeat: no-repeat;
+                width: 96%;
+                height: 100%;
+                float: right;
+                &-image{
+                    // background-image: url('../assets/images/isidora_solo.png');
+                    background-position: left;
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                    width: 96%;
+                    height: 100%;
+                    float: right;
+                }
+            }
+        }
+    }
+}

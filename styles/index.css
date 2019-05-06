@@ -1,0 +1,35 @@
+.upoznaj_sebe-left-text {
+  border-left: 0.188rem solid #291644;
+}
+.upoznaj_sebe-right {
+  background-image: url('../assets/images/krug-1.svg');
+  background-position: left;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.upoznaj_sebe-right-1 {
+  background-image: url('../assets/images/krug-0.svg');
+  background-position: left;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 97%;
+  height: 100%;
+  float: right;
+}
+.upoznaj_sebe-right-1-2 {
+  background-image: url('../assets/images/krug-2.svg');
+  background-position: left;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 96%;
+  height: 100%;
+  float: right;
+}
+.upoznaj_sebe-right-1-2-image {
+  background-position: left;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 96%;
+  height: 100%;
+  float: right;
+}
