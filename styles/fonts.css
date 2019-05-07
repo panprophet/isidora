@@ -54,6 +54,11 @@
   font-size: inherit;
   line-height: inherit;
 }
+.font-62 {
+  font-size: 3.875rem;
+  line-height: 3.875rem;
+  letter-spacing: 0.04rem;
+}
 .font-64 {
   font-size: 4rem;
   line-height: 4.4rem;
@@ -61,11 +66,6 @@
 .font-64 * {
   font-size: inherit;
   line-height: inherit;
-}
-.font-62 {
-  font-size: 3.875rem;
-  line-height: 5rem;
-  letter-spacing: 0.04rem;
 }
 .font-regular {
   font-weight: 300;
@@ -95,6 +95,27 @@
 .font-white--menu {
   color: #FFFFFF;
   transition: color 0.8s ease-in-out;
+}
+.font--xxl-62 {
+  font-size: 3.875rem;
+  line-height: 3.7375rem;
+  letter-spacing: 0.04rem;
+}
+.font--xxl-16 {
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+.font--xxl-16 * {
+  font-size: inherit;
+  line-height: inherit;
+}
+.font--xxl-14 {
+  font-size: 0.875rem;
+  line-height: 1.5rem;
+}
+.font--xxl-14 * {
+  font-size: inherit;
+  line-height: inherit;
 }
 .letter-spacing-0_3 {
   letter-spacing: 0.019rem;
@@ -147,40 +168,36 @@
 .line-marker:hover {
   cursor: pointer;
 }
-@media screen and (max-width: 1366px) {
-  .font-64 {
-    font-size: 2.875rem;
-    line-height: 4.106rem;
+@media screen and (max-width: 1440px) {
+  .font--xl-62 {
+    font-size: 3.875rem;
+    line-height: 3.875rem;
+    letter-spacing: 0.04rem;
   }
-  .font-64 * {
+  .font--xl-46 {
+    font-size: 2.875rem;
+    line-height: 3.438rem;
+  }
+  .font--xl-16 {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+  .font--xl-16 * {
+    font-size: inherit;
+    line-height: inherit;
+  }
+  .font--xl-14 {
+    font-size: 0.875rem;
+    line-height: 1.5rem;
+  }
+  .font--xl-14 * {
     font-size: inherit;
     line-height: inherit;
   }
 }
+@media screen and (max-width: 1366px) {
+}
 @media screen and (max-width: 1024px) {
-  .font-24 {
-    font-size: 1.25rem;
-  }
-  .font-24 * {
-    font-size: inherit;
-    line-height: inherit;
-  }
-  .font-32 {
-    font-size: 1.5rem;
-    line-height: 1.8rem;
-  }
-  .font-32 * {
-    font-size: inherit;
-    line-height: inherit;
-  }
-  .font-46 {
-    font-size: 2rem;
-    line-height: 2.7rem;
-  }
-  .font-46 * {
-    font-size: inherit;
-    line-height: inherit;
-  }
   .text--l-center {
     text-align: center;
   }
@@ -224,6 +241,10 @@
   }
 }
 @media screen and (max-width: 480px) {
+  .font--xs-36 {
+    font-size: 2.25rem;
+    line-height: 2.7rem;
+  }
   .line-tiny {
     width: 2.1875rem;
     height: 0.3125rem;

@@ -1,6 +1,39 @@
 {% extends "base.twig" %}
 {% block content %}
+{% set Home_Page_Intro = fetch("Home_Page_Intro") %}
 
-<div style="height: 100vh; widht: 100%; background-color: #291644; top: 3.75rem;" id="first"></div>
-<div style="height: 100vh; widht: 100%; background-color: #9DC64F;" id="second"></div>
+{# <div style="height: 100vh; widht: 100%; background-color: #291644; top: 3.75rem;" id="first"></div>
+<div style="height: 100vh; widht: 100%; background-color: #9DC64F;" id="second"></div> #}
+
+<div class="upoznaj_sebe">
+    {% for item in Home_Page_Intro %}
+    <div id="upoznaj_sebe1" class="mySlides flex flex-direction-reverse flex--l-direction">
+        <div class="upoznaj_sebe-right">
+            <div class="upoznaj_sebe-right-1">
+                <div class="upoznaj_sebe-right-1-2">
+                    <div class="upoznaj_sebe-right-1-2-image" 
+                        style="background-image: url('img/{{item.Slika}}')">
+                        <div class="upoznaj_sebe-right-1-2-image-gr"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="upoznaj_sebe-left flex flex-column justify-content-center align-items-start margin-xxl--left-135 margin-xl--left-70 margin-m--left-57 margin-xs--left-23">
+            <div class="upoznaj_sebe-left-all">
+                <div class="font--xxl-62 font--xl-46 font--xs-36 font-purple font-bold">{{item.NaslovBold}} </div>
+                <div class="font--xxl-62 font--xl-46 font--xs-36 font-purple margin-xxl--bottom-42 margin-s--bottom-32">{{item.Naslov}}</div>
+                <div class="upoznaj_sebe-left-all-text padding-xxl--left-25 font--xxl-16 font-purple margin-xxl--bottom-77 margin-m--bottom-46 margin-s--bottom-32">{{item.Text}}</div>
+                <button class="button-midd font-white font--xxl-14 background-purple">SAZNAJ VIŠE</button>
+            </div>
+        </div>
+        <div class="upoznaj_sebe-hide"></div>
+    </div>
+    {% endfor %}
+
+    <div class="upoznaj_sebe-buttons flex margin-xxl--left-135 margin-xl--left-70 margin-m--left-57 margin-xs--left-23">
+        <div class="font--xxl-14 font-purple margin-xxl--right-30 cursor-pointer" onclick="plusDivs(-1)">Prethodna</div>
+        <div class="font--xxl-14 font-purple cursor-pointer" onclick="plusDivs(1)">Sledeća</div>
+    </div>
+</div>
+
 {% endblock %}
