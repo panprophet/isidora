@@ -59,13 +59,3 @@
   border: 1px solid #291644;
   transition: all 0.4s ease-in-out;
 }
-@media screen and (max-width: 480px) {
-  .button-big {
-    height: 3.513rem;
-    width: 10.063rem;
-  }
-  .button-midd {
-    height: 2.313rem;
-    width: 6.375rem;
-  }
-}

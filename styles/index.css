@@ -1,5 +1,7 @@
 .mySlides {
   display: none;
+  position: relative;
+  height: 100%;
 }
 .cursor-pointer {
   cursor: pointer;
@@ -14,23 +16,29 @@
   animation-name: fadeInLeft;
   animation-fill-mode: both;
   animation-duration: 0.6s;
+  position: relative;
+  width: 35%;
 }
-.upoznaj_sebe-left-text {
+.upoznaj_sebe-left-all {
+  position: relative;
+}
+.upoznaj_sebe-left-all-text {
   border-left: 0.188rem solid #291644;
 }
 .upoznaj_sebe-right {
   background-color: rgba(41, 22, 68, 0.02);
-  clip-path: circle(100% at 92% 25%);
+  clip-path: circle(100% at 96% 25%);
   animation-name: fadeInLeft;
   animation-fill-mode: both;
   animation-duration: 0.6s;
+  width: 65%;
 }
 .upoznaj_sebe-right-1 {
   background-color: rgba(41, 22, 68, 0.05);
   width: 100%;
   height: 100%;
   float: right;
-  clip-path: circle(97.7% at 92% 25%);
+  clip-path: circle(97.7% at 96% 25%);
   animation-name: fadeInLeft;
   animation-fill-mode: both;
   animation-duration: 0.6s;
@@ -41,7 +49,7 @@
   width: 100%;
   height: 100%;
   float: right;
-  clip-path: circle(95.4% at 92% 25%);
+  clip-path: circle(95.4% at 96% 25%);
   animation-name: fadeInLeft;
   animation-fill-mode: both;
   animation-duration: 0.6s;
@@ -55,15 +63,17 @@
   width: 100%;
   height: 100%;
   float: right;
-  clip-path: circle(93.2% at 92% 25%);
+  clip-path: circle(93.2% at 96% 25%);
   animation-name: opacity;
   animation-fill-mode: both;
   animation-duration: 2.5s;
   animation-delay: 0.9s;
 }
+.upoznaj_sebe-right-1-2-image-gr {
+  display: none;
+}
 .upoznaj_sebe-buttons {
   position: absolute;
-  left: 12.5rem;
   bottom: 3rem;
 }
 @keyframes fadeInLeft {
@@ -82,5 +92,92 @@
   }
   to {
     opacity: 1;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .upoznaj_sebe-right {
+    clip-path: circle(100% at 108.5% 25%);
+  }
+  .upoznaj_sebe-right-1 {
+    clip-path: circle(97.7% at 108.5% 25%);
+  }
+  .upoznaj_sebe-right-1-2 {
+    clip-path: circle(95.4% at 108.5% 25%);
+  }
+  .upoznaj_sebe-right-1-2-image {
+    clip-path: circle(93.2% at 108.5% 25%);
+  }
+}
+@media screen and (max-width: 1023px) {
+  .upoznaj_sebe {
+    flex-direction: column-reverse;
+    height: auto;
+  }
+  .upoznaj_sebe-left {
+    width: 100%;
+    animation-duration: 0s;
+  }
+  .upoznaj_sebe-left-all {
+    position: absolute;
+    top: -115px;
+  }
+  .upoznaj_sebe-right {
+    width: 100%;
+    height: 55vw;
+    clip-path: none;
+    animation-duration: 0s;
+    background-color: #FFFFFF;
+  }
+  .upoznaj_sebe-right-1 {
+    clip-path: none;
+    animation-duration: 0s;
+    animation-delay: 0;
+    background-color: #FFFFFF;
+  }
+  .upoznaj_sebe-right-1-2 {
+    clip-path: none;
+    animation-duration: 0s;
+    animation-delay: 0;
+    background-color: #FFFFFF;
+  }
+  .upoznaj_sebe-right-1-2-image {
+    clip-path: none;
+    animation-duration: 0.5s;
+    animation-delay: 0;
+  }
+  .upoznaj_sebe-right-1-2-image-gr {
+    display: block;
+    background: linear-gradient(0deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 71.18%);
+    height: 101%;
+    width: 100%;
+  }
+  .upoznaj_sebe-hide {
+    height: 28vw;
+  }
+}
+@media screen and (max-width: 800px) {
+  .upoznaj_sebe-hide {
+    height: 35vw;
+  }
+}
+@media screen and (max-width: 640px) {
+  .upoznaj_sebe-hide {
+    height: 42vw;
+  }
+}
+@media screen and (max-width: 480px) {
+  .upoznaj_sebe-left-all {
+    top: -90px;
+  }
+  .upoznaj_sebe-right {
+    height: 78vw;
+  }
+  .upoznaj_sebe-hide {
+    height: 50vw;
+  }
+}
+@media screen and (max-width: 360px) {
+  .upoznaj_sebe-hide {
+    height: 70vw;
   }
 }

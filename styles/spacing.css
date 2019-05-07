@@ -681,6 +681,9 @@
   .margin-m--left-60 {
     margin-left: 3.75rem;
   }
+  .margin-m--left-57 {
+    margin-left: 3.563rem;
+  }
   .margin-m--left-18 {
     margin-left: 1.125rem;
   }
@@ -811,6 +814,9 @@
   }
   .margin-s--bottom-46 {
     margin-bottom: 2.875rem;
+  }
+  .margin-s--bottom-32 {
+    margin-bottom: 2rem;
   }
   .margin-s--bottom-24 {
     margin-bottom: 1.5rem;
@@ -945,6 +951,9 @@
   }
   .margin-xs--bottom-24 {
     margin-bottom: 1.5rem;
+  }
+  .margin-xs--left-23 {
+    margin-left: 1.438rem;
   }
   .margin-xs--right-36 {
     margin-right: 2.25rem;

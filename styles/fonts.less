@@ -118,6 +118,30 @@
   }
 
 }
+
+.font--xxl{
+  &-62{
+    font-size: 3.875rem;
+    line-height: 3.7375rem;
+    letter-spacing: 0.04rem;
+  }
+  &-16{
+    font-size: 1rem;
+    line-height: 1.5rem;
+    *{
+      font-size: inherit;
+      line-height: inherit;
+    }
+  }
+  &-14{
+    font-size: 0.875rem;
+    line-height: 1.5rem;
+    *{
+      font-size: inherit;
+      line-height: inherit;
+    }
+  }
+}
 .letter-spacing{
   &-0_3{
     letter-spacing: 0.019rem;
@@ -181,11 +205,28 @@
     }
   }
 }
-@media screen and (max-width: 1366px){
-  .font{
-    &-64 {
+@media screen and (max-width: 1440px){
+  .font--xl{
+    &-62{
+      font-size: 3.875rem;
+      line-height: 3.875rem; 
+      letter-spacing: 0.04rem;
+    }
+    &-46{
       font-size: 2.875rem;
-      line-height: 4.106rem;
+      line-height: 3.438rem;
+    }
+    &-16{
+      font-size: 1rem;
+      line-height: 1.5rem;
+      *{
+        font-size: inherit;
+        line-height: inherit;
+      }
+    }
+    &-14{
+      font-size: 0.875rem;
+      line-height: 1.5rem;
       *{
         font-size: inherit;
         line-height: inherit;
@@ -193,33 +234,45 @@
     }
   }
 }
+@media screen and (max-width: 1366px){
+  // .font{
+  //   &-64 {
+  //     font-size: 2.875rem;
+  //     line-height: 4.106rem;
+  //     *{
+  //       font-size: inherit;
+  //       line-height: inherit;
+  //     }
+  //   }
+  // }
+}
 @media screen and (max-width: 1024px){
-  .font {
-    &-24 {
-      font-size: 1.25rem;
-      // line-height: 1.375rem;
-      *{
-        font-size: inherit;
-        line-height: inherit;
-      }
-    }
-    &-32 {
-      font-size: 1.5rem;
-      line-height: 1.8rem;
-      *{
-        font-size: inherit;
-        line-height: inherit;
-      }
-    }
-    &-46 {
-      font-size: 2rem;
-      line-height: 2.7rem;
-      *{
-        font-size: inherit;
-        line-height: inherit;
-      }
-    }
-  }
+  // .font {
+  //   &-24 {
+  //     font-size: 1.25rem;
+  //     // line-height: 1.375rem;
+  //     *{
+  //       font-size: inherit;
+  //       line-height: inherit;
+  //     }
+  //   }
+  //   &-32 {
+  //     font-size: 1.5rem;
+  //     line-height: 1.8rem;
+  //     *{
+  //       font-size: inherit;
+  //       line-height: inherit;
+  //     }
+  //   }
+  //   &-46 {
+  //     font-size: 2rem;
+  //     line-height: 2.7rem;
+  //     *{
+  //       font-size: inherit;
+  //       line-height: inherit;
+  //     }
+  //   }
+  // }
   .text {
     &--l {
       &-center {
@@ -255,6 +308,7 @@
       }
     }
   }
+  
 }
 @media only screen and (max-width: 600px) {
   .text {
@@ -286,12 +340,12 @@
   }
 }
 @media screen and (max-width: 480px){
-  // .font{
-  //   &-14{
-  //     font-size: 0.75rem;
-  //     // line-height: 0.9rem;
-  //   }
-  // }
+  .font--xs{
+    &-36{
+      font-size: 2.25rem;
+      line-height: 2.7rem;
+    }
+  }
   .line {
     &-tiny {
       width: 2.1875rem;

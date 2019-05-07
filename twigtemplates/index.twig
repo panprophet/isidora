@@ -6,46 +6,34 @@
 <div style="height: 100vh; widht: 100%; background-color: #9DC64F;" id="second"></div> #}
 
 <div class="upoznaj_sebe">
-{% for item in Home_Page_Intro %}
-<div id="upoznaj_sebe1" class="mySlides flex padding-xxl--left-200" style="height:100%">
-    <div class="upoznaj_sebe-left w-35 flex flex-column justify-content-center align-items-start">
-        <div class="font-62 font-purple font-bold">{{item.NaslovBold}} </div>
-        <div class="font-62 font-purple margin-xxl--bottom-42">{{item.Naslov}}</div>
-        <div class="upoznaj_sebe-left-text padding-xxl--left-25 font-16 font-purple margin-xxl--bottom-77">{{item.Text}}</div>
-        <button class="button-midd font-white font-14 background-purple">SAZNAJ VIŠE</button>
-    </div>
-    <div class="upoznaj_sebe-right w-65">
-        <div class="upoznaj_sebe-right-1">
-            <div class="upoznaj_sebe-right-1-2">
-                <div class="upoznaj_sebe-right-1-2-image" 
-                    style="background-image: url('img/{{item.Slika}}')">
+    {% for item in Home_Page_Intro %}
+    <div id="upoznaj_sebe1" class="mySlides flex flex-direction-reverse flex--l-direction">
+        <div class="upoznaj_sebe-right">
+            <div class="upoznaj_sebe-right-1">
+                <div class="upoznaj_sebe-right-1-2">
+                    <div class="upoznaj_sebe-right-1-2-image" 
+                        style="background-image: url('img/{{item.Slika}}')">
+                        <div class="upoznaj_sebe-right-1-2-image-gr"></div>
+                    </div>
                 </div>
             </div>
         </div>
+        <div class="upoznaj_sebe-left flex flex-column justify-content-center align-items-start margin-xxl--left-135 margin-xl--left-70 margin-m--left-57 margin-xs--left-23">
+            <div class="upoznaj_sebe-left-all">
+                <div class="font--xxl-62 font--xl-46 font--xs-36 font-purple font-bold">{{item.NaslovBold}} </div>
+                <div class="font--xxl-62 font--xl-46 font--xs-36 font-purple margin-xxl--bottom-42 margin-s--bottom-32">{{item.Naslov}}</div>
+                <div class="upoznaj_sebe-left-all-text padding-xxl--left-25 font--xxl-16 font-purple margin-xxl--bottom-77 margin-m--bottom-46 margin-s--bottom-32">{{item.Text}}</div>
+                <button class="button-midd font-white font--xxl-14 background-purple">SAZNAJ VIŠE</button>
+            </div>
+        </div>
+        <div class="upoznaj_sebe-hide"></div>
     </div>
-</div>
-{% endfor %}
+    {% endfor %}
 
-{# <div id="upoznaj_sebe2" class="mySlides flex padding-xxl--left-200" style="height:100%">
-    <div class="upoznaj_sebe-left w-35 flex flex-column justify-content-center align-items-start">
-        <div class="font-62 font-purple font-bold"> sebe,</div>
-        <div class="font-62 font-purple margin-xxl--bottom-42">reši .</div>
-        <div class="upoznaj_sebe-left-text padding-xxl--left-25 font-16 font-purple margin-xxl--bottom-77">Živi život po meri</div>
-        <button class="button-midd font-white font-14 background-purple">SAZNAJ VIŠE</button>
+    <div class="upoznaj_sebe-buttons flex margin-xxl--left-135 margin-xl--left-70 margin-m--left-57 margin-xs--left-23">
+        <div class="font--xxl-14 font-purple margin-xxl--right-30 cursor-pointer" onclick="plusDivs(-1)">Prethodna</div>
+        <div class="font--xxl-14 font-purple cursor-pointer" onclick="plusDivs(1)">Sledeća</div>
     </div>
-    <div class="upoznaj_sebe-right w-65">
-        <div class="upoznaj_sebe-right-1">
-            <div class="upoznaj_sebe-right-1-2">
-                <div class="upoznaj_sebe-right-1-2-image">
-                </div>
-            </div>
-        </div>
-    </div>
-</div> #}
-<div class="upoznaj_sebe-buttons flex">
-  <div class="font-14 font-purple margin-xxl--right-30 cursor-pointer" onclick="plusDivs(-1)">Prethodna</div>
-  <div class="font-14 font-purple cursor-pointer" onclick="plusDivs(1)">Sledeća</div>
-</div>
 </div>
 
 {% endblock %}
