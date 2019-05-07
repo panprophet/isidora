@@ -1,35 +1,86 @@
+.mySlides {
+  display: none;
+}
+.cursor-pointer {
+  cursor: pointer;
+}
+.upoznaj_sebe {
+  height: calc(100vh - 3.74rem);
+  padding-top: 3.71rem;
+  position: relative;
+  overflow: hidden;
+}
+.upoznaj_sebe-left {
+  animation-name: fadeInLeft;
+  animation-fill-mode: both;
+  animation-duration: 0.6s;
+}
 .upoznaj_sebe-left-text {
   border-left: 0.188rem solid #291644;
 }
 .upoznaj_sebe-right {
-  background-image: url('../assets/images/krug-1.svg');
-  background-position: left;
-  background-size: cover;
-  background-repeat: no-repeat;
+  background-color: rgba(41, 22, 68, 0.02);
+  clip-path: circle(100% at 92% 25%);
+  animation-name: fadeInLeft;
+  animation-fill-mode: both;
+  animation-duration: 0.6s;
 }
 .upoznaj_sebe-right-1 {
-  background-image: url('../assets/images/krug-0.svg');
-  background-position: left;
-  background-size: cover;
-  background-repeat: no-repeat;
-  width: 97%;
+  background-color: rgba(41, 22, 68, 0.05);
+  width: 100%;
   height: 100%;
   float: right;
+  clip-path: circle(97.7% at 92% 25%);
+  animation-name: fadeInLeft;
+  animation-fill-mode: both;
+  animation-duration: 0.6s;
+  animation-delay: 0.2s;
 }
 .upoznaj_sebe-right-1-2 {
-  background-image: url('../assets/images/krug-2.svg');
-  background-position: left;
-  background-size: cover;
-  background-repeat: no-repeat;
-  width: 96%;
+  background-color: #291644;
+  width: 100%;
   height: 100%;
   float: right;
+  clip-path: circle(95.4% at 92% 25%);
+  animation-name: fadeInLeft;
+  animation-fill-mode: both;
+  animation-duration: 0.6s;
+  animation-delay: 0.4s;
 }
 .upoznaj_sebe-right-1-2-image {
-  background-position: left;
+  background-image: url('../assets/images/intro-slika-1.jpg');
+  background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  width: 96%;
+  width: 100%;
   height: 100%;
   float: right;
+  clip-path: circle(93.2% at 92% 25%);
+  animation-name: opacity;
+  animation-fill-mode: both;
+  animation-duration: 2.5s;
+  animation-delay: 0.9s;
+}
+.upoznaj_sebe-buttons {
+  position: absolute;
+  left: 12.5rem;
+  bottom: 3rem;
+}
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translate3d(100%, 0, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+@keyframes opacity {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
