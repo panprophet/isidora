@@ -86,7 +86,9 @@
       line-height: inherit;
     }
   }
-  
+  &-italic {
+    font-style: italic;
+  }
   &-regular {
     font-weight: 300;
   }
@@ -124,6 +126,22 @@
     font-size: 3.875rem;
     line-height: 3.7375rem;
     letter-spacing: 0.04rem;
+  }
+  &-46 {
+    font-size: 2.875rem;
+    line-height: 3.7375rem;
+    *{
+      font-size: inherit;
+      line-height: inherit;
+    }
+  }
+  &-24 {
+    font-size: 1.5rem;
+    line-height: 1.8rem;
+    *{
+      font-size: inherit;
+      line-height: inherit;
+    }
   }
   &-16{
     font-size: 1rem;
@@ -235,16 +253,37 @@
   }
 }
 @media screen and (max-width: 1366px){
-  // .font{
-  //   &-64 {
-  //     font-size: 2.875rem;
-  //     line-height: 4.106rem;
-  //     *{
-  //       font-size: inherit;
-  //       line-height: inherit;
-  //     }
-  //   }
-  // }
+  .font--xl{
+    &-62{
+      font-size: 3.875rem;
+      line-height: 3.875rem; 
+      letter-spacing: 0.04rem;
+    }
+    &-46{
+      font-size: 2.875rem;
+      line-height: 3.438rem;
+    }
+    &-42{
+      font-size: 2.625rem;
+      line-height: 2.625rem;
+    }
+    &-16{
+      font-size: 1rem;
+      line-height: 1.5rem;
+      *{
+        font-size: inherit;
+        line-height: inherit;
+      }
+    }
+    &-14{
+      font-size: 0.875rem;
+      line-height: 1.5rem;
+      *{
+        font-size: inherit;
+        line-height: inherit;
+      }
+    }
+  }
 }
 @media screen and (max-width: 1024px){
   // .font {

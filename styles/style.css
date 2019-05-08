@@ -158,6 +158,9 @@ a:active {
   font-size: inherit;
   line-height: inherit;
 }
+.font-italic {
+  font-style: italic;
+}
 .font-regular {
   font-weight: 300;
 }
@@ -191,6 +194,22 @@ a:active {
   font-size: 3.875rem;
   line-height: 3.7375rem;
   letter-spacing: 0.04rem;
+}
+.font--xxl-46 {
+  font-size: 2.875rem;
+  line-height: 3.7375rem;
+}
+.font--xxl-46 * {
+  font-size: inherit;
+  line-height: inherit;
+}
+.font--xxl-24 {
+  font-size: 1.5rem;
+  line-height: 1.8rem;
+}
+.font--xxl-24 * {
+  font-size: inherit;
+  line-height: inherit;
 }
 .font--xxl-16 {
   font-size: 1rem;
@@ -287,6 +306,35 @@ a:active {
   }
 }
 @media screen and (max-width: 1366px) {
+  .font--xl-62 {
+    font-size: 3.875rem;
+    line-height: 3.875rem;
+    letter-spacing: 0.04rem;
+  }
+  .font--xl-46 {
+    font-size: 2.875rem;
+    line-height: 3.438rem;
+  }
+  .font--xl-42 {
+    font-size: 2.625rem;
+    line-height: 2.625rem;
+  }
+  .font--xl-16 {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+  .font--xl-16 * {
+    font-size: inherit;
+    line-height: inherit;
+  }
+  .font--xl-14 {
+    font-size: 0.875rem;
+    line-height: 1.5rem;
+  }
+  .font--xl-14 * {
+    font-size: inherit;
+    line-height: inherit;
+  }
 }
 @media screen and (max-width: 1024px) {
   .text--l-center {
@@ -793,6 +841,9 @@ a:active {
 .background-purple {
   background-color: #291644;
 }
+.background-purple-dark {
+  background-color: #060606;
+}
 .background-grey {
   background-color: #383838;
 }
@@ -1120,6 +1171,9 @@ a:active {
   .margin-xl--bottom-48 {
     margin-bottom: 3rem;
   }
+  .margin-xl--bottom-24 {
+    margin-bottom: 1.5rem;
+  }
   .margin-xl--bottom-18 {
     margin-bottom: 1.125rem;
   }
@@ -1262,7 +1316,7 @@ a:active {
     padding-right: 0.625rem;
   }
 }
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1023px) {
   .margin-l--top-100 {
     margin-top: 6.25rem;
   }
@@ -1328,6 +1382,9 @@ a:active {
   }
   .margin-l--left-90-per {
     margin-left: 4.687%;
+  }
+  .margin-l--left-70 {
+    margin-left: 4.375rem;
   }
   .margin-l--left-60 {
     margin-left: 3.75rem;
@@ -1773,6 +1830,9 @@ a:active {
   .margin-xs--right-36 {
     margin-right: 2.25rem;
   }
+  .margin-xs--right-23 {
+    margin-right: 1.438rem;
+  }
   .margin-xs--right-18 {
     margin-right: 1.125rem;
   }
@@ -2062,6 +2122,124 @@ a:active {
     opacity: 1;
   }
 }
+.blizak-odnos {
+  height: calc(100vh - 7.33rem);
+  background-image: url('../assets/images/home-blok2.jpg');
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-top: 3.71rem;
+}
+.blizak-odnos-left {
+  width: 50%;
+  position: relative;
+}
+.blizak-odnos-left-image-1 {
+  position: absolute;
+  width: 27vw;
+  height: 27vw;
+  z-index: 3;
+  top: 5%;
+  left: 49%;
+}
+.blizak-odnos-left-image-1 img {
+  max-width: 100%;
+  max-height: 100%;
+}
+.blizak-odnos-left-image-1:hover {
+  z-index: 4;
+}
+.blizak-odnos-left-image-2 {
+  position: absolute;
+  width: 27vw;
+  height: 27vw;
+  z-index: 2;
+  top: 49%;
+  left: 20%;
+}
+.blizak-odnos-left-image-2 img {
+  max-width: 100%;
+  max-height: 100%;
+}
+.blizak-odnos-left-image-2:hover {
+  z-index: 4;
+}
+.blizak-odnos-left-image-3 {
+  position: absolute;
+  width: 27vw;
+  height: 27vw;
+  z-index: 1;
+  top: 9%;
+  left: 9%;
+}
+.blizak-odnos-left-image-3 img {
+  max-width: 100%;
+  max-height: 100%;
+}
+.blizak-odnos-left-image-3:hover {
+  z-index: 4;
+}
+.blizak-odnos-right {
+  width: 45%;
+  padding-left: 5%;
+}
+.blizak-odnos-right-line {
+  display: none;
+}
+.blizak-odnos-right-border {
+  border-left: 5px solid #FFFFFF;
+  height: 40px;
+}
+.blizak-odnos-right-text {
+  width: 59%;
+}
+.blizak-odnos-right-testimonial-text {
+  width: 435px;
+  height: auto;
+}
+@media screen and (max-width: 1680px) {
+  .blizak-odnos-right-text {
+    width: 67%;
+  }
+}
+@media screen and (max-width: 1440px) {
+  .blizak-odnos-right-text {
+    width: 77%;
+  }
+}
+@media screen and (max-width: 1366px) {
+  .blizak-odnos-left {
+    width: 45%;
+  }
+  .blizak-odnos-left-image-1 {
+    width: 26vw;
+    height: 26vw;
+    top: 10%;
+    left: 40%;
+  }
+  .blizak-odnos-left-image-2 {
+    width: 26vw;
+    height: 26vw;
+    top: 53%;
+    left: 9%;
+  }
+  .blizak-odnos-left-image-3 {
+    width: 26vw;
+    height: 26vw;
+    top: 12%;
+    left: -3%;
+  }
+  .blizak-odnos-right {
+    width: 55%;
+    padding-left: 0;
+  }
+  .blizak-odnos-right-border {
+    height: 32px;
+  }
+  .blizak-odnos-right-text {
+    width: 94%;
+  }
+}
 @media screen and (max-width: 1200px) {
   .upoznaj_sebe-right {
     clip-path: circle(100% at 108.5% 25%);
@@ -2074,6 +2252,15 @@ a:active {
   }
   .upoznaj_sebe-right-1-2-image {
     clip-path: circle(93.2% at 108.5% 25%);
+  }
+  .blizak-odnos-left-image-1 {
+    top: 12%;
+  }
+  .blizak-odnos-left-image-2 {
+    top: 48%;
+  }
+  .blizak-odnos-left-image-3 {
+    top: 19%;
   }
 }
 @media screen and (max-width: 1023px) {
@@ -2122,15 +2309,60 @@ a:active {
   .upoznaj_sebe-hide {
     height: 28vw;
   }
+  .blizak-odnos {
+    background-image: none;
+    height: auto;
+  }
+  .blizak-odnos-left {
+    background: linear-gradient(0deg, #291644 6.11%, rgba(41, 22, 68, 0) 71.18%), url(../assets/images/home-blok2-mobile.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 56vw;
+  }
+  .blizak-odnos-left-image-1 {
+    display: none;
+  }
+  .blizak-odnos-left-image-2 {
+    display: none;
+  }
+  .blizak-odnos-left-image-3 {
+    display: none;
+  }
+  .blizak-odnos-right {
+    background-color: #291644;
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  .blizak-odnos-right-line {
+    display: block;
+    width: 100%;
+    position: absolute;
+    top: -21%;
+  }
+  .blizak-odnos-right-text {
+    width: 60%;
+  }
 }
 @media screen and (max-width: 800px) {
   .upoznaj_sebe-hide {
     height: 35vw;
   }
+  .blizak-odnos-right-line {
+    top: -8%;
+  }
+  .blizak-odnos-right-text {
+    width: 81%;
+  }
 }
 @media screen and (max-width: 640px) {
   .upoznaj_sebe-hide {
     height: 42vw;
+  }
+  .blizak-odnos-right-testimonial-text {
+    width: 83%;
   }
 }
 @media screen and (max-width: 480px) {
@@ -2142,6 +2374,15 @@ a:active {
   }
   .upoznaj_sebe-hide {
     height: 50vw;
+  }
+  .blizak-odnos-left {
+    height: 80vw;
+  }
+  .blizak-odnos-right-text {
+    width: 100%;
+  }
+  .blizak-odnos-right-testimonial-text {
+    width: 93%;
   }
 }
 @media screen and (max-width: 360px) {
