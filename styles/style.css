@@ -288,6 +288,10 @@ a:active {
     font-size: 2.875rem;
     line-height: 3.438rem;
   }
+  .font--xl-42 {
+    font-size: 2.625rem;
+    line-height: 2.625rem;
+  }
   .font--xl-16 {
     font-size: 1rem;
     line-height: 1.5rem;
@@ -1170,6 +1174,9 @@ a:active {
   }
   .margin-xl--bottom-48 {
     margin-bottom: 3rem;
+  }
+  .margin-xl--bottom-32 {
+    margin-bottom: 2rem;
   }
   .margin-xl--bottom-24 {
     margin-bottom: 1.5rem;
@@ -2250,8 +2257,8 @@ a:active {
   animation-delay: 0.4s;
 }
 .blok-all-right-1-2-image {
-  background-image: url('../assets/images/intro-slika-1.jpg');
-  background-position: center;
+  background-image: url('../assets/images/home-blok3.jpg');
+  background-position: left;
   background-size: cover;
   background-repeat: no-repeat;
   width: 100%;
@@ -2437,6 +2444,7 @@ a:active {
   .blok-all-left-all {
     position: absolute;
     top: -115px;
+    width: 58%;
   }
   .blok-all-right {
     width: 100%;
@@ -2469,7 +2477,7 @@ a:active {
     width: 100%;
   }
   .blok-all-hide {
-    height: 28vw;
+    height: 40vw;
   }
 }
 @media screen and (max-width: 800px) {
@@ -2483,7 +2491,7 @@ a:active {
     width: 81%;
   }
   .blok-all-hide {
-    height: 35vw;
+    height: 53vw;
   }
 }
 @media screen and (max-width: 640px) {
@@ -2494,7 +2502,7 @@ a:active {
     width: 83%;
   }
   .blok-all-hide {
-    height: 42vw;
+    height: 80vw;
   }
 }
 @media screen and (max-width: 480px) {
@@ -2523,7 +2531,7 @@ a:active {
     height: 78vw;
   }
   .blok-all-hide {
-    height: 50vw;
+    height: 111vw;
   }
 }
 @media screen and (max-width: 360px) {
