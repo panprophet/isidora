@@ -281,11 +281,17 @@
   .margin-xl--top-50 {
     margin-top: 3.125rem;
   }
+  .margin-xl--top-24 {
+    margin-top: 1.5rem;
+  }
   .margin-xl--bottom-80 {
     margin-bottom: 5rem;
   }
   .margin-xl--bottom-48 {
     margin-bottom: 3rem;
+  }
+  .margin-xl--bottom-24 {
+    margin-bottom: 1.5rem;
   }
   .margin-xl--bottom-18 {
     margin-bottom: 1.125rem;
@@ -317,6 +323,9 @@
   .margin-xl--left-10 {
     margin-left: 0.625rem;
   }
+  .margin-xl--left-none {
+    margin-left: 0rem;
+  }
   .margin-xl--right-180 {
     margin-right: 11.25rem;
   }
@@ -343,6 +352,9 @@
   }
   .margin-xl--right-10 {
     margin-right: 0.625rem;
+  }
+  .margin-xl--right-none {
+    margin-right: 0rem;
   }
   .padding-xl--top-160 {
     padding-top: 10rem;
@@ -502,6 +514,12 @@
   .margin-l--left-90-per {
     margin-left: 4.687%;
   }
+  .margin-l--left-80 {
+    margin-left: 5rem;
+  }
+  .margin-l--left-70 {
+    margin-left: 4.5rem;
+  }
   .margin-l--left-60 {
     margin-left: 3.75rem;
   }
@@ -543,6 +561,12 @@
   }
   .margin-l--right-90-per {
     margin-right: 4.687%;
+  }
+  .margin-l--right-80 {
+    margin-right: 5rem;
+  }
+  .margin-l--right-70 {
+    margin-right: 4.5rem;
   }
   .margin-l--right-60 {
     margin-right: 3.75rem;
@@ -672,6 +696,9 @@
   .margin-m--left-18 {
     margin-left: 1.125rem;
   }
+  .margin-m--left-none {
+    margin-left: 0rem;
+  }
   .margin-m--right-100 {
     margin-right: 6.25rem;
   }
@@ -683,6 +710,9 @@
   }
   .margin-m--right-18 {
     margin-right: 1.125rem;
+  }
+  .margin-m--right-none {
+    margin-right: 0rem;
   }
   .padding-m--top-100 {
     padding-top: 6.25rem;

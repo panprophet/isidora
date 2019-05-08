@@ -158,7 +158,7 @@
 .line-marker:hover {
   cursor: pointer;
 }
-@media screen and (max-width: 1366px) {
+@media screen and (max-width: 1365px) {
   .font-64 {
     font-size: 2.875rem;
     line-height: 4.106rem;
@@ -166,6 +166,15 @@
   .font-64 * {
     font-size: inherit;
     line-height: inherit;
+  }
+  .text--xl-center {
+    text-align: center;
+  }
+  .text--xl-left {
+    text-align: left;
+  }
+  .text--xl-right {
+    text-align: right;
   }
 }
 @media screen and (max-width: 1024px) {
