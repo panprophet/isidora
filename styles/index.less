@@ -249,6 +249,26 @@
         }
     }
 }
+.blok4{
+    height: calc(~"100vh - 3.74rem");
+    background: linear-gradient(360deg, #291644 2.41%, rgba(41, 22, 68, 0) 100%), url(../assets/images/home-blok4.jpg), #291644;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    &-top{
+        height: 100%;
+        width: 100%;
+        &-all{
+            width: 50%;
+            &-line{
+                height: 5px;
+                width: 2.688rem;
+                background-color: @white;
+    
+            }
+        }
+    }
+}
 
 @media screen and (max-width: 1680px){
     .blizak-odnos{
@@ -444,7 +464,7 @@
                 &-all{
                     position: absolute;
                     top: -115px;
-                    width: 58%;
+                    width: 60%;
                 }
             }
             &-right{
@@ -483,6 +503,31 @@
         }
         
     }
+    .blok4{
+        height: auto;
+        background: @purple;
+        &-top{
+            height: 55vw;
+            background: linear-gradient(360deg, #291644 2.41%, rgba(41, 22, 68, 0) 100%), url(../assets/images/home-blok4.jpg), #291644;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            position: relative;
+            &-all{
+                position: absolute;
+                width: 60%;
+                // bottom: -36%;
+                top: 70%;
+                left: 0;
+                &-line{
+                    display: none;
+                }
+            }
+        }
+        &-hide{
+        height: 260px;
+        }
+    }
 }
 @media screen and (max-width: 800px){
     .upoznaj_sebe-hide{
@@ -499,7 +544,15 @@
         }
     }
     .blok-all-hide{
-        height: 53vw;
+        height: 440px;
+    }
+    .blok4{
+        // &-top-all{
+        //     bottom: -56%;
+        // }
+        &-hide{
+            height: 310px;
+        }
     }
 }
 @media screen and (max-width: 640px){
@@ -515,8 +568,22 @@
             }
         }
     }
-    .blok-all-hide{
-        height: 80vw;
+    .blok-all{
+        &-left-all{
+            width: 75%;
+        }
+        &-hide{
+            height: 72vw;
+        }
+    }
+    .blok4{
+        &-top-all{
+            width: 75%;
+            // bottom: -91%;
+        }
+        &-hide{
+            height: 380px;
+        }
     }
 }
 @media screen and (max-width: 480px){
@@ -527,7 +594,7 @@
             }
         }
         &-right {
-            height: 78vw;
+            height: 74vw;
         }
         &-hide{
             height: 50vw;
@@ -535,7 +602,7 @@
     }
     .blizak-odnos{
         &-left{
-            height: 80vw;
+            height: 74vw;
         }
         &-right{
             &-text{
@@ -557,10 +624,19 @@
                 }
             }
             &-right {
-                height: 78vw;
+                height: 74vw;
             }
             &-hide{
                 height: 95vw;
+            }
+        }
+    }
+    .blok4{
+        &-top{
+            height: 74vw;
+            &-all{
+                width: 86%;
+                bottom: -90%;
             }
         }
     }
@@ -572,6 +648,15 @@
         }
     }
     .blok-all-hide{
-        height: 180vw;
+        height: 580px;
+    }
+    .blok4{
+        &-top-all{
+            // bottom: -170%;
+            top: 175%;
+        }
+        &-hide{
+            height: 540px;
+        }
     }
 }

@@ -426,7 +426,7 @@ a:active {
     line-height: inherit;
   }
 }
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1023px) {
   .text--l-center {
     text-align: center;
   }
@@ -917,8 +917,8 @@ a:active {
   }
 }
 .button-big {
-  height: 3.5625rem;
-  width: 15.9375rem;
+  height: 2.813rem;
+  width: 12.750rem;
   background-color: #291644;
   border: 1px solid #291644;
   transition: all 0.4s ease-in-out;
@@ -976,12 +976,6 @@ a:active {
 .button-border-purple {
   border: 1px solid #291644;
   transition: all 0.4s ease-in-out;
-}
-@media screen and (max-width: 480px) {
-  .button-big {
-    height: 2.813rem;
-    width: 12.750rem;
-  }
 }
 .background-black {
   background-color: #000000;
@@ -2517,6 +2511,25 @@ a:active {
 .blok-all-right-1-2-image-gr {
   display: none;
 }
+.blok4 {
+  height: calc(100vh - 3.74rem);
+  background: linear-gradient(360deg, #291644 2.41%, rgba(41, 22, 68, 0) 100%), url(../assets/images/home-blok4.jpg), #291644;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.blok4-top {
+  height: 100%;
+  width: 100%;
+}
+.blok4-top-all {
+  width: 50%;
+}
+.blok4-top-all-line {
+  height: 5px;
+  width: 2.688rem;
+  background-color: #FFFFFF;
+}
 @media screen and (max-width: 1680px) {
   .blizak-odnos-right-text {
     width: 67%;
@@ -2688,7 +2701,7 @@ a:active {
   .blok-all-left-all {
     position: absolute;
     top: -115px;
-    width: 58%;
+    width: 60%;
   }
   .blok-all-right {
     width: 100%;
@@ -2723,6 +2736,30 @@ a:active {
   .blok-all-hide {
     height: 40vw;
   }
+  .blok4 {
+    height: auto;
+    background: #291644;
+  }
+  .blok4-top {
+    height: 55vw;
+    background: linear-gradient(360deg, #291644 2.41%, rgba(41, 22, 68, 0) 100%), url(../assets/images/home-blok4.jpg), #291644;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+  }
+  .blok4-top-all {
+    position: absolute;
+    width: 60%;
+    top: 70%;
+    left: 0;
+  }
+  .blok4-top-all-line {
+    display: none;
+  }
+  .blok4-hide {
+    height: 260px;
+  }
 }
 @media screen and (max-width: 800px) {
   .upoznaj_sebe-hide {
@@ -2735,7 +2772,10 @@ a:active {
     width: 81%;
   }
   .blok-all-hide {
-    height: 53vw;
+    height: 440px;
+  }
+  .blok4-hide {
+    height: 310px;
   }
 }
 @media screen and (max-width: 640px) {
@@ -2745,8 +2785,17 @@ a:active {
   .blizak-odnos-right-testimonial-text {
     width: 83%;
   }
+  .blok-all-left-all {
+    width: 75%;
+  }
   .blok-all-hide {
-    height: 80vw;
+    height: 72vw;
+  }
+  .blok4-top-all {
+    width: 75%;
+  }
+  .blok4-hide {
+    height: 380px;
   }
 }
 @media screen and (max-width: 480px) {
@@ -2754,13 +2803,13 @@ a:active {
     top: -90px;
   }
   .upoznaj_sebe-right {
-    height: 78vw;
+    height: 74vw;
   }
   .upoznaj_sebe-hide {
     height: 50vw;
   }
   .blizak-odnos-left {
-    height: 80vw;
+    height: 74vw;
   }
   .blizak-odnos-right-text {
     width: 100%;
@@ -2773,10 +2822,17 @@ a:active {
     width: 86%;
   }
   .blok-all-right {
-    height: 78vw;
+    height: 74vw;
   }
   .blok-all-hide {
     height: 95vw;
+  }
+  .blok4-top {
+    height: 74vw;
+  }
+  .blok4-top-all {
+    width: 86%;
+    bottom: -90%;
   }
 }
 @media screen and (max-width: 360px) {
@@ -2784,6 +2840,12 @@ a:active {
     height: 70vw;
   }
   .blok-all-hide {
-    height: 180vw;
+    height: 580px;
+  }
+  .blok4-top-all {
+    top: 175%;
+  }
+  .blok4-hide {
+    height: 540px;
   }
 }
