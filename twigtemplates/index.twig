@@ -5,6 +5,7 @@
 {# <div style="height: 100vh; widht: 100%; background-color: #291644; top: 3.75rem;" id="first"></div>
 <div style="height: 100vh; widht: 100%; background-color: #9DC64F;" id="second"></div> #}
 
+<!-- blok1 -->
 <div class="upoznaj_sebe">
     {% for item in Home_Page_Intro %}
     <div id="upoznaj_sebe1" class="mySlides flex flex-direction-reverse flex--l-direction">
@@ -35,7 +36,9 @@
         <div class="font--xxl-14 font-purple cursor-pointer" onclick="plusDivs(1)">Sledeća</div>
     </div>
 </div>
+<!-- blok1 -->
 
+<!-- blok2 -->
 <div class="blizak-odnos flex flex--l-direction">
     <div class="blizak-odnos-left">
         <div class="blizak-odnos-left-image-1"><img src="./assets/images/home-blok2-1.png"></div>
@@ -67,5 +70,33 @@
         </div>
     </div>
 </div>
+<!-- blok2 -->
+
+<!-- blok3 -->
+<div class="blok">
+    <div class="blok-all flex flex-direction-reverse flex--l-direction">
+        <div class="blok-all-right">
+            <div class="blok-all-right-1">
+                <div class="blok-all-right-1-2">
+                    <div class="blok-all-right-1-2-image">
+                        <div class="blok-all-right-1-2-image-gr"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="blok-all-left flex flex-column justify-content-center align-items-start margin-xxl--left-135 margin-xl--left-70 margin-m--left-57 margin-xs--left-23">
+            <div class="blok-all-left-all flex flex-column">
+                <div class="font--xxl-46 font--xl-42 font--xs-36 font-purple font-bold">Na stari način</div>
+                <div class="font--xxl-46 font--xl-42 font--xs-36 font-purple margin-xxl--bottom-42 margin-xl--bottom-32">nema novih rešenja</div>
+                <div class="blok-all-left-all-text padding-xxl--left-25 font--xxl-14 font-purple margin-xxl--bottom-77 margin-xl--bottom-32 margin-m--bottom-46 margin-s--bottom-32">Lorem Ipsum is simply dummy text of the printing</div>
+                <div class="font--xxl-14 font-purple margin-xxl--bottom-42 margin-xl--bottom-32">Trajno rešavanje prekomerne kilaže možete postići samo ako odklonite uzrok zašto se prejedate. Potrebno je stvarati zdravije navike a ne drzati dijetu. Sta god ste u svom zivotu drzali ono je bilo tu samo dok ga drzite. Isto je i sa dijetom. Dijetom resavamo samo trenutno posledicu. 15 godina sam pokusavla da smrsam, uskracivala sebi hranu i na kraju sam dosla do 110kg. Kao da sam bila na rezimu koji me je gojio.</div>
+                <a class="font-italic font-bold font--xxl-14 font-purple margin-xxl--bottom-42 margin-s--bottom-32">Saznaj više</a>
+                <button class="button-big font-white font--xxl-14 background-purple">ZAKAŽI SVOJ TERMIN</button>
+            </div>
+        </div>
+        <div class="blok-all-hide"></div>
+    </div>
+</div>
+<!-- blok3 -->
 
 {% endblock %}
