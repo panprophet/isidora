@@ -7,14 +7,20 @@
 .w-75 {
   width: 75%;
 }
+.w-65 {
+  width: 65%;
+}
 .w-60 {
-  width: 55%;
+  width: 60%;
 }
 .w-50 {
   width: 50%;
 }
 .w-40 {
-  width: 45%;
+  width: 40%;
+}
+.w-35 {
+  width: 35%;
 }
 .w-33 {
   width: 33.33%;
@@ -25,7 +31,17 @@
 .w-25--min {
   min-width: 25%;
 }
+<<<<<<< HEAD
 @media only screen and (max-width: 1365px) {
+=======
+.h-100-vh {
+  height: 100vh;
+}
+.h-100 {
+  height: 100%;
+}
+@media only screen and (max-width: 1440px) {
+>>>>>>> master
   .w--xl-100 {
     width: 100%;
   }

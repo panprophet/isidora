@@ -46,6 +46,9 @@
 .margin-xxl--bottom-80 {
   margin-bottom: 5rem;
 }
+.margin-xxl--bottom-77 {
+  margin-bottom: 4.813rem;
+}
 .margin-xxl--bottom-60 {
   margin-bottom: 3.75rem;
 }
@@ -54,6 +57,9 @@
 }
 .margin-xxl--bottom-48-per {
   margin-bottom: 6.51%;
+}
+.margin-xxl--bottom-42 {
+  margin-bottom: 2.625rem;
 }
 .margin-xxl--bottom-38 {
   margin-bottom: 2.375rem;
@@ -178,6 +184,9 @@
 .margin-xxl--right-48 {
   margin-right: 3rem;
 }
+.margin-xxl--right-30 {
+  margin-right: 1.875rem;
+}
 .margin-xxl--right-28 {
   margin-right: 1.75rem;
 }
@@ -204,6 +213,9 @@
 }
 .padding-xxl--top-100 {
   padding-top: 6.25rem;
+}
+.padding-xxl--top-60 {
+  padding-top: 3.75rem;
 }
 .padding-xxl--top-48 {
   padding-top: 3rem;
@@ -235,6 +247,9 @@
 .padding-xxl--bottom-8 {
   padding-bottom: 0.5rem;
 }
+.padding-xxl--left-200 {
+  padding-left: 12.5rem;
+}
 .padding-xxl--left-180 {
   padding-left: 11.25rem;
 }
@@ -243,6 +258,9 @@
 }
 .padding-xxl--left-60 {
   padding-left: 3.75rem;
+}
+.padding-xxl--left-25 {
+  padding-left: 1.563rem;
 }
 .padding-xxl--left-24 {
   padding-left: 1.5rem;
@@ -290,6 +308,12 @@
   .margin-xl--bottom-48 {
     margin-bottom: 3rem;
   }
+<<<<<<< HEAD
+=======
+  .margin-xl--bottom-32 {
+    margin-bottom: 2rem;
+  }
+>>>>>>> master
   .margin-xl--bottom-24 {
     margin-bottom: 1.5rem;
   }
@@ -447,7 +471,7 @@
     padding-right: 0.625rem;
   }
 }
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1023px) {
   .margin-l--top-100 {
     margin-top: 6.25rem;
   }
@@ -514,11 +538,16 @@
   .margin-l--left-90-per {
     margin-left: 4.687%;
   }
+<<<<<<< HEAD
   .margin-l--left-80 {
     margin-left: 5rem;
   }
   .margin-l--left-70 {
     margin-left: 4.5rem;
+=======
+  .margin-l--left-70 {
+    margin-left: 4.375rem;
+>>>>>>> master
   }
   .margin-l--left-60 {
     margin-left: 3.75rem;
@@ -693,6 +722,9 @@
   .margin-m--left-60 {
     margin-left: 3.75rem;
   }
+  .margin-m--left-57 {
+    margin-left: 3.563rem;
+  }
   .margin-m--left-18 {
     margin-left: 1.125rem;
   }
@@ -830,6 +862,9 @@
   .margin-s--bottom-46 {
     margin-bottom: 2.875rem;
   }
+  .margin-s--bottom-32 {
+    margin-bottom: 2rem;
+  }
   .margin-s--bottom-24 {
     margin-bottom: 1.5rem;
   }
@@ -964,8 +999,14 @@
   .margin-xs--bottom-24 {
     margin-bottom: 1.5rem;
   }
+  .margin-xs--left-23 {
+    margin-left: 1.438rem;
+  }
   .margin-xs--right-36 {
     margin-right: 2.25rem;
+  }
+  .margin-xs--right-23 {
+    margin-right: 1.438rem;
   }
   .margin-xs--right-18 {
     margin-right: 1.125rem;

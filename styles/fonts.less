@@ -73,6 +73,11 @@
   //     line-height: inherit;
   //   }
   // }
+  &-62 {
+    font-size: 3.875rem;
+    line-height: 3.875rem; //izmenjeno
+    letter-spacing: 0.04rem;
+  }
   &-64 {
     font-size: 4rem;
     line-height: 4.4rem;
@@ -81,10 +86,8 @@
       line-height: inherit;
     }
   }
-  &-62 {
-    font-size: 3.875rem;
-    line-height: 5rem;
-    letter-spacing: 0.04rem;
+  &-italic {
+    font-style: italic;
   }
   &-regular {
     font-weight: 300;
@@ -127,6 +130,46 @@
     }
   }
 
+}
+
+.font--xxl{
+  &-62{
+    font-size: 3.875rem;
+    line-height: 3.7375rem;
+    letter-spacing: 0.04rem;
+  }
+  &-46 {
+    font-size: 2.875rem;
+    line-height: 3.7375rem;
+    *{
+      font-size: inherit;
+      line-height: inherit;
+    }
+  }
+  &-24 {
+    font-size: 1.5rem;
+    line-height: 1.8rem;
+    *{
+      font-size: inherit;
+      line-height: inherit;
+    }
+  }
+  &-16{
+    font-size: 1rem;
+    line-height: 1.5rem;
+    *{
+      font-size: inherit;
+      line-height: inherit;
+    }
+  }
+  &-14{
+    font-size: 0.875rem;
+    line-height: 1.5rem;
+    *{
+      font-size: inherit;
+      line-height: inherit;
+    }
+  }
 }
 .letter-spacing{
   &-0_3{
@@ -191,16 +234,36 @@
     }
   }
 }
+<<<<<<< HEAD
 @media screen and (max-width: 1365px){
   .font{
     &-64 {
+=======
+@media screen and (max-width: 1440px){
+  .font--xl{
+    &-62{
+      font-size: 3.875rem;
+      line-height: 3.875rem; 
+      letter-spacing: 0.04rem;
+    }
+    &-46{
+>>>>>>> master
       font-size: 2.875rem;
-      line-height: 4.106rem;
+      line-height: 3.438rem;
+    }
+    &-42{
+      font-size: 2.625rem;
+      line-height: 2.625rem;
+    }
+    &-16{
+      font-size: 1rem;
+      line-height: 1.5rem;
       *{
         font-size: inherit;
         line-height: inherit;
       }
     }
+<<<<<<< HEAD
   }
   .text {
     &--xl {
@@ -221,28 +284,78 @@
     &-24 {
       font-size: 1.25rem;
       // line-height: 1.375rem;
-      *{
-        font-size: inherit;
-        line-height: inherit;
-      }
-    }
-    &-32 {
-      font-size: 1.5rem;
-      line-height: 1.8rem;
-      *{
-        font-size: inherit;
-        line-height: inherit;
-      }
-    }
-    &-46 {
-      font-size: 2rem;
-      line-height: 2.7rem;
+=======
+    &-14{
+      font-size: 0.875rem;
+      line-height: 1.5rem;
+>>>>>>> master
       *{
         font-size: inherit;
         line-height: inherit;
       }
     }
   }
+}
+@media screen and (max-width: 1366px){
+  .font--xl{
+    &-62{
+      font-size: 3.875rem;
+      line-height: 3.875rem; 
+      letter-spacing: 0.04rem;
+    }
+    &-46{
+      font-size: 2.875rem;
+      line-height: 3.438rem;
+    }
+    &-42{
+      font-size: 2.625rem;
+      line-height: 2.625rem;
+    }
+    &-16{
+      font-size: 1rem;
+      line-height: 1.5rem;
+      *{
+        font-size: inherit;
+        line-height: inherit;
+      }
+    }
+    &-14{
+      font-size: 0.875rem;
+      line-height: 1.5rem;
+      *{
+        font-size: inherit;
+        line-height: inherit;
+      }
+    }
+  }
+}
+@media screen and (max-width: 1024px){
+  // .font {
+  //   &-24 {
+  //     font-size: 1.25rem;
+  //     // line-height: 1.375rem;
+  //     *{
+  //       font-size: inherit;
+  //       line-height: inherit;
+  //     }
+  //   }
+  //   &-32 {
+  //     font-size: 1.5rem;
+  //     line-height: 1.8rem;
+  //     *{
+  //       font-size: inherit;
+  //       line-height: inherit;
+  //     }
+  //   }
+  //   &-46 {
+  //     font-size: 2rem;
+  //     line-height: 2.7rem;
+  //     *{
+  //       font-size: inherit;
+  //       line-height: inherit;
+  //     }
+  //   }
+  // }
   .text {
     &--l {
       &-center {
@@ -278,6 +391,7 @@
       }
     }
   }
+  
 }
 @media only screen and (max-width: 600px) {
   .text {
@@ -309,12 +423,12 @@
   }
 }
 @media screen and (max-width: 480px){
-  // .font{
-  //   &-14{
-  //     font-size: 0.75rem;
-  //     // line-height: 0.9rem;
-  //   }
-  // }
+  .font--xs{
+    &-36{
+      font-size: 2.25rem;
+      line-height: 2.7rem;
+    }
+  }
   .line {
     &-tiny {
       width: 2.1875rem;

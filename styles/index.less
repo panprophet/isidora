@@ -1,0 +1,577 @@
+@import 'variables';
+
+.mySlides {
+    display:none;
+    position: relative;
+    height: 100%;
+}
+.cursor-pointer{
+    cursor: pointer;
+}
+.upoznaj_sebe{
+    height: calc(~"100vh - 3.74rem");
+    padding-top: 3.71rem;
+    position: relative;
+    overflow: hidden;
+    &-left {
+        animation-name: fadeInLeft;
+        animation-fill-mode: both;
+        animation-duration: 0.6s;
+        position: relative;
+        width: 35%;
+        &-all {
+            position: relative;
+            &-text{
+                border-left: 0.188rem solid @purple;
+            }
+        }
+    }
+    &-right{
+        background-color: @purple-lighter;
+        clip-path: circle(100% at 96% 25%);
+        animation-name: fadeInLeft;
+        animation-fill-mode: both;
+        animation-duration: 0.6s;
+        width: 65%;
+        &-1{
+            background-color: @purple-light;
+            width: 100%;
+            height: 100%;
+            float: right;
+            clip-path: circle(97.7% at 96% 25%);
+            animation-name: fadeInLeft;
+            animation-fill-mode: both;
+            animation-duration: 0.6s;
+            animation-delay: 0.2s;
+            &-2{
+                background-color: @purple;
+                width: 100%;
+                height: 100%;
+                float: right;
+                clip-path: circle(95.4% at 96% 25%);
+                animation-name: fadeInLeft;
+                animation-fill-mode: both;
+                animation-duration: 0.6s;
+                animation-delay: 0.4s;
+                &-image{
+                    background-image: url('../assets/images/intro-slika-1.jpg');
+                    background-position: center;
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                    width: 100%;
+                    height: 100%;
+                    float: right;
+                    clip-path: circle(93.2% at 96% 25%);
+                    animation-name: opacity;
+                    animation-fill-mode: both;
+                    animation-duration: 2.5s;
+                    animation-delay: 0.9s;
+                    &-gr{
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+    &-buttons{
+        position: absolute;
+        bottom: 3rem;
+    }
+}
+
+@keyframes fadeInLeft {
+    from {
+        opacity: 0;
+        transform: translate3d(100%, 0, 0);
+    }
+    to {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+}
+@keyframes opacity {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.blizak-odnos{
+    height: calc(~"100vh - 7.33rem");
+    background-image: url('../assets/images/home-blok2.jpg');
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 3.71rem;
+    &-left {
+        width: 50%;
+        position: relative;
+        &-image {
+            &-1{
+                position: absolute;
+                width: 27vw;
+                height: 27vw;
+                z-index: 3;
+                top: 5%;
+                left: 49%;
+                img {
+                    max-width: 100%;
+                    max-height: 100%;
+                }
+                &:hover {
+                    z-index: 4;
+                }
+            }
+            &-2{
+                position: absolute;
+                width: 27vw;
+                height: 27vw;
+                z-index: 2;
+                top: 49%;
+                left: 20%;
+                img {
+                    max-width: 100%;
+                    max-height: 100%;
+                }
+                &:hover {
+                    z-index: 4;
+                }
+            }
+            &-3{
+                position: absolute;
+                width: 27vw;
+                height: 27vw;
+                z-index: 1;
+                top: 9%;
+                left: 9%;
+                img {
+                    max-width: 100%;
+                    max-height: 100%;
+                }
+                &:hover {
+                    z-index: 4;
+                }
+            }
+
+        }
+
+    }
+    &-right {
+        width: 45%;
+        padding-left: 5%;
+        &-line{
+            display: none;
+        }
+        &-border{
+            border-left: 5px solid @white;
+            height: 40px;
+        }
+        &-text{
+            width: 59%;
+        }
+        &-testimonial{
+            &-text{
+                width: 435px;
+                height: auto;
+            }
+        }
+    } 
+}
+
+.blok{
+    height: calc(~"100vh - 3.74rem");
+    position: relative;
+    overflow: hidden;
+    &-all{
+        position: relative;
+        height: 100%;
+        &-left {
+            animation-name: fadeInLeft;
+            animation-fill-mode: both;
+            animation-duration: 0.6s;
+            position: relative;
+            width: 35%;
+            &-all {
+                position: relative;
+                &-text{
+                    border-left: 0.188rem solid @purple;
+                }
+            }
+        }
+        &-right{
+            background-color: @purple-lighter;
+            clip-path: circle(100% at 96% 25%);
+            animation-name: fadeInLeft;
+            animation-fill-mode: both;
+            animation-duration: 0.6s;
+            width: 65%;
+            &-1{
+                background-color: @purple-light;
+                width: 100%;
+                height: 100%;
+                float: right;
+                clip-path: circle(97.7% at 96% 25%);
+                animation-name: fadeInLeft;
+                animation-fill-mode: both;
+                animation-duration: 0.6s;
+                animation-delay: 0.2s;
+                &-2{
+                    background-color: @purple;
+                    width: 100%;
+                    height: 100%;
+                    float: right;
+                    clip-path: circle(95.4% at 96% 25%);
+                    animation-name: fadeInLeft;
+                    animation-fill-mode: both;
+                    animation-duration: 0.6s;
+                    animation-delay: 0.4s;
+                    &-image{
+                        background-image: url('../assets/images/home-blok3.jpg');
+                        background-position: left;
+                        background-size: cover;
+                        background-repeat: no-repeat;
+                        width: 100%;
+                        height: 100%;
+                        float: right;
+                        clip-path: circle(93.2% at 96% 25%);
+                        animation-name: opacity;
+                        animation-fill-mode: both;
+                        animation-duration: 2.5s;
+                        animation-delay: 0.9s;
+                        &-gr{
+                            display: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1680px){
+    .blizak-odnos{
+        &-right{
+            &-text{
+                width: 67%;
+            }
+        }
+    }
+}
+@media screen and (max-width: 1440px){
+    .blizak-odnos{
+        &-right{
+            &-text{
+                width: 77%;
+            }
+        }
+    }
+}
+@media screen and (max-width: 1366px){
+    .blizak-odnos{
+        &-left{
+            width: 45%;
+            &-image{
+                &-1{
+                    width: 26vw;
+                    height: 26vw;
+                    top: 10%;
+                    left: 40%;
+                }
+                &-2{
+                    width: 26vw;
+                    height: 26vw;
+                    top: 53%;
+                    left: 9%;
+                }
+                &-3{
+                    width: 26vw;
+                    height: 26vw;
+                    top: 12%;
+                    left: -3%;
+                }
+            }
+        }
+        &-right{
+            width: 55%;
+            padding-left: 0;
+            &-border{
+                height: 32px;
+            }
+            &-text{
+                width: 94%;
+            }
+        }
+    }
+}
+@media screen and (max-width: 1200px){
+    .upoznaj_sebe-right{
+        clip-path: circle(100% at 108.5% 25%);
+        &-1{
+            clip-path: circle(97.7% at 108.5% 25%);
+            &-2{
+                clip-path: circle(95.4% at 108.5% 25%);
+                &-image{
+                    clip-path: circle(93.2% at 108.5% 25%);
+                }
+            }
+        }
+    }
+    .blizak-odnos{
+        &-left{
+            &-image{
+                &-1{
+                    top: 12%;
+                }
+                &-2{
+                    top: 48%;
+                }
+                &-3{
+                    top: 19%;
+                }
+            }
+        }
+    }
+    .blok{
+        &-all{
+            &-right{
+                clip-path: circle(100% at 108.5% 25%);
+            &-1{
+                clip-path: circle(97.7% at 108.5% 25%);
+                &-2{
+                    clip-path: circle(95.4% at 108.5% 25%);
+                    &-image{
+                        clip-path: circle(93.2% at 108.5% 25%);
+                    }
+                }
+            }
+            }
+        }
+    }
+}
+@media screen and (max-width: 1023px){
+    .upoznaj_sebe{
+        flex-direction: column-reverse;
+        height: auto;
+        &-left{
+            width: 100%;
+            animation-duration: 0s;
+            &-all{
+                position: absolute;
+                top: -115px;
+            }
+        }
+        &-right{
+            width: 100%;
+            height: 55vw;
+            clip-path: none;
+            animation-duration: 0s;
+            background-color: @white;
+            &-1{
+                clip-path: none;
+                animation-duration: 0s;
+                animation-delay: 0;
+                background-color: @white;
+                &-2{
+                    clip-path: none;
+                    animation-duration: 0s;
+                    animation-delay: 0;
+                    background-color: @white;
+                    &-image{
+                        clip-path: none;
+                        animation-duration: 0.5s;
+                        animation-delay: 0;
+                        &-gr{
+                            display: block;
+                            background: linear-gradient(0deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 71.18%); 
+                            height: 101%; 
+                            width:100%;
+                        }
+                    }
+                }
+            }
+        }
+        &-hide{
+            height: 28vw;
+        }
+    }
+    .blizak-odnos{
+        background-image: none;
+        height: auto;
+        &-left{
+            background: linear-gradient(0deg, #291644 6.11%, rgba(41, 22, 68, 0) 71.18%), url(../assets/images/home-blok2-mobile.jpg);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            width: 100%;
+            height: 56vw;
+            &-image{
+                &-1{
+                    display: none;
+                }
+                &-2{
+                    display: none;
+                }
+                &-3{
+                    display: none;
+                }
+            }
+        }
+        &-right{
+            background-color: @purple;
+            width: 100%;
+            height: auto;
+            position: relative;
+            &-line{
+                display: block;
+                width: 100%;
+                position: absolute;
+                top: -21%;
+            }
+            &-text{
+                width: 60%;
+            }
+        }
+    }
+    .blok{
+        flex-direction: column-reverse;
+        height: auto;
+        &-all{
+            &-left{
+                width: 100%;
+                animation-duration: 0s;
+                &-all{
+                    position: absolute;
+                    top: -115px;
+                    width: 58%;
+                }
+            }
+            &-right{
+                width: 100%;
+                height: 55vw;
+                clip-path: none;
+                animation-duration: 0s;
+                background-color: @white;
+                &-1{
+                    clip-path: none;
+                    animation-duration: 0s;
+                    animation-delay: 0;
+                    background-color: @white;
+                    &-2{
+                        clip-path: none;
+                        animation-duration: 0s;
+                        animation-delay: 0;
+                        background-color: @white;
+                        &-image{
+                            clip-path: none;
+                            animation-duration: 0.5s;
+                            animation-delay: 0;
+                            &-gr{
+                                display: block;
+                                background: linear-gradient(0deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 71.18%); 
+                                height: 101%; 
+                                width:100%;
+                            }
+                        }
+                    }
+                }
+            }
+            &-hide{
+                height: 40vw;
+            }
+        }
+        
+    }
+}
+@media screen and (max-width: 800px){
+    .upoznaj_sebe-hide{
+        height: 35vw;
+    }
+    .blizak-odnos{
+        &-right{
+            &-line{
+                top: -8%;
+            }
+            &-text{
+                width: 81%;
+            }
+        }
+    }
+    .blok-all-hide{
+        height: 53vw;
+    }
+}
+@media screen and (max-width: 640px){
+    .upoznaj_sebe-hide{
+        height: 42vw;
+    }
+    .blizak-odnos{
+        &-right{
+            &-testimonial{
+                &-text{
+                    width: 83%;
+                }
+            }
+        }
+    }
+    .blok-all-hide{
+        height: 80vw;
+    }
+}
+@media screen and (max-width: 480px){
+    .upoznaj_sebe {
+        &-left {
+            &-all {
+                top: -90px;
+            }
+        }
+        &-right {
+            height: 78vw;
+        }
+        &-hide{
+            height: 50vw;
+        }
+    }
+    .blizak-odnos{
+        &-left{
+            height: 80vw;
+        }
+        &-right{
+            &-text{
+                width: 100%;
+            }
+            &-testimonial{
+                &-text{
+                    width: 93%;
+                }
+            }
+        }
+    }
+    .blok{
+        &-all{
+            &-left {
+                &-all {
+                    top: -90px;
+                    width: 86%;
+                }
+            }
+            &-right {
+                height: 78vw;
+            }
+            &-hide{
+                height: 95vw;
+            }
+        }
+    }
+}
+@media screen and (max-width: 360px){
+    .upoznaj_sebe {
+        &-hide{
+            height: 70vw;
+        }
+    }
+    .blok-all-hide{
+        height: 180vw;
+    }
+}
