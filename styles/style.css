@@ -836,6 +836,12 @@ a:active {
   border: 1px solid #291644;
   transition: all 0.4s ease-in-out;
 }
+@media screen and (max-width: 480px) {
+  .button-big {
+    height: 2.813rem;
+    width: 12.750rem;
+  }
+}
 .background-black {
   background-color: #000000;
 }
@@ -2526,12 +2532,13 @@ a:active {
   }
   .blok-all-left-all {
     top: -90px;
+    width: 86%;
   }
   .blok-all-right {
     height: 78vw;
   }
   .blok-all-hide {
-    height: 111vw;
+    height: 95vw;
   }
 }
 @media screen and (max-width: 360px) {
@@ -2539,6 +2546,6 @@ a:active {
     height: 70vw;
   }
   .blok-all-hide {
-    height: 70vw;
+    height: 180vw;
   }
 }

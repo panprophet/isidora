@@ -491,12 +491,13 @@
   }
   .blok-all-left-all {
     top: -90px;
+    width: 86%;
   }
   .blok-all-right {
     height: 78vw;
   }
   .blok-all-hide {
-    height: 111vw;
+    height: 95vw;
   }
 }
 @media screen and (max-width: 360px) {
@@ -504,6 +505,6 @@
     height: 70vw;
   }
   .blok-all-hide {
-    height: 70vw;
+    height: 180vw;
   }
 }
