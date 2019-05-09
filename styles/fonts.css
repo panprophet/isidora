@@ -198,10 +198,6 @@
 .line-marker:hover {
   cursor: pointer;
 }
-<<<<<<< HEAD
-@media screen and (max-width: 1365px) {
-  .font-64 {
-=======
 @media screen and (max-width: 1440px) {
   .font--xl-62 {
     font-size: 3.875rem;
@@ -209,7 +205,6 @@
     letter-spacing: 0.04rem;
   }
   .font--xl-46 {
->>>>>>> master
     font-size: 2.875rem;
     line-height: 3.438rem;
   }
@@ -225,7 +220,6 @@
     font-size: inherit;
     line-height: inherit;
   }
-<<<<<<< HEAD
   .text--xl-center {
     text-align: center;
   }
@@ -239,13 +233,12 @@
 @media screen and (max-width: 1024px) {
   .font-24 {
     font-size: 1.25rem;
-=======
-  .font--xl-14 {
+  }
+  .font-14 {
     font-size: 0.875rem;
     line-height: 1.5rem;
->>>>>>> master
   }
-  .font--xl-14 * {
+  .font-14 * {
     font-size: inherit;
     line-height: inherit;
   }

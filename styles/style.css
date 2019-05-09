@@ -350,10 +350,6 @@ a:active {
 .line-marker:hover {
   cursor: pointer;
 }
-<<<<<<< HEAD
-@media screen and (max-width: 1365px) {
-  .font-64 {
-=======
 @media screen and (max-width: 1440px) {
   .font--xl-62 {
     font-size: 3.875rem;
@@ -361,7 +357,6 @@ a:active {
     letter-spacing: 0.04rem;
   }
   .font--xl-46 {
->>>>>>> master
     font-size: 2.875rem;
     line-height: 3.438rem;
   }
@@ -377,7 +372,6 @@ a:active {
     font-size: inherit;
     line-height: inherit;
   }
-<<<<<<< HEAD
   .text--xl-center {
     text-align: center;
   }
@@ -391,13 +385,12 @@ a:active {
 @media screen and (max-width: 1024px) {
   .font-24 {
     font-size: 1.25rem;
-=======
-  .font--xl-14 {
+  }
+  .font-14 {
     font-size: 0.875rem;
     line-height: 1.5rem;
->>>>>>> master
   }
-  .font--xl-14 * {
+  .font-14 * {
     font-size: inherit;
     line-height: inherit;
   }
@@ -570,7 +563,6 @@ a:active {
   -ms-flex-align: end;
   align-items: flex-end;
 }
-<<<<<<< HEAD
 @media only screen and (max-width: 1365px) {
   .flex--xl {
     display: flex;
@@ -626,8 +618,6 @@ a:active {
     justify-content: space-evenly;
   }
 }
-=======
->>>>>>> master
 @media only screen and (max-width: 1023px) {
   .flex--l {
     display: flex;
@@ -1003,11 +993,10 @@ a:active {
   background-color: #291644;
 }
 .background-purple-dark {
-<<<<<<< HEAD
   background-color: #190E29;
-=======
+}
+.background-purple-darker {
   background-color: #060606;
->>>>>>> master
 }
 .background-grey {
   background-color: #383838;
@@ -1342,12 +1331,9 @@ a:active {
   .margin-xl--bottom-48 {
     margin-bottom: 3rem;
   }
-<<<<<<< HEAD
-=======
   .margin-xl--bottom-32 {
     margin-bottom: 2rem;
   }
->>>>>>> master
   .margin-xl--bottom-24 {
     margin-bottom: 1.5rem;
   }
@@ -1572,16 +1558,11 @@ a:active {
   .margin-l--left-90-per {
     margin-left: 4.687%;
   }
-<<<<<<< HEAD
   .margin-l--left-80 {
     margin-left: 5rem;
   }
   .margin-l--left-70 {
     margin-left: 4.5rem;
-=======
-  .margin-l--left-70 {
-    margin-left: 4.375rem;
->>>>>>> master
   }
   .margin-l--left-60 {
     margin-left: 3.75rem;
@@ -2094,17 +2075,7 @@ a:active {
 .w-25--min {
   min-width: 25%;
 }
-<<<<<<< HEAD
-@media only screen and (max-width: 1365px) {
-=======
-.h-100-vh {
-  height: 100vh;
-}
-.h-100 {
-  height: 100%;
-}
 @media only screen and (max-width: 1440px) {
->>>>>>> master
   .w--xl-100 {
     width: 100%;
   }
@@ -2125,6 +2096,14 @@ a:active {
   }
   .w--xl-auto {
     width: auto;
+  }
+}
+@media only screen and (max-width: 1365px) {
+  .h-100-vh {
+    height: 100vh;
+  }
+  .h-100 {
+    height: 100%;
   }
 }
 @media only screen and (max-width: 1024px) {
