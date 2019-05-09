@@ -31,12 +31,6 @@
 .w-25--min {
   min-width: 25%;
 }
-.h-100-vh {
-  height: 100vh;
-}
-.h-100 {
-  height: 100%;
-}
 @media only screen and (max-width: 1440px) {
   .w--xl-100 {
     width: 100%;
@@ -58,6 +52,14 @@
   }
   .w--xl-auto {
     width: auto;
+  }
+}
+@media only screen and (max-width: 1365px) {
+  .h-100-vh {
+    height: 100vh;
+  }
+  .h-100 {
+    height: 100%;
   }
 }
 @media only screen and (max-width: 1024px) {

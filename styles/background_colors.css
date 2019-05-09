@@ -8,6 +8,9 @@
   background-color: #291644;
 }
 .background-purple-dark {
+  background-color: #190E29;
+}
+.background-purple-darker {
   background-color: #060606;
 }
 .background-grey {
@@ -15,6 +18,9 @@
 }
 .background-grey-light {
   background-color: #F6F6F6;
+}
+.background-grey-lighter {
+  background-color: #F4F4F5;
 }
 .background-white {
   background-color: #FFFFFF;

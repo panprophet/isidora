@@ -1,7 +1,21 @@
 @import 'variables';
-
+@font-face {
+  font-family: Metropolis;
+  font-weight: 300;
+  src: url('../assets/font/Metropolis-Regular.otf');
+}
+@font-face {
+  font-family: Metropolis;
+  font-weight: 400;
+  src: url('../assets/font/Metropolis-Medium.otf');
+}
+@font-face {
+  font-family: Metropolis;
+  font-weight: 500;
+  src: url('../assets/font/Metropolis-Bold.otf');
+}
 *{
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Metropolis', sans-serif;
     font-weight: 300;
     font-size: 16px;
     line-height: 16px;
@@ -48,7 +62,7 @@ input:focus {
     -webkit-box-shadow: none;
             box-shadow: none;
     border-color: none;
-    background-color: @black;
+    background-color: @white;
 }
 button:hover {
     opacity: 0.5;
@@ -57,8 +71,8 @@ input:-webkit-autofill,
 input:-webkit-autofill:hover,
 input:-webkit-autofill:focus,
 input:-webkit-autofill:active {
-    -webkit-box-shadow: 0 0 0px 1000px @black inset;
-    box-shadow: 0 0 0px 1000px @black inset;
+    -webkit-box-shadow: 0 0 0px 1000px @white inset;
+    box-shadow: 0 0 0px 1000px @white inset;
     -webkit-text-fill-color: @white !important;
 }
 p {
@@ -93,6 +107,76 @@ a:active{
     width: 100%;
 }
 
+.display {
+    &--xxl {
+        &-flex {
+            display: flex;
+        }
+        &-none {
+            display: none;
+        }
+    }
+}
+@media only screen and (max-width: 1365px) {
+    .display {
+        &--xl {
+            &-none {
+            display: none;
+            }
+            &-flex {
+                display: flex;
+            }
+        }
+    }
+}
+@media only screen and (max-width: 1023px) {
+    .display {
+        &--l {
+            &-none {
+            display: none;
+            }
+            &-flex {
+                display: flex;
+            }
+        }
+    }
+}
+@media only screen and (max-width: 960px) {
+    .display {
+        &--m {
+            &-none {
+            display: none;
+            }
+            &-flex {
+                display: flex;
+            }
+        }
+    }
+}
+@media only screen and (max-width: 600px) {
+    .display {
+        &--s {
+            &-none {
+            display: none;
+            }
+            &-flex {
+                display: flex;
+            }
+        }
+    }
+}
+@media only screen and (max-width: 380px) {
+    .display {
+        &--xxs {
+            &-none {
+            display: none;
+            }
+            &-flex {
+                display: flex;
+            }
+        }
+    }
+}
 @import 'fonts';
 @import 'flex_classes';
 @import 'buttons';

@@ -92,6 +92,17 @@
   color: #291644;
   transition: color 0.8s ease-in-out;
 }
+.font-purple--invert {
+  color: #291644;
+  opacity: 0.5;
+}
+.font-purple--invert a {
+  color: #291644;
+  opacity: 0.5;
+}
+.font-purple--invert a:hover {
+  opacity: 1;
+}
 .font-white {
   color: #FFFFFF;
 }
@@ -209,11 +220,25 @@
     font-size: inherit;
     line-height: inherit;
   }
-  .font--xl-14 {
+  .text--xl-center {
+    text-align: center;
+  }
+  .text--xl-left {
+    text-align: left;
+  }
+  .text--xl-right {
+    text-align: right;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .font-24 {
+    font-size: 1.25rem;
+  }
+  .font-14 {
     font-size: 0.875rem;
     line-height: 1.5rem;
   }
-  .font--xl-14 * {
+  .font-14 * {
     font-size: inherit;
     line-height: inherit;
   }
