@@ -426,7 +426,7 @@ a:active {
     line-height: inherit;
   }
 }
-@media screen and (max-width: 1023px) {
+@media screen and (max-width: 1024px) {
   .text--l-center {
     text-align: center;
   }
@@ -2450,6 +2450,10 @@ a:active {
 .blok-all {
   position: relative;
   height: 100%;
+  background-image: url('../assets/shared/luk-desktop.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 .blok-all-left {
   animation-name: fadeInLeft;
@@ -2465,7 +2469,7 @@ a:active {
   border-left: 0.188rem solid #291644;
 }
 .blok-all-right {
-  background-color: rgba(41, 22, 68, 0.02);
+  background-color: #FFFFFF;
   clip-path: circle(100% at 96% 25%);
   animation-name: fadeInLeft;
   animation-fill-mode: both;
@@ -2473,7 +2477,7 @@ a:active {
   width: 65%;
 }
 .blok-all-right-1 {
-  background-color: rgba(41, 22, 68, 0.05);
+  background-color: #2F1850;
   width: 100%;
   height: 100%;
   float: right;
@@ -2484,7 +2488,7 @@ a:active {
   animation-delay: 0.2s;
 }
 .blok-all-right-1-2 {
-  background-color: #291644;
+  background-color: #22123A;
   width: 100%;
   height: 100%;
   float: right;
@@ -2495,7 +2499,6 @@ a:active {
   animation-delay: 0.4s;
 }
 .blok-all-right-1-2-image {
-  background-image: url('../assets/images/home-blok3.jpg');
   background-position: left;
   background-size: cover;
   background-repeat: no-repeat;
@@ -2694,6 +2697,9 @@ a:active {
     flex-direction: column-reverse;
     height: auto;
   }
+  .blok-all {
+    background-image: none;
+  }
   .blok-all-left {
     width: 100%;
     animation-duration: 0s;
@@ -2736,6 +2742,9 @@ a:active {
   .blok-all-hide {
     height: 40vw;
   }
+  .blok-all-hide-2 {
+    height: 40vw;
+  }
   .blok4 {
     height: auto;
     background: #291644;
@@ -2772,6 +2781,9 @@ a:active {
     width: 81%;
   }
   .blok-all-hide {
+    height: 440px;
+  }
+  .blok-all-hide-2 {
     height: 440px;
   }
   .blok4-hide {
@@ -2841,6 +2853,9 @@ a:active {
   }
   .blok-all-hide {
     height: 580px;
+  }
+  .blok-all-hide-2 {
+    height: 470px;
   }
   .blok4-top-all {
     top: 175%;
