@@ -1,6 +1,6 @@
 .button-big {
-  height: 3.5625rem;
-  width: 15.9375rem;
+  height: 2.813rem;
+  width: 12.750rem;
   background-color: #291644;
   border: 1px solid #291644;
   transition: all 0.4s ease-in-out;
@@ -58,10 +58,4 @@
 .button-border-purple {
   border: 1px solid #291644;
   transition: all 0.4s ease-in-out;
-}
-@media screen and (max-width: 480px) {
-  .button-big {
-    height: 2.813rem;
-    width: 12.750rem;
-  }
 }

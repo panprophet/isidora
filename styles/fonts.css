@@ -274,7 +274,7 @@
     line-height: inherit;
   }
 }
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1023px) {
   .text--l-center {
     text-align: center;
   }

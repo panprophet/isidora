@@ -2,11 +2,9 @@
 {% block content %}
 {% set Home_Page_Intro = fetch("Home_Page_Intro") %}
 
-{# <div style="height: 100vh; widht: 100%; background-color: #291644; top: 3.75rem;" id="first"></div>
-<div style="height: 100vh; widht: 100%; background-color: #9DC64F;" id="second"></div> #}
 
 <!-- blok1 -->
-<div class="upoznaj_sebe">
+<div id="upoznaj_sebe" class="upoznaj_sebe">
     {% for item in Home_Page_Intro %}
     <div id="upoznaj_sebe1" class="mySlides flex flex-direction-reverse flex--l-direction">
         <div class="upoznaj_sebe-right">
@@ -39,7 +37,7 @@
 <!-- blok1 -->
 
 <!-- blok2 -->
-<div class="blizak-odnos flex flex--l-direction">
+<div id="blizak_odnos" class="blizak-odnos flex flex--l-direction">
     <div class="blizak-odnos-left">
         <div class="blizak-odnos-left-image-1"><img src="./assets/images/home-blok2-1.png"></div>
         <div class="blizak-odnos-left-image-2"><img src="./assets/images/home-blok2-2.png"></div>
@@ -54,7 +52,7 @@
                 <div class="font--xxl-14 font-white margin-xxl--bottom-24 margin-xl--bottom-18">Ja sam Isidora Buneta, živim i radim u Beogradu. Psiholog-psihoterapeut, poznavalac zdravog načina ishrane, treninga, života. Verujem da trajnom rešavanje problema možemo postići samo ako problemu pristupimo kako iz glave tako i iz tela.</div>
                 <div class="font--xxl-14 font-white margin-xxl--bottom-32 margin-xl--bottom-24">Kroz prihoterapijski odnos pomažem ljudima da napuste obrasce koji nisu njihovi i da žive u skladu sa sobom. Uspela sam trajno da smršam 42kg. Rešila sam psihološke uzroke prejedanja i mnogo lakše promenila način ishrane.</div>
             </div>
-            <button class="button-midd font-white font--xxl-14 background-purple-dark margin-xxl--bottom-32 margin-xl--bottom-24">SAZNAJ VIŠE</button>
+            <button class="button-midd font-white font--xxl-14 background-purple-darker margin-xxl--bottom-32 margin-xl--bottom-24">SAZNAJ VIŠE</button>
         </div>
         <div class="margin-l--left-70 margin-m--left-57 margin-xs--left-23 margin-l--top-24 margin-l--bottom-50">
             <div class="font--xxl-24 font-bold font-italic font-white margin-xxl--bottom-32 margin-xl--bottom-24">Šta su o meni rekli</div>
@@ -73,7 +71,7 @@
 <!-- blok2 -->
 
 <!-- blok3 -->
-<div class="blok">
+<div id="stari_nacin" class="blok">
     <div class="blok-all flex flex-direction-reverse flex--l-direction">
         <div class="blok-all-right">
             <div class="blok-all-right-1">
@@ -98,5 +96,27 @@
     </div>
 </div>
 <!-- blok3 -->
+
+<!-- blok4 -->
+<div id="odnos_je_taj" class="blok4 flex flex-column align-items-center justify-content-center">
+    <div class="blok4-top flex align-items-center justify-content-center">
+        <div class="blok4-top-all flex flex-column align-items-center align-items--l-start justify-content-center margin-m--left-57 margin-xs--left-23">
+            <div class="font--xxl-46 font--xl-42 font--xs-36 font-white text-center text--l-left flex flex--m-column margin-xxl--bottom-32 margin-xl--bottom-24"><p class="font-bold font--xxl-46 font--xl-42 font--xs-36 font-white">Odnos je taj&nbsp</p> koji leči</div>
+            <div class="blok4-top-all-line margin-xxl--bottom-10"></div>
+            <div class="font-white font--xxl-16 text-center text--l-left margin-xxl--bottom-42 margin-xl--bottom-32">Lorem Ipsum is simply dummy text of the printing</div>
+            <div class="font-white font--xxl-14 text-center text--l-left margin-xxl--bottom-32 margin-xl--bottom-24">Psihoterapija je terapija resavanje problema putem govora. Najbitniji je poverenje i odnos u kome se osoba oseca slobodno da zajedno sa terapeutom istazi i upozna sebe. Bez osudjivanja i lepljenja etiketa. Atmosfera u kojoj je bezbedno biti svoj. Ljudi najcesce veruju da nisu dobri i prikrivaju svoje mena. Psihoterapeut bez moralisanja i osudjivanja upoznaju klijenta. Pomocu psihoterapije mozete postati postati dobri kako niste ni sanjali da mozete biti.</div>
+            <div class="flex flex--xs-column">
+                <a href="#">
+                    <button class="button-big font-white font--xxl-14 background-purple-darker margin-xxl--right-24 margin-xs--bottom-24">ZAKAŽI SVOJ TERMIN</button>
+                </a>
+                <a data-fancybox  href="https://www.youtube.com/embed/2vb3tAajXIM">
+                    <button class="button-midd font-white font--xxl-14 background-purple-darker">VIDEO</button>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="blok4-hide"></div>
+</div>
+<!-- blok4 -->
 
 {% endblock %}
