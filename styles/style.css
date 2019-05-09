@@ -2450,6 +2450,10 @@ a:active {
 .blok-all {
   position: relative;
   height: 100%;
+  background-image: url('../assets/shared/luk-desktop.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 .blok-all-left {
   animation-name: fadeInLeft;
@@ -2692,6 +2696,9 @@ a:active {
   .blok {
     flex-direction: column-reverse;
     height: auto;
+  }
+  .blok-all {
+    background-image: none;
   }
   .blok-all-left {
     width: 100%;
