@@ -1,0 +1,13 @@
+{% set Blog = fetch("Blog") %}
+<div class="blog-posts flex flex--xs-column justify-content-between margin-xxl--top-52 margin-xs--top-24 margin-xxl--bottom-52 margin-xs--bottom-24 margin-xxl--left-52 margin-xs--left-23 margin-xxl--right-52 margin-xs--right-23">
+    {% for item in Blog %}
+    {% if loop.index > 1 and loop.index < 6 %}
+    <div class="blog-posts-post flex flex-column">
+        <div class="blog-posts-post-image margin-xxl--bottom-32" style="background-image: url('img/{{item.Slika}}')"></div>
+        <div class="w-70 w--l-100 font--xxl-24 font-purple margin-xxl--bottom-24">{{item.Naslov}}</div>
+        <div class="font--xxl-16 font-purple-light margin-xxl--bottom-32">{{item.Opis}}</div>
+        <div class="font--xxl-16 font-bold font-purple font-italic margin-xxl--bottom-32">Saznaj više</div>
+    </div>
+    {% endif %}
+    {% endfor %}
+</div>

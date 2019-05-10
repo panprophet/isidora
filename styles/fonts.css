@@ -88,6 +88,9 @@
 .font-purple {
   color: #291644;
 }
+.font-purple-light {
+  color: rgba(42, 54, 89, 0.5);
+}
 .font-purple--menu {
   color: #291644;
   transition: color 0.8s ease-in-out;

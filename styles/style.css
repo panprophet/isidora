@@ -240,6 +240,9 @@ a:active {
 .font-purple {
   color: #291644;
 }
+.font-purple-light {
+  color: rgba(42, 54, 89, 0.5);
+}
 .font-purple--menu {
   color: #291644;
   transition: color 0.8s ease-in-out;
@@ -1037,6 +1040,9 @@ a:active {
 .margin-xxl--top-60 {
   margin-top: 3.75rem;
 }
+.margin-xxl--top-52 {
+  margin-top: 3.25rem;
+}
 .margin-xxl--top-48 {
   margin-top: 3rem;
 }
@@ -1072,6 +1078,9 @@ a:active {
 }
 .margin-xxl--bottom-60 {
   margin-bottom: 3.75rem;
+}
+.margin-xxl--bottom-52 {
+  margin-bottom: 3.25rem;
 }
 .margin-xxl--bottom-48 {
   margin-bottom: 3rem;
@@ -2049,6 +2058,9 @@ a:active {
 .w-75 {
   width: 75%;
 }
+.w-70 {
+  width: 70%;
+}
 .w-65 {
   width: 65%;
 }
@@ -2338,7 +2350,7 @@ a:active {
   background-size: cover;
   background-repeat: no-repeat;
   width: 100%;
-  height: 100%;
+  height: 101%;
   float: right;
   clip-path: circle(93.2% at 96% 25%);
   animation-name: opacity;
@@ -2507,7 +2519,7 @@ a:active {
   background-size: cover;
   background-repeat: no-repeat;
   width: 100%;
-  height: 100%;
+  height: 101%;
   float: right;
   clip-path: circle(93.2% at 96% 25%);
   animation-name: opacity;
@@ -2929,7 +2941,7 @@ a:active {
   background-size: cover;
   background-repeat: no-repeat;
   width: 100%;
-  height: 100%;
+  height: 101%;
   float: right;
   clip-path: circle(93.2% at 96% 25%);
   animation-name: opacity;
@@ -3034,5 +3046,48 @@ a:active {
 @media screen and (max-width: 360px) {
   .najnoviji_blog-all-hide {
     height: 490px;
+  }
+}
+.blog-posts-post {
+  width: 23%;
+}
+.blog-posts-post-image {
+  width: 100%;
+  height: 22vw;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+@media screen and (max-width: 1280px) {
+  .blog-posts-post {
+    width: 31%;
+  }
+  .blog-posts-post-image {
+    height: 26vw;
+  }
+  .blog-posts-post:nth-child(4) {
+    display: none;
+  }
+}
+@media screen and (max-width: 840px) {
+  .blog-posts-post {
+    width: 47%;
+  }
+  .blog-posts-post-image {
+    height: 36vw;
+  }
+  .blog-posts-post:nth-child(3) {
+    display: none;
+  }
+}
+@media screen and (max-width: 480px) {
+  .blog-posts-post {
+    width: 100%;
+  }
+  .blog-posts-post-image {
+    height: 80vw;
+  }
+  .blog-posts-post:nth-child(3) {
+    display: none;
   }
 }
