@@ -1,10 +1,11 @@
 {% extends "base.twig" %}
 {% block content %}
-{% set Home_Page_Intro = fetch("Home_Page_Intro") %}
+
 
 
 <!-- blok1 -->
 <div id="upoznaj_sebe" class="upoznaj_sebe">
+{% set Home_Page_Intro = fetch("Home_Page_Intro") %}
     {% for item in Home_Page_Intro %}
     <div id="upoznaj_sebe1" class="mySlides flex flex-direction-reverse flex--l-direction">
         <div class="upoznaj_sebe-right">

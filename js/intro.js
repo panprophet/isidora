@@ -30,3 +30,17 @@ $(document).ready(function() {
   });
   $('.post--text p:has(img)').css({'margin-left':'-3rem', 'margin-right':'-3rem', 'margin-top':'2em', 'margin-bottom':'2em', 'text-align' : 'center',});
 });
+
+// owl carousel
+var owl = $('.owl-carousel');
+    owl.owlCarousel({
+        items:1,
+        loop:true,
+        autoplay:true,
+        autoplayTimeout:6000,
+        autoplayHoverPause:true,
+        nav:false,
+        dots:true,
+        animateOut: 'fadeOut',
+        hideOnContentClick: 'false'
+    });
