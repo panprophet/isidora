@@ -106,32 +106,33 @@
     height: 55vw;
     clip-path: none;
     animation-duration: 0s;
-    background-color: #FFFFFF;
+    background-color: #291644;
   }
   .najnoviji_blog-all-right-1 {
     clip-path: none;
     animation-duration: 0s;
     animation-delay: 0;
-    background-color: #FFFFFF;
+    background-color: #291644;
   }
   .najnoviji_blog-all-right-1-2 {
     clip-path: none;
     animation-duration: 0s;
     animation-delay: 0;
-    background-color: #FFFFFF;
+    background-color: #291644;
   }
   .najnoviji_blog-all-right-1-2-image {
     clip-path: none;
-    animation-duration: 0.5s;
+    animation-duration: 0;
     animation-delay: 0;
   }
   .najnoviji_blog-all-right-1-2-image-gr {
     display: block;
-    background: linear-gradient(0deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 71.18%);
-    height: 101%;
+    background: linear-gradient(360deg, #291644 0%, rgba(41, 22, 68, 0) 53.27%);
+    height: 102%;
     width: 100%;
   }
   .najnoviji_blog-all-hide {
+    background-color: #291644;
     height: 40vw;
   }
   .najnoviji_blog-all-hide-2 {
@@ -140,31 +141,28 @@
 }
 @media screen and (max-width: 800px) {
   .najnoviji_blog-all-hide {
-    height: 440px;
+    height: 370px;
   }
 }
 @media screen and (max-width: 640px) {
   .najnoviji_blog-all-left-all {
     width: 75%;
   }
-  .najnoviji_blog-all-hide {
-    height: 72vw;
-  }
 }
 @media screen and (max-width: 480px) {
   .najnoviji_blog-all-left-all {
-    top: -90px;
+    top: -60px;
     width: 86%;
   }
   .najnoviji_blog-all-right {
     height: 74vw;
   }
   .najnoviji_blog-all-hide {
-    height: 95vw;
+    height: 440px;
   }
 }
 @media screen and (max-width: 360px) {
   .najnoviji_blog-all-hide {
-    height: 580px;
+    height: 490px;
   }
 }

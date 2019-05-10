@@ -113,25 +113,25 @@
                 height: 55vw;
                 clip-path: none;
                 animation-duration: 0s;
-                background-color: @white;
+                background-color: @purple;
                 &-1{
                     clip-path: none;
                     animation-duration: 0s;
                     animation-delay: 0;
-                    background-color: @white;
+                    background-color: @purple;
                     &-2{
                         clip-path: none;
                         animation-duration: 0s;
                         animation-delay: 0;
-                        background-color: @white;
+                        background-color: @purple;
                         &-image{
                             clip-path: none;
-                            animation-duration: 0.5s;
+                            animation-duration: 0;
                             animation-delay: 0;
                             &-gr{
                                 display: block;
-                                background: linear-gradient(0deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 71.18%); 
-                                height: 101%; 
+                                background: linear-gradient(360deg, #291644 0%, rgba(41, 22, 68, 0) 53.27%); 
+                                height: 102%; 
                                 width:100%;
                             }
                         }
@@ -139,6 +139,7 @@
                 }
             }
             &-hide{
+                background-color: @purple;
                 height: 40vw;
                 &-2{
                     height: 40vw;
@@ -150,16 +151,13 @@
 }
 @media screen and (max-width: 800px){
     .najnoviji_blog-all-hide{
-        height: 440px;
+        height: 370px;
     }
 }
 @media screen and (max-width: 640px){
     .najnoviji_blog-all{
         &-left-all{
             width: 75%;
-        }
-        &-hide{
-            height: 72vw;
         }
     }
 }
@@ -168,7 +166,7 @@
         &-all{
             &-left {
                 &-all {
-                    top: -90px;
+                    top: -60px;
                     width: 86%;
                 }
             }
@@ -176,13 +174,13 @@
                 height: 74vw;
             }
             &-hide{
-                height: 95vw;
+                height: 440px;
             }
         }
     }
 }
 @media screen and (max-width: 360px){
     .najnoviji_blog-all-hide{
-        height: 580px;
+        height: 490px;
     }
 }
