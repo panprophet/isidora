@@ -1,0 +1,47 @@
+@import 'variables';
+
+.blog-posts{
+    &-post{
+        width: 23%;
+        &-image{
+            width: 100%;
+            height: 22vw;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+    }
+}
+@media screen and (max-width: 1280px){
+    .blog-posts-post{
+        width: 31%;
+        &-image{
+            height: 26vw;
+        }
+        &:nth-child(4){
+            display: none;
+        }
+    }
+}
+@media screen and (max-width: 840px){
+    .blog-posts-post{
+        width: 47%;
+        &-image{
+            height: 36vw;
+        }
+        &:nth-child(3){
+            display: none;
+        }
+    }
+}
+@media screen and (max-width: 480px){
+    .blog-posts-post{
+        width: 100%;
+        &-image{
+            height: 80vw;
+        }
+        &:nth-child(3){
+            display: none;
+        }
+    }
+}

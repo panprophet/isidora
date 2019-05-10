@@ -1,13 +1,11 @@
 
 <div id="najnoviji_blog" class="najnoviji_blog">
     <div class="najnoviji_blog-all flex flex-direction-reverse flex--l-direction">
-    {% set Blog = fetch("Blog") %}
-            {% for item in Blog %}
-            {% if item.id == 1 %}
+    {% set Blog = fetch("Blog") | first %}
         <div class="najnoviji_blog-all-right">
             <div class="najnoviji_blog-all-right-1">
                 <div class="najnoviji_blog-all-right-1-2">
-                    <div class="najnoviji_blog-all-right-1-2-image" style="background-image: url('img/{{item.Slika}}')">
+                    <div class="najnoviji_blog-all-right-1-2-image" style="background-image: url('img/{{Blog.Slika}}')">
                         <div class="najnoviji_blog-all-right-1-2-image-gr"></div>
                     </div>
                 </div>
@@ -15,18 +13,14 @@
         </div>
         <div class="najnoviji_blog-all-left flex flex-column justify-content-center align-items-start margin-xxl--left-135 margin-xl--left-70 margin-m--left-57 margin-xs--left-23">
             <div class="najnoviji_blog-all-left-all flex flex-column">
-            
                 <div class="font--xxl-46 font--xl-42 font--xs-36 font-white font-bold margin-xxl--bottom-42 margin-xl--bottom-32">Blog</div>
-                <div class="najnoviji_blog-all-left-all-text font--xxl-14 font-white flex padding-xxl--left-25 margin-xxl--bottom-77 margin-xl--bottom-32 margin-m--bottom-46 margin-s--bottom-32">New post &nbsp {{item.Datum|date("d/m/Y")}}</div>
-                <div class="font--xxl-36 font-white font-bold margin-xxl--bottom-42 margin-xl--bottom-32">{{item.Naslov}}</div>
-                <div class="font--xxl-14 font-white margin-xxl--bottom-42 margin-xl--bottom-32">{{item.Opis}}</div>
+                <div class="najnoviji_blog-all-left-all-text font--xxl-14 font-white flex padding-xxl--left-25 margin-xxl--bottom-77 margin-xl--bottom-32 margin-m--bottom-46 margin-s--bottom-32">New post &nbsp {{Blog.Datum|date("d/m/Y")}}</div>
+                <div class="font--xxl-36 font-white font-bold margin-xxl--bottom-42 margin-xl--bottom-32">{{Blog.Naslov}}</div>
+                <div class="font--xxl-14 font-white margin-xxl--bottom-42 margin-xl--bottom-32">{{Blog.Opis}}</div>
                 <button class="button-midd font-white font--xxl-14 background-purple-darker">SAZNAJ VIŠE</button>
-            
             </div>
         </div>
         <div class="najnoviji_blog-all-hide"></div>
-        {% endif %}
-        {% endfor %}
     </div>
 </div>
 

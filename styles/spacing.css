@@ -16,6 +16,9 @@
 .margin-xxl--top-60 {
   margin-top: 3.75rem;
 }
+.margin-xxl--top-52 {
+  margin-top: 3.25rem;
+}
 .margin-xxl--top-48 {
   margin-top: 3rem;
 }
@@ -51,6 +54,9 @@
 }
 .margin-xxl--bottom-60 {
   margin-bottom: 3.75rem;
+}
+.margin-xxl--bottom-52 {
+  margin-bottom: 3.25rem;
 }
 .margin-xxl--bottom-48 {
   margin-bottom: 3rem;
