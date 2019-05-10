@@ -123,6 +123,10 @@
   font-size: inherit;
   line-height: inherit;
 }
+.font--xxl-36 {
+  font-size: 2.250rem;
+  line-height: 2.250rem;
+}
 .font--xxl-24 {
   font-size: 1.5rem;
   line-height: 1.8rem;
