@@ -3166,27 +3166,29 @@ a:active {
   }
 }
 @media screen and (max-width: 640px) {
-  .pozovi_nas-top-all {
-    width: 75%;
-  }
   .pozovi_nas-hide {
     height: 380px;
   }
 }
 @media screen and (max-width: 480px) {
   .pozovi_nas-top {
-    height: 74vw;
+    height: 75vw;
   }
   .pozovi_nas-top-all {
-    width: 86%;
-    bottom: -90%;
+    top: 90%;
+  }
+  .pozovi_nas-top-all-text {
+    width: 87%;
   }
 }
 @media screen and (max-width: 360px) {
+  .pozovi_nas-top {
+    height: 77vw;
+  }
   .pozovi_nas-top-all {
-    top: 175%;
+    top: 80%;
   }
   .pozovi_nas-hide {
-    height: 540px;
+    height: 300px;
   }
 }

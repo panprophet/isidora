@@ -81,10 +81,10 @@
 }
 @media screen and (max-width: 640px){
     .pozovi_nas{
-        &-top-all{
-            width: 75%;
-            // bottom: -91%;
-        }
+        // &-top-all{
+        //     width: 75%;
+        //     // bottom: -91%;
+        // }
         &-hide{
             height: 380px;
         }
@@ -93,22 +93,28 @@
 @media screen and (max-width: 480px){
     .pozovi_nas{
         &-top{
-            height: 74vw;
+            height: 75vw;
             &-all{
-                width: 86%;
-                bottom: -90%;
+                // width: 86%;
+                top: 90%;
+                &-text {
+                    width: 87%;
+                }
             }
         }
     }
 }
 @media screen and (max-width: 360px){
     .pozovi_nas{
-        &-top-all{
-            // bottom: -170%;
-            top: 175%;
+        &-top {
+            height: 77vw;
+            &-all{
+                // bottom: -170%;
+                top: 80%;
+            }
         }
         &-hide{
-            height: 540px;
+            height: 300px;
         }
     }
 }
