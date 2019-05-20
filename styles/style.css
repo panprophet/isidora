@@ -1349,6 +1349,9 @@ a:active {
   .margin-xl--bottom-18 {
     margin-bottom: 1.125rem;
   }
+  .margin-xl--bottom-12 {
+    margin-bottom: 0.75rem;
+  }
   .margin-xl--left-180 {
     margin-left: 11.25rem;
   }
@@ -2678,6 +2681,7 @@ a:active {
   .blizak-odnos {
     background-image: none;
     height: auto;
+    padding-top: 0;
   }
   .blizak-odnos-left {
     background: linear-gradient(0deg, #291644 6.11%, rgba(41, 22, 68, 0) 71.18%), url(../assets/images/home-blok2-mobile.jpg);
@@ -2709,7 +2713,7 @@ a:active {
     top: -21%;
   }
   .blizak-odnos-right-text {
-    width: 60%;
+    width: 65%;
   }
   .blok {
     flex-direction: column-reverse;
@@ -3237,11 +3241,19 @@ a:active {
   .o_meni-text {
     position: absolute;
     top: 90%;
-    width: 80%;
+    width: 65%;
   }
   .o_meni-hide {
     display: flex;
     height: 380px;
+  }
+}
+@media screen and (max-width: 800px) {
+  .o_meni-text {
+    width: 75%;
+  }
+  .o_meni-hide {
+    width: 330px;
   }
 }
 @media screen and (max-width: 680px) {
