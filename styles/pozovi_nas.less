@@ -1,0 +1,120 @@
+@import 'variables';
+
+.pozovi_nas{
+    height: calc(~"100vh - 3.74rem");
+    background: linear-gradient(180deg, #291644 0%, rgba(41, 22, 68, 0) 100%), url(../assets/images/pozovi-nas.jpg), #C4C4C4;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    &-top{
+        height: 100%;
+        width: 100%;
+        &-all{
+            width: 50%;
+            &-image{
+                width: 60%;
+                img{
+                    max-width: 100%;
+                }
+            }
+            &-line{
+                height: 5px;
+                width: 2.688rem;
+                background-color: @white;
+    
+            }
+            &-text{
+                width: 39%;
+            }
+        }
+    }
+}
+@media screen and (max-width: 1440px){
+    .pozovi_nas-top-all-text{
+        width: 49%;
+    }
+}
+@media screen and (max-width: 1280px){
+    .pozovi_nas-top-all-text{
+        width: 69%;
+    }
+}
+@media screen and (max-width: 1023px){
+    .pozovi_nas{
+        height: auto;
+        background: @purple;
+        &-top{
+            height: 55vw;
+            background: linear-gradient(180deg, rgba(41, 22, 68, 0) 37.7%, #291644 100%), url(../assets/images/pozovi-nas.jpg), #C4C4C4;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            position: relative;
+            &-all{
+                position: absolute;
+                width: 100%;
+                // bottom: -36%;
+                top: 70%;
+                left: 0;
+                &-image{
+                    width: 45%;
+                }
+                &-line{
+                    display: none;
+                }
+            }
+        }
+        &-hide{
+        height: 310px;
+        }
+    }
+}
+@media screen and (max-width: 800px){
+    .pozovi_nas{
+        // &-top-all{
+        //     bottom: -56%;
+        // }
+        &-hide{
+            height: 310px;
+        }
+    }
+}
+@media screen and (max-width: 640px){
+    .pozovi_nas{
+        // &-top-all{
+        //     width: 75%;
+        //     // bottom: -91%;
+        // }
+        &-hide{
+            height: 380px;
+        }
+    }
+}
+@media screen and (max-width: 480px){
+    .pozovi_nas{
+        &-top{
+            height: 75vw;
+            &-all{
+                // width: 86%;
+                top: 90%;
+                &-text {
+                    width: 87%;
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 360px){
+    .pozovi_nas{
+        &-top {
+            height: 77vw;
+            &-all{
+                // bottom: -170%;
+                top: 80%;
+            }
+        }
+        &-hide{
+            height: 300px;
+        }
+    }
+}
