@@ -3192,3 +3192,76 @@ a:active {
     height: 300px;
   }
 }
+.o_meni {
+  height: calc(100vh - 3.74rem);
+  padding-top: 3.71rem;
+  background-image: url(../assets/images/o-meni-intro.jpg);
+  background-position: top right;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+.o_meni-gr {
+  display: none;
+}
+.o_meni-text {
+  width: 30%;
+}
+.o_meni-text-border {
+  border-left: 5px solid #291644;
+  height: 40px;
+}
+.o_meni-hide {
+  display: none;
+}
+@media screen and (max-width: 1440px) {
+  .o_meni-text {
+    width: 35%;
+  }
+}
+@media screen and (max-width: 1280px) {
+  .o_meni-text {
+    width: 40%;
+  }
+}
+@media screen and (max-width: 1023px) {
+  .o_meni {
+    height: 55vw;
+  }
+  .o_meni-gr {
+    display: block;
+    background: linear-gradient(0deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 71.18%);
+    height: 102%;
+    width: 100%;
+  }
+  .o_meni-text {
+    position: absolute;
+    top: 90%;
+    width: 80%;
+  }
+  .o_meni-hide {
+    display: flex;
+    height: 380px;
+  }
+}
+@media screen and (max-width: 680px) {
+  .o_meni-hide {
+    height: 460px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .o_meni {
+    height: 74vw;
+  }
+  .o_meni-text {
+    width: 90%;
+  }
+  .o_meni-hide {
+    height: 440px;
+  }
+}
+@media screen and (max-width: 360px) {
+  .o_meni-hide {
+    height: 570px;
+  }
+}
