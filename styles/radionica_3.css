@@ -41,3 +41,32 @@
 .radionica_3-play:hover img {
   opacity: 1;
 }
+@media screen and (max-width: 1023px) {
+  .radionica_3 {
+    height: auto;
+  }
+  .radionica_3-1 {
+    width: 100%;
+    height: 70vw;
+  }
+  .radionica_3-1:hover {
+    width: 100%;
+  }
+  .radionica_3-2 {
+    width: 50%;
+    height: 47vw;
+  }
+  .radionica_3-2:hover {
+    width: 50%;
+  }
+  .radionica_3-3 {
+    width: 50%;
+    height: 47vw;
+  }
+  .radionica_3-3:hover {
+    width: 50%;
+  }
+  .radionica_3-play {
+    display: none;
+  }
+}

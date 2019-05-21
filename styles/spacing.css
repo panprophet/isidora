@@ -625,6 +625,9 @@
   .margin-l--right-none {
     margin-right: 0px;
   }
+  .padding-l--top-100 {
+    padding-top: 6.25rem;
+  }
   .padding-l--top-70 {
     padding-top: 4.375rem;
   }
@@ -636,6 +639,9 @@
   }
   .padding-l--top-2_5-per {
     padding-top: 2.5%;
+  }
+  .padding-l--bottom-100 {
+    padding-bottom: 6.25rem;
   }
   .padding-l--bottom-70 {
     padding-bottom: 4.375rem;
@@ -754,10 +760,10 @@
     padding-top: 6.25rem;
   }
   .padding-m--top-70 {
-    padding-top: 8.81vh;
+    padding-top: 4.375rem;
   }
   .padding-m--top-60 {
-    padding-top: 7.55vh;
+    padding-top: 3.750rem;
   }
   .padding-m--top-46 {
     padding-top: 5.786vh;
@@ -1017,5 +1023,11 @@
   }
   .margin-xs--right-none {
     margin-right: 0rem;
+  }
+  .padding-xs--left-23 {
+    padding-left: 1.438rem;
+  }
+  .padding-xs--right-23 {
+    padding-right: 1.438rem;
   }
 }

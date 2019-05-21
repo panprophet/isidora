@@ -2,23 +2,71 @@
 {% block content %}
 
 <!-- blok1 -->
-<div class="blok1">
+<div class="blok1 blok1-a">
     <div class="blok1-1">
         <div class="blok1-1-2">
             <div class="blok1-1-2-3">
                 <div class="blok1-1-2-3-all flex flex-column justify-content-center margin-xxl--left-135 margin-xl--left-70 margin-m--left-57 margin-xs--left-23">
-                <div class="font--xxl-46 font--xl-42 font--xs-36 font-white font-bold">Na stari način</div>
-                <div class="font--xxl-46 font--xl-42 font--xs-36 font-white margin-xxl--bottom-42 margin-xl--bottom-32">nema novih rešenja</div>
-                <div class="blok1-1-2-3-all-text padding-xxl--left-25 font--xxl-14 font-white margin-xxl--bottom-77 margin-xl--bottom-32 margin-m--bottom-46 margin-s--bottom-32">Lorem Ipsum is simply dummy text of the printing</div>
-                <div class="font--xxl-14 font-white margin-xxl--bottom-42 margin-xl--bottom-32">Trajno rešavanje prekomerne kilaže možete postići samo ako odklonite uzrok zašto se prejedate. Potrebno je stvarati zdravije navike a ne drzati dijetu. Sta god ste u svom zivotu drzali ono je bilo tu samo dok ga drzite. Isto je i sa dijetom. Dijetom resavamo samo trenutno posledicu. 15 godina sam pokusavla da smrsam, uskracivala sebi hranu i na kraju sam dosla do 110kg. Kao da sam bila na rezimu koji me je gojio.</div>
-                <a class="font-italic font-bold font--xxl-14 font-white margin-xxl--bottom-42 margin-s--bottom-32">Saznaj više</a>
-                <button class="button-big font-white font--xxl-14 background-purple-dark">ZAKAŽI SVOJ TERMIN</button>
-            </div>
+                    <div class="font--xxl-46 font--xl-42 font--xs-36 font-white font-bold">Na stari način</div>
+                    <div class="font--xxl-46 font--xl-42 font--xs-36 font-white margin-xxl--bottom-42 margin-xl--bottom-32">nema novih rešenja</div>
+                    <div class="blok1-1-2-3-all-text padding-xxl--left-25 font--xxl-14 font-white margin-xxl--bottom-77 margin-xl--bottom-32 margin-m--bottom-46 margin-s--bottom-32">Lorem Ipsum is simply dummy text of the printing</div>
+                    <div class="font--xxl-14 font-white margin-xxl--bottom-42 margin-xl--bottom-32">Trajno rešavanje prekomerne kilaže možete postići samo ako odklonite uzrok zašto se prejedate. Potrebno je stvarati zdravije navike a ne drzati dijetu. Sta god ste u svom zivotu drzali ono je bilo tu samo dok ga drzite. Isto je i sa dijetom. Dijetom resavamo samo trenutno posledicu. 15 godina sam pokusavla da smrsam, uskracivala sebi hranu i na kraju sam dosla do 110kg. Kao da sam bila na rezimu koji me je gojio.</div>
+                    <a class="font-italic font-bold font--xxl-14 font-white margin-xxl--bottom-42 margin-s--bottom-32">Saznaj više</a>
+                    <button class="button-big font-white font--xxl-14 background-purple-dark">ZAKAŽI SVOJ TERMIN</button>
+                </div>
             </div>
         </div>
     </div>
 </div>
 <div class="hide"></div>
 <!-- blok1 -->
+
+<!-- blok2 -->
+<div class="blok2 flex flex-column align-items-center justify-content-center padding-l--top-100 padding-m--top-70 padding-l--bottom-100 padding-xs--left-23 padding-xs--right-23">
+    <div class="flex flex--m-column align-items-center margin-xxl--bottom-32 margin-xl--bottom-24">
+        <p class="font--xxl-46 font--xl-42 font--xs-36 font-white font-bold">9 od 10 dijeta&nbsp</p>
+        <p class="font--xxl-46 font--xl-42 font--xs-36 font-white">nisu uspešne</p>
+    </div>
+    <div class="blok2-line margin-xxl--bottom-10"></div>
+    <div class="font--xxl-16 font-white text-center margin-xxl--bottom-42 margin-xl--bottom-32">Lorem Ipsum is simply dummy text of the printing</div>
+    <div class="blok2-width font--xxl-16 font-white text-center">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</div>
+</div>
+<!-- blok2 -->
+
+<!-- blok5 -->
+<div class="blok1 blok1-b">
+    <div class="blok1-1">
+        <div class="blok1-1-2">
+            <div class="blok1-1-2-3">
+                <div class="blok1-1-2-3-all flex flex-column justify-content-center margin-xxl--left-135 margin-xl--left-70 margin-m--left-57 margin-xs--left-23">
+                {% set Radionica = fetch("Radionica") %}
+                {% for item in Radionica %}
+                {% if item.Oznaci == 'true' %}
+                    <div class="font--xxl-46 font--xl-42 font--xs-36 font-white font-bold margin-xxl--bottom-42 margin-xl--bottom-32">Radionica</div>
+                    <div class="blok1-1-2-3-all-text flex padding-xxl--left-25 font--xxl-14 font-white margin-xxl--bottom-77 margin-xl--bottom-32 margin-m--bottom-46 margin-s--bottom-32">
+                        <img src="./assets/shared/date.png" >
+                        <p class="font--xxl-14 font-bold font-white">{{item.Datum|date("d/m/Y")}} &nbsp</p>
+                        <p class="font--xxl-14 font-white"> {{item.Vreme}}</p>
+                    </div>
+                    <div class="font--xxl-14 font-white margin-xxl--bottom-42 margin-xl--bottom-32">{{item.Opis}}</div>
+                    <a class="font-italic font-bold font--xxl-14 font-white margin-xxl--bottom-42 margin-s--bottom-32">Saznaj više</a>
+                    <button class="button-big font-white font--xxl-14 background-purple-dark">ZAKAŽI SVOJ TERMIN</button>
+                {% endif %}
+                {% endfor %}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="hide"></div>
+<!-- blok5 -->
+
+<!-- blok6 -->
+{% include 'radionica_3.twig' %}
+<!-- blok6 -->
+
+<!-- blok9 -->
+{% include 'poslednji_postovi.twig' %}
+<!-- blok9 -->
 
 {% endblock %}
