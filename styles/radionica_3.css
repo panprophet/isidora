@@ -34,3 +34,10 @@
 .radionica_3-3:hover {
   width: 90%;
 }
+.radionica_3-play img {
+  opacity: 0;
+  transition: opacity 2s;
+}
+.radionica_3-play:hover img {
+  opacity: 1;
+}
