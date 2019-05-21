@@ -433,6 +433,37 @@ a:active {
   }
 }
 @media screen and (max-width: 1023px) {
+  .font--l-24 {
+    font-size: 1.25rem;
+  }
+  .font--l-24 * {
+    font-size: inherit;
+    line-height: inherit;
+  }
+  .font--l-32 {
+    font-size: 1.5rem;
+    line-height: 1.8rem;
+  }
+  .font--l-32 * {
+    font-size: inherit;
+    line-height: inherit;
+  }
+  .font--l-42 {
+    font-size: 2.625rem;
+    line-height: normal;
+  }
+  .font--l-42 * {
+    font-size: inherit;
+    line-height: inherit;
+  }
+  .font--l-46 {
+    font-size: 2rem;
+    line-height: 2.7rem;
+  }
+  .font--l-46 * {
+    font-size: inherit;
+    line-height: inherit;
+  }
   .text--l-center {
     text-align: center;
   }
@@ -455,6 +486,14 @@ a:active {
   }
   .text--m-right {
     text-align: right;
+  }
+  .font--m-32 {
+    font-size: 1.5rem;
+    line-height: 1.8rem;
+  }
+  .font--m-32 * {
+    font-size: inherit;
+    line-height: inherit;
   }
 }
 @media only screen and (max-width: 600px) {
@@ -648,6 +687,9 @@ a:active {
     -webkit-box-direction: normal;
     -ms-flex-direction: row;
     flex-direction: row;
+  }
+  .flex--l-wrap {
+    flex-wrap: wrap;
   }
   .align-items--l-center {
     -webkit-box-align: center;
@@ -1648,6 +1690,9 @@ a:active {
   .margin-l--right-none {
     margin-right: 0px;
   }
+  .padding-l--top-100 {
+    padding-top: 6.25rem;
+  }
   .padding-l--top-70 {
     padding-top: 4.375rem;
   }
@@ -1659,6 +1704,9 @@ a:active {
   }
   .padding-l--top-2_5-per {
     padding-top: 2.5%;
+  }
+  .padding-l--bottom-100 {
+    padding-bottom: 6.25rem;
   }
   .padding-l--bottom-70 {
     padding-bottom: 4.375rem;
@@ -1777,10 +1825,10 @@ a:active {
     padding-top: 6.25rem;
   }
   .padding-m--top-70 {
-    padding-top: 8.81vh;
+    padding-top: 4.375rem;
   }
   .padding-m--top-60 {
-    padding-top: 7.55vh;
+    padding-top: 3.750rem;
   }
   .padding-m--top-46 {
     padding-top: 5.786vh;
@@ -2040,6 +2088,12 @@ a:active {
   }
   .margin-xs--right-none {
     margin-right: 0rem;
+  }
+  .padding-xs--left-23 {
+    padding-left: 1.438rem;
+  }
+  .padding-xs--right-23 {
+    padding-right: 1.438rem;
   }
 }
 .input-form {
@@ -3320,10 +3374,47 @@ a:active {
 .radionica_3-play:hover img {
   opacity: 1;
 }
+@media screen and (max-width: 1023px) {
+  .radionica_3 {
+    height: auto;
+  }
+  .radionica_3-1 {
+    width: 100%;
+    height: 70vw;
+  }
+  .radionica_3-1:hover {
+    width: 100%;
+  }
+  .radionica_3-2 {
+    width: 50%;
+    height: 47vw;
+  }
+  .radionica_3-2:hover {
+    width: 50%;
+  }
+  .radionica_3-3 {
+    width: 50%;
+    height: 47vw;
+  }
+  .radionica_3-3:hover {
+    width: 50%;
+  }
+  .radionica_3-play {
+    display: none;
+  }
+}
 .blok1 {
   height: calc(100vh - 3.74rem);
+}
+.blok1-a {
   padding-top: 3.71rem;
   background: linear-gradient(97.15deg, #291644 17.89%, rgba(41, 22, 68, 0) 62.24%), url(../assets/images/marsavljenje-intro.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.blok1-b {
+  background: linear-gradient(97.15deg, #291644 17.89%, rgba(41, 22, 68, 0) 62.24%), url(../assets/images/mrsavljenje-blok5.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -3356,9 +3447,27 @@ a:active {
 .hide {
   display: none;
 }
+.blok2 {
+  height: calc(100vh - 3.74rem);
+  background-image: url(../assets/images/marsavljenje-blok2.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.blok2-line {
+  height: 5px;
+  width: 2.688rem;
+  background-color: #FFFFFF;
+}
+.blok2-width {
+  width: 40%;
+}
 @media screen and (max-width: 1440px) {
   .blok1-1-2-3-all {
     width: 58%;
+  }
+  .blok2-width {
+    width: 60%;
   }
 }
 @media screen and (max-width: 1279px) {
@@ -3374,25 +3483,36 @@ a:active {
   .blok1-1-2-3-all {
     width: 76%;
   }
+  .blok2-width {
+    width: 67%;
+  }
 }
 @media screen and (max-width: 1023px) {
   .blok1 {
     height: 55vw;
+  }
+  .blok1-a {
     background: linear-gradient(0deg, #291644 6.11%, rgba(41, 22, 68, 0) 71.18%), url(../assets/images/marsavljenje-intro.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
   }
+  .blok1-b {
+    background: linear-gradient(0deg, #291644 6.11%, rgba(41, 22, 68, 0) 71.18%), url(../assets/images/mrsavljenje-blok5.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
   .blok1-1 {
-    clip-path: circle(114% at 31% 209%);
+    clip-path: circle(114% at 31% 226%);
     width: 100%;
   }
   .blok1-1-2 {
-    clip-path: circle(114% at 31% 212%);
+    clip-path: circle(114% at 31% 232%);
     width: 100%;
   }
   .blok1-1-2-3 {
-    clip-path: circle(114% at 31% 215%);
+    clip-path: circle(114% at 31% 237%);
     width: 100%;
     position: relative;
   }
@@ -3400,12 +3520,20 @@ a:active {
     height: auto;
     width: 65%;
     position: absolute;
-    top: 65%;
+    top: 82%;
   }
   .hide {
     display: flex;
     height: 22.5rem;
     background-color: #291644;
+  }
+  .blok2 {
+    background-image: none;
+    background-color: #291644;
+    height: auto;
+  }
+  .blok2-width {
+    width: 80%;
   }
 }
 @media screen and (max-width: 800px) {
@@ -3447,6 +3575,9 @@ a:active {
   }
   .hide {
     height: 30.625rem;
+  }
+  .blok2-width {
+    width: 100%;
   }
 }
 @media screen and (max-width: 360px) {

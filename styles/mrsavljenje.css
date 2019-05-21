@@ -1,7 +1,15 @@
 .blok1 {
   height: calc(100vh - 3.74rem);
+}
+.blok1-a {
   padding-top: 3.71rem;
   background: linear-gradient(97.15deg, #291644 17.89%, rgba(41, 22, 68, 0) 62.24%), url(../assets/images/marsavljenje-intro.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.blok1-b {
+  background: linear-gradient(97.15deg, #291644 17.89%, rgba(41, 22, 68, 0) 62.24%), url(../assets/images/mrsavljenje-blok5.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -34,9 +42,27 @@
 .hide {
   display: none;
 }
+.blok2 {
+  height: calc(100vh - 3.74rem);
+  background-image: url(../assets/images/marsavljenje-blok2.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.blok2-line {
+  height: 5px;
+  width: 2.688rem;
+  background-color: #FFFFFF;
+}
+.blok2-width {
+  width: 40%;
+}
 @media screen and (max-width: 1440px) {
   .blok1-1-2-3-all {
     width: 58%;
+  }
+  .blok2-width {
+    width: 60%;
   }
 }
 @media screen and (max-width: 1279px) {
@@ -52,25 +78,36 @@
   .blok1-1-2-3-all {
     width: 76%;
   }
+  .blok2-width {
+    width: 67%;
+  }
 }
 @media screen and (max-width: 1023px) {
   .blok1 {
     height: 55vw;
+  }
+  .blok1-a {
     background: linear-gradient(0deg, #291644 6.11%, rgba(41, 22, 68, 0) 71.18%), url(../assets/images/marsavljenje-intro.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
   }
+  .blok1-b {
+    background: linear-gradient(0deg, #291644 6.11%, rgba(41, 22, 68, 0) 71.18%), url(../assets/images/mrsavljenje-blok5.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
   .blok1-1 {
-    clip-path: circle(114% at 31% 209%);
+    clip-path: circle(114% at 31% 226%);
     width: 100%;
   }
   .blok1-1-2 {
-    clip-path: circle(114% at 31% 212%);
+    clip-path: circle(114% at 31% 232%);
     width: 100%;
   }
   .blok1-1-2-3 {
-    clip-path: circle(114% at 31% 215%);
+    clip-path: circle(114% at 31% 237%);
     width: 100%;
     position: relative;
   }
@@ -78,12 +115,20 @@
     height: auto;
     width: 65%;
     position: absolute;
-    top: 65%;
+    top: 82%;
   }
   .hide {
     display: flex;
     height: 22.5rem;
     background-color: #291644;
+  }
+  .blok2 {
+    background-image: none;
+    background-color: #291644;
+    height: auto;
+  }
+  .blok2-width {
+    width: 80%;
   }
 }
 @media screen and (max-width: 800px) {
@@ -125,6 +170,9 @@
   }
   .hide {
     height: 30.625rem;
+  }
+  .blok2-width {
+    width: 100%;
   }
 }
 @media screen and (max-width: 360px) {
