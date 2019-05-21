@@ -1,0 +1,150 @@
+@import 'variables';
+
+.blok1 {
+    height: calc(~"100vh - 3.74rem");
+    padding-top: 3.71rem;
+    background: linear-gradient(97.15deg, #291644 17.89%, rgba(41, 22, 68, 0) 62.24%), url(../assets/images/marsavljenje-intro.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    &-1 {
+        background-color: rgba(41, 22, 68, 0.2);
+        clip-path: circle(72% at 30% 74%);
+        width: 65%;
+        height: 100%;
+        &-2 {
+            background-color: rgba(41, 22, 68, 0.2);
+            clip-path: circle(72% at 30% 74%);
+            width: 96%;
+            height: 100%;
+            &-3 {
+                background-color: rgba(41, 22, 68, 0.4);
+                clip-path: circle(72% at 30% 74%);
+                width: 96%;
+                height: 100%;
+                &-all {
+                    width: 43%;
+                    height: 100%;
+                    &-text {
+                        border-left: 0.188rem solid @white;
+                    }
+                }
+            }
+        }
+    }
+}
+.hide {
+    display: none;
+}
+
+@media screen and (max-width: 1440px) {
+    .blok1-1-2-3-all {
+        width: 58%;
+    }
+}
+
+@media screen and (max-width: 1279px) {
+    .blok1 {
+        &-1 {
+            clip-path: circle(72% at 22% 68%);
+            &-2 {
+                clip-path: circle(72% at 22% 68%);
+                &-3 {
+                    clip-path: circle(72% at 22% 68%);
+                    &-all {
+                        width: 76%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1023px) {
+    .blok1 {
+        height: 55vw;
+        // position: relative;
+        background: linear-gradient(0deg, #291644 6.11%, rgba(41, 22, 68, 0) 71.18%), url(../assets/images/marsavljenje-intro.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        &-1 {
+            // background-color: rgba(41, 22, 68, 0.3);
+            clip-path: circle(114% at 31% 209%);
+            width: 100%;
+            &-2 {
+                // background-color: rgba(41, 22, 68, 0.5);
+                clip-path: circle(114% at 31% 212%);
+                width: 100%;
+                &-3 {
+                    // background-color: rgba(41, 22, 68, 0.9);
+                    clip-path: circle(114% at 31% 215%);
+                    width: 100%;
+                    position: relative;
+                    &-all {
+                        height: auto;
+                        width: 65%;
+                        position: absolute;
+                        top: 65%;
+                    }
+                }
+            }
+        }
+    }
+    .hide {
+        display: flex;
+        height: 22.5rem;
+        background-color: rgba(41, 22, 68, 1);
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .blok1-1-2-3-all {
+       top: 77%;
+    }
+    .hide {
+        height: 26.875rem;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .hide {
+        height: 31.25rem;
+    }
+}
+
+@media screen and (max-width: 580px) {
+    .blok1-1-2-3-all {
+       top: 81%;
+    }
+    .hide {
+        height: 36.25rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .blok1 {
+        height: 57vw;
+        &-1 {
+            clip-path: circle(204% at 11% 338%);
+            &-2 {
+                clip-path: circle(204% at 11% 343%);
+                &-3 {
+                    clip-path: circle(204% at 11% 349%);
+                    &-all {
+                        width: 87%;
+                    }
+                }
+            }
+        }
+    }
+    .hide {
+        height: 30.625rem;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .hide {
+        height: 40.625rem;;
+    }
+}
