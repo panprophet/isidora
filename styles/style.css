@@ -149,6 +149,14 @@ a:active {
     display: flex;
   }
 }
+.font-12 {
+  font-size: 0.75rem;
+  line-height: 0.9rem;
+}
+.font-12 * {
+  font-size: inherit;
+  line-height: inherit;
+}
 .font-14 {
   font-size: 0.875rem;
   line-height: 1.5rem;
@@ -264,6 +272,9 @@ a:active {
   color: #FFFFFF;
   transition: color 0.8s ease-in-out;
 }
+.font-green {
+  color: #9DC64F;
+}
 .font--xxl-62 {
   font-size: 3.875rem;
   line-height: 3.7375rem;
@@ -302,6 +313,14 @@ a:active {
   line-height: 1.5rem;
 }
 .font--xxl-14 * {
+  font-size: inherit;
+  line-height: inherit;
+}
+.font--xxl-12 {
+  font-size: 0.75rem;
+  line-height: 0.9rem;
+}
+.font--xxl-12 * {
   font-size: inherit;
   line-height: inherit;
 }
@@ -919,17 +938,17 @@ a:active {
     -ms-flex-direction: row;
     flex-direction: row;
   }
-  .align-items--s-center {
+  .align-items--xs-center {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
   }
-  .align-items--s-start {
+  .align-items--xs-start {
     -webkit-box-align: start;
     -ms-flex-align: start;
     align-items: flex-start;
   }
-  .align-items--s-end {
+  .align-items--xs-end {
     -webkit-box-align: end;
     -ms-flex-align: end;
     align-items: flex-end;
@@ -2074,6 +2093,9 @@ a:active {
   .margin-xs--bottom-24 {
     margin-bottom: 1.5rem;
   }
+  .margin-xs--bottom-10 {
+    margin-bottom: 0.625rem;
+  }
   .margin-xs--left-23 {
     margin-left: 1.438rem;
   }
@@ -3040,7 +3062,7 @@ a:active {
   }
   .najnoviji_blog-all-left-all {
     position: absolute;
-    top: -115px;
+    top: -7.188rem;
     width: 60%;
   }
   .najnoviji_blog-all-right {
@@ -3083,7 +3105,7 @@ a:active {
 }
 @media screen and (max-width: 800px) {
   .najnoviji_blog-all-hide {
-    height: 370px;
+    height: 23.125rem;
   }
 }
 @media screen and (max-width: 640px) {
@@ -3093,19 +3115,19 @@ a:active {
 }
 @media screen and (max-width: 480px) {
   .najnoviji_blog-all-left-all {
-    top: -60px;
+    top: -3.75rem;
     width: 86%;
   }
   .najnoviji_blog-all-right {
     height: 74vw;
   }
   .najnoviji_blog-all-hide {
-    height: 440px;
+    height: 27.5rem;
   }
 }
 @media screen and (max-width: 360px) {
   .najnoviji_blog-all-hide {
-    height: 490px;
+    height: 30rem;
   }
 }
 .blog-posts-post {
@@ -3455,12 +3477,114 @@ a:active {
   background-repeat: no-repeat;
 }
 .blok2-line {
-  height: 5px;
+  height: 0.313rem;
   width: 2.688rem;
   background-color: #FFFFFF;
 }
 .blok2-width {
   width: 40%;
+}
+#psihoterapija {
+  display: flex;
+}
+#cilj {
+  display: none;
+}
+#rezultat {
+  display: none;
+}
+.opacity {
+  opacity: 0.05;
+}
+.text {
+  border-left: 0.063rem solid #60B709;
+  line-height: 1.75rem;
+}
+.position {
+  position: relative;
+}
+.position-1 {
+  position: absolute;
+  left: 0;
+}
+.position-2 {
+  position: absolute;
+  left: 45%;
+}
+.position-3 {
+  position: absolute;
+  right: 0;
+}
+.blok3 {
+  height: calc(100vh - 3.74rem);
+  overflow: hidden;
+}
+.blok3-all {
+  position: relative;
+  height: 100%;
+  background-image: url('../assets/shared/luk-ljubicasti-desktop.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.blok3-all-left {
+  animation-name: fadeInLeft;
+  animation-fill-mode: both;
+  animation-duration: 0.6s;
+  position: relative;
+  width: 35%;
+}
+.blok3-all-left-all {
+  position: relative;
+}
+.blok3-all-left-all-text {
+  border-left: 0.188rem solid #FFFFFF;
+}
+.blok3-all-right {
+  background-color: #291644;
+  clip-path: circle(100% at 96% 25%);
+  animation-name: fadeInLeft;
+  animation-fill-mode: both;
+  animation-duration: 0.6s;
+  width: 65%;
+}
+.blok3-all-right-1 {
+  background-color: #2F1850;
+  width: 100%;
+  height: 100%;
+  float: right;
+  clip-path: circle(97.7% at 96% 25%);
+  animation-name: fadeInLeft;
+  animation-fill-mode: both;
+  animation-duration: 0.6s;
+  animation-delay: 0.2s;
+}
+.blok3-all-right-1-2 {
+  background-color: #22123A;
+  width: 100%;
+  height: 100%;
+  float: right;
+  clip-path: circle(95.4% at 96% 25%);
+  animation-name: fadeInLeft;
+  animation-fill-mode: both;
+  animation-duration: 0.6s;
+  animation-delay: 0.4s;
+}
+.blok3-all-right-1-2-image {
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+  float: right;
+  clip-path: circle(93.2% at 96% 25%);
+  animation-name: opacity;
+  animation-fill-mode: both;
+  animation-duration: 2.5s;
+  animation-delay: 0.9s;
+}
+.blok3-all-right-1-2-image-gr {
+  display: none;
 }
 @media screen and (max-width: 1440px) {
   .blok1-1-2-3-all {
@@ -3468,6 +3592,15 @@ a:active {
   }
   .blok2-width {
     width: 60%;
+  }
+}
+@media screen and (max-width: 1365px) {
+  .position-2 {
+    left: 58%;
+  }
+  .position-3 {
+    position: absolute;
+    right: -22%;
   }
 }
 @media screen and (max-width: 1279px) {
@@ -3485,6 +3618,20 @@ a:active {
   }
   .blok2-width {
     width: 67%;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .blok3-all-right {
+    clip-path: circle(100% at 108.5% 25%);
+  }
+  .blok3-all-right-1 {
+    clip-path: circle(97.7% at 108.5% 25%);
+  }
+  .blok3-all-right-1-2 {
+    clip-path: circle(95.4% at 108.5% 25%);
+  }
+  .blok3-all-right-1-2-image {
+    clip-path: circle(93.2% at 108.5% 25%);
   }
 }
 @media screen and (max-width: 1023px) {
@@ -3535,6 +3682,59 @@ a:active {
   .blok2-width {
     width: 80%;
   }
+  .blok3 {
+    flex-direction: column-reverse;
+    height: auto;
+  }
+  .blok3-all {
+    background-image: none;
+  }
+  .blok3-all-left {
+    width: 100%;
+    animation-duration: 0s;
+  }
+  .blok3-all-left-all {
+    position: absolute;
+    top: -7.118rem;
+    width: 60%;
+  }
+  .blok3-all-right {
+    width: 100%;
+    height: 55vw;
+    clip-path: none;
+    animation-duration: 0s;
+    background-color: #291644;
+  }
+  .blok3-all-right-1 {
+    clip-path: none;
+    animation-duration: 0s;
+    animation-delay: 0;
+    background-color: #291644;
+  }
+  .blok3-all-right-1-2 {
+    clip-path: none;
+    animation-duration: 0s;
+    animation-delay: 0;
+    background-color: #291644;
+  }
+  .blok3-all-right-1-2-image {
+    clip-path: none;
+    animation-duration: 0;
+    animation-delay: 0;
+  }
+  .blok3-all-right-1-2-image-gr {
+    display: block;
+    background: linear-gradient(360deg, #291644 0%, rgba(41, 22, 68, 0) 53.27%);
+    height: 102%;
+    width: 100%;
+  }
+  .blok3-all-hide {
+    background-color: #291644;
+    height: 40vw;
+  }
+  .blok3-all-hide-2 {
+    height: 40vw;
+  }
 }
 @media screen and (max-width: 800px) {
   .blok1-1-2-3-all {
@@ -3543,10 +3743,23 @@ a:active {
   .hide {
     height: 26.875rem;
   }
+  .blok3-all-hide {
+    height: 23.125rem;
+  }
+  .position-2 {
+    left: 46%;
+  }
+  .position-3 {
+    position: absolute;
+    right: 0%;
+  }
 }
 @media screen and (max-width: 640px) {
   .hide {
     height: 31.25rem;
+  }
+  .blok3-all-left-all {
+    width: 75%;
   }
 }
 @media screen and (max-width: 580px) {
@@ -3579,9 +3792,33 @@ a:active {
   .blok2-width {
     width: 100%;
   }
+  .blok3-all-left-all {
+    top: -3.75rem;
+    width: 86%;
+  }
+  .blok3-all-right {
+    height: 74vw;
+  }
+  .blok3-all-hide {
+    height: 36.25rem;
+  }
+  .position-1 {
+    left: 0.438rem;
+  }
+  .position-2 {
+    left: 0;
+    top: 2.5rem;
+  }
+  .position-3 {
+    left: 0;
+    top: 5rem;
+  }
 }
 @media screen and (max-width: 360px) {
   .hide {
     height: 40.625rem;
+  }
+  .blok3-all-hide {
+    height: 38.750rem;
   }
 }

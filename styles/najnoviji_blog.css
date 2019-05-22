@@ -98,7 +98,7 @@
   }
   .najnoviji_blog-all-left-all {
     position: absolute;
-    top: -115px;
+    top: -7.188rem;
     width: 60%;
   }
   .najnoviji_blog-all-right {
@@ -141,7 +141,7 @@
 }
 @media screen and (max-width: 800px) {
   .najnoviji_blog-all-hide {
-    height: 370px;
+    height: 23.125rem;
   }
 }
 @media screen and (max-width: 640px) {
@@ -151,18 +151,18 @@
 }
 @media screen and (max-width: 480px) {
   .najnoviji_blog-all-left-all {
-    top: -60px;
+    top: -3.75rem;
     width: 86%;
   }
   .najnoviji_blog-all-right {
     height: 74vw;
   }
   .najnoviji_blog-all-hide {
-    height: 440px;
+    height: 27.5rem;
   }
 }
 @media screen and (max-width: 360px) {
   .najnoviji_blog-all-hide {
-    height: 490px;
+    height: 30rem;
   }
 }
