@@ -3,8 +3,8 @@
 }
 .radionica_3-1 {
   width: 33.33%;
-  background: linear-gradient(180deg, rgba(41, 22, 68, 0) 33.43%, #291644 100%), url(../assets/images/pozovi-nas.jpg);
-  background-position: center;
+  background: linear-gradient(180deg, rgba(41, 22, 68, 0) 33.43%, #291644 100%), url(../assets/images/radionica3-2.jpg);
+  background-position: left;
   background-size: cover;
   background-repeat: no-repeat;
   transition: width 2s;
@@ -14,7 +14,7 @@
 }
 .radionica_3-2 {
   width: 33.33%;
-  background: linear-gradient(180deg, rgba(41, 22, 68, 0) 33.43%, #291644 100%), url(../assets/images/pozovi-nas.jpg);
+  background: linear-gradient(180deg, rgba(41, 22, 68, 0) 33.43%, #291644 100%), url(../assets/images/radionica3-1.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;

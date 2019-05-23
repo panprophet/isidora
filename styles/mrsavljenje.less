@@ -62,6 +62,44 @@
     }
 }
 
+.blok3{
+    height: calc(~"100vh - 3.74rem");
+    background-image: url(../assets/shared/white-round-right.jpg);
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    &-left {
+        width: 60%;
+        background-color: @purple-circle;
+        clip-path: circle(62% at 22% 42%);
+        height: 100%;
+        &-1 {
+            width: 96%;
+            background-color: @purple;
+            clip-path: circle(62% at 22% 42%);
+            height: 100%;
+            &-image {
+                width: 96%;
+                background-image: url(../assets/images/mrsavljenje-blok5.jpg);
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+                clip-path: circle(62% at 22% 42%);
+                height: 100%;
+            }
+        }
+    }
+    &-right {
+        width: 40%;
+        &-all {
+            width: 80%;
+            &-line {
+                border-left: 0.188rem solid @purple
+            }
+        }
+    }
+}
+
 #psihoterapija {
     display: flex;
 }
@@ -94,7 +132,7 @@
     }
 }
 
-.blok3{
+.blok4{
     height: calc(~"100vh - 3.74rem");
     // position: relative;
     overflow: hidden;
@@ -113,7 +151,7 @@
             width: 35%;
             
             &-all {
-                position: relative;
+                // position: relative;
                 &-text{
                     border-left: 0.188rem solid @white;
                 }
@@ -176,6 +214,10 @@
     .blok2-width {
         width: 60%;
     }
+    .blok3-right-all {
+        margin-left: -2.5rem;
+        width: 90%;
+    }
 }
 @media screen and (max-width:1365px) {
     .position {
@@ -210,6 +252,17 @@
 
 @media screen and (max-width: 1200px){
     .blok3{
+        &-left {
+            clip-path: circle(62% at 22% 46%);
+            &-1 {
+                clip-path: circle(62% at 22% 46%);
+                &-image {
+                    clip-path: circle(62% at 22% 46%);
+                }
+            }
+        }
+    }
+    .blok4{
         &-all{
             &-right{
                 clip-path: circle(100% at 108.5% 25%);
@@ -278,7 +331,39 @@
             width: 80%;
         }
     }
-    .blok3{
+    .blok3 {
+        height: auto;
+        background-image: none;
+        &-left {
+            width: 100%;
+            height: 55vw;
+            clip-path: none;
+            background-color: @white;
+            &-1 {
+                width: 100%;
+                clip-path: none;
+                background-color: @white;
+                &-image {
+                    width: 100%;
+                    clip-path: none;
+                    background: linear-gradient(0deg, #FFFFFF 6.11%, rgba(255, 255, 255, 0) 71.18%), url(../assets/images/mrsavljenje-blok5.jpg);
+                    background-size: cover;
+                    background-position: center;
+                    background-repeat: no-repeat;
+                }
+            }
+        }
+        &-right {
+            width: 100%;
+            height: auto;
+            &-all {
+                width: 65%;
+                margin-left: 3.563rem;
+                margin-top: -6.250rem;
+            }
+        }
+    }
+    .blok4{
         flex-direction: column-reverse;
         height: auto;
         &-all{
@@ -286,10 +371,13 @@
             &-left{
                 width: 100%;
                 animation-duration: 0s;
+                height: auto;
+                margin-bottom: 9.375rem;
                 &-all{
-                    position: absolute;
-                    top: -7.118rem;
+                    // position: absolute;
+                    // top: -7.118rem;
                     width: 60%;
+                    margin-top: -3.75rem;
                 }
             }
             &-right{
@@ -322,13 +410,13 @@
                     }
                 }
             }
-            &-hide{
-                background-color: @purple;
-                height: 40vw;
-                &-2{
-                    height: 40vw;
-                }
-            }
+            // &-hide{
+            //     background-color: @purple;
+            //     height: 40vw;
+            //     &-2{
+            //         height: 40vw;
+            //     }
+            // }
         }  
     }
 }
@@ -339,9 +427,6 @@
     }
     .hide {
         height: 26.875rem;
-    }
-    .blok3-all-hide{
-        height: 23.125rem;
     }
     .position {
         &-2 {
@@ -358,7 +443,7 @@
     .hide {
         height: 31.25rem;
     }
-    .blok3-all{
+    .blok4-all{
         &-left-all{
             width: 75%;
         }
@@ -367,7 +452,7 @@
 
 @media screen and (max-width: 580px) {
     .blok1-1-2-3-all {
-       top: 81%;
+       top: 85%;
     }
     .hide {
         height: 36.25rem;
@@ -376,13 +461,16 @@
 
 @media screen and (max-width: 480px) {
     .blok1 {
-        height: 57vw;
+        height: 74vw;
         &-1 {
-            clip-path: circle(204% at 11% 338%);
+            clip-path: none;
+            width: 100%;
             &-2 {
-                clip-path: circle(204% at 11% 343%);
+                clip-path: none;
+                width: 100%;
                 &-3 {
-                    clip-path: circle(204% at 11% 349%);
+                    clip-path: none;
+                    width: 100%;
                     &-all {
                         width: 87%;
                     }
@@ -396,19 +484,24 @@
     .blok2-width {
         width: 100%;
     }
-    .blok3{
+    .blok3 {
+        &-left {
+            height: 74vw;
+        }
+        &-right-all {
+            width: 87%;
+            margin-left: 1.438rem;
+        }
+    }
+    .blok4{
         &-all{
             &-left {
                 &-all {
-                    top: -3.75rem;
                     width: 86%;
                 }
             }
             &-right {
                 height: 74vw;
-            }
-            &-hide{
-                height: 36.25rem;
             }
         }
     }
@@ -431,7 +524,7 @@
     .hide {
         height: 40.625rem;;
     }
-    .blok3-all-hide{
-        height: 38.750rem;
+    .blok3-right-all {
+        margin-top: -1.875rem;
     }
 }
