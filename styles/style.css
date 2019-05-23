@@ -1834,6 +1834,9 @@ a:active {
   .margin-m--right-90 {
     margin-right: 5.625rem;
   }
+  .margin-m--right-57 {
+    margin-right: 3.563rem;
+  }
   .margin-m--right-60 {
     margin-right: 3.75rem;
   }
@@ -2646,6 +2649,7 @@ a:active {
 @media screen and (max-width: 1366px) {
   .blizak-odnos-left {
     width: 45%;
+    margin-top: -3.125rem;
   }
   .blizak-odnos-left-image-1 {
     width: 26vw;
@@ -2769,6 +2773,7 @@ a:active {
     background-repeat: no-repeat;
     width: 100%;
     height: 56vw;
+    margin-top: 0;
   }
   .blizak-odnos-left-image-1 {
     display: none;
@@ -3899,5 +3904,72 @@ a:active {
   }
   .blok3-right-all {
     margin-top: -1.875rem;
+  }
+}
+.psihoterapija-blok {
+  height: calc(100vh - 3.74rem);
+  padding-top: 3.71rem;
+  background: linear-gradient(97.15deg, #291644 17.89%, rgba(41, 22, 68, 0) 62.24%), url(../assets/images/radionica3-2.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.psihoterapija-blok-1 {
+  background-color: rgba(41, 22, 68, 0.2);
+  clip-path: circle(72% at 30% 74%);
+  width: 65%;
+  height: 100%;
+}
+.psihoterapija-blok-1-2 {
+  background-color: rgba(41, 22, 68, 0.2);
+  clip-path: circle(72% at 30% 74%);
+  width: 96%;
+  height: 100%;
+}
+.psihoterapija-blok-1-2-3 {
+  background-color: rgba(41, 22, 68, 0.4);
+  clip-path: circle(72% at 30% 74%);
+  width: 96%;
+  height: 100%;
+}
+.psihoterapija-blok-1-2-3-all {
+  width: 80%;
+  height: 100%;
+}
+.psihoterapija-blok-1-2-3-all-text {
+  border-left: 0.188rem solid #FFFFFF;
+}
+@media screen and (max-width: 1023px) {
+  .psihoterapija-blok {
+    height: auto;
+    background: linear-gradient(0deg, #291644 6.11%, rgba(41, 22, 68, 0) 71.18%), url(../assets/images/radionica3-2.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .psihoterapija-blok-1 {
+    background-color: rgba(41, 22, 68, 0);
+    clip-path: none;
+    width: 100%;
+  }
+  .psihoterapija-blok-1-2 {
+    background-color: rgba(41, 22, 68, 0);
+    clip-path: none;
+    width: 100%;
+  }
+  .psihoterapija-blok-1-2-3 {
+    background-color: rgba(41, 22, 68, 0);
+    clip-path: none;
+    width: 100%;
+  }
+  .psihoterapija-blok-1-2-3-all {
+    height: auto;
+    min-height: 50rem;
+    width: auto;
+  }
+}
+@media screen and (max-width: 480px) {
+  .psihoterapija-blok-1-2-3-all {
+    min-height: 33.75rem;
   }
 }

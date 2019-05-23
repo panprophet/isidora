@@ -273,6 +273,7 @@
 @media screen and (max-width: 1366px) {
   .blizak-odnos-left {
     width: 45%;
+    margin-top: -3.125rem;
   }
   .blizak-odnos-left-image-1 {
     width: 26vw;
@@ -396,6 +397,7 @@
     background-repeat: no-repeat;
     width: 100%;
     height: 56vw;
+    margin-top: 0;
   }
   .blizak-odnos-left-image-1 {
     display: none;
