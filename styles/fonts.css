@@ -1,3 +1,11 @@
+.font-12 {
+  font-size: 0.75rem;
+  line-height: 0.9rem;
+}
+.font-12 * {
+  font-size: inherit;
+  line-height: inherit;
+}
 .font-14 {
   font-size: 0.875rem;
   line-height: 1.5rem;
@@ -113,6 +121,9 @@
   color: #FFFFFF;
   transition: color 0.8s ease-in-out;
 }
+.font-green {
+  color: #9DC64F;
+}
 .font--xxl-62 {
   font-size: 3.875rem;
   line-height: 3.7375rem;
@@ -151,6 +162,14 @@
   line-height: 1.5rem;
 }
 .font--xxl-14 * {
+  font-size: inherit;
+  line-height: inherit;
+}
+.font--xxl-12 {
+  font-size: 0.75rem;
+  line-height: 0.9rem;
+}
+.font--xxl-12 * {
   font-size: inherit;
   line-height: inherit;
 }

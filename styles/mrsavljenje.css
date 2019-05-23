@@ -50,12 +50,148 @@
   background-repeat: no-repeat;
 }
 .blok2-line {
-  height: 5px;
+  height: 0.313rem;
   width: 2.688rem;
   background-color: #FFFFFF;
 }
 .blok2-width {
   width: 40%;
+}
+.blok3 {
+  height: calc(100vh - 3.74rem);
+  background-image: url(../assets/shared/white-round-right.jpg);
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+}
+.blok3-left {
+  width: 60%;
+  background-color: #2F1850;
+  clip-path: circle(62% at 22% 42%);
+  height: 100%;
+}
+.blok3-left-1 {
+  width: 96%;
+  background-color: #291644;
+  clip-path: circle(62% at 22% 42%);
+  height: 100%;
+}
+.blok3-left-1-image {
+  width: 96%;
+  background-image: url(../assets/images/mrsavljenje-blok5.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  clip-path: circle(62% at 22% 42%);
+  height: 100%;
+}
+.blok3-right {
+  width: 40%;
+}
+.blok3-right-all {
+  width: 80%;
+}
+.blok3-right-all-line {
+  border-left: 0.188rem solid #291644;
+}
+#psihoterapija {
+  display: flex;
+}
+#cilj {
+  display: none;
+}
+#rezultat {
+  display: none;
+}
+.opacity {
+  opacity: 0.05;
+}
+.text {
+  border-left: 0.063rem solid #60B709;
+  line-height: 1.75rem;
+}
+.position {
+  position: relative;
+}
+.position-1 {
+  position: absolute;
+  left: 0;
+}
+.position-2 {
+  position: absolute;
+  left: 45%;
+}
+.position-3 {
+  position: absolute;
+  right: 0;
+}
+.blok4 {
+  height: calc(100vh - 3.74rem);
+  overflow: hidden;
+}
+.blok4-all {
+  position: relative;
+  height: 100%;
+  background-image: url('../assets/shared/luk-ljubicasti-desktop.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.blok4-all-left {
+  animation-name: fadeInLeft;
+  animation-fill-mode: both;
+  animation-duration: 0.6s;
+  position: relative;
+  width: 35%;
+}
+.blok4-all-left-all-text {
+  border-left: 0.188rem solid #FFFFFF;
+}
+.blok4-all-right {
+  background-color: #291644;
+  clip-path: circle(100% at 96% 25%);
+  animation-name: fadeInLeft;
+  animation-fill-mode: both;
+  animation-duration: 0.6s;
+  width: 65%;
+}
+.blok4-all-right-1 {
+  background-color: #2F1850;
+  width: 100%;
+  height: 100%;
+  float: right;
+  clip-path: circle(97.7% at 96% 25%);
+  animation-name: fadeInLeft;
+  animation-fill-mode: both;
+  animation-duration: 0.6s;
+  animation-delay: 0.2s;
+}
+.blok4-all-right-1-2 {
+  background-color: #22123A;
+  width: 100%;
+  height: 100%;
+  float: right;
+  clip-path: circle(95.4% at 96% 25%);
+  animation-name: fadeInLeft;
+  animation-fill-mode: both;
+  animation-duration: 0.6s;
+  animation-delay: 0.4s;
+}
+.blok4-all-right-1-2-image {
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+  float: right;
+  clip-path: circle(93.2% at 96% 25%);
+  animation-name: opacity;
+  animation-fill-mode: both;
+  animation-duration: 2.5s;
+  animation-delay: 0.9s;
+}
+.blok4-all-right-1-2-image-gr {
+  display: none;
 }
 @media screen and (max-width: 1440px) {
   .blok1-1-2-3-all {
@@ -63,6 +199,19 @@
   }
   .blok2-width {
     width: 60%;
+  }
+  .blok3-right-all {
+    margin-left: -2.5rem;
+    width: 90%;
+  }
+}
+@media screen and (max-width: 1365px) {
+  .position-2 {
+    left: 58%;
+  }
+  .position-3 {
+    position: absolute;
+    right: -22%;
   }
 }
 @media screen and (max-width: 1279px) {
@@ -80,6 +229,29 @@
   }
   .blok2-width {
     width: 67%;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .blok3-left {
+    clip-path: circle(62% at 22% 46%);
+  }
+  .blok3-left-1 {
+    clip-path: circle(62% at 22% 46%);
+  }
+  .blok3-left-1-image {
+    clip-path: circle(62% at 22% 46%);
+  }
+  .blok4-all-right {
+    clip-path: circle(100% at 108.5% 25%);
+  }
+  .blok4-all-right-1 {
+    clip-path: circle(97.7% at 108.5% 25%);
+  }
+  .blok4-all-right-1-2 {
+    clip-path: circle(95.4% at 108.5% 25%);
+  }
+  .blok4-all-right-1-2-image {
+    clip-path: circle(93.2% at 108.5% 25%);
   }
 }
 @media screen and (max-width: 1023px) {
@@ -130,6 +302,85 @@
   .blok2-width {
     width: 80%;
   }
+  .blok3 {
+    height: auto;
+    background-image: none;
+  }
+  .blok3-left {
+    width: 100%;
+    height: 55vw;
+    clip-path: none;
+    background-color: #FFFFFF;
+  }
+  .blok3-left-1 {
+    width: 100%;
+    clip-path: none;
+    background-color: #FFFFFF;
+  }
+  .blok3-left-1-image {
+    width: 100%;
+    clip-path: none;
+    background: linear-gradient(0deg, #FFFFFF 6.11%, rgba(255, 255, 255, 0) 71.18%), url(../assets/images/mrsavljenje-blok5.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .blok3-right {
+    width: 100%;
+    height: auto;
+  }
+  .blok3-right-all {
+    width: 65%;
+    margin-left: 3.563rem;
+    margin-top: -6.25rem;
+  }
+  .blok4 {
+    flex-direction: column-reverse;
+    height: auto;
+  }
+  .blok4-all {
+    background-image: none;
+  }
+  .blok4-all-left {
+    width: 100%;
+    animation-duration: 0s;
+    height: auto;
+    margin-bottom: 9.375rem;
+  }
+  .blok4-all-left-all {
+    width: 60%;
+    margin-top: -3.75rem;
+  }
+  .blok4-all-right {
+    width: 100%;
+    height: 55vw;
+    clip-path: none;
+    animation-duration: 0s;
+    background-color: #291644;
+  }
+  .blok4-all-right-1 {
+    clip-path: none;
+    animation-duration: 0s;
+    animation-delay: 0;
+    background-color: #291644;
+  }
+  .blok4-all-right-1-2 {
+    clip-path: none;
+    animation-duration: 0s;
+    animation-delay: 0;
+    background-color: #291644;
+  }
+  .blok4-all-right-1-2-image {
+    clip-path: none;
+    animation-duration: 0;
+    animation-delay: 0;
+  }
+  .blok4-all-right-1-2-image-gr {
+    display: block;
+    background: linear-gradient(360deg, #291644 0%, rgba(41, 22, 68, 0) 53.27%);
+    height: 102%;
+    width: 100%;
+  }
 }
 @media screen and (max-width: 800px) {
   .blok1-1-2-3-all {
@@ -138,15 +389,25 @@
   .hide {
     height: 26.875rem;
   }
+  .position-2 {
+    left: 46%;
+  }
+  .position-3 {
+    position: absolute;
+    right: 0%;
+  }
 }
 @media screen and (max-width: 640px) {
   .hide {
     height: 31.25rem;
   }
+  .blok4-all-left-all {
+    width: 75%;
+  }
 }
 @media screen and (max-width: 580px) {
   .blok1-1-2-3-all {
-    top: 81%;
+    top: 85%;
   }
   .hide {
     height: 36.25rem;
@@ -154,16 +415,19 @@
 }
 @media screen and (max-width: 480px) {
   .blok1 {
-    height: 57vw;
+    height: 74vw;
   }
   .blok1-1 {
-    clip-path: circle(204% at 11% 338%);
+    clip-path: none;
+    width: 100%;
   }
   .blok1-1-2 {
-    clip-path: circle(204% at 11% 343%);
+    clip-path: none;
+    width: 100%;
   }
   .blok1-1-2-3 {
-    clip-path: circle(204% at 11% 349%);
+    clip-path: none;
+    width: 100%;
   }
   .blok1-1-2-3-all {
     width: 87%;
@@ -174,9 +438,36 @@
   .blok2-width {
     width: 100%;
   }
+  .blok3-left {
+    height: 74vw;
+  }
+  .blok3-right-all {
+    width: 87%;
+    margin-left: 1.438rem;
+  }
+  .blok4-all-left-all {
+    width: 86%;
+  }
+  .blok4-all-right {
+    height: 74vw;
+  }
+  .position-1 {
+    left: 0.438rem;
+  }
+  .position-2 {
+    left: 0;
+    top: 2.5rem;
+  }
+  .position-3 {
+    left: 0;
+    top: 5rem;
+  }
 }
 @media screen and (max-width: 360px) {
   .hide {
     height: 40.625rem;
+  }
+  .blok3-right-all {
+    margin-top: -1.875rem;
   }
 }
