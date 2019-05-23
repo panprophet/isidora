@@ -1,0 +1,85 @@
+@import 'variables';
+
+.psihoterapija-blok {
+    height: calc(~"100vh - 3.74rem");
+    padding-top: 3.71rem;
+    background: linear-gradient(97.15deg, #291644 17.89%, rgba(41, 22, 68, 0) 62.24%), url(../assets/images/radionica3-2.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    &-1 {
+        background-color: rgba(41, 22, 68, 0.2);
+        clip-path: circle(72% at 30% 74%);
+        width: 65%;
+        height: 100%;
+        &-2 {
+            background-color: rgba(41, 22, 68, 0.2);
+            clip-path: circle(72% at 30% 74%);
+            width: 96%;
+            height: 100%;
+            &-3 {
+                background-color: rgba(41, 22, 68, 0.4);
+                clip-path: circle(72% at 30% 74%);
+                width: 96%;
+                height: 100%;
+                &-all {
+                    width: 80%;
+                    height: 100%;
+                    &-text {
+                        border-left: 0.188rem solid @white;
+                    }
+                }
+            }
+        }
+    }
+}
+// .hide {
+//     display: none;
+// }
+ 
+@media screen and (max-width: 1023px) {
+    .psihoterapija-blok {
+        height: auto;
+        background: linear-gradient(0deg, #291644 6.11%, rgba(41, 22, 68, 0) 71.18%), url(../assets/images/radionica3-2.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        &-1 {
+            background-color: rgba(41, 22, 68, 0);
+            clip-path: none;
+            width: 100%;
+            &-2 {
+                background-color: rgba(41, 22, 68, 0);
+                clip-path: none;
+                width: 100%;
+                &-3 {
+                    background-color: rgba(41, 22, 68, 0);
+                    clip-path: none;
+                    width: 100%;
+                    // position: relative;
+                    &-all {
+                        height: auto;
+                        min-height: 50rem;
+                        width: auto;
+                        // position: absolute;
+                        // top: 82%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .psihoterapija-blok {
+        &-1 {
+            &-2 {
+                &-3 {
+                    &-all {
+                        min-height: 33.75rem;
+                    }
+                }
+            }
+        }
+    }
+}
