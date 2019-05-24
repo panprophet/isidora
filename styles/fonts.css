@@ -124,6 +124,9 @@
 .font-green {
   color: #9DC64F;
 }
+.font-blue {
+  color: #2a3659;
+}
 .font--xxl-62 {
   font-size: 3.875rem;
   line-height: 3.7375rem;
@@ -141,6 +144,14 @@
   font-size: 2.250rem;
   line-height: 2.250rem;
 }
+.font--xxl-32 {
+  font-size: 2rem;
+  line-height: 2.7rem;
+}
+.font--xxl-32 * {
+  font-size: inherit;
+  line-height: inherit;
+}
 .font--xxl-24 {
   font-size: 1.5rem;
   line-height: 1.8rem;
@@ -148,6 +159,10 @@
 .font--xxl-24 * {
   font-size: inherit;
   line-height: inherit;
+}
+.font--xxl-22 {
+  font-size: 1.375rem;
+  line-height: 1.625rem;
 }
 .font--xxl-16 {
   font-size: 1rem;

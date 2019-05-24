@@ -1,0 +1,43 @@
+{% extends "base.twig" %}
+{% block content %}
+
+{% set Blog = fetch("Blog") %}
+
+<div style="height: 3.75rem;"></div>
+
+<!-- blok1 -->
+{% include 'najnoviji_blog.twig' %}
+<!-- blok1 -->
+
+<div class="flex flex-column align-items-center">
+    <!-- blok2 -->
+    <div class="blog font--xxl-32 font-blue margin-xxl--left-12_5 margin-xxl--right-12_5 margin-xxl--top-42 margin-xxl--bottom-42">Top Posts</div>
+    <!-- blok2 -->
+
+    <!-- posts -->
+    <div class="flex flex-wrap padding-xxl--left-180 padding-xl--left-none padding-xxl--right-180 padding-xl--right-none justify-content-center">
+        {% for item in Blog %}
+        {% if loop.index > 1 %}
+        <div class="blog-post flex flex-column justify-content-between margin-xxl--left-12_5 margin-xxl--right-12_5 margin-xxl--bottom-48">
+            <div class="flex flex--640-column">
+                <div class="blog-post-width flex flex-column margin-xxl--right-20">
+                    <div class="blog-post-image" style="background-image: url('img/{{item.Slika}}')"></div>
+                    <div class="flex flex-column padding-xxl--left-40 padding-left--640-20">
+                        <div class="font--xxl-22 font-bold margin-xxl--top-20">{{item.Naslov}}</div>
+                        <div class="blog-post-line margin-xxl--top-20"></div>
+                    </div>
+                </div>
+                <div class="flex-1 blog-post-text font--xxl-16 margin-xxl--right-20 margin-xxl--left-20 margin-xxl--top-20 margin-xxl--bottom-20">{{item.Opis}}</div>
+            </div>
+            <div class="flex justify-content--640-between padding-left--640-20 padding-xxl--left-40 padding-right--640-20">
+                <a class="blog-post-width-2 blog-post-text font--xxl-16 margin-xxl--top-20 margin-xxl--bottom-40">Share</a>
+                <a class="blog-post-text font--xxl-16  margin-xxl--top-20 margin-xxl--bottom-40">Read more</a>
+            </div>
+        </div>
+        {% endif %}
+        {% endfor %}
+    </div>
+    <!-- posts -->
+</div>
+
+{% endblock %}
