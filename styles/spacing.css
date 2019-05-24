@@ -25,6 +25,9 @@
 .margin-xxl--top-48-per {
   margin-top: 6.51%;
 }
+.margin-xxl--top-42 {
+  margin-top: 2.625rem;
+}
 .margin-xxl--top-38 {
   margin-top: 2.375rem;
 }
@@ -36,6 +39,9 @@
 }
 .margin-xxl--top-2_5-per {
   margin-top: 2.5%;
+}
+.margin-xxl--top-20 {
+  margin-top: 1.25rem;
 }
 .margin-xxl--bottom-200 {
   margin-bottom: 12.5rem;
@@ -67,6 +73,9 @@
 .margin-xxl--bottom-48-per {
   margin-bottom: 6.51%;
 }
+.margin-xxl--bottom-40 {
+  margin-bottom: 2.5rem;
+}
 .margin-xxl--bottom-42 {
   margin-bottom: 2.625rem;
 }
@@ -78,6 +87,9 @@
 }
 .margin-xxl--bottom-24 {
   margin-bottom: 1.5rem;
+}
+.margin-xxl--bottom-20 {
+  margin-bottom: 1.25rem;
 }
 .margin-xxl--bottom-10 {
   margin-bottom: 0.625rem;
@@ -136,6 +148,9 @@
 .margin-xxl--left-48 {
   margin-left: 3rem;
 }
+.margin-xxl--left-40 {
+  margin-left: 2.5rem;
+}
 .margin-xxl--left-28 {
   margin-left: 1.75rem;
 }
@@ -145,11 +160,17 @@
 .margin-xxl--left-24-per {
   margin-left: 1.25%;
 }
+.margin-xxl--left-20 {
+  margin-left: 1.25rem;
+}
 .margin-xxl--left-18 {
   margin-left: 1.1125rem;
 }
 .margin-xxl--left-14 {
   margin-left: 0.875rem;
+}
+.margin-xxl--left-12_5 {
+  margin-left: 0.781rem;
 }
 .margin-xxl--left-10 {
   margin-left: 0.625rem;
@@ -205,11 +226,17 @@
 .margin-xxl--right-24-per {
   margin-right: 1.25%;
 }
+.margin-xxl--right-20 {
+  margin-right: 1.25rem;
+}
 .margin-xxl--right-18 {
   margin-right: 1.1125rem;
 }
 .margin-xxl--right-14 {
   margin-right: 0.875rem;
+}
+.margin-xxl--right-12_5 {
+  margin-right: 0.781rem;
 }
 .margin-xxl--right-10 {
   margin-right: 0.625rem;
@@ -267,6 +294,9 @@
 }
 .padding-xxl--left-60 {
   padding-left: 3.75rem;
+}
+.padding-xxl--left-40 {
+  padding-left: 2.5rem;
 }
 .padding-xxl--left-25 {
   padding-left: 1.563rem;
@@ -458,6 +488,9 @@
   .padding-xl--left-10 {
     padding-left: 0.625rem;
   }
+  .padding-xl--left-none {
+    padding-left: 0;
+  }
   .padding-xl--right-180 {
     padding-right: 11.25rem;
   }
@@ -481,6 +514,9 @@
   }
   .padding-xl--right-10 {
     padding-right: 0.625rem;
+  }
+  .padding-xl--right-none {
+    padding-right: 0;
   }
 }
 @media screen and (max-width: 1023px) {
@@ -845,6 +881,14 @@
   }
   .padding-m--right-none {
     padding-right: 0px;
+  }
+}
+@media screen and (max-width: 640px) {
+  .padding-left--640-20 {
+    padding-left: 1.25rem;
+  }
+  .padding-right--640-20 {
+    padding-right: 1.25rem;
   }
 }
 @media screen and (max-width: 600px) {
