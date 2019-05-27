@@ -127,6 +127,10 @@
 .font-blue {
   color: #2a3659;
 }
+.font--xxl-72 {
+  font-size: 4.5rem;
+  line-height: 5.438rem;
+}
 .font--xxl-62 {
   font-size: 3.875rem;
   line-height: 3.7375rem;

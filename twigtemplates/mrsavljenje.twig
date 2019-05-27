@@ -184,14 +184,14 @@
 <!-- blok4 -->
 
 <!-- blok5 -->
-<div class="blok1 blok1-b">
+{% set Radionica = fetch("Radionica") %}
+{% for item in Radionica %}
+{% if item.Oznaci == 'true' %}
+<div class="blok1 blok1-b" style="background-image: url('img/{{item.Slika}}')">
     <div class="blok1-1">
         <div class="blok1-1-2">
             <div class="blok1-1-2-3">
                 <div class="blok1-1-2-3-all flex flex-column justify-content-center margin-xxl--left-135 margin-xl--left-70 margin-m--left-57 margin-xs--left-23">
-                {% set Radionica = fetch("Radionica") %}
-                {% for item in Radionica %}
-                {% if item.Oznaci == 'true' %}
                     <div class="font--xxl-46 font--xl-42 font--xs-36 font-white font-bold margin-xxl--bottom-42 margin-xl--bottom-32">Radionica</div>
                     <div class="blok1-1-2-3-all-text flex padding-xxl--left-25 font--xxl-14 font-white margin-xxl--bottom-77 margin-xl--bottom-32 margin-m--bottom-46 margin-s--bottom-32">
                         <img src="./assets/shared/date.png" >
@@ -201,13 +201,13 @@
                     <div class="font--xxl-14 font-white margin-xxl--bottom-42 margin-xl--bottom-32">{{item.Opis}}</div>
                     <a class="font-italic font-bold font--xxl-14 font-white margin-xxl--bottom-42 margin-s--bottom-32">Saznaj više</a>
                     <button class="button-big font-white font--xxl-14 background-purple-dark">ZAKAŽI SVOJ TERMIN</button>
-                {% endif %}
-                {% endfor %}
                 </div>
             </div>
         </div>
     </div>
 </div>
+{% endif %}
+{% endfor %}
 <div class="hide"></div>
 <!-- blok5 -->
 

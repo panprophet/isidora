@@ -36,6 +36,24 @@
   border: 1px solid #9DC64F;
   transition: all 0.4s ease-in-out;
 }
+.button-small {
+  height: 2.813rem;
+  width: 8.125rem;
+  background-color: #291644;
+  transition: all 0.4s ease-in-out;
+}
+.button-small a {
+  height: inherit;
+  width: inherit;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.button-small:hover {
+  background-color: #9DC64F;
+  border: 1px solid #9DC64F;
+  transition: all 0.4s ease-in-out;
+}
 .button-grey {
   height: 1.875rem;
   width: 6rem;

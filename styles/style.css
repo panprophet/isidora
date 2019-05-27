@@ -278,6 +278,10 @@ a:active {
 .font-blue {
   color: #2a3659;
 }
+.font--xxl-72 {
+  font-size: 4.5rem;
+  line-height: 5.438rem;
+}
 .font--xxl-62 {
   font-size: 3.875rem;
   line-height: 3.7375rem;
@@ -1040,6 +1044,24 @@ a:active {
   align-items: center;
 }
 .button-midd:hover {
+  background-color: #9DC64F;
+  border: 1px solid #9DC64F;
+  transition: all 0.4s ease-in-out;
+}
+.button-small {
+  height: 2.813rem;
+  width: 8.125rem;
+  background-color: #291644;
+  transition: all 0.4s ease-in-out;
+}
+.button-small a {
+  height: inherit;
+  width: inherit;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.button-small:hover {
   background-color: #9DC64F;
   border: 1px solid #9DC64F;
   transition: all 0.4s ease-in-out;
@@ -2330,6 +2352,9 @@ a:active {
     width: auto;
   }
 }
+.border-purple-light {
+  border: 1px solid #3D2A57;
+}
 .border--bottom-grey {
   border-bottom: 1px solid #F6F6F6;
 }
@@ -3511,7 +3536,7 @@ a:active {
   background-repeat: no-repeat;
 }
 .blok1-b {
-  background: linear-gradient(97.15deg, #291644 17.89%, rgba(41, 22, 68, 0) 62.24%), url(../assets/images/mrsavljenje-blok5.jpg);
+  background: linear-gradient(97.15deg, #291644 17.89%, rgba(41, 22, 68, 0) 62.24%);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -3607,6 +3632,9 @@ a:active {
 }
 .opacity {
   opacity: 0.05;
+}
+.opacity-01 {
+  opacity: 0.1;
 }
 .text {
   border-left: 0.063rem solid #60B709;
@@ -4137,4 +4165,10 @@ a:active {
   .post-text {
     width: 80%;
   }
+}
+.radionica {
+  height: calc(100vh  - 5.875rem);
+}
+.radionica-prijavi-se {
+  height: 5.875rem;
 }
