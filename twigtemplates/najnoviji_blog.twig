@@ -17,7 +17,9 @@
                 <div class="najnoviji_blog-all-left-all-text font--xxl-14 font-white flex padding-xxl--left-25 margin-xxl--bottom-77 margin-xl--bottom-32 margin-m--bottom-46 margin-s--bottom-32">New post &nbsp {{Blog.Datum|date("d/m/Y")}}</div>
                 <div class="font--xxl-36 font-white font-bold margin-xxl--bottom-42 margin-xl--bottom-32">{{Blog.Naslov}}</div>
                 <div class="font--xxl-14 font-white margin-xxl--bottom-42 margin-xl--bottom-32">{{Blog.Opis}}</div>
-                <button class="button-midd font-white font--xxl-14 background-purple-darker">SAZNAJ VIŠE</button>
+                <a href="post/{{Blog.Slug}}">
+                    <button class="button-midd font-white font--xxl-14 background-purple-darker">SAZNAJ VIŠE</button>
+                </a>
             </div>
         </div>
         <div class="najnoviji_blog-all-hide"></div>

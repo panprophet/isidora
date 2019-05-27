@@ -1,0 +1,37 @@
+.post {
+  padding-top: 3.71rem;
+}
+.post-image {
+  width: 70%;
+  height: 30rem;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.post-share {
+  height: 3.75rem;
+  box-shadow: 0px 3px 4px rgba(163, 170, 182, 0.13);
+}
+.post-text {
+  width: 50%;
+}
+.post-kom {
+  height: 6.25rem;
+  border-bottom: 1px solid rgba(219, 219, 219, 0.5);
+}
+.post-kom-title {
+  width: 70%;
+}
+.post-other {
+  width: 70%;
+  height: 6.25rem;
+}
+@media screen and (max-width: 960px) {
+  .post-image {
+    width: 80%;
+    height: 18.75rem;
+  }
+  .post-text {
+    width: 80%;
+  }
+}
