@@ -790,6 +790,9 @@ a:active {
     -ms-flex-direction: column;
     flex-direction: column;
   }
+  .flex--m-column-reverse {
+    flex-direction: column-reverse;
+  }
   .flex--m-row {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -2817,8 +2820,7 @@ a:active {
     animation-duration: 0s;
   }
   .upoznaj_sebe-left-all {
-    position: absolute;
-    top: -115px;
+    margin-top: -5.625rem;
   }
   .upoznaj_sebe-right {
     width: 100%;
@@ -2851,7 +2853,7 @@ a:active {
     width: 100%;
   }
   .upoznaj_sebe-hide {
-    height: 28vw;
+    height: auto;
   }
   .blizak-odnos {
     background-image: none;
@@ -2969,9 +2971,6 @@ a:active {
   }
 }
 @media screen and (max-width: 800px) {
-  .upoznaj_sebe-hide {
-    height: 35vw;
-  }
   .blizak-odnos-right-line {
     top: -8%;
   }
@@ -2989,9 +2988,6 @@ a:active {
   }
 }
 @media screen and (max-width: 640px) {
-  .upoznaj_sebe-hide {
-    height: 42vw;
-  }
   .blizak-odnos-right-testimonial-text {
     width: 83%;
   }
@@ -3009,9 +3005,6 @@ a:active {
   }
 }
 @media screen and (max-width: 480px) {
-  .upoznaj_sebe-left-all {
-    top: -90px;
-  }
   .upoznaj_sebe-right {
     height: 74vw;
   }
@@ -3046,9 +3039,6 @@ a:active {
   }
 }
 @media screen and (max-width: 360px) {
-  .upoznaj_sebe-hide {
-    height: 70vw;
-  }
   .blok-all-hide {
     height: 580px;
   }
@@ -3725,7 +3715,7 @@ a:active {
 }
 @media screen and (max-width: 1440px) {
   .blok1-1-2-3-all {
-    width: 58%;
+    width: 75%;
   }
   .blok2-width {
     width: 60%;
@@ -4167,8 +4157,126 @@ a:active {
   }
 }
 .radionica {
-  height: calc(100vh  - 5.875rem);
+  height: calc(100vh  - 5.875rem - 3.71rem);
+  background-size: cover;
+  background-position: top center;
+  background-repeat: no-repeat;
 }
 .radionica-prijavi-se {
   height: 5.875rem;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.radionica-gr {
+  background: linear-gradient(97.15deg, #291644 17.89%, rgba(41, 22, 68, 0) 62.24%);
+  height: 100%;
+  width: 100%;
+}
+.radionica-1 {
+  background-color: rgba(41, 22, 68, 0.2);
+  clip-path: circle(72% at 30% 74%);
+  width: 65%;
+  height: 100%;
+}
+.radionica-1-2 {
+  background-color: rgba(41, 22, 68, 0.2);
+  clip-path: circle(72% at 30% 74%);
+  width: 96%;
+  height: 100%;
+}
+.radionica-1-2-3 {
+  background-color: rgba(41, 22, 68, 0.4);
+  clip-path: circle(72% at 30% 74%);
+  width: 96%;
+  height: 100%;
+}
+.radionica-1-2-3-all {
+  width: 43%;
+  height: 100%;
+}
+.radionica-1-2-3-all-text {
+  border-left: 0.188rem solid #FFFFFF;
+}
+.radionica-hide {
+  display: none;
+}
+@media screen and (max-width: 1440px) {
+  .radionica-1-2-3-all {
+    width: 75%;
+  }
+}
+@media screen and (max-width: 1279px) {
+  .radionica-1 {
+    clip-path: circle(72% at 22% 68%);
+  }
+  .radionica-1-2 {
+    clip-path: circle(72% at 22% 68%);
+  }
+  .radionica-1-2-3 {
+    clip-path: circle(72% at 22% 68%);
+  }
+  .radionica-1-2-3-all {
+    width: 76%;
+  }
+}
+@media screen and (max-width: 1023px) {
+  .radionica {
+    height: 55vw;
+  }
+  .radionica-gr {
+    background: linear-gradient(0deg, #291644 6.11%, rgba(41, 22, 68, 0) 71.18%);
+    height: 100%;
+    width: 100%;
+  }
+  .radionica-1 {
+    clip-path: circle(114% at 31% 226%);
+    width: 100%;
+  }
+  .radionica-1-2 {
+    clip-path: circle(114% at 31% 232%);
+    width: 100%;
+  }
+  .radionica-1-2-3 {
+    clip-path: circle(114% at 31% 237%);
+    width: 100%;
+  }
+  .radionica-1-2-3-all {
+    display: none;
+  }
+  .radionica-hide {
+    display: flex;
+    height: auto;
+    background-color: #291644;
+  }
+  .radionica-hide-all {
+    margin-top: -5rem;
+    width: 65%;
+  }
+  .radionica-prijavi-se {
+    height: auto;
+  }
+}
+@media screen and (max-width: 480px) {
+  .radionica {
+    height: 74vw;
+  }
+  .radionica-1 {
+    clip-path: none;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0);
+  }
+  .radionica-1-2 {
+    clip-path: none;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0);
+  }
+  .radionica-1-2-3 {
+    clip-path: none;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0);
+  }
+  .radionica-hide-all {
+    width: 87%;
+  }
 }

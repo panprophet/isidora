@@ -224,6 +224,9 @@
     -ms-flex-direction: column;
     flex-direction: column;
   }
+  .flex--m-column-reverse {
+    flex-direction: column-reverse;
+  }
   .flex--m-row {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
