@@ -278,6 +278,10 @@ a:active {
 .font-blue {
   color: #2a3659;
 }
+.font--xxl-72 {
+  font-size: 4.5rem;
+  line-height: 5.438rem;
+}
 .font--xxl-62 {
   font-size: 3.875rem;
   line-height: 3.7375rem;
@@ -786,6 +790,9 @@ a:active {
     -ms-flex-direction: column;
     flex-direction: column;
   }
+  .flex--m-column-reverse {
+    flex-direction: column-reverse;
+  }
   .flex--m-row {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -1040,6 +1047,24 @@ a:active {
   align-items: center;
 }
 .button-midd:hover {
+  background-color: #9DC64F;
+  border: 1px solid #9DC64F;
+  transition: all 0.4s ease-in-out;
+}
+.button-small {
+  height: 2.813rem;
+  width: 8.125rem;
+  background-color: #291644;
+  transition: all 0.4s ease-in-out;
+}
+.button-small a {
+  height: inherit;
+  width: inherit;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.button-small:hover {
   background-color: #9DC64F;
   border: 1px solid #9DC64F;
   transition: all 0.4s ease-in-out;
@@ -2270,7 +2295,10 @@ a:active {
     height: 100%;
   }
 }
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 1023px) {
+  .display-l-none {
+    display: none;
+  }
   .w--l-100 {
     width: 100%;
   }
@@ -2329,6 +2357,9 @@ a:active {
   .w--s-auto {
     width: auto;
   }
+}
+.border-purple-light {
+  border: 1px solid #3D2A57;
 }
 .border--bottom-grey {
   border-bottom: 1px solid #F6F6F6;
@@ -2451,7 +2482,6 @@ a:active {
 }
 .upoznaj_sebe {
   height: calc(100vh - 3.74rem);
-  padding-top: 3.71rem;
   position: relative;
   overflow: hidden;
 }
@@ -2684,21 +2714,21 @@ a:active {
 .blok-all-right-1-2-image-gr {
   display: none;
 }
-.blok4 {
+.home-blok4 {
   height: calc(100vh - 3.74rem);
   background: linear-gradient(360deg, #291644 2.41%, rgba(41, 22, 68, 0) 100%), url(../assets/images/home-blok4.jpg), #291644;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
 }
-.blok4-top {
+.home-blok4-top {
   height: 100%;
   width: 100%;
 }
-.blok4-top-all {
+.home-blok4-top-all {
   width: 50%;
 }
-.blok4-top-all-line {
+.home-blok4-top-all-line {
   height: 5px;
   width: 2.688rem;
   background-color: #FFFFFF;
@@ -2792,8 +2822,7 @@ a:active {
     animation-duration: 0s;
   }
   .upoznaj_sebe-left-all {
-    position: absolute;
-    top: -115px;
+    margin-top: -5.625rem;
   }
   .upoznaj_sebe-right {
     width: 100%;
@@ -2826,7 +2855,7 @@ a:active {
     width: 100%;
   }
   .upoznaj_sebe-hide {
-    height: 28vw;
+    height: auto;
   }
   .blizak-odnos {
     background-image: none;
@@ -2875,11 +2904,11 @@ a:active {
   }
   .blok-all-left {
     width: 100%;
+    height: auto;
     animation-duration: 0s;
+    margin-top: -4.375rem;
   }
   .blok-all-left-all {
-    position: absolute;
-    top: -115px;
     width: 60%;
   }
   .blok-all-right {
@@ -2912,81 +2941,48 @@ a:active {
     height: 101%;
     width: 100%;
   }
-  .blok-all-hide {
-    height: 40vw;
-  }
-  .blok-all-hide-2 {
-    height: 40vw;
-  }
-  .blok4 {
+  .home-blok4 {
     height: auto;
     background: #291644;
   }
-  .blok4-top {
+  .home-blok4-top {
     height: 55vw;
     background: linear-gradient(360deg, #291644 2.41%, rgba(41, 22, 68, 0) 100%), url(../assets/images/home-blok4.jpg), #291644;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    position: relative;
   }
-  .blok4-top-all {
-    position: absolute;
+  .home-blok4-top-all {
     width: 60%;
-    top: 70%;
-    left: 0;
+    margin-top: -5rem;
   }
-  .blok4-top-all-line {
+  .home-blok4-top-all-line {
     display: none;
   }
-  .blok4-hide {
-    height: 260px;
+  .home-blok4-hide {
+    height: auto;
   }
 }
 @media screen and (max-width: 800px) {
-  .upoznaj_sebe-hide {
-    height: 35vw;
-  }
   .blizak-odnos-right-line {
     top: -8%;
   }
   .blizak-odnos-right-text {
     width: 81%;
   }
-  .blok-all-hide {
-    height: 440px;
-  }
-  .blok-all-hide-2 {
-    height: 440px;
-  }
-  .blok4-hide {
-    height: 310px;
-  }
 }
 @media screen and (max-width: 640px) {
-  .upoznaj_sebe-hide {
-    height: 42vw;
-  }
   .blizak-odnos-right-testimonial-text {
     width: 83%;
   }
   .blok-all-left-all {
     width: 75%;
   }
-  .blok-all-hide {
-    height: 72vw;
-  }
-  .blok4-top-all {
+  .home-blok4-top-all {
     width: 75%;
-  }
-  .blok4-hide {
-    height: 380px;
   }
 }
 @media screen and (max-width: 480px) {
-  .upoznaj_sebe-left-all {
-    top: -90px;
-  }
   .upoznaj_sebe-right {
     height: 74vw;
   }
@@ -3003,39 +2999,19 @@ a:active {
     width: 93%;
   }
   .blok-all-left-all {
-    top: -90px;
     width: 86%;
   }
   .blok-all-right {
     height: 74vw;
   }
-  .blok-all-hide {
-    height: 95vw;
-  }
-  .blok4-top {
+  .home-blok4-top {
     height: 74vw;
   }
-  .blok4-top-all {
+  .home-blok4-top-all {
     width: 86%;
-    bottom: -90%;
   }
 }
 @media screen and (max-width: 360px) {
-  .upoznaj_sebe-hide {
-    height: 70vw;
-  }
-  .blok-all-hide {
-    height: 580px;
-  }
-  .blok-all-hide-2 {
-    height: 470px;
-  }
-  .blok4-top-all {
-    top: 175%;
-  }
-  .blok4-hide {
-    height: 540px;
-  }
 }
 .najnoviji_blog {
   height: calc(100vh - 3.74rem);
@@ -3129,15 +3105,15 @@ a:active {
     height: auto;
   }
   .najnoviji_blog-all {
-    background-image: none;
+    background-image: #291644;
   }
   .najnoviji_blog-all-left {
     width: 100%;
     animation-duration: 0s;
+    height: auto;
   }
   .najnoviji_blog-all-left-all {
-    position: absolute;
-    top: -7.188rem;
+    margin-top: -3.75rem;
     width: 60%;
   }
   .najnoviji_blog-all-right {
@@ -3170,13 +3146,6 @@ a:active {
     height: 102%;
     width: 100%;
   }
-  .najnoviji_blog-all-hide {
-    background-color: #291644;
-    height: 40vw;
-  }
-  .najnoviji_blog-all-hide-2 {
-    height: 40vw;
-  }
 }
 @media screen and (max-width: 800px) {
   .najnoviji_blog-all-hide {
@@ -3190,19 +3159,10 @@ a:active {
 }
 @media screen and (max-width: 480px) {
   .najnoviji_blog-all-left-all {
-    top: -3.75rem;
     width: 86%;
   }
   .najnoviji_blog-all-right {
     height: 74vw;
-  }
-  .najnoviji_blog-all-hide {
-    height: 27.5rem;
-  }
-}
-@media screen and (max-width: 360px) {
-  .najnoviji_blog-all-hide {
-    height: 30rem;
   }
 }
 .blog-posts-post {
@@ -3349,7 +3309,6 @@ a:active {
 }
 .o_meni {
   height: calc(100vh - 3.74rem);
-  padding-top: 3.71rem;
   background-image: url(../assets/images/o-meni-intro.jpg);
   background-position: top right;
   background-size: cover;
@@ -3502,6 +3461,9 @@ a:active {
 }
 .blok1 {
   height: calc(100vh - 3.74rem);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 .blok1-a {
   padding-top: 3.71rem;
@@ -3511,10 +3473,9 @@ a:active {
   background-repeat: no-repeat;
 }
 .blok1-b {
-  background: linear-gradient(97.15deg, #291644 17.89%, rgba(41, 22, 68, 0) 62.24%), url(../assets/images/mrsavljenje-blok5.jpg);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+  background: linear-gradient(97.15deg, #291644 17.89%, rgba(41, 22, 68, 0) 62.24%);
+  height: 100%;
+  width: 100%;
 }
 .blok1-1 {
   background-color: rgba(41, 22, 68, 0.2);
@@ -3608,6 +3569,9 @@ a:active {
 .opacity {
   opacity: 0.05;
 }
+.opacity-01 {
+  opacity: 0.1;
+}
 .text {
   border-left: 0.063rem solid #60B709;
   line-height: 1.75rem;
@@ -3697,7 +3661,7 @@ a:active {
 }
 @media screen and (max-width: 1440px) {
   .blok1-1-2-3-all {
-    width: 58%;
+    width: 75%;
   }
   .blok2-width {
     width: 60%;
@@ -3767,10 +3731,7 @@ a:active {
     background-repeat: no-repeat;
   }
   .blok1-b {
-    background: linear-gradient(0deg, #291644 6.11%, rgba(41, 22, 68, 0) 71.18%), url(../assets/images/mrsavljenje-blok5.jpg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+    background: linear-gradient(0deg, #291644 6.11%, rgba(41, 22, 68, 0) 71.18%);
   }
   .blok1-1 {
     clip-path: circle(114% at 31% 226%);
@@ -3879,7 +3840,7 @@ a:active {
   }
   .blok4-all-right-1-2-image-gr {
     display: block;
-    background: linear-gradient(360deg, #291644 0%, rgba(41, 22, 68, 0) 53.27%);
+    background: linear-gradient(360deg, #291644 5%, rgba(41, 22, 68, 0) 73.27%);
     height: 102%;
     width: 100%;
   }
@@ -3967,7 +3928,7 @@ a:active {
 }
 @media screen and (max-width: 360px) {
   .hide {
-    height: 40.625rem;
+    height: 34.625rem;
   }
   .blok3-right-all {
     margin-top: -1.875rem;
@@ -3975,7 +3936,6 @@ a:active {
 }
 .psihoterapija-blok {
   height: calc(100vh - 3.74rem);
-  padding-top: 3.71rem;
   background: linear-gradient(97.15deg, #291644 17.89%, rgba(41, 22, 68, 0) 62.24%), url(../assets/images/radionica3-2.jpg);
   background-size: cover;
   background-position: center;
@@ -4136,5 +4096,129 @@ a:active {
   }
   .post-text {
     width: 80%;
+  }
+}
+.radionica {
+  height: calc(100vh  - 5.875rem - 3.71rem);
+  background-size: cover;
+  background-position: top center;
+  background-repeat: no-repeat;
+}
+.radionica-prijavi-se {
+  height: 5.875rem;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.radionica-gr {
+  background: linear-gradient(97.15deg, #291644 17.89%, rgba(41, 22, 68, 0) 62.24%);
+  height: 100%;
+  width: 100%;
+}
+.radionica-1 {
+  background-color: rgba(41, 22, 68, 0.2);
+  clip-path: circle(72% at 30% 74%);
+  width: 65%;
+  height: 100%;
+}
+.radionica-1-2 {
+  background-color: rgba(41, 22, 68, 0.2);
+  clip-path: circle(72% at 30% 74%);
+  width: 96%;
+  height: 100%;
+}
+.radionica-1-2-3 {
+  background-color: rgba(41, 22, 68, 0.4);
+  clip-path: circle(72% at 30% 74%);
+  width: 96%;
+  height: 100%;
+}
+.radionica-1-2-3-all {
+  width: 43%;
+  height: 100%;
+}
+.radionica-1-2-3-all-text {
+  border-left: 0.188rem solid #FFFFFF;
+}
+.radionica-hide {
+  display: none;
+}
+@media screen and (max-width: 1440px) {
+  .radionica-1-2-3-all {
+    width: 75%;
+  }
+}
+@media screen and (max-width: 1279px) {
+  .radionica-1 {
+    clip-path: circle(72% at 22% 68%);
+  }
+  .radionica-1-2 {
+    clip-path: circle(72% at 22% 68%);
+  }
+  .radionica-1-2-3 {
+    clip-path: circle(72% at 22% 68%);
+  }
+  .radionica-1-2-3-all {
+    width: 76%;
+  }
+}
+@media screen and (max-width: 1023px) {
+  .radionica {
+    height: 55vw;
+  }
+  .radionica-gr {
+    background: linear-gradient(0deg, #291644 6.11%, rgba(41, 22, 68, 0) 71.18%);
+    height: 100%;
+    width: 100%;
+  }
+  .radionica-1 {
+    clip-path: circle(114% at 31% 226%);
+    width: 100%;
+  }
+  .radionica-1-2 {
+    clip-path: circle(114% at 31% 232%);
+    width: 100%;
+  }
+  .radionica-1-2-3 {
+    clip-path: circle(114% at 31% 237%);
+    width: 100%;
+  }
+  .radionica-1-2-3-all {
+    display: none;
+  }
+  .radionica-hide {
+    display: flex;
+    height: auto;
+    background-color: #291644;
+  }
+  .radionica-hide-all {
+    margin-top: -5rem;
+    width: 65%;
+  }
+  .radionica-prijavi-se {
+    height: auto;
+  }
+}
+@media screen and (max-width: 480px) {
+  .radionica {
+    height: 74vw;
+  }
+  .radionica-1 {
+    clip-path: none;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0);
+  }
+  .radionica-1-2 {
+    clip-path: none;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0);
+  }
+  .radionica-1-2-3 {
+    clip-path: none;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0);
+  }
+  .radionica-hide-all {
+    width: 87%;
   }
 }

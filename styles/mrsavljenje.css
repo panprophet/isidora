@@ -1,5 +1,8 @@
 .blok1 {
   height: calc(100vh - 3.74rem);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 .blok1-a {
   padding-top: 3.71rem;
@@ -9,10 +12,9 @@
   background-repeat: no-repeat;
 }
 .blok1-b {
-  background: linear-gradient(97.15deg, #291644 17.89%, rgba(41, 22, 68, 0) 62.24%), url(../assets/images/mrsavljenje-blok5.jpg);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+  background: linear-gradient(97.15deg, #291644 17.89%, rgba(41, 22, 68, 0) 62.24%);
+  height: 100%;
+  width: 100%;
 }
 .blok1-1 {
   background-color: rgba(41, 22, 68, 0.2);
@@ -106,6 +108,9 @@
 .opacity {
   opacity: 0.05;
 }
+.opacity-01 {
+  opacity: 0.1;
+}
 .text {
   border-left: 0.063rem solid #60B709;
   line-height: 1.75rem;
@@ -195,7 +200,7 @@
 }
 @media screen and (max-width: 1440px) {
   .blok1-1-2-3-all {
-    width: 58%;
+    width: 75%;
   }
   .blok2-width {
     width: 60%;
@@ -265,10 +270,7 @@
     background-repeat: no-repeat;
   }
   .blok1-b {
-    background: linear-gradient(0deg, #291644 6.11%, rgba(41, 22, 68, 0) 71.18%), url(../assets/images/mrsavljenje-blok5.jpg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+    background: linear-gradient(0deg, #291644 6.11%, rgba(41, 22, 68, 0) 71.18%);
   }
   .blok1-1 {
     clip-path: circle(114% at 31% 226%);
@@ -377,7 +379,7 @@
   }
   .blok4-all-right-1-2-image-gr {
     display: block;
-    background: linear-gradient(360deg, #291644 0%, rgba(41, 22, 68, 0) 53.27%);
+    background: linear-gradient(360deg, #291644 5%, rgba(41, 22, 68, 0) 73.27%);
     height: 102%;
     width: 100%;
   }
@@ -465,7 +467,7 @@
 }
 @media screen and (max-width: 360px) {
   .hide {
-    height: 40.625rem;
+    height: 34.625rem;
   }
   .blok3-right-all {
     margin-top: -1.875rem;
