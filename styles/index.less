@@ -10,7 +10,7 @@
 }
 .upoznaj_sebe{
     height: calc(~"100vh - 3.74rem");
-    padding-top: 3.71rem;
+    // padding-top: 3.71rem;
     position: relative;
     overflow: hidden;
     &-left {
@@ -254,7 +254,7 @@
         }
     }
 }
-.blok4{
+.home-blok4{
     height: calc(~"100vh - 3.74rem");
     background: linear-gradient(360deg, #291644 2.41%, rgba(41, 22, 68, 0) 100%), url(../assets/images/home-blok4.jpg), #291644;
     background-position: center;
@@ -470,10 +470,10 @@
             background-image: none;
             &-left{
                 width: 100%;
+                height: auto;
                 animation-duration: 0s;
+                margin-top: -4.375rem;
                 &-all{
-                    position: absolute;
-                    top: -115px;
                     width: 60%;
                 }
             }
@@ -507,16 +507,16 @@
                     }
                 }
             }
-            &-hide{
-                height: 40vw;
-                &-2{
-                    height: 40vw;
-                }
-            }
+            // &-hide{
+            //     height: 40vw;
+            //     &-2{
+            //         height: 40vw;
+            //     }
+            // }
         }
         
     }
-    .blok4{
+    .home-blok4{
         height: auto;
         background: @purple;
         &-top{
@@ -525,20 +525,16 @@
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
-            position: relative;
             &-all{
-                position: absolute;
                 width: 60%;
-                // bottom: -36%;
-                top: 70%;
-                left: 0;
+                margin-top: -5rem;
                 &-line{
                     display: none;
                 }
             }
         }
         &-hide{
-        height: 260px;
+        height: auto;
         }
     }
 }
@@ -556,20 +552,20 @@
             }
         }
     }
-    .blok-all-hide{
-        height: 440px;
-        &-2{
-            height: 440px;
-        }
-    }
-    .blok4{
+    // .index-blok-all-hide{
+    //     height: 440px;
+    //     &-2{
+    //         height: 440px;
+    //     }
+    // }
+    // .home-blok4{
         // &-top-all{
         //     bottom: -56%;
         // }
-        &-hide{
-            height: 310px;
-        }
-    }
+        // &-hide{
+        //     height: 310px;
+        // }
+    // }
 }
 @media screen and (max-width: 640px){
     // .upoznaj_sebe-hide{
@@ -588,18 +584,18 @@
         &-left-all{
             width: 75%;
         }
-        &-hide{
-            height: 72vw;
-        }
+        // &-hide{
+        //     height: 72vw;
+        // }
     }
-    .blok4{
+    .home-blok4{
         &-top-all{
             width: 75%;
             // bottom: -91%;
         }
-        &-hide{
-            height: 380px;
-        }
+        // &-hide{
+        //     height: 380px;
+        // }
     }
 }
 @media screen and (max-width: 480px){
@@ -635,24 +631,24 @@
         &-all{
             &-left {
                 &-all {
-                    top: -90px;
+                    // top: -90px;
                     width: 86%;
                 }
             }
             &-right {
                 height: 74vw;
             }
-            &-hide{
-                height: 95vw;
-            }
+            // &-hide{
+            //     height: 95vw;
+            // }
         }
     }
-    .blok4{
+    .home-blok4{
         &-top{
             height: 74vw;
             &-all{
                 width: 86%;
-                bottom: -90%;
+                // bottom: -90%;
             }
         }
     }
@@ -663,19 +659,19 @@
     //         height: 70vw;
     //     }
     // }
-    .blok-all-hide{
-        height: 580px;
-        &-2{
-            height: 470px;
-        }
-    }
-    .blok4{
-        &-top-all{
-            // bottom: -170%;
-            top: 175%;
-        }
-        &-hide{
-            height: 540px;
-        }
-    }
+    // .index-blok-all-hide{
+    //     height: 580px;
+    //     &-2{
+    //         height: 470px;
+    //     }
+    // }
+    // .home-blok4{
+    //     &-top-all{
+    //         // bottom: -170%;
+    //         top: 175%;
+    //     }
+    //     &-hide{
+    //         height: 540px;
+    //     }
+    // }
 }

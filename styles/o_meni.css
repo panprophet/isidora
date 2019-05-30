@@ -241,21 +241,21 @@
 .blok-all-right-1-2-image-gr {
   display: none;
 }
-.blok4 {
+.home-blok4 {
   height: calc(100vh - 3.74rem);
   background: linear-gradient(360deg, #291644 2.41%, rgba(41, 22, 68, 0) 100%), url(../assets/images/home-blok4.jpg), #291644;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
 }
-.blok4-top {
+.home-blok4-top {
   height: 100%;
   width: 100%;
 }
-.blok4-top-all {
+.home-blok4-top-all {
   width: 50%;
 }
-.blok4-top-all-line {
+.home-blok4-top-all-line {
   height: 5px;
   width: 2.688rem;
   background-color: #FFFFFF;
@@ -273,6 +273,7 @@
 @media screen and (max-width: 1366px) {
   .blizak-odnos-left {
     width: 45%;
+    margin-top: -3.125rem;
   }
   .blizak-odnos-left-image-1 {
     width: 26vw;
@@ -348,8 +349,7 @@
     animation-duration: 0s;
   }
   .upoznaj_sebe-left-all {
-    position: absolute;
-    top: -115px;
+    margin-top: -5.625rem;
   }
   .upoznaj_sebe-right {
     width: 100%;
@@ -382,7 +382,7 @@
     width: 100%;
   }
   .upoznaj_sebe-hide {
-    height: 28vw;
+    height: auto;
   }
   .blizak-odnos {
     background-image: none;
@@ -396,6 +396,7 @@
     background-repeat: no-repeat;
     width: 100%;
     height: 56vw;
+    margin-top: 0;
   }
   .blizak-odnos-left-image-1 {
     display: none;
@@ -430,11 +431,11 @@
   }
   .blok-all-left {
     width: 100%;
+    height: auto;
     animation-duration: 0s;
+    margin-top: -4.375rem;
   }
   .blok-all-left-all {
-    position: absolute;
-    top: -115px;
     width: 60%;
   }
   .blok-all-right {
@@ -467,81 +468,48 @@
     height: 101%;
     width: 100%;
   }
-  .blok-all-hide {
-    height: 40vw;
-  }
-  .blok-all-hide-2 {
-    height: 40vw;
-  }
-  .blok4 {
+  .home-blok4 {
     height: auto;
     background: #291644;
   }
-  .blok4-top {
+  .home-blok4-top {
     height: 55vw;
     background: linear-gradient(360deg, #291644 2.41%, rgba(41, 22, 68, 0) 100%), url(../assets/images/home-blok4.jpg), #291644;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    position: relative;
   }
-  .blok4-top-all {
-    position: absolute;
+  .home-blok4-top-all {
     width: 60%;
-    top: 70%;
-    left: 0;
+    margin-top: -5rem;
   }
-  .blok4-top-all-line {
+  .home-blok4-top-all-line {
     display: none;
   }
-  .blok4-hide {
-    height: 260px;
+  .home-blok4-hide {
+    height: auto;
   }
 }
 @media screen and (max-width: 800px) {
-  .upoznaj_sebe-hide {
-    height: 35vw;
-  }
   .blizak-odnos-right-line {
     top: -8%;
   }
   .blizak-odnos-right-text {
     width: 81%;
   }
-  .blok-all-hide {
-    height: 440px;
-  }
-  .blok-all-hide-2 {
-    height: 440px;
-  }
-  .blok4-hide {
-    height: 310px;
-  }
 }
 @media screen and (max-width: 640px) {
-  .upoznaj_sebe-hide {
-    height: 42vw;
-  }
   .blizak-odnos-right-testimonial-text {
     width: 83%;
   }
   .blok-all-left-all {
     width: 75%;
   }
-  .blok-all-hide {
-    height: 72vw;
-  }
-  .blok4-top-all {
+  .home-blok4-top-all {
     width: 75%;
-  }
-  .blok4-hide {
-    height: 380px;
   }
 }
 @media screen and (max-width: 480px) {
-  .upoznaj_sebe-left-all {
-    top: -90px;
-  }
   .upoznaj_sebe-right {
     height: 74vw;
   }
@@ -558,43 +526,22 @@
     width: 93%;
   }
   .blok-all-left-all {
-    top: -90px;
     width: 86%;
   }
   .blok-all-right {
     height: 74vw;
   }
-  .blok-all-hide {
-    height: 95vw;
-  }
-  .blok4-top {
+  .home-blok4-top {
     height: 74vw;
   }
-  .blok4-top-all {
+  .home-blok4-top-all {
     width: 86%;
-    bottom: -90%;
   }
 }
 @media screen and (max-width: 360px) {
-  .upoznaj_sebe-hide {
-    height: 70vw;
-  }
-  .blok-all-hide {
-    height: 580px;
-  }
-  .blok-all-hide-2 {
-    height: 470px;
-  }
-  .blok4-top-all {
-    top: 175%;
-  }
-  .blok4-hide {
-    height: 540px;
-  }
 }
 .o_meni {
   height: calc(100vh - 3.74rem);
-  padding-top: 3.71rem;
   background-image: url(../assets/images/o-meni-intro.jpg);
   background-position: top right;
   background-size: cover;

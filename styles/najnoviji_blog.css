@@ -90,15 +90,15 @@
     height: auto;
   }
   .najnoviji_blog-all {
-    background-image: none;
+    background-image: #291644;
   }
   .najnoviji_blog-all-left {
     width: 100%;
     animation-duration: 0s;
+    height: auto;
   }
   .najnoviji_blog-all-left-all {
-    position: absolute;
-    top: -7.188rem;
+    margin-top: -3.75rem;
     width: 60%;
   }
   .najnoviji_blog-all-right {
@@ -131,13 +131,6 @@
     height: 102%;
     width: 100%;
   }
-  .najnoviji_blog-all-hide {
-    background-color: #291644;
-    height: 40vw;
-  }
-  .najnoviji_blog-all-hide-2 {
-    height: 40vw;
-  }
 }
 @media screen and (max-width: 800px) {
   .najnoviji_blog-all-hide {
@@ -151,18 +144,9 @@
 }
 @media screen and (max-width: 480px) {
   .najnoviji_blog-all-left-all {
-    top: -3.75rem;
     width: 86%;
   }
   .najnoviji_blog-all-right {
     height: 74vw;
-  }
-  .najnoviji_blog-all-hide {
-    height: 27.5rem;
-  }
-}
-@media screen and (max-width: 360px) {
-  .najnoviji_blog-all-hide {
-    height: 30rem;
   }
 }

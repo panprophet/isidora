@@ -98,13 +98,15 @@
         flex-direction: column-reverse;
         height: auto;
         &-all{
-            background-image: none;
+            background-image: @purple;
             &-left{
                 width: 100%;
                 animation-duration: 0s;
+                height: auto;
                 &-all{
-                    position: absolute;
-                    top: -7.188rem;
+                    // position: absolute;
+                    // top: -7.188rem;
+                    margin-top: -3.75rem;
                     width: 60%;
                 }
             }
@@ -138,13 +140,13 @@
                     }
                 }
             }
-            &-hide{
-                background-color: @purple;
-                height: 40vw;
-                &-2{
-                    height: 40vw;
-                }
-            }
+            // &-hide{
+            //     background-color: @purple;
+            //     height: 40vw;
+            //     &-2{
+            //         height: 40vw;
+            //     }
+            // }
         }
         
     }
@@ -166,21 +168,21 @@
         &-all{
             &-left {
                 &-all {
-                    top: -3.75rem;
+                    // top: -3.75rem;
                     width: 86%;
                 }
             }
             &-right {
                 height: 74vw;
             }
-            &-hide{
-                height: 27.5rem;
-            }
+            // &-hide{
+            //     height: 27.5rem;
+            // }
         }
     }
 }
-@media screen and (max-width: 360px){
-    .najnoviji_blog-all-hide{
-        height: 30rem;
-    }
-}
+// @media screen and (max-width: 360px){
+//     .najnoviji_blog-all-hide{
+//         height: 30rem;
+//     }
+// }
