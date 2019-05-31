@@ -259,6 +259,9 @@
   width: 2.688rem;
   background-color: #FFFFFF;
 }
+.home-blok4-hide {
+  display: none;
+}
 @media screen and (max-width: 1680px) {
   .blizak-odnos-right-text {
     width: 67%;
@@ -486,6 +489,7 @@
     display: none;
   }
   .home-blok4-hide {
+    display: flex;
     height: auto;
   }
 }
