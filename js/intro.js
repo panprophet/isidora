@@ -34,15 +34,41 @@ $(document).ready(function() {
 });
 
 // owl carousel
-var owl = $('.owl-carousel');
+var owl = $('#owl-one');
     owl.owlCarousel({
         items:1,
         loop:true,
         autoplay:true,
-        autoplayTimeout:6000,
+        autoplayTimeout:5000,
         autoplayHoverPause:true,
         nav:false,
         dots:true,
         animateOut: 'fadeOut',
         hideOnContentClick: 'false'
     });
+
+    var owl2 = $('#owl-two');
+    // var dots = $('.owl-dots');
+    owl2.owlCarousel({
+        items:1,
+        loop:false,
+        autoplay:false,
+        autoplayTimeout:5000,
+        autoplayHoverPause:true,
+        nav:true,
+        dots:true,
+        dotsClass: 'tacke',
+        dotClass: 'tacka',
+        animateOut: 'fadeOut',
+        hideOnContentClick: 'false',
+        // navContainer: '.news-carousel .navigation',
+        // dotsText:["<div class='nav-btn prev-slide'></div>","<div class='nav-btn next-slide'></div>"],
+        // navText: ["←","→"] 
+
+        // 
+    });
+    // owl2('changed.owl.carousel', function(event){
+    //   document.getElementsByClassName("owl-dots").style.position = 'absolute';
+    //   document.getElementsByClassName("owl-dots").style.bottom = '0';
+    //   document.getElementsByClassName("owl-dots").style.right = '0';
+    // }) 

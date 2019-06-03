@@ -732,6 +732,9 @@
   }
 }
 @media screen and (max-width: 960px) {
+  .margin-m--top-200 {
+    margin-top: 12.5rem;
+  }
   .margin-m--top-100 {
     margin-top: 6.25rem;
   }
