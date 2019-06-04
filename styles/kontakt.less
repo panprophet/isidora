@@ -1,0 +1,52 @@
+@import 'variables';
+
+.kontakt {
+    &-line {
+        width: 43px;
+        height: 5px;
+        background-color: @purple;
+    }
+    &-mapa {
+        background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 33.98%);
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        z-index: 1000000;
+    }
+    &-form {
+        border: 0;
+        border-bottom: 1px solid @grey-form;
+        height: 3.125rem;
+        color: @purple;
+        font-size: 1.5rem;
+        line-height: normal;
+    }
+   &-side {
+       width: 40%;
+   }
+}
+
+.map-black-white {
+    -webkit-filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
+    -ms-filter: grayscale(100%);
+    -o-filter: grayscale(100%);
+    filter: grayscale(100%);
+    height: 35vw;
+    border-bottom: 1px solid @purple;
+}
+
+@media screen and (max-width: 1023px) {
+    .kontakt-side {
+        width: 70%;
+    }
+    .map-black-white {
+        height: 350px;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .kontakt-side {
+        width: 100%;
+    }
+}

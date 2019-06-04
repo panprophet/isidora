@@ -63,6 +63,13 @@ input:focus {
   border-color: none;
   background-color: #FFFFFF;
 }
+textarea:focus {
+  outline: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  border-color: none;
+  background-color: #FFFFFF;
+}
 button:hover {
   opacity: 1;
 }
@@ -243,6 +250,9 @@ a:active {
 }
 .font-grey--mid {
   color: #C6C6C5;
+}
+.font-grey--form {
+  color: #c4c4c4;
 }
 .font-purple {
   color: #291644;
@@ -1421,6 +1431,9 @@ a:active {
 .padding-xxl--left-180 {
   padding-left: 11.25rem;
 }
+.padding-xxl--left-135 {
+  padding-left: 8.438rem;
+}
 .padding-xxl--left-90 {
   padding-left: 5.625rem;
 }
@@ -1441,6 +1454,9 @@ a:active {
 }
 .padding-xxl--right-180 {
   padding-right: 11.25rem;
+}
+.padding-xxl--right-135 {
+  padding-right: 8.438rem;
 }
 .padding-xxl--right-90 {
   padding-right: 5.625rem;
@@ -4036,6 +4052,11 @@ a:active {
 .blog-post-text {
   color: #5d5d5d;
 }
+.border-line {
+  width: 100%;
+  height: 1px;
+  border-bottom: 1px solid #DBDBDB;
+}
 @media screen and (max-width: 1280px) {
   .blog {
     width: 38.063rem;
@@ -4227,6 +4248,51 @@ a:active {
   }
   .radionica-hide-all {
     width: 87%;
+  }
+}
+.kontakt-line {
+  width: 43px;
+  height: 5px;
+  background-color: #291644;
+}
+.kontakt-mapa {
+  background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 33.98%);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 1000000;
+}
+.kontakt-form {
+  border: 0;
+  border-bottom: 1px solid #c4c4c4;
+  height: 3.125rem;
+  color: #291644;
+  font-size: 1.5rem;
+  line-height: normal;
+}
+.kontakt-side {
+  width: 40%;
+}
+.map-black-white {
+  -webkit-filter: grayscale(100%);
+  -moz-filter: grayscale(100%);
+  -ms-filter: grayscale(100%);
+  -o-filter: grayscale(100%);
+  filter: grayscale(100%);
+  height: 35vw;
+  border-bottom: 1px solid #291644;
+}
+@media screen and (max-width: 1023px) {
+  .kontakt-side {
+    width: 70%;
+  }
+  .map-black-white {
+    height: 350px;
+  }
+}
+@media screen and (max-width: 640px) {
+  .kontakt-side {
+    width: 100%;
   }
 }
 .testimonial {

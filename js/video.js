@@ -10,7 +10,7 @@ $(document).ready(function() {
   });
 
 function url2embed(url){
-    var a = document.getElementById('url');
+    var a = document.getElementsByClassName('video-url');
     var video_url = null
     if(url) {
         // https://gist.github.com/yangshun/9892961

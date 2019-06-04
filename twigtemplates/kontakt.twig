@@ -1,19 +1,73 @@
 {% extends "base.twig" %}
 {% block content %}
 
-<div class="flex flex-column">
+<div style="height: 3.71rem;"></div>
+
+<div class="flex flex-column margin-xxl--top-200 margin-l--top-100 margin-xxl--bottom-100">
     <div class="flex flex-column align-items-center justify-content-center">
-        <div>Kontakt</div>
-        <div></div>
-        <div>Lorem Ipsum is simply dummy text</div>
+        <div class="font--xxl-46 font-purple font-bold margin-xxl--bottom-24">Kontakt</div>
+        <div class="kontakt-line"></div>
+        <div class="font--xxl-16 font-purple text-center margin-xxl--top-24 margin-xxl--bottom-60">Lorem Ipsum is simply dummy text</div>
     </div>
-    <div class="flex">
-        <div></div>
-        <div></div>
+    <div >
+        <form id="contactform" class="flex justify-content-between flex--l-column align-items--l-center padding-xxl--left-135 padding-xxl--right-135 padding-xs--left-23 padding-xs--right-23">
+          {# <div class="d-flex flex-column">
+            <input class="contact-side-right-form font-12 white" id="name" type="text" placeholder="Name"/>
+            <input class="contact-side-right-form font-12 white" id="email" type="email" placeholder="Email"/>
+            <input class="contact-side-right-form font-12 white" id="phone" type="tel" placeholder="Phone"/>
+            <input class="contact-side-right-form font-12 white" id="subject" type="text" placeholder="Subject"/>
+            <input class="contact-side-right-form-msg font-12 white" id="message" type="text" placeholder="Message"/>
+            <button class="contact-side-right-button button-disabled font-12 font-bold white" type="submit">Submit</button>
+          </div> #}
+          <div class="kontakt-side flex flex-column">
+            <div class="font-xxl--18 font-grey--form margin-xxl--bottom-10 text--l-center">Ime i Prezime</div>
+            <input class="kontakt-form font-12 margin-xxl--bottom-20" id="name" type="text"/>
+            <div class="font-xxl--18 font-grey--form margin-xxl--bottom-10 text--l-center">Email</div>
+            <input class="kontakt-form font-12 margin-xxl--bottom-20" id="email" type="text"/>
+            <div class="font-xxl--18 font-grey--form margin-xxl--bottom-10 text--l-center">Naslov</div>
+            <input class="kontakt-form font-12 margin-xxl--bottom-20" id="title" type="text"/>
+          </div>
+          <div class="kontakt-side flex flex-column">
+            <div class="font-xxl--18 font-grey--form margin-xxl--bottom-10 text--l-center">Poruka</div>
+            <textarea class="kontakt-form font-12 margin-xxl--bottom-24" id="message" type="text"></textarea>
+            <div class="w-100 flex justify-content-end justify-content--l-center">
+                <button class="button-midd font-white font--xxl-14 border-purple-light">POŠALJI</button>
+            </div>
+          </div>
+          {# <button class="button-midd font-white font--xxl-14 border-purple-light">POŠALJI</button> #}
+        </form>
     </div>
 </div>
 
 <!-- mapa -->
-<div></div>
+{# <div>
+    <iframe class="map-black-white" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1124.9011779628927!2d12.565593558310587!3d55.675036995133105!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4652530d960f2c4d%3A0x2eb845d6b85ef620!2sVesterbrogade+1C%2C+1620+K%C3%B8benhavn+V!5e0!3m2!1sen!2sdk!4v1493057498872" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+</div> #}
+{% set Kontakt = fetch("Kontakt") %}
+
+<div class="map-black-white" id="mapid">
+    <div class="kontakt-mapa"></div>
+</div>
+
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
+integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
+crossorigin=""/>
+
+<script src="https://unpkg.com/leaflet@1.3.4/dist/leaflet.js"
+integrity="sha512-nMMmRyTVoLYqjP9hrbed9S+FzjZHW5gY1TWCHA5ckwXZBadntCNs8kEqAWdrb9O7rxbCaA4lKTIWjDXZxflOcA=="
+crossorigin=""></script>
+
+<script>
+    var MapStr = '{{Kontakt.Mapa}}';
+    var lat  = Number( MapStr.split(',')[0] );
+    var lng  = Number( MapStr.split(',')[1] );
+    var map =  L.map('mapid').setView([lat, lng ], 13);
+
+    L.tileLayer('https://{s}.tile.osm.org/{z}/{x}/{y}.png', {
+        attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
+    }).addTo(map);    
+
+    var marker = new L.marker([lat, lng]).addTo(map);
+</script>
 
 {% endblock %}
