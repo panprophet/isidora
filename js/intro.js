@@ -23,15 +23,7 @@ AOS.init({
     once: false
 });
 
-$(document).ready(function() {
 
-  $('[data-fancybox]').fancybox({
-    youtube : {
-      showinfo : 0
-    }
-  });
-  $('.post--text p:has(img)').css({'margin-left':'-3rem', 'margin-right':'-3rem', 'margin-top':'2em', 'margin-bottom':'2em', 'text-align' : 'center',});
-});
 
 // owl carousel
 var owl = $('#owl-one');
