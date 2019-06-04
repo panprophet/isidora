@@ -1,0 +1,27 @@
+{% set Testimonial2 = fetch("Testimonial2") %}
+
+<div id="owl-two" class="testimonial owl-carousel owl-theme owl-loaded">
+{% for item in Testimonial2 %}
+    <div style="height: 100%;" class="flex flex--l-column">
+        <div class="testimonial-left">
+            <div class="testimonial-left-2 flex align-items-center"></div>
+        </div>
+        <div class="testimonial-right flex align-items-center justify-content-center margin-m--top-100 margin-m--bottom-100 margin-s--top-46">
+            <div class="testimonial-right-all flex flex-column align-items--l-center">
+                <div class="font--xxl-46 font-bold font-purple margin-xxl--bottom-24 text--l-center">Testimonial</div>
+                <div class="font--xxl-36 font-purple margin-xxl--bottom-24 text--l-center">Isidora Buneta</div>
+                <div class="flex flex--l-column align-items-center margin-xxl--bottom-24">
+                    <div class="testimonial-right-all-border"></div>
+                    <div class="font--xxl-16 text--l-center font-purple flex align-items-center padding-xxl--left-25">Lorem Ipsum is simply dummy text</div>
+                </div>
+                <div class="font--xxl-16 font-italic font-purple text--m-center">{{item.Text}}</div>
+                <div></div>
+            </div>
+        </div>
+        <div class="testimonial-box margin-xxl--left-135 margin-xl--left-70 margin-m--left-none">
+            <div class="testimonial-box-image" style="background-image: url('img/{{item.Slika}}')"></div>
+        </div>
+    </div>
+    {% endfor %}
+</div>
+
