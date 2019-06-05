@@ -1,3 +1,36 @@
+.vertical_nav {
+  position: fixed;
+  top: 60%;
+  right: 2%;
+  z-index: 100000;
+}
+.vertical_nav-all .dot {
+  position: relative;
+  height: 5px;
+  width: 5px;
+  border-radius: 50%;
+  background-color: #FFFFFF;
+  margin-left: 20px;
+  transition: background-color 0.4s;
+}
+.vertical_nav-all .label {
+  opacity: 0;
+  font-size: 12px;
+  color: #FFFFFF;
+  transition: opacity 0.4s;
+}
+.vertical_nav-all:hover .label {
+  opacity: 1;
+}
+.vertical_nav-all:hover .dot {
+  background-color: #60B709;
+}
+.is-selected .label {
+  opacity: 1;
+}
+.is-selected .dot {
+  background-color: #60B709;
+}
 .mySlides {
   display: none;
   position: relative;
@@ -94,7 +127,8 @@
   }
 }
 .blizak-odnos {
-  height: calc(100vh - 7.33rem);
+  height: calc(100vh - 3.74rem);
+  padding-top: 3.74rem;
   background-image: url('../assets/images/home-blok2.jpg');
   background-position: top;
   background-size: cover;
@@ -169,7 +203,7 @@
   height: auto;
 }
 .blok {
-  height: calc(100vh - 3.74rem);
+  height: 100vh;
   position: relative;
   overflow: hidden;
 }
@@ -242,6 +276,7 @@
 }
 .home-blok4 {
   height: calc(100vh - 3.74rem);
+  padding-top: 3.74rem;
   background: linear-gradient(360deg, #291644 2.41%, rgba(41, 22, 68, 0) 100%), url(../assets/images/home-blok4.jpg), #291644;
   background-position: center;
   background-size: cover;
@@ -342,6 +377,9 @@
   }
 }
 @media screen and (max-width: 1023px) {
+  .vertical_nav {
+    display: none;
+  }
   .upoznaj_sebe {
     flex-direction: column-reverse;
     height: auto;
@@ -540,6 +578,4 @@
   .home-blok4-top-all {
     width: 86%;
   }
-}
-@media screen and (max-width: 360px) {
 }

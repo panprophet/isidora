@@ -1,5 +1,60 @@
 @import 'variables';
 
+.vertical_nav {
+    position: fixed;
+    top: 60%;
+    right: 2%;
+    z-index: 100000;
+    &-all {
+        .dot {
+            position: relative;
+            height: 5px;
+            width: 5px;
+            border-radius: 50%;
+            background-color: @white;
+            margin-left: 20px;
+            // -webkit-transition: -webkit-transform 0.2s, background-color 0.5s;
+            // -moz-transition: -moz-transform 0.2s, background-color 0.5s;
+            // transition: transform 0.2s, background-color 0.5s;
+            // -webkit-transform-origin: 50% 50%;
+            // -moz-transform-origin: 50% 50%;
+            // -ms-transform-origin: 50% 50%;
+            // -o-transform-origin: 50% 50%;
+            // transform-origin: 50% 50%;
+            transition: background-color 0.4s;
+            // &:hover {
+            //     background-color: #60B709;
+            //     .label {
+            //         opacity: 1;
+            //     }
+            // }
+        }
+        .label {
+            opacity: 0;
+            font-size: 12px;
+            color: @white;
+            transition: opacity 0.4s;
+            // &:hover {
+            //     opacity: 1;
+            // }
+        }
+        &:hover .label {
+            opacity: 1;
+        }
+        &:hover .dot {
+            background-color: #60B709;
+        }
+    }
+}
+.is-selected {
+    .label {
+        opacity: 1;
+    }
+    .dot {
+        background-color: #60B709;
+    }
+}
+
 .mySlides {
     display:none;
     position: relative;
@@ -99,7 +154,8 @@
 }
 
 .blizak-odnos{
-    height: calc(~"100vh - 7.33rem");
+    height: calc(~"100vh - 3.74rem");
+    padding-top: 3.74rem;
     background-image: url('../assets/images/home-blok2.jpg');
     background-position: top;
     background-size: cover;
@@ -181,7 +237,9 @@
 }
 
 .blok{
-    height: calc(~"100vh - 3.74rem");
+    // height: calc(~"100vh - 3.74rem");
+    height: 100vh;
+    // padding-top: 3.74rem;
     position: relative;
     overflow: hidden;
     &-all{
@@ -256,6 +314,7 @@
 }
 .home-blok4{
     height: calc(~"100vh - 3.74rem");
+    padding-top: 3.74rem;
     background: linear-gradient(360deg, #291644 2.41%, rgba(41, 22, 68, 0) 100%), url(../assets/images/home-blok4.jpg), #291644;
     background-position: center;
     background-size: cover;
@@ -380,6 +439,9 @@
     }
 }
 @media screen and (max-width: 1023px){
+    .vertical_nav {
+        display: none;
+    }
     .upoznaj_sebe{
         flex-direction: column-reverse;
         height: auto;
@@ -543,9 +605,6 @@
     }
 }
 @media screen and (max-width: 800px){
-    // .upoznaj_sebe-hide{
-    //     height: 35vw;
-    // }
     .blizak-odnos{
         &-right{
             &-line{
@@ -556,25 +615,8 @@
             }
         }
     }
-    // .index-blok-all-hide{
-    //     height: 440px;
-    //     &-2{
-    //         height: 440px;
-    //     }
-    // }
-    // .home-blok4{
-        // &-top-all{
-        //     bottom: -56%;
-        // }
-        // &-hide{
-        //     height: 310px;
-        // }
-    // }
 }
 @media screen and (max-width: 640px){
-    // .upoznaj_sebe-hide{
-    //     height: 42vw;
-    // }
     .blizak-odnos{
         &-right{
             &-testimonial{
@@ -588,27 +630,15 @@
         &-left-all{
             width: 75%;
         }
-        // &-hide{
-        //     height: 72vw;
-        // }
     }
     .home-blok4{
         &-top-all{
             width: 75%;
-            // bottom: -91%;
         }
-        // &-hide{
-        //     height: 380px;
-        // }
     }
 }
 @media screen and (max-width: 480px){
     .upoznaj_sebe {
-        // &-left {
-        //     &-all {
-        //         top: -90px;
-        //     }
-        // }
         &-right {
             height: 74vw;
         }
@@ -635,16 +665,12 @@
         &-all{
             &-left {
                 &-all {
-                    // top: -90px;
                     width: 86%;
                 }
             }
             &-right {
                 height: 74vw;
             }
-            // &-hide{
-            //     height: 95vw;
-            // }
         }
     }
     .home-blok4{
@@ -652,12 +678,11 @@
             height: 74vw;
             &-all{
                 width: 86%;
-                // bottom: -90%;
             }
         }
     }
 }
-@media screen and (max-width: 360px){
+// @media screen and (max-width: 360px){
     // .upoznaj_sebe {
     //     &-hide{
     //         height: 70vw;
@@ -678,4 +703,6 @@
     //         height: 540px;
     //     }
     // }
-}
+// }
+
+
