@@ -1997,6 +1997,9 @@ a:active {
   .padding-m--left-60 {
     padding-left: 3.75rem;
   }
+  .padding-m--left-57 {
+    padding-left: 3.563rem;
+  }
   .padding-m--left-24 {
     padding-left: 1.5rem;
   }
@@ -2020,6 +2023,9 @@ a:active {
   }
   .padding-m--right-60 {
     padding-right: 3.75rem;
+  }
+  .padding-m--right-57 {
+    padding-right: 3.563rem;
   }
   .padding-m--right-24 {
     padding-right: 1.5rem;
@@ -2277,11 +2283,20 @@ a:active {
 .w-33 {
   width: 33.33%;
 }
+.w-30 {
+  width: 30%;
+}
 .w-25 {
   width: 25%;
 }
 .w-25--min {
   min-width: 25%;
+}
+.h-70 {
+  height: 70%;
+}
+.h-30 {
+  height: 30%;
 }
 @media only screen and (max-width: 1440px) {
   .w--xl-100 {
@@ -2491,6 +2506,39 @@ a:active {
     background-color: #291644;
   }
 }
+.vertical_nav {
+  position: fixed;
+  top: 60%;
+  right: 2%;
+  z-index: 100000;
+}
+.vertical_nav-all .dot {
+  position: relative;
+  height: 5px;
+  width: 5px;
+  border-radius: 50%;
+  background-color: #FFFFFF;
+  margin-left: 20px;
+  transition: background-color 0.4s;
+}
+.vertical_nav-all .label {
+  opacity: 0;
+  font-size: 12px;
+  color: #FFFFFF;
+  transition: opacity 0.4s;
+}
+.vertical_nav-all:hover .label {
+  opacity: 1;
+}
+.vertical_nav-all:hover .dot {
+  background-color: #60B709;
+}
+.is-selected .label {
+  opacity: 1;
+}
+.is-selected .dot {
+  background-color: #60B709;
+}
 .mySlides {
   display: none;
   position: relative;
@@ -2503,6 +2551,19 @@ a:active {
   height: calc(100vh - 3.74rem);
   position: relative;
   overflow: hidden;
+}
+.upoznaj_sebe-scroll {
+  position: absolute;
+  z-index: 10000;
+  top: 30%;
+  right: 0%;
+  transform: rotate(-90deg);
+  margin-right: -50px;
+}
+.upoznaj_sebe-scroll-line {
+  width: 80px;
+  height: 1px;
+  background-color: #FFFFFF;
 }
 .upoznaj_sebe-left {
   animation-name: fadeInLeft;
@@ -2587,7 +2648,8 @@ a:active {
   }
 }
 .blizak-odnos {
-  height: calc(100vh - 7.33rem);
+  height: calc(100vh - 3.74rem);
+  padding-top: 3.74rem;
   background-image: url('../assets/images/home-blok2.jpg');
   background-position: top;
   background-size: cover;
@@ -2662,7 +2724,7 @@ a:active {
   height: auto;
 }
 .blok {
-  height: calc(100vh - 3.74rem);
+  height: 100vh;
   position: relative;
   overflow: hidden;
 }
@@ -2735,6 +2797,7 @@ a:active {
 }
 .home-blok4 {
   height: calc(100vh - 3.74rem);
+  padding-top: 3.74rem;
   background: linear-gradient(360deg, #291644 2.41%, rgba(41, 22, 68, 0) 100%), url(../assets/images/home-blok4.jpg), #291644;
   background-position: center;
   background-size: cover;
@@ -2835,9 +2898,15 @@ a:active {
   }
 }
 @media screen and (max-width: 1023px) {
+  .vertical_nav {
+    display: none;
+  }
   .upoznaj_sebe {
     flex-direction: column-reverse;
     height: auto;
+  }
+  .upoznaj_sebe-scroll {
+    display: none;
   }
   .upoznaj_sebe-left {
     width: 100%;
@@ -3034,10 +3103,8 @@ a:active {
     width: 86%;
   }
 }
-@media screen and (max-width: 360px) {
-}
 .najnoviji_blog {
-  height: calc(100vh - 3.74rem);
+  height: 100vh;
   position: relative;
   overflow: hidden;
 }
@@ -3232,7 +3299,7 @@ a:active {
   }
 }
 .pozovi_nas {
-  height: calc(100vh - 3.74rem);
+  height: 100vh;
   background: linear-gradient(180deg, #291644 0%, rgba(41, 22, 68, 0) 100%), url(../assets/images/pozovi-nas.jpg), #C4C4C4;
   background-position: center;
   background-size: cover;
@@ -4493,5 +4560,58 @@ a:active {
     width: 17.5rem;
     height: 17.5rem;
     margin-left: 0;
+  }
+}
+.detaljnije-kk {
+  height: calc(100vh - 3.74rem);
+}
+.detaljnije-kk-bcg1 {
+  background-image: url('../assets/shared/white-round-right.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.detaljnije-kk-bcg2 {
+  background-image: url('../assets/shared/luk-ljubicasti-desktop.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.detaljnije-kk-top {
+  height: 30%;
+}
+.detaljnije-kk-bottom {
+  height: 70%;
+}
+.detaljnije-kk-bottom-all {
+  width: 30%;
+}
+.detaljnije-kk-bottom-all-img {
+  max-width: 9vw;
+}
+.detaljnije-kk-bottom-all-line {
+  width: 43px;
+  height: 5px;
+}
+@media screen and (max-width: 1023px) {
+  .detaljnije-kk {
+    height: auto;
+  }
+  .detaljnije-kk-bcg1 {
+    background-image: none;
+  }
+  .detaljnije-kk-bcg2 {
+    background-image: none;
+  }
+  .detaljnije-kk-bottom-all {
+    width: 80%;
+  }
+  .detaljnije-kk-bottom-all-img {
+    max-width: 9.375rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  .detaljnije-kk-bottom-all {
+    width: 90%;
   }
 }

@@ -1,5 +1,5 @@
 .najnoviji_blog {
-  height: calc(100vh - 3.74rem);
+  height: 100vh;
   position: relative;
   overflow: hidden;
 }

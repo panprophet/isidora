@@ -1,61 +1,141 @@
 {% extends "base.twig" %}
+{% set Radionica = fetch("Radionica", {"id": _GET['1']})[0] %}
 {% block content %}
 
-{% set Radionica = fetch("Radionica") %}
 <div style="height: 3.71rem;"></div>
-{% for item in Radionica %}
-{# {% if item.Oznaci == 'true' %} #}
-<div class="radionica" style="background-image: url('img/{{item.Slika}}')">
-    <div class="radionica-gr">
-        <div class="radionica-1">
-            <div class="radionica-1-2">
-                <div class="radionica-1-2-3">
-                    <div class="radionica-1-2-3-all flex flex-column justify-content-center margin-xxl--left-135 margin-xl--left-70 margin-m--left-57 margin-xs--left-23">
-                        <div class="font--xxl-72 font-white font-bold opacity-01">{{item.Broj}}</div>
-                        <div class="font--xxl-46 font--xl-42 font--xs-36 font-white font-bold margin-xxl--bottom-42 margin-xl--bottom-32">{{item.Naziv}}</div>
-                        <div class="flex align-items-center font--xxl-14 font-white margin-xxl--bottom-20 margin-xl--bottom-20 margin-m--bottom-46 margin-s--bottom-32">
-                            <img style="width: 1.125rem; height: 1.25rem;" src="./assets/shared/date-white.png" >
-                            <p class="font--xxl-14 font-bold font-white margin-xxl--left-20">{{item.Datum|date("d/m/Y")}} &nbsp</p>
-                        </div>
-                        <div class="radionica-1-2-3-all-text flex align-items-center font--xxl-14 font-white margin-xxl--bottom-20 margin-xl--bottom-20 margin-m--bottom-46 margin-s--bottom-32">
-                            {# <img style="width: 1.125rem; height: 1.25rem;" src="./assets/shared/date-white.png" > #}
-                            <p class="font--xxl-14 font-bold font-white margin-xxl--left-20">Lorem Ipsum is simply dummy text of the printing</p>
-                            {# <p class="font--xxl-14 font-white"> {{item.Vreme}}</p> #}
-                        </div>
-                        <div class="font--xxl-14 font-white margin-xxl--bottom-42 margin-xl--bottom-32">{{item.Opis}}</div>
-                        {# <a class="font-italic font-bold font--xxl-14 font-white margin-xxl--bottom-42 margin-s--bottom-32">Saznaj više</a> #}
-                        <button class="button-midd font-white font--xxl-14 border-purple-light">SAZNAJ VIŠE</button>
-                    </div>
+<!-- blok1 -->
+<div class="blok1 ">
+    <div class="blok1-1">
+        <div class="blok1-1-2">
+            <div class="blok1-1-2-3">
+                <div class="blok1-1-2-3-all flex flex-column justify-content-center margin-xxl--left-135 margin-xl--left-70 margin-m--left-57 margin-xs--left-23">
+                    <div class="font--xxl-46 font--xl-42 font--xs-36 font-white font-bold margin-xxl--bottom-42 margin-xl--bottom-32">Info o radionici</div>
+                    <div class="blok1-1-2-3-all-text padding-xxl--left-25 font--xxl-14 font-white margin-xxl--bottom-42 margin-xl--bottom-32">Beograd datum vreme</div>
+                    <div class="font--xxl-14 font-white margin-xxl--bottom-42 margin-xl--bottom-32">Trajno rešavanje prekomerne kilaže možete postići samo ako odklonite uzrok zašto se prejedate. Potrebno je stvarati zdravije navike a ne drzati dijetu. Sta god ste u svom zivotu drzali ono je bilo tu samo dok ga drzite. Isto je i sa dijetom. Dijetom resavamo samo trenutno posledicu. 15 godina sam pokusavla da smrsam, uskracivala sebi hranu i na kraju sam dosla do 110kg. Kao da sam bila na rezimu koji me je gojio.</div>
                 </div>
             </div>
         </div>
     </div>
 </div>
-<div class="radionica-hide">
-    <div class="radionica-hide-all margin-l--bottom-50 flex flex-column justify-content-center margin-xxl--left-135 margin-xl--left-70 margin-m--left-57 margin-xs--left-23">
-        <div class="font--xxl-72 font-white font-bold opacity-01">{{item.Broj}}</div>
-        <div class="font--xxl-46 font--xl-42 font--xs-36 font-white font-bold margin-xxl--bottom-42 margin-xl--bottom-32">{{item.Naziv}}</div>
-        <div class="flex align-items-center font--xxl-14 font-white margin-xxl--bottom-20 margin-xl--bottom-20 margin-m--bottom-46 margin-s--bottom-32">
-            <img style="width: 1.125rem; height: 1.25rem;" src="./assets/shared/date-white.png" >
-            <p class="font--xxl-14 font-bold font-white margin-xxl--left-20">{{item.Datum|date("d/m/Y")}} &nbsp</p>
+<div class="hide"></div>
+<!-- blok1 -->
+
+<!-- blok2 -->
+<div class="blok3 flex flex--l-column">
+    <div class="blok3-left">
+        <div class="blok3-left-1">
+            <div class="blok3-left-1-image"></div>
         </div>
-        <div class="radionica-1-2-3-all-text flex align-items-center font--xxl-14 font-white margin-xxl--bottom-20 margin-xl--bottom-20 margin-m--bottom-46 margin-s--bottom-32">
-            {# <img style="width: 1.125rem; height: 1.25rem;" src="./assets/shared/date-white.png" > #}
-            <p class="font--xxl-14 font-bold font-white margin-xxl--left-20">Lorem Ipsum is simply dummy text of the printing</p>
-            {# <p class="font--xxl-14 font-white"> {{item.Vreme}}</p> #}
+    </div>
+    <div class="blok3-right flex align-items-center">
+        <div class="blok3-right-all flex flex-column margin-xs--left-23 margin-l--bottom-50">
+            <div class="font--xxl-36 font-purple font-bold margin-xxl--bottom-42 margin-xl--bottom-32">Kome je namenjena</div>
+            <div class="blok3-right-all-line font--xxl-14 font-purple margin-xxl--bottom-42 margin-xl--bottom-32 padding-xxl--left-25">Naslov</div>
+            <div class="font--xxl-14 font-purple margin-xxl--bottom-42 margin-xl--bottom-32">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the...</div>
         </div>
-        <div class="font--xxl-14 font-white margin-xxl--bottom-42 margin-xl--bottom-32">{{item.Opis}}</div>
-        {# <a class="font-italic font-bold font--xxl-14 font-white margin-xxl--bottom-42 margin-s--bottom-32">Saznaj više</a> #}
-        <button class="button-midd font-white font--xxl-14 border-purple-light">SAZNAJ VIŠE</button>
     </div>
 </div>
-<div class="radionica-prijavi-se flex flex--m-column-reverse align-items-center margin-xxl--left-135 margin-xl--left-70 margin-m--left-none margin-m--top-24 margin-m--bottom-24 margin-xs--left-23 margin-xs--right-23">
-    <button class="button-small font-white font--xxl-14 border-purple-light">PRIJAVI SE</button>
-    <div class="font--xxl-16 font-purple text-center margin-xxl--left-40 margin-m--left-none margin-m--bottom-24">Saznaj te više i prijavi se za radionicu</div>
+<!-- blok2 -->
+
+<!-- blok3 -->
+<div class="blok1 ">
+    <div class="blok1-1">
+        <div class="blok1-1-2">
+            <div class="blok1-1-2-3">
+                <div class="blok1-1-2-3-all flex flex-column justify-content-center margin-xxl--left-135 margin-xl--left-70 margin-m--left-57 margin-xs--left-23">
+                    <div class="font--xxl-46 font--xl-42 font--xs-36 font-white font-bold margin-xxl--bottom-42 margin-xl--bottom-32">Benefit radionice</div>
+                    <div class="blok1-1-2-3-all-text padding-xxl--left-25 font--xxl-14 font-white margin-xxl--bottom-42 margin-xl--bottom-32">Naslov</div>
+                    <div class="font--xxl-14 font-white margin-xxl--bottom-42 margin-xl--bottom-32">Trajno rešavanje prekomerne kilaže možete postići samo ako odklonite uzrok zašto se prejedate. Potrebno je stvarati zdravije navike a ne drzati dijetu. Sta god ste u svom zivotu drzali ono je bilo tu samo dok ga drzite. Isto je i sa dijetom. Dijetom resavamo samo trenutno posledicu. 15 godina sam pokusavla da smrsam, uskracivala sebi hranu i na kraju sam dosla do 110kg. Kao da sam bila na rezimu koji me je gojio.</div>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
-{# {% endif %} #}
-{% endfor %}
+<div class="hide"></div>
+<!-- blok3 -->
 
+<!-- blok4 -->
+{% include 'testimonial.twig' %}
+<!-- blok4 -->
 
+<!-- blok5 -->
+<div id="najnoviji_blog" class="najnoviji_blog">
+    <div class="najnoviji_blog-all flex flex-direction-reverse flex--l-direction">
+    {# {% set Blog = fetch("Blog") | first %} #}
+        <div class="najnoviji_blog-all-right">
+            <div class="najnoviji_blog-all-right-1">
+                <div class="najnoviji_blog-all-right-1-2">
+                    <div class="najnoviji_blog-all-right-1-2-image" style="background-image: url('img/{{Blog.Slika}}')">
+                        <div class="najnoviji_blog-all-right-1-2-image-gr"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="najnoviji_blog-all-left flex flex-column justify-content-center align-items-start margin-xxl--left-135 margin-xl--left-70 margin-m--left-57 margin-xs--left-23 margin-l--bottom-50">
+            <div class="najnoviji_blog-all-left-all flex flex-column">
+                <div class="font--xxl-46 font--xl-42 font--xs-36 font-white font-bold margin-xxl--bottom-42 margin-xl--bottom-32">Vreme odrzavanja</div>
+                <div class="najnoviji_blog-all-left-all-text font--xxl-14 font-white flex padding-xxl--left-25 margin-xxl--bottom-42 margin-xl--bottom-32">Mesto datum vreme</div>
+                <div class="font--xxl-14 font-white margin-xxl--bottom-42 margin-xl--bottom-32">Opis</div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- blok5 -->
+
+<!-- blok6 -->
+<div class="detaljnije-kk detaljnije-kk-bcg1 flex flex-column">
+    <div class="detaljnije-kk-top flex align-items-end justify-content-center font--xxl-46 font-purple font-bold text-center margin-l--top-100 margin-l--bottom-50 margin-xxl--left-24 margin-xxl--right-24">Koliko košta</div>
+    <div class="detaljnije-kk-bottom flex flex--l-column align-items-center justify-content-around padding-xxl--left-135 padding-xxl--right-135 padding-xl--left-70 padding-m--left-57 padding-xs--left-23 padding-xxl--right-135 padding-xl--right-70 padding-m--right-57 padding-xs--right-23">
+        <div class="detaljnije-kk-bottom-all flex flex-column align-items-center margin-l--bottom-70">
+            <img class="detaljnije-kk-bottom-all-img margin-xxl--bottom-48" src="./assets/images/radionica-kk-1.png">
+            <div class="detaljnije-kk-bottom-all-line background-purple margin-xxl--bottom-10"></div>
+            <div class="font--xxl-16 font-purple margin-xxl--bottom-24 text-center">Lorem Ipsum is simply dummy text</div>
+            <div class="font--xxl-16 font-purple font-italic text-center">“Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type</div>
+        </div>
+        <div class="detaljnije-kk-bottom-all flex flex-column align-items-center margin-l--bottom-70">
+            <img class="detaljnije-kk-bottom-all-img margin-xxl--bottom-48" src="./assets/images/radionica-kk-2.png">
+            <div class="detaljnije-kk-bottom-all-line background-purple margin-xxl--bottom-10"></div>
+            <div class="font--xxl-16 font-purple margin-xxl--bottom-24 text-center">Lorem Ipsum is simply dummy text</div>
+            <div class="font--xxl-16 font-purple font-italic text-center">“Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type</div>
+        </div>
+        <div class="detaljnije-kk-bottom-all flex flex-column align-items-center margin-l--bottom-70">
+            <img class="detaljnije-kk-bottom-all-img margin-xxl--bottom-48" src="./assets/images/radionica-kk-3.png">
+            <div class="detaljnije-kk-bottom-all-line background-purple margin-xxl--bottom-10"></div>
+            <div class="font--xxl-16 font-purple margin-xxl--bottom-24 text-center">Lorem Ipsum is simply dummy text</div>
+            <div class="font--xxl-16 font-purple font-italic text-center">“Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type</div>
+        </div>
+    </div>
+</div>
+<!-- blok6 -->
+
+<!-- blok7 -->
+<div class="detaljnije-kk detaljnije-kk-bcg2 background-purple flex flex-column">
+    <div class="detaljnije-kk-top flex flex-column align-items-center justify-content-end margin-l--top-100 margin-l--bottom-50 margin-xxl--left-24 margin-xxl--right-24">
+        <div class="font--xxl-46 font-white font-bold text-center margin-xxl--bottom-24">Koncept radionice</div>
+        <div class="detaljnije-kk-bottom-all-line background-white margin-xxl--bottom-24"></div>
+        <div class="font--xxl-16 font-white text-center">Lorem Ipsum is simply dummy text</div>
+    </div>
+    <div class="detaljnije-kk-bottom flex flex--l-column align-items-center justify-content-around padding-xxl--left-135 padding-xxl--right-135 padding-xl--left-70 padding-m--left-57 padding-xs--left-23 padding-xxl--right-135 padding-xl--right-70 padding-m--right-57 padding-xs--right-23">
+        <div class="detaljnije-kk-bottom-all flex flex-column align-items-center margin-l--bottom-70">
+            <img class="detaljnije-kk-bottom-all-img margin-xxl--bottom-48" src="./assets/images/radionica-kr-1.png">
+            <div class="detaljnije-kk-bottom-all-line background-white margin-xxl--bottom-10"></div>
+            <div class="font--xxl-16 font-white margin-xxl--bottom-24 text-center">Lorem Ipsum is simply dummy text</div>
+            <div class="font--xxl-16 font-white font-italic text-center">“Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type</div>
+        </div>
+        <div class="detaljnije-kk-bottom-all flex flex-column align-items-center margin-l--bottom-70">
+            <img class="detaljnije-kk-bottom-all-img margin-xxl--bottom-48" src="./assets/images/radionica-kr-1.png">
+            <div class="detaljnije-kk-bottom-all-line background-white margin-xxl--bottom-10"></div>
+            <div class="font--xxl-16 font-white margin-xxl--bottom-24 text-center">Lorem Ipsum is simply dummy text</div>
+            <div class="font--xxl-16 font-white font-italic text-center">“Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type</div>
+        </div>
+        <div class="detaljnije-kk-bottom-all flex flex-column align-items-center margin-l--bottom-70">
+            <img class="detaljnije-kk-bottom-all-img margin-xxl--bottom-48" src="./assets/images/radionica-kr-1.png">
+            <div class="detaljnije-kk-bottom-all-line background-white margin-xxl--bottom-10"></div>
+            <div class="font--xxl-16 font-white margin-xxl--bottom-24 text-center">Lorem Ipsum is simply dummy text</div>
+            <div class="font--xxl-16 font-white font-italic text-center">“Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type</div>
+        </div>
+    </div>
+</div>
+<!-- blok7 -->
 
 {% endblock %}

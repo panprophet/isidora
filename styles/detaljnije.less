@@ -1,0 +1,70 @@
+@import 'variables';
+
+.detaljnije {
+    &-kk {
+        height: calc(~"100vh - 3.74rem");
+        &-bcg1 {
+            background-image: url('../assets/shared/white-round-right.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+        &-bcg2 {
+            background-image: url('../assets/shared/luk-ljubicasti-desktop.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+        &-top {
+            height: 30%;
+        }
+        &-bottom {
+            height: 70%;
+            &-all {
+                width: 30%;
+                &-img {
+                    max-width: 9vw;
+                }
+                &-line {
+                    width: 43px;
+                    height: 5px;
+                    // background-color: @purple;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1023px) {
+    .detaljnije {
+        &-kk {
+            height: auto;
+            &-bcg1 {
+                background-image: none;
+            }
+            &-bcg2 {
+                background-image: none;
+            }
+            &-bottom {
+                &-all {
+                    width: 80%;
+                    &-img {
+                        max-width: 9.375rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .detaljnije {
+        &-kk {
+            &-bottom {
+                &-all {
+                    width: 90%;
+                }
+            }
+        }
+    }
+}

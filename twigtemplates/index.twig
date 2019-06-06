@@ -2,9 +2,66 @@
 {% block content %}
 
 
-<div style="height: 3.71rem;"></div>
+<nav id="cd-vertical-nav" class="vertical_nav">
+		<ul style="list-style-type: none;">
+			<li>
+				<a href="#section1" data-number="1" class="vertical_nav-all flex justify-content-end align-items-center margin-xxl--bottom-20">
+					<span class="label cd-label">Intro</span>
+                    <span class="dot cd-dot"></span>
+				</a>
+			</li>
+			<li>
+				<a href="#section2" data-number="2" class="vertical_nav-all flex justify-content-end align-items-center margin-xxl--bottom-20">
+					{# <span class="cd-dot"></span> #}
+					<span class="label cd-label">Blizak odnos je lekovit  </span>
+                    <span class="dot cd-dot"></span>
+				</a>
+			</li>
+			<li>
+				<a href="#section3" data-number="3" class="vertical_nav-all flex justify-content-end align-items-center margin-xxl--bottom-20">
+					{# <span class="cd-dot"></span> #}
+					<span class="label cd-label">Na stari način</span>
+                    <span class="dot cd-dot"></span>
+				</a>
+			</li>
+			<li>
+				<a href="#section4" data-number="4" class="vertical_nav-all flex justify-content-end align-items-center margin-xxl--bottom-20">
+					{# <span class="cd-dot"></span> #}
+					<span class="label cd-label">Odnos je taj koji leči</span>
+                    <span class="dot cd-dot"></span>
+				</a>
+			</li>
+			<li>
+				<a href="#section5" data-number="5" class="vertical_nav-all flex justify-content-end align-items-center margin-xxl--bottom-20">
+					{# <span class="cd-dot"></span> #}
+					<span class="label cd-label">Radionica</span>
+                    <span class="dot cd-dot"></span>
+				</a>
+			</li>
+            <li>
+				<a href="#section6" data-number="6" class="vertical_nav-all flex justify-content-end align-items-center margin-xxl--bottom-20">
+					{# <span class="cd-dot"></span> #}
+					<span class="label cd-label">Blog</span>
+                    <span class="dot cd-dot"></span>
+				</a>
+			</li>
+            <li>
+				<a href="#section7" data-number="7" class="vertical_nav-all flex justify-content-end align-items-center">
+					{# <span class="cd-dot"></span> #}
+					<span class="label cd-label">Pozovi nas</span>
+                    <span class="dot cd-dot"></span>
+				</a>
+			</li>
+		</ul>
+	</nav>
+
+{# <div style="height: 3.71rem;"></div> #}
 <!-- blok1 -->
-<div id="upoznaj_sebe" class="upoznaj_sebe">
+<div id="section1" class="cd-section upoznaj_sebe" style="padding-top: 3.71rem;">
+<a href="#section2" class="cd-scroll-down cd-img-replace upoznaj_sebe-scroll flex align-items-center">
+        <div class="font--xxl-14 font-white margin-xxl--right-20">Skroluj dole</div>
+        <div class="upoznaj_sebe-scroll-line"></div>
+</a>
 {% set Home_Page_Intro = fetch("Home_Page_Intro") %}
     {% for item in Home_Page_Intro %}
     <div id="upoznaj_sebe1" class="mySlides flex flex-direction-reverse flex--l-direction">
@@ -38,7 +95,7 @@
 <!-- blok1 -->
 
 <!-- blok2 -->
-<div id="blizak_odnos" class="blizak-odnos flex flex--l-direction">
+<div id="section2" class="cd-section blizak-odnos flex flex--l-direction" style="padding-top: 3.71rem;">
     <div class="blizak-odnos-left">
         <div class="blizak-odnos-left-image-1"><img src="./assets/images/home-blok2-1.png"></div>
         <div class="blizak-odnos-left-image-2"><img src="./assets/images/home-blok2-2.png"></div>
@@ -47,7 +104,7 @@
     <div class="blizak-odnos-right flex flex-column justify-content-center">
     <img class="blizak-odnos-right-line" src="./assets/images/linija.png">
         <div class="margin-l--left-70 margin-m--left-57 margin-xs--left-23 margin-xs--right-23">
-            <div class="font--xxl-46 font--xl-42 font--xs-36 font-white flex flex--s-column margin-xxl--bottom-32 margin-xl--bottom-24"><p class="font-bold font--xxl-46 font--xl-42 font--xs-36 font-white">Blizak odnos&nbsp</p> je lekovit</div>
+            <div class="font--xxl-46 font--xl-42 font--xs-36 font-white flex flex--s-column margin-xxl--bottom-32 margin-xl--bottom-24"><span class="font-bold font--xxl-46 font--xl-42 font--xs-36 font-white">Blizak odnos&nbsp</span> je lekovit</div>
             <div class="blizak-odnos-right-border font--xxl-14 font-white margin-xxl--bottom-32 margin-xl--bottom-24 padding-xxl--left-24 flex align-items-center">Lorem Ipsum is simply dummy text of the printing</div>
             <div class="blizak-odnos-right-text">
                 <div class="font--xxl-14 font-white margin-xxl--bottom-24 margin-xl--bottom-18">Ja sam Isidora Buneta, živim i radim u Beogradu. Psiholog-psihoterapeut, poznavalac zdravog načina ishrane, treninga, života. Verujem da trajnom rešavanje problema možemo postići samo ako problemu pristupimo kako iz glave tako i iz tela.</div>
@@ -74,7 +131,7 @@
 <!-- blok2 -->
 
 <!-- blok3 -->
-<div id="stari_nacin" class="blok">
+<div id="section3" class="cd-section blok">
     <div class="blok-all flex flex-direction-reverse flex--l-direction">
         <div class="blok-all-right">
             <div class="blok-all-right-1">
@@ -101,10 +158,10 @@
 <!-- blok3 -->
 
 <!-- blok4 -->
-<div id="odnos_je_taj" class="home-blok4 flex flex-column align-items-center justify-content-center">
+<div id="section4" class="cd-section home-blok4 flex flex-column align-items-center justify-content-center">
     <div class="home-blok4-top flex align-items-center justify-content-center">
         <div class="home-blok4-top-all flex flex-column align-items-center display-l-none justify-content-center">
-            <div class="font--xxl-46 font--xl-42 font--xs-36 font-white text-center text--l-left flex flex--m-column margin-xxl--bottom-32 margin-xl--bottom-24"><p class="font-bold font--xxl-46 font--xl-42 font--xs-36 font-white">Odnos je taj&nbsp</p> koji leči</div>
+            <div class="font--xxl-46 font--xl-42 font--xs-36 font-white text-center text--l-left flex flex--m-column margin-xxl--bottom-32 margin-xl--bottom-24"><span class="font-bold font--xxl-46 font--xl-42 font--xs-36 font-white">Odnos je taj&nbsp</span> koji leči</div>
             <div class="home-blok4-top-all-line margin-xxl--bottom-10"></div>
             <div class="font-white font--xxl-16 text-center text--l-left margin-xxl--bottom-42 margin-xl--bottom-32">Lorem Ipsum is simply dummy text of the printing</div>
             <div class="font-white font--xxl-14 text-center text--l-left margin-xxl--bottom-32 margin-xl--bottom-24">Psihoterapija je terapija resavanje problema putem govora. Najbitniji je poverenje i odnos u kome se osoba oseca slobodno da zajedno sa terapeutom istazi i upozna sebe. Bez osudjivanja i lepljenja etiketa. Atmosfera u kojoj je bezbedno biti svoj. Ljudi najcesce veruju da nisu dobri i prikrivaju svoje mena. Psihoterapeut bez moralisanja i osudjivanja upoznaju klijenta. Pomocu psihoterapije mozete postati postati dobri kako niste ni sanjali da mozete biti.</div>
@@ -120,7 +177,7 @@
     </div>
     <div class="home-blok4-hide margin-l--bottom-50">
         <div class="home-blok4-top-all flex flex-column align-items-center align-items--l-start justify-content-center margin-l--left-60 margin-m--left-57 margin-xs--left-23">
-            <div class="font--xxl-46 font--xl-42 font--xs-36 font-white text-center text--l-left flex flex--m-column margin-xxl--bottom-32 margin-xl--bottom-24"><p class="font-bold font--xxl-46 font--xl-42 font--xs-36 font-white">Odnos je taj&nbsp</p> koji leči</div>
+            <div class="font--xxl-46 font--xl-42 font--xs-36 font-white text-center text--l-left flex flex--m-column margin-xxl--bottom-32 margin-xl--bottom-24"><span class="font-bold font--xxl-46 font--xl-42 font--xs-36 font-white">Odnos je taj&nbsp</span> koji leči</div>
             <div class="home-blok4-top-all-line margin-xxl--bottom-10"></div>
             <div class="font-white font--xxl-16 text-center text--l-left margin-xxl--bottom-42 margin-xl--bottom-32">Lorem Ipsum is simply dummy text of the printing</div>
             <div class="font-white font--xxl-14 text-center text--l-left margin-xxl--bottom-32 margin-xl--bottom-24">Psihoterapija je terapija resavanje problema putem govora. Najbitniji je poverenje i odnos u kome se osoba oseca slobodno da zajedno sa terapeutom istazi i upozna sebe. Bez osudjivanja i lepljenja etiketa. Atmosfera u kojoj je bezbedno biti svoj. Ljudi najcesce veruju da nisu dobri i prikrivaju svoje mena. Psihoterapeut bez moralisanja i osudjivanja upoznaju klijenta. Pomocu psihoterapije mozete postati postati dobri kako niste ni sanjali da mozete biti.</div>
@@ -138,7 +195,7 @@
 <!-- blok4 -->
 
 <!-- blok5 -->
-<div id="stari_nacin" class="blok">
+<div id="section5" class="cd-section blok">
     <div class="blok-all flex flex-direction-reverse flex--l-direction">
         <div class="blok-all-right">
             <div class="blok-all-right-1">
@@ -157,8 +214,8 @@
                 <div class="font--xxl-46 font--xl-42 font--xs-36 font-purple font-bold margin-xxl--bottom-42 margin-xl--bottom-32">Radionica</div>
                 <div class="blok-all-left-all-text flex padding-xxl--left-25 margin-xxl--bottom-77 margin-xl--bottom-32 margin-m--bottom-46 margin-s--bottom-32">
                     <img src="./assets/shared/date.png" >
-                    <p class="font--xxl-14 font-bold font-purple">{{item.Datum|date("d/m/Y")}} &nbsp</p>
-                    <p class="font--xxl-14 font-purple"> {{item.Vreme}}</p>
+                    <span class="font--xxl-14 font-bold font-purple">{{item.Datum|date("d/m/Y")}} &nbsp</span>
+                    <span class="font--xxl-14 font-purple"> {{item.Vreme}}</span>
                 </div>
                 <div class="font--xxl-14 font-purple margin-xxl--bottom-42 margin-xl--bottom-32">{{item.Opis}}</div>
                 <a class="font-italic font-bold font--xxl-14 font-purple margin-xxl--bottom-42 margin-s--bottom-32">Saznaj više</a>
