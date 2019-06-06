@@ -28,11 +28,20 @@
 .w-33 {
   width: 33.33%;
 }
+.w-30 {
+  width: 30%;
+}
 .w-25 {
   width: 25%;
 }
 .w-25--min {
   min-width: 25%;
+}
+.h-70 {
+  height: 70%;
+}
+.h-30 {
+  height: 30%;
 }
 @media only screen and (max-width: 1440px) {
   .w--xl-100 {
