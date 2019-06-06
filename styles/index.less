@@ -68,6 +68,19 @@
     // padding-top: 3.71rem;
     position: relative;
     overflow: hidden;
+    &-scroll {
+        position: absolute;
+        z-index: 10000;
+        top: 30%;
+        right: 0%;
+        transform: rotate(-90deg);
+        margin-right: -50px;
+        &-line {
+            width: 80px;
+            height: 1px;
+            background-color: @white;
+        }
+    }
     &-left {
         animation-name: fadeInLeft;
         animation-fill-mode: both;
@@ -445,6 +458,9 @@
     .upoznaj_sebe{
         flex-direction: column-reverse;
         height: auto;
+        &-scroll {
+            display: none;
+        }
         &-left{
             width: 100%;
             animation-duration: 0s;

@@ -44,6 +44,19 @@
   position: relative;
   overflow: hidden;
 }
+.upoznaj_sebe-scroll {
+  position: absolute;
+  z-index: 10000;
+  top: 30%;
+  right: 0%;
+  transform: rotate(-90deg);
+  margin-right: -50px;
+}
+.upoznaj_sebe-scroll-line {
+  width: 80px;
+  height: 1px;
+  background-color: #FFFFFF;
+}
 .upoznaj_sebe-left {
   animation-name: fadeInLeft;
   animation-fill-mode: both;
@@ -383,6 +396,9 @@
   .upoznaj_sebe {
     flex-direction: column-reverse;
     height: auto;
+  }
+  .upoznaj_sebe-scroll {
+    display: none;
   }
   .upoznaj_sebe-left {
     width: 100%;

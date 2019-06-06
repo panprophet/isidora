@@ -2537,6 +2537,19 @@ a:active {
   position: relative;
   overflow: hidden;
 }
+.upoznaj_sebe-scroll {
+  position: absolute;
+  z-index: 10000;
+  top: 30%;
+  right: 0%;
+  transform: rotate(-90deg);
+  margin-right: -50px;
+}
+.upoznaj_sebe-scroll-line {
+  width: 80px;
+  height: 1px;
+  background-color: #FFFFFF;
+}
 .upoznaj_sebe-left {
   animation-name: fadeInLeft;
   animation-fill-mode: both;
@@ -2876,6 +2889,9 @@ a:active {
   .upoznaj_sebe {
     flex-direction: column-reverse;
     height: auto;
+  }
+  .upoznaj_sebe-scroll {
+    display: none;
   }
   .upoznaj_sebe-left {
     width: 100%;
@@ -3268,7 +3284,7 @@ a:active {
   }
 }
 .pozovi_nas {
-  height: calc(100vh - 3.74rem);
+  height: 100vh;
   background: linear-gradient(180deg, #291644 0%, rgba(41, 22, 68, 0) 100%), url(../assets/images/pozovi-nas.jpg), #C4C4C4;
   background-position: center;
   background-size: cover;
