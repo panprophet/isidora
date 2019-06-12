@@ -47,12 +47,15 @@
             {# <p class="font--xxl-14 font-white"> {{item.Vreme}}</p> #}
         </div>
         <div class="font--xxl-14 font-white margin-xxl--bottom-42 margin-xl--bottom-32">{{item.Opis}}</div>
-        {# <a class="font-italic font-bold font--xxl-14 font-white margin-xxl--bottom-42 margin-s--bottom-32">Saznaj više</a> #}
-        <button class="button-midd font-white font--xxl-14 border-purple-light">SAZNAJ VIŠE</button>
+        <a href="radionica/{{item.Slug}}">
+            <button class="button-midd font-white font--xxl-14 border-purple-light">SAZNAJ VIŠE</button>
+        </a>
     </div>
 </div>
 <div class="radionica-prijavi-se flex flex--m-column-reverse align-items-center margin-xxl--left-135 margin-xl--left-70 margin-m--left-none margin-m--top-24 margin-m--bottom-24 margin-xs--left-23 margin-xs--right-23">
-    <button class="button-small font-white font--xxl-14 border-purple-light">PRIJAVI SE</button>
+    <a href="radionica/{{item.Slug}}#zakazi">
+        <button class="button-small font-white font--xxl-14 border-purple-light">PRIJAVI SE</button>
+    </a>
     <div class="font--xxl-16 font-purple text-center margin-xxl--left-40 margin-m--left-none margin-m--bottom-24">Saznaj te više i prijavi se za radionicu</div>
 </div>
 {# {% endif %} #}
