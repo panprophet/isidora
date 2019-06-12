@@ -84,7 +84,7 @@
 
 <!-- blok6 -->
 <div class="detaljnije-kk detaljnije-kk-bcg1 flex flex-column">
-    <div class="detaljnije-kk-top flex align-items-end justify-content-center font--xxl-46 font-purple font-bold text-center margin-l--top-100 margin-l--bottom-50 margin-xxl--left-24 margin-xxl--right-24">Koliko košta</div>
+    <div class="detaljnije-kk-top flex align-items-end justify-content-center font--xxl-46 font--xl-42 font--xs-36 font-purple font-bold text-center margin-l--top-100 margin-l--bottom-50 margin-xxl--left-24 margin-xxl--right-24">Koliko košta</div>
     <div class="detaljnije-kk-bottom flex flex--l-column align-items-center justify-content-around padding-xxl--left-135 padding-xxl--right-135 padding-xl--left-70 padding-m--left-57 padding-xs--left-23 padding-xxl--right-135 padding-xl--right-70 padding-m--right-57 padding-xs--right-23">
         <div class="detaljnije-kk-bottom-all flex flex-column align-items-center margin-l--bottom-70">
             <img class="detaljnije-kk-bottom-all-img margin-xxl--bottom-48" src="./assets/images/radionica-kk-1.png">
@@ -111,7 +111,7 @@
 <!-- blok7 -->
 <div class="detaljnije-kk detaljnije-kk-bcg2 background-purple flex flex-column">
     <div class="detaljnije-kk-top flex flex-column align-items-center justify-content-end margin-l--top-100 margin-l--bottom-50 margin-xxl--left-24 margin-xxl--right-24">
-        <div class="font--xxl-46 font-white font-bold text-center margin-xxl--bottom-24">Koncept radionice</div>
+        <div class="font--xxl-46 font--xl-42 font--xs-36 font-white font-bold text-center margin-xxl--bottom-24">Koncept radionice</div>
         <div class="detaljnije-kk-bottom-all-line background-white margin-xxl--bottom-24"></div>
         <div class="font--xxl-16 font-white text-center">Lorem Ipsum is simply dummy text</div>
     </div>
@@ -138,4 +138,89 @@
 </div>
 <!-- blok7 -->
 
+<!-- blok8 -->
+<div class="flex flex-column align-items-center padding-xxl--left-40 padding-xxl--right-40">
+    <div class="flex font--xxl-46 font--xl-42 font--xs-36 font-purple font-bold text-center margin-xxl--top-150 margin-xxl--bottom-80">Šta dobijaš u radionici</div>
+    <div class="flex flex--l-column align-items--l-center">
+        <div class="detaljnije-blok8-text font--xxl-16 font-purple font-italic margin-xxl--left-40 margin-xxl--right-40">{{Radionica.Sta_dobijas1 | raw}}</div>
+        <div class="detaljnije-blok8-text font--xxl-16 font-purple font-italic margin-xxl--left-40 margin-xxl--right-40 margin-l--top-50">{{Radionica.Sta_dobijas2 | raw}}</div>    
+    </div>
+</div>
+<!-- blok8 -->
+
+<!-- blok9 -->
+<div class="sivi-luk flex flex-column padding-xxl--top-200 padding-l--top-100 padding-xxl--bottom-100">
+    <div class="flex flex-column align-items-center justify-content-center">
+        <div class="font--xxl-46 font-purple font-bold margin-xxl--bottom-24">Zakaži</div>
+        <div class="kontakt-line"></div>
+        <div class="font--xxl-16 font-purple text-center margin-xxl--top-24 margin-xxl--bottom-60">Lorem Ipsum is simply dummy text</div>
+    </div>
+    <div >
+        <form id="contactform" class="flex justify-content-between flex--l-column align-items--l-center padding-xxl--left-135 padding-xxl--right-135 padding-xs--left-23 padding-xs--right-23">
+          <div class="kontakt-side flex flex-column">
+            <div class="font-xxl--18 font-grey--form margin-xxl--bottom-10 text--l-center">Ime i Prezime</div>
+            <input class="kontakt-form margin-xxl--bottom-100 margin-l--bottom-20" id="ime" type="text"/>
+            <div class="font-xxl--18 font-grey--form margin-xxl--bottom-10 text--l-center">Email</div>
+            <input class="kontakt-form margin-xxl--bottom-20" id="mail" type="text"/>
+          </div>
+          <div class="kontakt-side flex flex-column">
+            <div class="font-xxl--18 font-grey--form margin-xxl--bottom-10 text--l-center">Tekst</div>
+            <textarea class="kontakt-form margin-xxl--bottom-24" id="tekst" type="text"></textarea>
+            <div class="w-100 flex justify-content-end justify-content--l-center">
+                <button class="button-midd font-white font--xxl-14 border-purple-light">POŠALJI</button>
+            </div>
+          </div>
+        </form>
+    </div>
+</div>
+{% set Kontakt = fetch("Kontakt") %}
+
+<div class="map-black-white" id="mapid">
+    <div class="kontakt-mapa"></div>
+</div>
+<!-- blok9 -->
+
+<!-- blok10 -->
+<div class="flex flex-column">
+    <div class="detaljnije-radionice flex padding-xxl--top-200 padding-xxl--bottom-200 padding-l--top-100 padding-l--bottom-100 flex-column align-items-center justify-content-center padding-xxl--left-24 padding-xxl--right-24">
+        <div class="font--xxl-46 font--xl-42 font--xs-36 font-white font-bold text-center">Naše radionice</div>
+        <div class="detaljnije-kk-bottom-all-line background-white margin-xxl--top-24 margin-xxl--bottom-24"></div>
+        <div class="font--xxl-16 font-white text-center">Lorem Ipsum is simply dummy text of the printing</div>
+    </div>
+    <div class="flex background-purple flex--l-column padding-l--left-40 padding-l--right-40 align-items--l-center">
+    {% set Radionice = fetch("Radionica") %}
+    {% for item in Radionice %}
+    
+        <a href="radionica/{{item.Slug}}" class="detaljnije-radionice-1 flex flex-3 flex--l-none flex-column justify-content-end align-items--l-center margin-l--bottom-30" style="background-image: linear-gradient(360deg, #291644 0%, rgba(41, 22, 68, 0) 100%), url('img/{{item.Slika}}');">
+            <div class="font--xxl-36 font--s-32 font--xs-24 font-bold font-white margin-xxl--bottom-32 margin-l--bottom-24 margin-xs--bottom-10 padding-xxl--left-40 padding-xxl--right-40 text--l-center">{{item.Naziv}}</div>
+            <div class="detaljnije-radionice-1-line margin-l--bottom-24 margin-xs--bottom-10"></div>
+            <div class="detaljnije-radionice-1-opis padding-xxl--left-18 padding-l--left-none font--xxl-14 font-white margin-xxl--bottom-42 margin-l--bottom-24 margin-xs--bottom-10  margin-xxl--left-40 padding-xxl--right-40 text--l-center">{{item.Opis}}</div>
+        </a>
+        
+    {% endfor %}
+    </div>
+    
+</div>
+<!-- blok10 -->
+
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
+integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
+crossorigin=""/>
+
+<script src="https://unpkg.com/leaflet@1.3.4/dist/leaflet.js"
+integrity="sha512-nMMmRyTVoLYqjP9hrbed9S+FzjZHW5gY1TWCHA5ckwXZBadntCNs8kEqAWdrb9O7rxbCaA4lKTIWjDXZxflOcA=="
+crossorigin=""></script>
+
+<script>
+    var MapStr = '{{Kontakt.Mapa}}';
+    var lat  = Number( MapStr.split(',')[0] );
+    var lng  = Number( MapStr.split(',')[1] );
+    var map =  L.map('mapid').setView([lat, lng ], 13);
+
+    L.tileLayer('https://{s}.tile.osm.org/{z}/{x}/{y}.png', {
+        attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
+    }).addTo(map);    
+
+    var marker = new L.marker([lat, lng]).addTo(map);
+</script>
 {% endblock %}

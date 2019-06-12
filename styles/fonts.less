@@ -313,22 +313,22 @@
     }
   }
 }
-@media screen and (max-width: 1024px){
-  .font {
-    &-24 {
-      font-size: 1.25rem;
-      // line-height: 1.375rem;
-    }
-    &-14{
-      font-size: 0.875rem;
-      line-height: 1.5rem;
-      *{
-        font-size: inherit;
-        line-height: inherit;
-      }
-    }
-  }
-}
+// @media screen and (max-width: 1024px){
+//   .font {
+//     &-24 {
+//       font-size: 1.25rem;
+//       // line-height: 1.375rem;
+//     }
+//     &-14{
+//       font-size: 0.875rem;
+//       line-height: 1.5rem;
+//       *{
+//         font-size: inherit;
+//         line-height: inherit;
+//       }
+//     }
+//   }
+// }
 @media screen and (max-width: 1366px){
   .font--xl{
     &-62{
@@ -460,12 +460,22 @@
         text-align: right;
       }
     }
+      
+
   }
 
   .font{
     &--s{
       &-purple{
         color: @purple;
+      }
+      &-32 {
+        font-size: 1.5rem;
+        line-height: 1.8rem;
+        *{
+          font-size: inherit;
+          line-height: inherit;
+        }
       }
     }
   }
@@ -481,6 +491,14 @@
     &-36{
       font-size: 2.25rem;
       line-height: 2.7rem;
+    }
+    &-24 {
+      font-size: 1.25rem;
+      // line-height: 1.375rem;
+      *{
+        font-size: inherit;
+        line-height: inherit;
+      }
     }
   }
   .line {

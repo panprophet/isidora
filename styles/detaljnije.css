@@ -29,6 +29,40 @@
   width: 43px;
   height: 5px;
 }
+.detaljnije-blok8-text {
+  width: 50%;
+}
+.detaljnije-blok8-text p {
+  letter-spacing: -0.02em;
+  line-height: 1.5rem;
+}
+.detaljnije-radionice {
+  background-image: url('../assets/shared/luk-ljubicasti-desktop.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.detaljnije-radionice-1 {
+  width: 33%;
+  height: 33vw;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.detaljnije-radionice-1-opis {
+  height: 2.688rem;
+  border-left: 0.313rem solid white;
+  line-height: 2.688rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.sivi-luk {
+  background-image: url('../assets/shared/white-round-right.jpg');
+  background-size: contain;
+  background-position: bottom right;
+  background-repeat: no-repeat;
+}
 @media screen and (max-width: 1023px) {
   .detaljnije-kk {
     height: auto;
@@ -45,9 +79,33 @@
   .detaljnije-kk-bottom-all-img {
     max-width: 9.375rem;
   }
+  .detaljnije-blok8-text {
+    width: 100%;
+  }
+  .detaljnije-blok8-text p {
+    text-align: center;
+  }
+  .detaljnije-radionice-1 {
+    width: 100%;
+    height: 60vw;
+  }
+  .detaljnije-radionice-1-opis {
+    border-left: none;
+    height: auto;
+    line-height: inherit;
+    width: 60%;
+  }
+  .detaljnije-radionice-1-line {
+    width: 43px;
+    height: 5px;
+    background-color: white;
+  }
 }
 @media screen and (max-width: 480px) {
   .detaljnije-kk-bottom-all {
+    width: 90%;
+  }
+  .detaljnije-radionice-1-opis {
     width: 90%;
   }
 }

@@ -33,6 +33,40 @@
             }
         }
     }
+    &-blok8-text {
+        width: 50%;
+        p {
+            letter-spacing: -0.02em;
+            line-height: 1.5rem;
+        }
+    }
+    &-radionice {
+        background-image: url('../assets/shared/luk-ljubicasti-desktop.jpg');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        &-1 {
+            width: 33%;
+            height: 33vw;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            &-opis {
+                height: 2.688rem;
+                border-left: 0.313rem solid white;
+                line-height: 2.688rem;
+                overflow: hidden; 
+                text-overflow: ellipsis; 
+                white-space: nowrap;
+            }
+        }
+    }
+}
+.sivi-luk {
+    background-image: url('../assets/shared/white-round-right.jpg');
+    background-size: contain;
+    background-position: bottom right;
+    background-repeat: no-repeat;
 }
 
 @media screen and (max-width: 1023px) {
@@ -54,6 +88,29 @@
                 }
             }
         }
+        &-blok8-text {
+            width: 100%;
+            p {
+                text-align: center;
+            }
+        }
+        &-radionice {
+            &-1 {
+                width: 100%;
+                height: 60vw;
+                &-opis {
+                    border-left: none;
+                    height: auto;
+                    line-height: inherit;
+                    width: 60%;
+                }
+                &-line {
+                    width: 43px;
+                    height: 5px;
+                    background-color: white;
+                } 
+            }
+        }
     }
 }
 
@@ -62,6 +119,13 @@
         &-kk {
             &-bottom {
                 &-all {
+                    width: 90%;
+                }
+            }
+        }
+        &-radionice {
+            &-1 {
+                &-opis {
                     width: 90%;
                 }
             }
