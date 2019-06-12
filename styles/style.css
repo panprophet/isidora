@@ -436,19 +436,6 @@ a:active {
     text-align: right;
   }
 }
-@media screen and (max-width: 1024px) {
-  .font-24 {
-    font-size: 1.25rem;
-  }
-  .font-14 {
-    font-size: 0.875rem;
-    line-height: 1.5rem;
-  }
-  .font-14 * {
-    font-size: inherit;
-    line-height: inherit;
-  }
-}
 @media screen and (max-width: 1366px) {
   .font--xl-62 {
     font-size: 3.875rem;
@@ -557,6 +544,14 @@ a:active {
   .font--s-purple {
     color: #291644;
   }
+  .font--s-32 {
+    font-size: 1.5rem;
+    line-height: 1.8rem;
+  }
+  .font--s-32 * {
+    font-size: inherit;
+    line-height: inherit;
+  }
   .line-marker {
     height: 0.13rem;
     width: 1.8rem;
@@ -566,6 +561,13 @@ a:active {
   .font--xs-36 {
     font-size: 2.25rem;
     line-height: 2.7rem;
+  }
+  .font--xs-24 {
+    font-size: 1.25rem;
+  }
+  .font--xs-24 * {
+    font-size: inherit;
+    line-height: inherit;
   }
   .line-tiny {
     width: 2.1875rem;
@@ -4693,9 +4695,23 @@ a:active {
     width: 100%;
     height: 60vw;
   }
+  .detaljnije-radionice-1-opis {
+    border-left: none;
+    height: auto;
+    line-height: inherit;
+    width: 60%;
+  }
+  .detaljnije-radionice-1-line {
+    width: 43px;
+    height: 5px;
+    background-color: white;
+  }
 }
 @media screen and (max-width: 480px) {
   .detaljnije-kk-bottom-all {
+    width: 90%;
+  }
+  .detaljnije-radionice-1-opis {
     width: 90%;
   }
 }

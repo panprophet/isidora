@@ -182,7 +182,7 @@
 
 <!-- blok10 -->
 <div class="flex flex-column">
-    <div class="detaljnije-radionice flex padding-xxl--top-200 padding-xxl--bottom-200 flex-column align-items-center justify-content-center">
+    <div class="detaljnije-radionice flex padding-xxl--top-200 padding-xxl--bottom-200 padding-l--top-100 padding-l--bottom-100 flex-column align-items-center justify-content-center padding-xxl--left-24 padding-xxl--right-24">
         <div class="font--xxl-46 font--xl-42 font--xs-36 font-white font-bold text-center">Naše radionice</div>
         <div class="detaljnije-kk-bottom-all-line background-white margin-xxl--top-24 margin-xxl--bottom-24"></div>
         <div class="font--xxl-16 font-white text-center">Lorem Ipsum is simply dummy text of the printing</div>
@@ -191,9 +191,10 @@
     {% set Radionice = fetch("Radionica") %}
     {% for item in Radionice %}
     
-        <a href="radionica/{{item.Slug}}" class="detaljnije-radionice-1 flex flex-3 flex--l-none flex-column justify-content-end margin-l--bottom-30" style="background-image: linear-gradient(360deg, #291644 0%, rgba(41, 22, 68, 0) 100%), url('img/{{item.Slika}}');">
-            <div class="font--xxl-36 font-bold font-white margin-xxl--bottom-32 padding-xxl--left-40 padding-xxl--right-40">{{item.Naziv}}</div>
-            <div class="detaljnije-radionice-1-opis padding-xxl--left-18 font--xxl-14 font-white margin-xxl--bottom-42  margin-xxl--left-40 padding-xxl--right-40">{{item.Opis}}</div>
+        <a href="radionica/{{item.Slug}}" class="detaljnije-radionice-1 flex flex-3 flex--l-none flex-column justify-content-end align-items--l-center margin-l--bottom-30" style="background-image: linear-gradient(360deg, #291644 0%, rgba(41, 22, 68, 0) 100%), url('img/{{item.Slika}}');">
+            <div class="font--xxl-36 font--s-32 font--xs-24 font-bold font-white margin-xxl--bottom-32 margin-l--bottom-24 margin-xs--bottom-10 padding-xxl--left-40 padding-xxl--right-40 text--l-center">{{item.Naziv}}</div>
+            <div class="detaljnije-radionice-1-line margin-l--bottom-24 margin-xs--bottom-10"></div>
+            <div class="detaljnije-radionice-1-opis padding-xxl--left-18 padding-l--left-none font--xxl-14 font-white margin-xxl--bottom-42 margin-l--bottom-24 margin-xs--bottom-10  margin-xxl--left-40 padding-xxl--right-40 text--l-center">{{item.Opis}}</div>
         </a>
         
     {% endfor %}

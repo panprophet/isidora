@@ -89,9 +89,23 @@
     width: 100%;
     height: 60vw;
   }
+  .detaljnije-radionice-1-opis {
+    border-left: none;
+    height: auto;
+    line-height: inherit;
+    width: 60%;
+  }
+  .detaljnije-radionice-1-line {
+    width: 43px;
+    height: 5px;
+    background-color: white;
+  }
 }
 @media screen and (max-width: 480px) {
   .detaljnije-kk-bottom-all {
+    width: 90%;
+  }
+  .detaljnije-radionice-1-opis {
     width: 90%;
   }
 }
