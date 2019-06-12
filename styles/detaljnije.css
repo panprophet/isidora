@@ -36,6 +36,12 @@
   letter-spacing: -0.02em;
   line-height: 1.5rem;
 }
+.sivi-luk {
+  background-image: url('../assets/shared/white-round-right.jpg');
+  background-size: contain;
+  background-position: bottom right;
+  background-repeat: no-repeat;
+}
 @media screen and (max-width: 1023px) {
   .detaljnije-kk {
     height: auto;

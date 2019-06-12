@@ -68,7 +68,7 @@ textarea:focus {
   -webkit-box-shadow: none;
   box-shadow: none;
   border-color: none;
-  background-color: #FFFFFF;
+  background-color: transparent;
 }
 button:hover {
   opacity: 1;
@@ -1715,6 +1715,9 @@ a:active {
   }
   .margin-l--bottom-24 {
     margin-bottom: 1.5rem;
+  }
+  .margin-l--bottom-20 {
+    margin-bottom: 1.25rem;
   }
   .margin-l--bottom-17 {
     margin-bottom: 1.125rem;
@@ -4348,6 +4351,7 @@ a:active {
   color: #291644;
   font-size: 1.5rem;
   line-height: normal;
+  background-color: transparent;
 }
 .kontakt-side {
   width: 40%;
@@ -4611,6 +4615,12 @@ a:active {
 .detaljnije-blok8-text p {
   letter-spacing: -0.02em;
   line-height: 1.5rem;
+}
+.sivi-luk {
+  background-image: url('../assets/shared/white-round-right.jpg');
+  background-size: contain;
+  background-position: bottom right;
+  background-repeat: no-repeat;
 }
 @media screen and (max-width: 1023px) {
   .detaljnije-kk {
