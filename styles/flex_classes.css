@@ -9,6 +9,9 @@
 .flex-2 {
   flex: 2;
 }
+.flex-3 {
+  flex: 3;
+}
 .flex-direction {
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
@@ -138,6 +141,9 @@
 @media only screen and (max-width: 1023px) {
   .flex--l {
     display: flex;
+  }
+  .flex--l-none {
+    flex: none;
   }
   .flex--l-direction {
     -webkit-box-orient: vertical;

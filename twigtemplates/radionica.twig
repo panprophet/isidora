@@ -178,6 +178,29 @@
 <div class="map-black-white" id="mapid">
     <div class="kontakt-mapa"></div>
 </div>
+<!-- blok9 -->
+
+<!-- blok10 -->
+<div class="flex flex-column">
+    <div class="detaljnije-radionice flex padding-xxl--top-200 padding-xxl--bottom-200 flex-column align-items-center justify-content-center">
+        <div class="font--xxl-46 font--xl-42 font--xs-36 font-white font-bold text-center">Naše radionice</div>
+        <div class="detaljnije-kk-bottom-all-line background-white margin-xxl--top-24 margin-xxl--bottom-24"></div>
+        <div class="font--xxl-16 font-white text-center">Lorem Ipsum is simply dummy text of the printing</div>
+    </div>
+    <div class="flex background-purple flex--l-column padding-l--left-40 padding-l--right-40 align-items--l-center">
+    {% set Radionice = fetch("Radionica") %}
+    {% for item in Radionice %}
+    
+        <a href="radionica/{{item.Slug}}" class="detaljnije-radionice-1 flex flex-3 flex--l-none flex-column justify-content-end margin-l--bottom-30" style="background-image: linear-gradient(360deg, #291644 0%, rgba(41, 22, 68, 0) 100%), url('img/{{item.Slika}}');">
+            <div class="font--xxl-36 font-bold font-white margin-xxl--bottom-32 padding-xxl--left-40 padding-xxl--right-40">{{item.Naziv}}</div>
+            <div class="detaljnije-radionice-1-opis padding-xxl--left-18 font--xxl-14 font-white margin-xxl--bottom-42  margin-xxl--left-40 padding-xxl--right-40">{{item.Opis}}</div>
+        </a>
+        
+    {% endfor %}
+    </div>
+    
+</div>
+<!-- blok10 -->
 
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
 integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
@@ -199,6 +222,4 @@ crossorigin=""></script>
 
     var marker = new L.marker([lat, lng]).addTo(map);
 </script>
-<!-- blok9 -->
-
 {% endblock %}
