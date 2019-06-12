@@ -29,6 +29,13 @@
   width: 43px;
   height: 5px;
 }
+.detaljnije-blok8-text {
+  width: 50%;
+}
+.detaljnije-blok8-text p {
+  letter-spacing: -0.02em;
+  line-height: 1.5rem;
+}
 @media screen and (max-width: 1023px) {
   .detaljnije-kk {
     height: auto;
@@ -44,6 +51,12 @@
   }
   .detaljnije-kk-bottom-all-img {
     max-width: 9.375rem;
+  }
+  .detaljnije-blok8-text {
+    width: 100%;
+  }
+  .detaljnije-blok8-text p {
+    text-align: center;
   }
 }
 @media screen and (max-width: 480px) {
