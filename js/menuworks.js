@@ -30,14 +30,17 @@ function radionica_open() {
 
   if(radionicaInfo.classList.contains('radionica-info-res')) {
     radionicaInfo.classList.remove('radionica-info-res');
+    radionicaInfo.style.display = "none";
     i = true;
   }
   else {
     radionicaInfo.classList.add('radionica-info-res');
+    radionicaInfo.style.display = "flex";
   }
 
 }
 
 function radionica_close() {
   radionicaInfo.classList.remove('radionica-info-res');
+  radionicaInfo.style.display = "none";
 }

@@ -8,7 +8,6 @@
   display: none;
 }
 .radionica-info-res {
-  display: flex;
   width: 100%;
   min-height: calc(100vh - 3.71rem);
   height: auto;
