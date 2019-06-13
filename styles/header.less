@@ -96,8 +96,11 @@
   z-index: 0;
   &-container {
     width: 100%;
-    // &-top {
-    // }
+    &-top {
+      &--left-logo {
+        height: 4.375rem;
+      }
+    }
     &-bottom {
       background-color: @grey-lighter;
     }
@@ -128,6 +131,15 @@
     &-second {
       top: 0px;
       background-color: @purple;
+    }
+  }
+  .footer {
+    &-container {
+      &-top {
+        &--left-logo {
+          height: 3.125rem;
+        }
+      }
     }
   }
 }
