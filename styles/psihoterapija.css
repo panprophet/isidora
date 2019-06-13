@@ -4,6 +4,7 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  position: relative;
 }
 .psihoterapija-blok-1 {
   background-color: rgba(41, 22, 68, 0.2);
@@ -29,6 +30,12 @@
 }
 .psihoterapija-blok-1-2-3-all-text {
   border-left: 0.188rem solid #FFFFFF;
+}
+.psihoterapija-blok-icon {
+  position: absolute;
+  z-index: 10;
+  bottom: 3.125rem;
+  right: 3.125rem;
 }
 @media screen and (max-width: 1023px) {
   .psihoterapija-blok {

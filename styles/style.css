@@ -61,9 +61,10 @@ input:focus {
   -webkit-box-shadow: none;
   box-shadow: none;
   border-color: none;
-  background-color: #FFFFFF;
+  background-color: transparent;
 }
-textarea:focus {
+textarea:focus,
+textarea:active {
   outline: none;
   -webkit-box-shadow: none;
   box-shadow: none;
@@ -79,6 +80,14 @@ input:-webkit-autofill:focus,
 input:-webkit-autofill:active {
   -webkit-box-shadow: 0 0 0px 1000px #FFFFFF inset;
   box-shadow: 0 0 0px 1000px #FFFFFF inset;
+  -webkit-text-fill-color: #291644 !important;
+}
+.isidora:-webkit-autofill,
+.isidora:-webkit-autofill:hover,
+.isidora:-webkit-autofill:focus,
+.isidora:-webkit-autofill:active {
+  -webkit-box-shadow: 0 0 0px 1000px #291644 inset;
+  box-shadow: 0 0 0px 1000px #291644 inset;
   -webkit-text-fill-color: #FFFFFF !important;
 }
 p {
@@ -4071,6 +4080,7 @@ a:active {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  position: relative;
 }
 .psihoterapija-blok-1 {
   background-color: rgba(41, 22, 68, 0.2);
@@ -4096,6 +4106,12 @@ a:active {
 }
 .psihoterapija-blok-1-2-3-all-text {
   border-left: 0.188rem solid #FFFFFF;
+}
+.psihoterapija-blok-icon {
+  position: absolute;
+  z-index: 10;
+  bottom: 3.125rem;
+  right: 3.125rem;
 }
 @media screen and (max-width: 1023px) {
   .psihoterapija-blok {
