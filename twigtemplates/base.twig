@@ -30,7 +30,7 @@
         <div class="menu-main--left--phone margin-xxl--right-70 margin-xl--right-40"><span class="margin-xxl--right-24">Broj telefona</span><span><a href="tel:0118789685">011 8789-685</a></span></div>
         <div class="menu-main--left--newsletter display--m-none"><a href="">Newsletter</a></div>
     </div>
-    <div class="menu-main--right flex justify-content-between align-items-center  margin-xxl--right-52">
+    <div class="menu-main--right flex justify-content-between align-items-center margin-xxl--right-52">
         <div class="menu-main--right--social margin-xxl--right-48">
             <span class="margin-xxl--left-24 display--m-none"><a href=""><img src="./assets/shared/instagram.svg"></a></span>
             <span class="margin-xxl--left-24 display--m-none"><a href=""><img src="./assets/shared/facebook.svg"></a></span>
@@ -50,14 +50,14 @@
 <div class="menu-second font-14 font-white flex justify-content-between align-items-center" id="secondmenu">
     <a href="index" class="menu-second--left flex align-items-center margin-xxl--left-52">
         <span class="margin-xxl--right-28">
-            <svg class="logo-purple" id="logo" width="37" height="41" viewBox="0 0 37 41" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg class="{% if (_GET[0] == 'radionice') or (_GET[0] == 'radionica') %} logo-white {% else %} logo-purple {% endif %}" id="logo" width="37" height="41" viewBox="0 0 37 41" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M14.8341 8.5037C17.2496 8.5037 19.2104 6.59865 19.2104 4.25185C19.2104 1.90505 17.2496 0 14.8341 0C12.4186 0 10.4578 1.90505 10.4578 4.25185C10.4578 6.59865 12.4186 8.5037 14.8341 8.5037Z"/>
                 <path d="M22.8763 14.5234C19.0684 14.5234 15.5161 16.042 12.9301 18.444C10.3441 20.8736 8.75269 24.1591 8.75269 27.6931C8.75269 31.2271 10.3441 34.5403 12.9301 36.9699C15.5161 39.3995 19.0684 40.9181 22.8763 40.9181C26.6843 40.9181 30.2366 39.3995 32.8226 36.9699C35.4086 34.5403 37 31.2271 37 27.6931C37 24.1591 35.4086 20.8736 32.8226 18.444C30.2366 16.0143 26.7127 14.5234 22.8763 14.5234ZM34.0161 27.6931C34.0161 30.7578 32.7657 33.5739 30.7481 35.617C28.7304 37.6601 25.9455 38.9578 22.8763 38.9854C19.7788 38.9854 16.9939 37.6878 14.9762 35.617C12.9585 33.5739 11.7081 30.7578 11.7081 27.6931C11.7081 24.6561 12.9585 21.8675 14.9762 19.8244C16.9939 17.7814 19.7788 16.4837 22.8763 16.4837C25.9455 16.5113 28.7304 17.7814 30.7481 19.8244C32.7657 21.8399 34.0161 24.6561 34.0161 27.6931Z" />
                 <path d="M4.00691 0.138672H0V41.0006H4.00691V0.138672Z" />
             </svg>
         </span>
         <span>
-            <svg class="logo-purple" width="116" height="29" viewBox="0 0 116 29" fill="none" xmlns="http://www.w3.org/2000/svg" id="logo2">
+            <svg class="{% if (_GET[0] == 'radionice') or (_GET[0] == 'radionica') %} logo-white {% else %} logo-purple {% endif %}" width="116" height="29" viewBox="0 0 116 29" fill="none" xmlns="http://www.w3.org/2000/svg" id="logo2">
                 {# <g clip-path="url(#clip0)"> #}
                     <path d="M58.161 16.4883H64.0047C66.0753 16.4883 67.5017 17.7394 67.5017 19.5268C67.5017 20.8226 66.8115 21.5823 65.6612 22.2078C67.1336 22.9228 68.0079 24.0399 68.0079 25.3804C68.0079 27.3465 66.4434 28.7317 64.2348 28.7317H58.161V16.4883ZM63.6366 21.7163C65.063 21.7163 66.0753 20.912 66.0753 19.7502C66.0753 18.5884 65.063 17.7841 63.6366 17.7841H59.5874V21.7163H63.6366ZM63.8667 27.5253C65.4311 27.5253 66.5815 26.5869 66.5815 25.2464C66.5815 23.9058 65.4772 22.9675 63.8667 22.9675H59.5874V27.5253H63.8667Z" fill="white"/>
                     <path d="M78.2229 19.5273V28.777H76.8425V27.3024C76.2903 28.2854 75.0479 29.0004 73.6675 29.0004C71.5509 29.0004 70.0785 27.5258 70.0785 25.4257V19.5273H71.4589V25.2469C71.4589 26.7662 72.4252 27.7939 73.8516 27.7939C75.4621 27.7939 76.8425 26.7215 76.8425 25.4257V19.5273H78.2229Z" fill="white"/>
@@ -95,7 +95,7 @@
 
         </span>
     </a>
-    <div class="menu-second--right font-white--menu flex align-items-center margin-xxl--right-52 " id="menusecond">
+    <div class="menu-second--right {% if (_GET[0] == 'radionice') or (_GET[0] == 'radionica') %} font-purple--menu {% else %} font-white--menu {% endif %} flex align-items-center margin-xxl--right-52 " id="menusecond">
         <div class="menu-second--right-links display--xl-none">
             <span class="margin-xxl--left-52"><a href="o_meni">O meni</a></span>
             <span class="margin-xxl--left-52 margin-xl--left-40"><a href="radionice">Radionica</a></span>
@@ -288,6 +288,7 @@
 
     <script>
         var page = "{{ _GET[0] }}";
+        {# console.log('page', page); #}
     </script>
     {# <script src="./js/menu-main.js"></script> #}
     {# <script src="./js/mailer.js"></script> #}
