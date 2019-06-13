@@ -19,3 +19,25 @@ function menu_toggle(state) {
     }
   }
 }
+
+
+let menuheight2 = document.getElementById('radionicaInfo').scrollHeight;
+
+let radionicaInfo = document.getElementById('radionicaInfo');
+// let closeham = document.getElementById('closeham');
+
+function radionica_open() {
+
+  if(radionicaInfo.classList.contains('radionica-info-res')) {
+    radionicaInfo.classList.remove('radionica-info-res');
+    i = true;
+  }
+  else {
+    radionicaInfo.classList.add('radionica-info-res');
+  }
+
+}
+
+function radionica_close() {
+  radionicaInfo.classList.remove('radionica-info-res');
+}

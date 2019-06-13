@@ -9,6 +9,19 @@
     // &:first-child {
     //     padding-top: 3.71rem;
     // }
+    &-info {
+        display: none;
+        &-res {
+            display: flex;
+            width: 100%;
+            min-height: calc(~"100vh - 3.71rem");
+            height: auto;
+            top: 3.75rem;
+            background-color: @purple;
+            position: fixed;  
+            z-index: 9999999999;      
+        }
+    }
     &-prijavi-se {
         height: 5.875rem;
         background-size: cover;
@@ -80,6 +93,11 @@
                 }
             }
         }
+    }
+}
+@media screen and (max-width: 1260px) {
+    .radionica-info {
+        display: block;
     }
 }
 

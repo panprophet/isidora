@@ -8,7 +8,7 @@
   <meta name="description" content="{% block description %}{% endblock %}"/>
   {# <link rel="icon" href="images/credo-favicon.png"> #}
   {# {% if _GET[0] == 'project'%} #}
-  <meta property="og:title" content="{% if _GET[0] == 'project'%}{% block ogtitle %}{% endblock %}{% else %}CREDO AGENCY{% endif %}"/>
+  <meta property="og:title" content="{% if _GET[0] == 'project'%}{% block ogtitle %}{% endblock %}{% else %}ISIDORA{% endif %}"/>
   <meta property="og:type" content="website" />
   <meta property="og:image" content="{% if _GET[0] == 'project'%}{% block ogimage %}{% endblock %}{% else %}images/logo-c.svg{% endif %}"/>
   <meta property="og:description" content="{% if _GET[0] == 'project'%}{% block ogdesc %}{% endblock %}{% else %}CREDO{% endif %}"/>
@@ -30,12 +30,31 @@
         <div class="menu-main--left--phone margin-xxl--right-70 margin-xl--right-40"><span class="margin-xxl--right-24">Broj telefona</span><span><a href="tel:0118789685">011 8789-685</a></span></div>
         <div class="menu-main--left--newsletter display--m-none"><a href="">Newsletter</a></div>
     </div>
+
     <div class="menu-main--right flex justify-content-between align-items-center  margin-xxl--right-52">
+            {% if _GET[0] == 'radionica' %}
+                {% set Radionica = fetch("Radionica", {"id": _GET['1']})[0] %}
+                <div class="flex align-items-center display--1260-none">
+                    <img src="assets/shared/date-white.png">
+                    <div class="font--xxl-14 font-white margin-xxl--left-10">{{ Radionica.Datum | date("d.m.Y") }}</div>
+                    {% if Radionica.Otvorena == 'true' %}
+                    <div class="font--xxl-14 font-white margin-xxl--left-40">Radionica otvorena, ostalo još {{Radionica.Mesto}}</div>
+                    <div class="font--xxl-14 font-white margin-xxl--left-10">{{ Radionica.Vreme }}</div>
+                    {% endif %}
+                    {% if Radionica.Otvorena == 'false' %}
+                    <div class="font--xxl-14 font-white margin-xxl--left-40">Radionica zatvorena</div>
+                    {% endif %}
+                </div>
+                <div onClick="radionica_open()" class="radionica-info" style="cursor: pointer;">
+                    <img src="assets/shared/date-white.png">
+                </div>
+            {% endif %}
+        
         <div class="menu-main--right--social margin-xxl--right-48">
-            <span class="margin-xxl--left-24 display--m-none"><a href=""><img src="./assets/shared/instagram.svg"></a></span>
-            <span class="margin-xxl--left-24 display--m-none"><a href=""><img src="./assets/shared/facebook.svg"></a></span>
-            <span class="margin-xxl--left-24 display--m-none"><a href=""><img src="./assets/shared/pinterest.svg"></a></span>
-            <span class="margin-xxl--left-24 display--m-none"><a href=""><img src="./assets/shared/linkedin.svg"></a></span>
+            <span class="margin-xxl--left-24 display--l-none"><a href=""><img src="./assets/shared/instagram.svg"></a></span>
+            <span class="margin-xxl--left-24 display--l-none"><a href=""><img src="./assets/shared/facebook.svg"></a></span>
+            <span class="margin-xxl--left-24 display--l-none"><a href=""><img src="./assets/shared/pinterest.svg"></a></span>
+            <span class="margin-xxl--left-24 display--l-none"><a href=""><img src="./assets/shared/linkedin.svg"></a></span>
         </div>
         <div class="menu-main--right--search flex align-items-center justify-content-center">
             <span class="display--xl-none">Pretraži</span>
@@ -47,8 +66,31 @@
         </div>
     </div>
 </div>
+
+<div id="radionicaInfo" class="flex flex-column">
+    <div onClick="radionica_close()" style="cursor: pointer;" class="flex justify-content-end margin-xxl--right-48 margin-xxl--top-24"><img src="assets/shared/close-icon.svg"></div>
+    <div class="w-100 flex flex-column flex-1 align-items-center justify-content-center">
+    {% set Radionica = fetch("Radionica", {"id": _GET['1']})[0] %}
+        {% if Radionica.Otvorena == 'true' %}
+        <div class="font--xxl-24 font-white font-bold margin-xxl--left-24 margin-xxl--right-24 text-center">Radionica otvorena, ostalo još {{Radionica.Mesto}}</div>
+        <div class="font--xxl-24 font-white margin-xxl--top-48">{{Radionica.Grad}}</div>
+        <div class="font--xxl-24 font-white margin-xxl--top-24">{{Radionica.Adresa}}</div>
+        <div class="font--xxl-62 font--s-32 font-white margin-xxl--top-24 margin-xxl--bottom-48">{{ Radionica.Vreme }}</div>
+        {% endif %}
+        {% if Radionica.Otvorena == 'false' %}
+        <div class="font--xxl-14 font-white font-bold">Radionica zatvorena</div>
+        {% endif %}
+        <div class="flex margin-xxl--top-48">
+            <span><a href=""><img src="./assets/shared/instagram.svg"></a></span>
+            <span class="margin-xxl--left-24"><a href=""><img src="./assets/shared/facebook.svg"></a></span>
+            <span class="margin-xxl--left-24"><a href=""><img src="./assets/shared/pinterest.svg"></a></span>
+            <span class="margin-xxl--left-24"><a href=""><img src="./assets/shared/linkedin.svg"></a></span>
+        </div>
+    </div>
+</div>
+
 <div class="menu-second font-14 font-white flex justify-content-between align-items-center" id="secondmenu">
-    <a href="index" class="menu-second--left flex align-items-center margin-xxl--left-52">
+    <a href="index" class="menu-second--left flex align-items-center margin-xxl--left-52 margin-s--left-24">
         <span class="margin-xxl--right-28">
             <svg class="logo-white" id="logo" width="37" height="41" viewBox="0 0 37 41" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M14.8341 8.5037C17.2496 8.5037 19.2104 6.59865 19.2104 4.25185C19.2104 1.90505 17.2496 0 14.8341 0C12.4186 0 10.4578 1.90505 10.4578 4.25185C10.4578 6.59865 12.4186 8.5037 14.8341 8.5037Z"/>
@@ -95,28 +137,35 @@
 
         </span>
     </a>
-    <div class="menu-second--right font-white--menu flex align-items-center margin-xxl--right-52 " id="menusecond">
-        <div class="menu-second--right-links display--xl-none">
-            <span class="margin-xxl--left-52"><a href="o_meni">O meni</a></span>
-            <span class="margin-xxl--left-52 margin-xl--left-40"><a href="radionice">Radionica</a></span>
-            <span class="margin-xxl--left-52 margin-xl--left-40"><a href="mrsavljenje">Mršavljenje</a></span>
-            <span class="margin-xxl--left-52 margin-xl--left-40"><a href="psihoterapija">Psihoterapija</a></span>
-            <span class="margin-xxl--left-52 margin-xl--left-40"><a href="video">Video</a></span>
-            <span class="margin-xxl--left-52 margin-xl--left-40"><a href="blog">Blog</a></span>
+    <div class="flex">
+    {% if _GET[0] == 'radionica' %}
+        <div onClick="radionica_open()" class="radionica-info margin-xxl--left-24" style="cursor: pointer;">
+            <img src="assets/shared/date-white.png">
         </div>
-        <div class="menu-second--right-kontakt flex align-items-center margin-xxl--left-52 display--xl-none">
-            <span class="display--xl-none">
-                <svg class="logo-white" width="20" height="22" viewBox="0 0 20 22" fill="none" xmlns="http://www.w3.org/2000/svg" id="contacticon">
-                    <path d="M18 6H8V12H6V4H12V0H4V6H2C0.9 6 0 6.9 0 8V20C0 21.1 0.9 22 2 22H18C19.1 22 20 21.1 20 20V8C20 6.9 19.1 6 18 6Z" />
+    {% endif %}
+        <div class="menu-second--right font-white--menu flex align-items-center margin-xxl--right-52 " id="menusecond">
+            <div class="menu-second--right-links display--xl-none">
+                <span class="margin-xxl--left-52"><a href="o_meni">O meni</a></span>
+                <span class="margin-xxl--left-52 margin-xl--left-40"><a href="radionice">Radionica</a></span>
+                <span class="margin-xxl--left-52 margin-xl--left-40"><a href="mrsavljenje">Mršavljenje</a></span>
+                <span class="margin-xxl--left-52 margin-xl--left-40"><a href="psihoterapija">Psihoterapija</a></span>
+                <span class="margin-xxl--left-52 margin-xl--left-40"><a href="video">Video</a></span>
+                <span class="margin-xxl--left-52 margin-xl--left-40"><a href="blog">Blog</a></span>
+            </div>
+            <div class="menu-second--right-kontakt flex align-items-center margin-xxl--left-52 display--xl-none">
+                <span class="display--xl-none">
+                    <svg class="logo-white" width="20" height="22" viewBox="0 0 20 22" fill="none" xmlns="http://www.w3.org/2000/svg" id="contacticon">
+                        <path d="M18 6H8V12H6V4H12V0H4V6H2C0.9 6 0 6.9 0 8V20C0 21.1 0.9 22 2 22H18C19.1 22 20 21.1 20 20V8C20 6.9 19.1 6 18 6Z" />
+                    </svg>
+                </span>
+                <span class="margin-xxl--left-10 display--xl-none"><a href="kontakt">Kontakt</a></span>
+            </div>
+            <div class="display--xxl-none display--xl-flex">
+                <svg class="ham-white" xmlns="http://www.w3.org/2000/svg" width="23" height="8" viewBox="0 0 23 8" fill="none" id="ham" onClick="menu_toggle(true)">
+                    <line y1="0.5" x2="23" y2="0.5" />
+                    <line y1="7.5" x2="18" y2="7.5" />
                 </svg>
-            </span>
-            <span class="margin-xxl--left-10 display--xl-none"><a href="kontakt">Kontakt</a></span>
-        </div>
-        <div class="display--xxl-none display--xl-flex">
-            <svg class="ham-white" xmlns="http://www.w3.org/2000/svg" width="23" height="8" viewBox="0 0 23 8" fill="none" id="ham" onClick="menu_toggle(true)">
-                <line y1="0.5" x2="23" y2="0.5" />
-                <line y1="7.5" x2="18" y2="7.5" />
-            </svg>
+            </div>
         </div>
     </div>
 </div>
