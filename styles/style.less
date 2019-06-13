@@ -62,9 +62,9 @@ input:focus {
     -webkit-box-shadow: none;
             box-shadow: none;
     border-color: none;
-    background-color: @white;
+    background-color: transparent;
 }
-textarea:focus {
+textarea:focus, textarea:active {
     outline: none;
     -webkit-box-shadow: none;
             box-shadow: none;
@@ -80,6 +80,14 @@ input:-webkit-autofill:focus,
 input:-webkit-autofill:active {
     -webkit-box-shadow: 0 0 0px 1000px @white inset;
     box-shadow: 0 0 0px 1000px @white inset;
+    -webkit-text-fill-color: @purple !important;
+}
+.isidora:-webkit-autofill,
+.isidora:-webkit-autofill:hover,
+.isidora:-webkit-autofill:focus,
+.isidora:-webkit-autofill:active {
+    -webkit-box-shadow: 0 0 0px 1000px @purple inset;
+    box-shadow: 0 0 0px 1000px @purple inset;
     -webkit-text-fill-color: @white !important;
 }
 p {
