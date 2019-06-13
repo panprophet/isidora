@@ -2393,6 +2393,11 @@ a:active {
     height: 100%;
   }
 }
+@media only screen and (max-width: 1260px) {
+  .display--1260-none {
+    display: none;
+  }
+}
 @media only screen and (max-width: 1023px) {
   .display-l-none {
     display: none;
@@ -4276,6 +4281,19 @@ a:active {
   background-position: top center;
   background-repeat: no-repeat;
 }
+.radionica-info {
+  display: none;
+}
+.radionica-info-res {
+  display: flex;
+  width: 100%;
+  min-height: calc(100vh - 3.71rem);
+  height: auto;
+  top: 3.75rem;
+  background-color: #291644;
+  position: fixed;
+  z-index: 9999999999;
+}
 .radionica-prijavi-se {
   height: 5.875rem;
   background-size: cover;
@@ -4332,6 +4350,11 @@ a:active {
   }
   .radionica-1-2-3-all {
     width: 76%;
+  }
+}
+@media screen and (max-width: 1260px) {
+  .radionica-info {
+    display: block;
   }
 }
 @media screen and (max-width: 1023px) {
