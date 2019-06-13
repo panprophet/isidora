@@ -3,10 +3,12 @@ let footerCont;
 
 let content = document.querySelector('#content');
 let menusecond = document.getElementById("menusecond");
+let menusecondTop = menusecond.getBoundingClientRect().top;
 
 let footerTop;
 
 let winPosition = 0;
+let winPrevPos = 0;
 
 let elements = [];
 let elementsLength = 0;
@@ -37,20 +39,41 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     }
     winPosition = window.scrollY;
-    setMenuColor();
+    // setMenuColor();
+    console.log(winWidth, winPosition, prevId);
+
   }
 
 });
-function setMenuColor(){
-  winPosition = window.scrollY;
+function setMenuColor(position, direction){
+  winPosition = position;
+
   for(let i = 0; i < elementsLength; i++) {
-    if(content.children[i].offsetTop < winPosition && content.children[i].offsetTop + content.children[i].scrollHeight > winPosition) {
-      if(content.children[i]['id'] !== prevId){
-        svg_color();
-        menuFontColor();
-        prevId = content.children[i]['id'];
-      }
-    }
+    // console.log(content.children[i]['id'], content.children[i].scrollHeight + content.children[i].offsetTop, content.children[i].offsetTop, 'menusecond: ' + (menusecondTop + winPosition));
+
+    // if(content.children[i].offsetTop < winPosition && content.children[i].offsetTop + content.children[i].scrollHeight > winPosition) {
+      // if(content.children[i]['id'] !== prevId && i === 2){
+      //   console.log(prevId, elementsLength);
+      //   svg_color();
+      //   // menuFontColor();
+      //   prevId = content.children[i]['id'];
+      // } else
+      // if(content.children[i]['id'] !== prevId){
+        // console.log( prevId, elementsLength);
+        // svg_color();
+        // menuFontColor();
+        // prevId = content.children[i]['id'];
+
+        if ( content.children[i].offsetTop <= menusecondTop + winPosition ) {
+          // if(){
+            if(prevId !== content.children[i]['id']) {
+            console.log('In the viewport!', content.children[i]['id'], content.children[i].offsetTop, menusecondTop + winPosition, prevId);
+            prevId = content.children[i]['id'];
+            }
+          // }
+        }
+      // }
+    // }
   }
 }
 
@@ -81,12 +104,25 @@ function svg_color() {
 }
 window.addEventListener("scroll", function(e) {
   e.preventDefault();
+  winPrevPos = winPosition;
+  winPosition = window.scrollY;
   if(winWidth > 1024) {
-    setMenuColor();
+    // setMenuColor();
   // if(winPosition <= footerTop.top) {
   //   footerCont.style.marginTop =  "" + (120 + (winPosition - elements[indexLast]['position'].bottom)) + "px";
   // }
+    if(winPrevPos - winPosition > 0) {
+      // ides na dole
+      console.log('ides na gore ');
+      setMenuColor(winPosition, 'up')
+
+    } else {
+      console.log('ides na dole')
+      setMenuColor(winPosition, 'down')
+    }
   }
+  // console.log('trajectory: ', winPrevPos - winPosition);
+
 });
 function menuFontColor(){
    if(menusecond.classList.contains("font-purple--menu")) {
@@ -96,4 +132,8 @@ function menuFontColor(){
     menusecond.classList.remove("font-white--menu");
     menusecond.classList.add("font-purple--menu");
   }
+};
+var isInViewport = function (elem) {
+  var bounding = elem.getBoundingClientRect();
+  return ( bounding.top >= 0 && bounding.left >=0 && bounding.bottom <= (window.innerHeight || document.documentElement.clientHeight) && bounding.right <= (window.innerWidth || document.documentElement.clientWidth));
 };
