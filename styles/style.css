@@ -338,6 +338,14 @@ a:active {
   font-size: 1.375rem;
   line-height: 1.625rem;
 }
+.font--xxl-18 {
+  font-size: 1.125rem;
+  line-height: 1.35rem;
+}
+.font--xxl-18 * {
+  font-size: inherit;
+  line-height: inherit;
+}
 .font--xxl-16 {
   font-size: 1rem;
   line-height: 1.5rem;
@@ -1518,6 +1526,9 @@ a:active {
   .margin-xl--top-50 {
     margin-top: 3.125rem;
   }
+  .margin-xl--top-32 {
+    margin-top: 2rem;
+  }
   .margin-xl--top-24 {
     margin-top: 1.5rem;
   }
@@ -1702,6 +1713,9 @@ a:active {
 @media screen and (max-width: 1023px) {
   .margin-l--top-100 {
     margin-top: 6.25rem;
+  }
+  .margin-l--top-80 {
+    margin-top: 5rem;
   }
   .margin-l--top-70 {
     margin-top: 4.375rem;
@@ -2379,6 +2393,11 @@ a:active {
     height: 100%;
   }
 }
+@media only screen and (max-width: 1260px) {
+  .display--1260-none {
+    display: none;
+  }
+}
 @media only screen and (max-width: 1023px) {
   .display-l-none {
     display: none;
@@ -2530,6 +2549,9 @@ a:active {
 .footer-container {
   width: 100%;
 }
+.footer-container-top--left-logo {
+  height: 4.375rem;
+}
 .footer-container-bottom {
   background-color: #F4F4F5;
 }
@@ -2554,6 +2576,9 @@ a:active {
   .menu-second {
     top: 0px;
     background-color: #291644;
+  }
+  .footer-container-top--left-logo {
+    height: 3.125rem;
   }
 }
 .vertical_nav {
@@ -4250,11 +4275,36 @@ a:active {
     width: 80%;
   }
 }
+.pretraga {
+  width: 90%;
+  border: 0;
+  border-bottom: 1px solid #5C5C5C;
+  color: #FFFFFF;
+  font-size: 2.75rem;
+  line-height: 3.313rem;
+  text-align: center;
+  background-color: #291644;
+}
+.pretraga::placeholder {
+  color: #FFFFFF;
+}
 .radionica {
   height: calc(100vh  - 5.875rem - 3.71rem);
   background-size: cover;
   background-position: top center;
   background-repeat: no-repeat;
+}
+.radionica-info {
+  display: none;
+}
+.radionica-info-res {
+  width: 100%;
+  min-height: calc(100vh - 3.71rem);
+  height: auto;
+  top: 3.75rem;
+  background-color: #291644;
+  position: fixed;
+  z-index: 9999999999;
 }
 .radionica-prijavi-se {
   height: 5.875rem;
@@ -4312,6 +4362,11 @@ a:active {
   }
   .radionica-1-2-3-all {
     width: 76%;
+  }
+}
+@media screen and (max-width: 1260px) {
+  .radionica-info {
+    display: block;
   }
 }
 @media screen and (max-width: 1023px) {

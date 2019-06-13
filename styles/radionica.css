@@ -1,8 +1,33 @@
+.pretraga {
+  width: 90%;
+  border: 0;
+  border-bottom: 1px solid #5C5C5C;
+  color: #FFFFFF;
+  font-size: 2.75rem;
+  line-height: 3.313rem;
+  text-align: center;
+  background-color: #291644;
+}
+.pretraga::placeholder {
+  color: #FFFFFF;
+}
 .radionica {
   height: calc(100vh  - 5.875rem - 3.71rem);
   background-size: cover;
   background-position: top center;
   background-repeat: no-repeat;
+}
+.radionica-info {
+  display: none;
+}
+.radionica-info-res {
+  width: 100%;
+  min-height: calc(100vh - 3.71rem);
+  height: auto;
+  top: 3.75rem;
+  background-color: #291644;
+  position: fixed;
+  z-index: 9999999999;
 }
 .radionica-prijavi-se {
   height: 5.875rem;
@@ -60,6 +85,11 @@
   }
   .radionica-1-2-3-all {
     width: 76%;
+  }
+}
+@media screen and (max-width: 1260px) {
+  .radionica-info {
+    display: block;
   }
 }
 @media screen and (max-width: 1023px) {
