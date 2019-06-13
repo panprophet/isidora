@@ -24,7 +24,6 @@ function menu_toggle(state) {
 let menuheight2 = document.getElementById('radionicaInfo').scrollHeight;
 
 let radionicaInfo = document.getElementById('radionicaInfo');
-// let closeham = document.getElementById('closeham');
 
 function radionica_open() {
 
@@ -44,3 +43,57 @@ function radionica_close() {
   radionicaInfo.classList.remove('radionica-info-res');
   radionicaInfo.style.display = "none";
 }
+
+// pretraga
+let pretraga = document.getElementById('js-pretraga');
+let search = document.getElementById('js-search');
+
+search.addEventListener('click', function(){
+  if (pretraga.classList.contains('radionica-info-res')) {
+      pretraga.classList.remove('radionica-info-res');
+      pretraga.style.display = "none";
+  }
+  else {
+      pretraga.classList.add('radionica-info-res');
+      pretraga.style.display = "flex";
+      // meni.classList.remove('radionica-info-res');
+  }
+  prefetchSearch()
+});
+
+var serachArray = [];
+var substringMatcher = function() {
+    return function findMatches(q, cb) {
+        q = q.replace(/[-[\]{}()*+?.,\\^$|#\s]/g, '\\$&');
+        var matches, substringRegex;
+        matches = [];
+        substrRegex = new RegExp(q, 'i');
+        $.each(serachArray, function(i, item) {
+            if (substrRegex.test(item.Naslov) || substrRegex.test(item.Text)) {
+                matches.push(item);
+            }
+        });
+        cb(matches);
+    };
+};
+var searchInit=false;
+function prefetchSearch(){
+    $('#typeahead_m')[0].focus();
+    if (searchInit) return;
+    searchInit=true;
+    $.getJSON("cms/api.php/?query=_search", function(result){
+        serachArray = result        
+    });
+}
+
+$('#typeahead_m').typeahead({highlight:true}, {
+    name: 'countries',
+    display: 'Naslov',
+    source: substringMatcher(),
+    limit: 10
+}); 
+
+$('#typeahead_m')[0].focus();
+$('#typeahead_m').bind('typeahead:select', function(ev, suggestion) {
+    document.location = suggestion.href+'/'+suggestion.Slug
+});   
