@@ -149,7 +149,9 @@
                 <div class="blok-all-left-all-text padding-xxl--left-25 font--xxl-14 font-purple margin-xxl--bottom-77 margin-xl--bottom-32 margin-m--bottom-46 margin-s--bottom-32">Lorem Ipsum is simply dummy text of the printing</div>
                 <div class="font--xxl-14 font-purple margin-xxl--bottom-42 margin-xl--bottom-32 padding-xxl--left-15">Trajno rešavanje prekomerne kilaže možete postići samo ako odklonite uzrok zašto se prejedate. Potrebno je stvarati zdravije navike a ne drzati dijetu. Sta god ste u svom zivotu drzali ono je bilo tu samo dok ga drzite. Isto je i sa dijetom. Dijetom resavamo samo trenutno posledicu. 15 godina sam pokusavla da smrsam, uskracivala sebi hranu i na kraju sam dosla do 110kg. Kao da sam bila na rezimu koji me je gojio.</div>
                 <a href="mrsavljenje" class="font-italic font-bold font--xxl-14 font-purple margin-xxl--bottom-42 margin-s--bottom-32">Saznaj više</a>
-                <button class="button-big font-white font--xxl-14 background-purple">ZAKAŽI SVOJ TERMIN</button>
+                <a href="kontakt">
+                    <button class="button-big font-white font--xxl-14 background-purple">ZAKAŽI SVOJ TERMIN</button>
+                </a>
             </div>
         </div>
         {# <div class="index-blok-all-hide"></div> #}
@@ -166,7 +168,7 @@
             <div class="font-white font--xxl-16 text-center text--l-left margin-xxl--bottom-42 margin-xl--bottom-32">Lorem Ipsum is simply dummy text of the printing</div>
             <div class="font-white font--xxl-14 text-center text--l-left margin-xxl--bottom-32 margin-xl--bottom-24">Psihoterapija je terapija resavanje problema putem govora. Najbitniji je poverenje i odnos u kome se osoba oseca slobodno da zajedno sa terapeutom istazi i upozna sebe. Bez osudjivanja i lepljenja etiketa. Atmosfera u kojoj je bezbedno biti svoj. Ljudi najcesce veruju da nisu dobri i prikrivaju svoje mena. Psihoterapeut bez moralisanja i osudjivanja upoznaju klijenta. Pomocu psihoterapije mozete postati postati dobri kako niste ni sanjali da mozete biti.</div>
             <div class="flex flex--xs-column">
-                <a href="#">
+                <a href="kontakt">
                     <button class="button-big font-white font--xxl-14 background-purple-darker margin-xxl--right-24 margin-xs--bottom-24">ZAKAŽI SVOJ TERMIN</button>
                 </a>
                 <a data-fancybox  href="https://www.youtube.com/embed/2vb3tAajXIM">
@@ -182,7 +184,7 @@
             <div class="font-white font--xxl-16 text-center text--l-left margin-xxl--bottom-42 margin-xl--bottom-32">Lorem Ipsum is simply dummy text of the printing</div>
             <div class="font-white font--xxl-14 text-center text--l-left margin-xxl--bottom-32 margin-xl--bottom-24">Psihoterapija je terapija resavanje problema putem govora. Najbitniji je poverenje i odnos u kome se osoba oseca slobodno da zajedno sa terapeutom istazi i upozna sebe. Bez osudjivanja i lepljenja etiketa. Atmosfera u kojoj je bezbedno biti svoj. Ljudi najcesce veruju da nisu dobri i prikrivaju svoje mena. Psihoterapeut bez moralisanja i osudjivanja upoznaju klijenta. Pomocu psihoterapije mozete postati postati dobri kako niste ni sanjali da mozete biti.</div>
             <div class="flex flex--xs-column">
-                <a href="#">
+                <a href="kontakt">
                     <button class="button-big font-white font--xxl-14 background-purple-darker margin-xxl--right-24 margin-xs--bottom-24">ZAKAŽI SVOJ TERMIN</button>
                 </a>
                 <a data-fancybox  href="https://www.youtube.com/embed/2vb3tAajXIM">
@@ -218,8 +220,10 @@
                     <span class="font--xxl-14 font-purple"> {{item.Vreme}}</span>
                 </div>
                 <div class="font--xxl-14 font-purple margin-xxl--bottom-42 margin-xl--bottom-32">{{item.Opis}}</div>
-                <a class="font-italic font-bold font--xxl-14 font-purple margin-xxl--bottom-42 margin-s--bottom-32">Saznaj više</a>
-                <button class="button-big font-white font--xxl-14 background-purple">ZAKAŽI SVOJ TERMIN</button>
+                <a href="radionica/{{item.Slug}}" class="font-italic font-bold font--xxl-14 font-purple margin-xxl--bottom-42 margin-s--bottom-32">Saznaj više</a>
+                <a href="kontakt">
+                    <button class="button-big font-white font--xxl-14 background-purple">ZAKAŽI SVOJ TERMIN</button>
+                </a>
             {% endif %}
             {% endfor %}
             </div>

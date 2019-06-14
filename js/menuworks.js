@@ -97,3 +97,28 @@ $('#typeahead_m')[0].focus();
 $('#typeahead_m').bind('typeahead:select', function(ev, suggestion) {
     document.location = suggestion.href+'/'+suggestion.Slug
 });   
+
+
+// copy link
+
+// var clipboard = new Clipboard('.btn-copy', {
+//   text: function() {
+//       return document.querySelector('input[type=hidden]').value;
+//   }
+// });
+// $("#input-url").val(location.href);
+// //safari
+// if (navigator.vendor.indexOf("Apple")==0 && /\sSafari\//.test(navigator.userAgent)) {
+//    $('.btn-copy').on('click', function() {
+// var msg = window.prompt("Copy this link", location.href);
+
+// });
+//   }
+// function CopyURL() {
+//   var copyText = document.getElementById("input-url").value;
+//   // console.log(copyText);
+  
+//   // copyText.value();
+//   document.execCommand(this.copyText);
+//   alert (copyText);
+// }

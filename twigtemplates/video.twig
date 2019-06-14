@@ -8,11 +8,11 @@
 <!-- blok1 -->
 <div id="najnoviji_blog" class="najnoviji_blog">
     <div class="najnoviji_blog-all flex flex-direction-reverse flex--l-direction">
-    {% set Video = fetch("Video") | first %}
+    {% set video = fetch("Video") | first %}
         <div class="najnoviji_blog-all-right">
             <div class="najnoviji_blog-all-right-1">
                 <div class="najnoviji_blog-all-right-1-2">
-                    <div class="najnoviji_blog-all-right-1-2-image" style="background-image: url('img/{{Video.Slika}}')">
+                    <div class="najnoviji_blog-all-right-1-2-image" style="background-image: url('img/{{video.Slika}}')">
                         <div class="najnoviji_blog-all-right-1-2-image-gr"></div>
                     </div>
                 </div>
@@ -22,9 +22,9 @@
             <div class="najnoviji_blog-all-left-all flex flex-column">
                 <div class="font--xxl-46 font--xl-42 font--xs-36 font-white font-bold margin-xxl--bottom-42 margin-xl--bottom-32">Video</div>
                 <div class="najnoviji_blog-all-left-all-text font--xxl-14 font-white flex padding-xxl--left-25 margin-xxl--bottom-77 margin-xl--bottom-32 margin-m--bottom-46 margin-s--bottom-32">Novi video &nbsp {{Video.Datum|date("d.m.Y")}}</div>
-                <div class="font--xxl-36 font-white font-bold margin-xxl--bottom-42 margin-xl--bottom-32">{{Video.Naslov}}</div>
-                <div class="font--xxl-14 font-white margin-xxl--bottom-42 margin-xl--bottom-32">{{Video.Text}}</div>
-                <a data-fancybox class="video-url" onclick="url2embed('{{Video.Video}}');">
+                <div class="font--xxl-36 font-white font-bold margin-xxl--bottom-42 margin-xl--bottom-32">{{video.Naslov}}</div>
+                <div class="font--xxl-14 font-white margin-xxl--bottom-42 margin-xl--bottom-32">{{video.Text}}</div>
+                <a data-fancybox id="video-url" onclick="url2embed('{{video.Video}}');">
                     <button class="button-midd font-white font--xxl-14 background-purple-darker">SAZNAJ VIŠE</button>
                 </a>
             </div>
@@ -42,7 +42,7 @@
     <!-- posts -->
     <div class="flex flex-wrap padding-xxl--left-180 padding-xl--left-none padding-xxl--right-180 padding-xl--right-none justify-content-center">
         {% for item in Video %}
-        {% if loop.index > 1 and item.Top_Video == 'true' %}
+        {% if  loop.index > 1 and item.Top_Video == 'true' %}
         <div class="blog-post flex flex-column justify-content-between margin-xxl--left-12_5 margin-xxl--right-12_5 margin-xxl--bottom-48">
             <div class="flex flex--640-column">
                 <div class="blog-post-width flex flex-column margin-xxl--right-20">
@@ -56,7 +56,7 @@
             </div>
             <div class="flex justify-content--640-between padding-left--640-20 padding-xxl--left-40 padding-right--640-20">
                 <a class="blog-post-width-2 blog-post-text font--xxl-16 margin-xxl--top-20 margin-xxl--bottom-40">Podeli</a>
-                <a data-fancybox onclick="url2embed('{{item.Video}}');" class="video-url blog-post-text font--xxl-16  margin-xxl--top-20 margin-xxl--bottom-40">Vidi više</a>
+                <a data-fancybox onclick="url2embed('{{item.Video}}');" id="video-url" class="blog-post-text font--xxl-16  margin-xxl--top-20 margin-xxl--bottom-40">Vidi više</a>
             </div>
         </div>
         {% endif %}

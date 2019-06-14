@@ -125,9 +125,9 @@
                 </div>
                 <div class="blok4-all-left-all-text font--xxl-14 font-white flex padding-xxl--left-25 margin-xxl--bottom-42 margin-xl--bottom-32">Text</div>
                 <div class="font--xxl-14 font-white margin-xxl--bottom-42 margin-xl--bottom-32">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. - s</div>
-                <div class="margin-xxl--bottom-42 flex flex--xs-column">
+                <a href="kontakt" class="margin-xxl--bottom-42 flex flex--xs-column">
                     <button class="button-midd font-white font--xxl-14 background-purple-darker margin-xxl--right-10 margin-xs--right-none margin-xs--bottom-10">ZAKAŽI SEANSU</button>
-                </div>
+                </a>
                 <div class="position flex">
                     <div class="position-1 flex align-items-center cursor-pointer" onClick="Blok1()">
                         <div class="opacity font-white font--xxl-36 font-bold padding-xxl--right-10">01</div>
@@ -166,17 +166,10 @@
         <div class="margin-l--left-70 margin-m--left-57 margin-xs--left-23 margin-xs--right-23">
             <div class="font--xxl-46 font--xl-42 font--xs-36 font-white flex flex--s-column margin-xxl--bottom-32 margin-xl--bottom-24"><p class="font-bold font--xxl-46 font--xl-42 font--xs-36 font-white">Blizak odnos&nbsp</p> je lekovit</div>
             <div class="blizak-odnos-right-border font--xxl-14 font-white margin-xxl--bottom-32 margin-xl--bottom-24 padding-xxl--left-24 flex align-items-center">Lorem Ipsum is simply dummy text of the printing</div>
-            {# <div class="blizak-odnos-right-text">
-                <div class="font--xxl-14 font-white margin-xxl--bottom-24 margin-xl--bottom-18">Ja sam Isidora Buneta, živim i radim u Beogradu. Psiholog-psihoterapeut, poznavalac zdravog načina ishrane, treninga, života. Verujem da trajnom rešavanje problema možemo postići samo ako problemu pristupimo kako iz glave tako i iz tela.</div>
-                <div class="font--xxl-14 font-white margin-xxl--bottom-32 margin-xl--bottom-24">Kroz prihoterapijski odnos pomažem ljudima da napuste obrasce koji nisu njihovi i da žive u skladu sa sobom. Uspela sam trajno da smršam 42kg. Rešila sam psihološke uzroke prejedanja i mnogo lakše promenila način ishrane.</div>
-            </div> #}
-            {# <a href="o_meni">
-                <button class="button-midd font-white font--xxl-14 background-purple-darker margin-xxl--bottom-32 margin-xl--bottom-24">SAZNAJ VIŠE</button>
-            </a> #}
         </div>
         <div class="margin-l--left-70 margin-m--left-57 margin-xs--left-23 margin-l--top-24 margin-l--bottom-50">
             <div class="font--xxl-24 font-bold font-italic font-white margin-xxl--bottom-32 margin-xl--bottom-24">Šta su o meni rekli</div>
-            <div class="owl-carousel owl-theme owl-loaded">
+            <div id="owl-one" class="owl-carousel owl-theme owl-loaded">
                 {% set Testimonial = fetch("Testimonial") %}
                 {% for item in Testimonial %}
                     <div>

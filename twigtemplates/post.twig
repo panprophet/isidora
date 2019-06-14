@@ -7,16 +7,20 @@
     <div class="post-image margin-xxl--bottom-48" style="background-image: url('img/{{Post.Slika}}')"></div>
 </div>
 <div class="post-share flex align-items-center justify-content-center">
-    <a href="http://www.facebook.com/sharer/sharer.php?u={{_BASE | url_encode}}prost%2F{{post.Slug | url_encode}}" target="_blank">
+    <a href="http://www.facebook.com/sharer/sharer.php?u={{_BASE | url_encode}}prost%2F{{Post.Slug | url_encode}}" target="_blank">
         <img class="margin-xxl--right-48" src="./assets/shared/icon-facebook.png">
     </a>
-    <a href="https://twitter.com/share?url={{post.Slug | url_encode}}&amp;url={{_BASE | url_encode}}prost%2F{{post.Slug | url_encode}}" target="_blank">
+    <a href="https://twitter.com/share?url={{Post.Slug | url_encode}}&amp;url={{_BASE | url_encode}}prost%2F{{post.Slug | url_encode}}" target="_blank">
         <img class="margin-xxl--right-48" src="./assets/shared/icon-twitter.png">
     </a>
-    <a href="http://www.linkedin.com/shareArticle?mini=true&amp;url={{post.Slug | url_encode}}&amp;url={{_BASE | url_encode}}prost%2F{{post.Slug | url_encode}}" target="_blank">
+    <a href="http://www.linkedin.com/shareArticle?mini=true&amp;url={{Post.Slug | url_encode}}&amp;url={{_BASE | url_encode}}prost%2F{{post.Slug | url_encode}}" target="_blank">
         <img class="margin-xxl--right-48" src="./assets/shared/icon-linkedin.png">
     </a>
     <img src="./assets/shared/icon-copy-link.png">
+    {# <a>
+        <input type="hidden" id="input-url" value="{{_BASE | url_encode}}post/{{Post.Slug}}">
+        <img onClick="CopyURL()" src="./assets/shared/icon-copy-link.png">
+    </a> #}
 </div>
 <div class="flex justify-content-center margin-xxl--top-48 margin-xxl--bottom-48">
     <div class="post-text">{{Post.Text | raw}}</div>
@@ -46,8 +50,8 @@
                 <div class="flex-1 blog-post-text font--xxl-16 margin-xxl--right-20 margin-xxl--left-20 margin-xxl--top-20 margin-xxl--bottom-20">{{prev_project.Opis}}</div>
             </div>
             <div class="flex justify-content--640-between padding-left--640-20 padding-xxl--left-40 padding-right--640-20">
-                <a class="blog-post-width-2 blog-post-text font--xxl-16 margin-xxl--top-20 margin-xxl--bottom-40">Share</a>
-                <a href="post/{{prev_project.Slug}}" class="blog-post-text font--xxl-16  margin-xxl--top-20 margin-xxl--bottom-40">Read more</a>
+                <a class="blog-post-width-2 blog-post-text font--xxl-16 margin-xxl--top-20 margin-xxl--bottom-40">Podeli</a>
+                <a href="post/{{prev_project.Slug}}" class="blog-post-text font--xxl-16  margin-xxl--top-20 margin-xxl--bottom-40">Saznaj više</a>
             </div>
         </div>
 
@@ -65,8 +69,8 @@
                 <div class="flex-1 blog-post-text font--xxl-16 margin-xxl--right-20 margin-xxl--left-20 margin-xxl--top-20 margin-xxl--bottom-20">{{next_project.Opis}}</div>
             </div>
             <div class="flex justify-content--640-between padding-left--640-20 padding-xxl--left-40 padding-right--640-20">
-                <a class="blog-post-width-2 blog-post-text font--xxl-16 margin-xxl--top-20 margin-xxl--bottom-40">Share</a>
-                <a href="post/{{next_project.Slug}}" class="blog-post-text font--xxl-16  margin-xxl--top-20 margin-xxl--bottom-40">Read more</a>
+                <a class="blog-post-width-2 blog-post-text font--xxl-16 margin-xxl--top-20 margin-xxl--bottom-40">Podeli</a>
+                <a href="post/{{next_project.Slug}}" class="blog-post-text font--xxl-16  margin-xxl--top-20 margin-xxl--bottom-40">Saznaj više</a>
             </div>
         </div>
     </div>
