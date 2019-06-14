@@ -22,15 +22,16 @@ document.addEventListener('DOMContentLoaded', () => {
 
   winWidth = window.outerWidth;
   winPosition = window.scrollY;
-  footer = document.getElementById("footer");
-  footerCont = document.getElementById("footercont");
-
-  footerTop = footer.getBoundingClientRect();
-  footerContTop = footerCont.getBoundingClientRect();
-
-  elementsLength = content.children.length;
-  indexLast = content.children.length - 1;
   if(winWidth > 1024) {
+    footer = document.getElementById("footer");
+    footerCont = document.getElementById("footercont");
+
+    footerTop = footer.getBoundingClientRect();
+    footerContTop = footerCont.getBoundingClientRect();
+
+    elementsLength = content.children.length;
+    indexLast = content.children.length - 1;
+
     for(i = 0; i < elementsLength; i++) {
       elements[i] = {
         id: content.children[i].id,
@@ -39,8 +40,14 @@ document.addEventListener('DOMContentLoaded', () => {
       }
       if(content.children[i].offsetTop - 60 <= winPosition && content.children[i].offsetTop + content.children[i].scrollHeight >= winPosition) {
         prevId = content.children[i]['id'];
+        // console.log(content.children[i]['id']);
+        if(content.children[i]['id']){
+          svg_color(content.children[i]['id']);
+          menuFontColor(content.children[i]['id']);
+        }
       }
     }
+
   }
 
 });
@@ -51,11 +58,11 @@ function setMenuColor(position, direction){
   for(let i = 0; i < elementsLength; i++) {
     if ( content.children[i].offsetTop <= menusecondTop + winPosition && content.children[i]['id'] !== 'cd-vertical-nav') {
       if(prevId !== content.children[i]['id']) {
-        elem.push(content.children[i]['id']);
-        if(content.children[i].offsetTop - 60 <= menusecondTop + winPosition && content.children[i].offsetTop + content.children[i].scrollHeight <= winPosition + content.children[i].scrollHeight && direction === 'down') {
+        if(content.children[i].offsetTop - 60 <= menusecondTop + winPosition && content.children[i].offsetTop + content.children[i].scrollHeight >= winPosition + content.children[i].scrollHeight && direction === 'down') {
+          elem.push(content.children[i]['id']);
           prevId = content.children[i]['id'];
         } else
-        if(content.children[i].offsetTop + content.children[i].scrollHeight - 60 <= menusecondTop + winPosition && content.children[i].offsetTop + content.children[i].scrollHeight >= winPosition && direction === 'up') {
+        if(content.children[i].offsetTop + content.children[i].scrollHeight <= menusecondTop + winPosition && content.children[i].offsetTop + content.children[i].scrollHeight >= winPosition && direction === 'up') {
           prevId = content.children[i]['id'];
           elem.push(content.children[i]['id']);
         }
@@ -63,7 +70,6 @@ function setMenuColor(position, direction){
         elem.push(content.children[i]['id']);
       }
     }
-
     if(elem[elem.length-1]){
       elemid = elem[elem.length-1].toString();
       menuFontColor(elemid);
@@ -95,13 +101,12 @@ function svg_color(elem) {
 }
 window.addEventListener("scroll", function(e) {
   e.preventDefault();
-  winPrevPos = winPosition;
-  winPosition = window.scrollY;
   if(winWidth > 1024) {
 
+    winPrevPos = winPosition;
+    winPosition = window.scrollY;
     if(winPrevPos - winPosition > 0) {
       setMenuColor(winPosition, 'up')
-
     } else {
       setMenuColor(winPosition, 'down')
     }
@@ -121,10 +126,3 @@ function menuFontColor(elem){
     this.document.getElementById('contacticon').classList.add("logo-purple");
   }
 };
-var isInViewport = function (elem) {
-  var bounding = elem.getBoundingClientRect();
-  return ( bounding.top >= 0 && bounding.left >=0 && bounding.bottom <= (window.innerHeight || document.documentElement.clientHeight) && bounding.right <= (window.innerWidth || document.documentElement.clientWidth));
-};
-
-
-// da li je u viewport-u ako mu je top ispod menu+top i bottom ispod windoe.bottom-a ili bottom iznad window.bottom-a i top iznad top+menutop ?? razmisli o ovome
