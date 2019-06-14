@@ -2,12 +2,13 @@
 {% set Post = fetch("Blog", {"id": _GET['1']})[0] %}
 {% block content %}
 
-<div class="post background-purple flex flex-column align-items-center">
+<div class="post background-purple flex flex-column align-items-center logo_white menu_white" id="posthead">
     <div class="font--xxl-36 font-white margin-xxl--top-60 margin-xxl--bottom-20 text-center margin-xxl--left-52 margin-xxl--right-52">{{Post.Naslov}}</div>
     <div class="post-image margin-xxl--bottom-48" style="background-image: url('img/{{Post.Slika}}')"></div>
 </div>
-<div class="post-share flex align-items-center justify-content-center">
-    <a href="http://www.facebook.com/sharer/sharer.php?u={{_BASE | url_encode}}prost%2F{{Post.Slug | url_encode}}" target="_blank">
+<div class="post-share flex align-items-center justify-content-center logo_purple menu_purple" id="social">
+    <a href="http://www.facebook.com/sharer/sharer.php?u={{_BASE | url_encode}}prost%2F{{post.Slug | url_encode}}" target="_blank">
+
         <img class="margin-xxl--right-48" src="./assets/shared/icon-facebook.png">
     </a>
     <a href="https://twitter.com/share?url={{Post.Slug | url_encode}}&amp;url={{_BASE | url_encode}}prost%2F{{post.Slug | url_encode}}" target="_blank">
@@ -56,7 +57,7 @@
         </div>
 
     {% set next_project = fetch ("next_project", {Slug:_GET[1]}) %}
-    
+
         <div class="blog-post flex flex-column justify-content-between margin-xxl--left-12_5 margin-xxl--right-12_5 margin-xxl--bottom-48">
             <div class="flex flex--640-column">
                 <div class="blog-post-width flex flex-column margin-xxl--right-20">
