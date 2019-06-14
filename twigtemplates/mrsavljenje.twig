@@ -22,7 +22,7 @@
 <!-- blok1 -->
 
 <!-- blok2 -->
-<div class="blok2 flex flex-column align-items-center justify-content-center padding-l--top-100 padding-m--top-70 padding-l--bottom-100 padding-xs--left-23 padding-xs--right-23">
+<div class="blok2 flex flex-column align-items-center justify-content-center padding-l--top-100 padding-m--top-70 padding-l--bottom-100 padding-xs--left-23 padding-xs--right-23 logo_white menu_white" id="section2">
     <div class="flex flex--m-column align-items-center margin-xxl--bottom-32 margin-xl--bottom-24">
         <p class="font--xxl-46 font--xl-42 font--xs-36 font-white font-bold">9 od 10 dijeta&nbsp</p>
         <p class="font--xxl-46 font--xl-42 font--xs-36 font-white">nisu uspešne</p>
@@ -34,7 +34,7 @@
 <!-- blok2 -->
 
 <!-- blok3 -->
-<div class="blok3 flex flex--l-column">
+<div class="blok3 flex flex--l-column logo_purple menu_purple" id="section3">
     <div class="blok3-left">
         <div class="blok3-left-1">
             <div class="blok3-left-1-image"></div>
@@ -53,7 +53,7 @@
 <!-- blok3 -->
 
 <!-- blok4 -->
-<div class="blok4 background-purple">
+<div class="blok4 background-purple logo_white menu_white" id="section4">
     <!-- psihoterapija -->
     <div id="psihoterapija" class="blok4-all flex-direction-reverse flex--l-direction">
         <div class="blok4-all-right">
@@ -187,7 +187,7 @@
 {% set Radionica = fetch("Radionica") %}
 {% for item in Radionica %}
 {% if item.Oznaci == 'true' %}
-<div class="blok1" style="background-image: url('img/{{item.Slika}}')">
+<div class="blok1 logo_white" style="background-image: url('img/{{item.Slika}}')" id="section5">
     <div class="blok1-b">
         <div class="blok1-1">
             <div class="blok1-1-2">
