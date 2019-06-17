@@ -1,23 +1,23 @@
-var slideIndex = 1;
-showDivs(slideIndex);
+// var slideIndex = 1;
+// showDivs(slideIndex);
 
-function plusDivs(n) {
-  showDivs(slideIndex += n);
-  AOS.refreshHard();
-}
+// function plusDivs(n) {
+//   showDivs(slideIndex += n);
+//   AOS.refreshHard();
+// }
 
-function showDivs(n) {
-  var i;
-  var x = document.getElementsByClassName("mySlides");
-  if (!x || x.length==0) return
+// function showDivs(n) {
+//   var i;
+//   var x = document.getElementsByClassName("mySlides");
+//   if (!x || x.length==0) return
 
-  if (n > x.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = x.length}
-  for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none";  
-  }
-  x[slideIndex-1].style.display = "flex";
-}
+//   if (n > x.length) {slideIndex = 1}
+//   if (n < 1) {slideIndex = x.length}
+//   for (i = 0; i < x.length; i++) {
+//     x[i].style.display = "none";  
+//   }
+//   x[slideIndex-1].style.display = "flex";
+// }
 
 AOS.init({
     once: false
@@ -36,7 +36,7 @@ var owl3 = $('#owl-3');
         autoplayHoverPause:true,
         nav: true,
         navContainerClass: 'owl-navigacija',
-        navText: ["Prethodna","Sledeca"],
+        navText: ["Prethodna","Sledeća"],
         navClass: ['owl-prethodna','owl-sledeca'],
         dots:false,
         animateOut: 'fadeOut',

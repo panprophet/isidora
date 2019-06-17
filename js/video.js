@@ -9,9 +9,11 @@ $(document).ready(function() {
     });
   });
 
-function url2embed(url){ 
-    var a = document.getElementById('video-url');
+function url2embed(id,url){ 
+    var a = document.getElementById(id);
     var video_url = null
+    console.log(a);
+    
     if(url) {
         // https://gist.github.com/yangshun/9892961
           
