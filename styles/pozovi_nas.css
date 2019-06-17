@@ -26,6 +26,12 @@
 .pozovi_nas-top-all-text {
   width: 39%;
 }
+.des {
+  display: flex;
+}
+.mob {
+  display: none;
+}
 @media screen and (max-width: 1440px) {
   .pozovi_nas-top-all-text {
     width: 49%;
@@ -63,6 +69,14 @@
   }
   .pozovi_nas-hide {
     height: 310px;
+  }
+}
+@media screen and (max-width: 959px) {
+  .des {
+    display: none;
+  }
+  .mob {
+    display: flex;
   }
 }
 @media screen and (max-width: 800px) {

@@ -26,6 +26,23 @@ AOS.init({
 
 
 // owl carousel
+var owl3 = $('#owl-3');
+    // var dots = $('.owl-dots');
+    owl3.owlCarousel({
+        items:1,
+        loop:false,
+        autoplay:false,
+        autoplayTimeout:5000,
+        autoplayHoverPause:true,
+        nav: true,
+        navContainerClass: 'owl-navigacija',
+        navText: ["Prethodna","Sledeca"],
+        navClass: ['owl-prethodna','owl-sledeca'],
+        dots:false,
+        animateOut: 'fadeOut',
+        hideOnContentClick: 'false',
+
+    });
 var owl = $('#owl-one');
     owl.owlCarousel({
         items:1,
@@ -53,17 +70,8 @@ var owl = $('#owl-one');
         dotClass: 'tacka',
         animateOut: 'fadeOut',
         hideOnContentClick: 'false',
-        // navContainer: '.news-carousel .navigation',
-        // dotsText:["<div class='nav-btn prev-slide'></div>","<div class='nav-btn next-slide'></div>"],
-        // navText: ["←","→"] 
 
-        // 
     });
-    // owl2('changed.owl.carousel', function(event){
-    //   document.getElementsByClassName("owl-dots").style.position = 'absolute';
-    //   document.getElementsByClassName("owl-dots").style.bottom = '0';
-    //   document.getElementsByClassName("owl-dots").style.right = '0';
-    // }) 
 
 
     jQuery(document).ready(function($){
