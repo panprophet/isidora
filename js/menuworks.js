@@ -49,40 +49,53 @@ let pretraga = document.getElementById('js-pretraga');
 let search = document.getElementById('js-search');
 
 search.addEventListener('click', function(){
+  
+  
   if (pretraga.classList.contains('radionica-info-res')) {
       pretraga.classList.remove('radionica-info-res');
       pretraga.style.display = "none";
+      console.log('radi');
+      
   }
   else {
       pretraga.classList.add('radionica-info-res');
       pretraga.style.display = "flex";
       // meni.classList.remove('radionica-info-res');
+      console.log('radi2');
   }
+  console.log('da li');
   prefetchSearch()
 });
 
 var serachArray = [];
 var substringMatcher = function() {
+  console.log('radi3');
     return function findMatches(q, cb) {
         q = q.replace(/[-[\]{}()*+?.,\\^$|#\s]/g, '\\$&');
         var matches, substringRegex;
         matches = [];
         substrRegex = new RegExp(q, 'i');
         $.each(serachArray, function(i, item) {
+          console.log('radi4', serachArray);
             if (substrRegex.test(item.Naslov) || substrRegex.test(item.Text)) {
+              console.log('radi5');
                 matches.push(item);
             }
         });
+        console.log('radi4', serachArray);
         cb(matches);
     };
 };
 var searchInit=false;
 function prefetchSearch(){
+  console.log('ovo', searchInit);
     $('#typeahead_m')[0].focus();
     if (searchInit) return;
     searchInit=true;
+    console.log('ovo2', searchInit);
     $.getJSON("cms/api.php/?query=_search", function(result){
-        serachArray = result        
+        serachArray = result   
+        console.log('ovo3', serachArray);     
     });
 }
 
