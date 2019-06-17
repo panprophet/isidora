@@ -27,7 +27,24 @@
         &-text {
             color: #5d5d5d;
         }
+        &-share {
+            position: relative;
+            cursor: pointer;
+            .op {
+                padding: 5px;
+            border: 1px solid #C6C6C5;
+            border-radius: 4px;
+            position: absolute;
+            bottom: 0;
+            opacity: 0;
+            transition: opacity 0.5s; 
+            }
+            &:hover .op {
+                opacity: 1;
+            }
+        }
     }
+    
 }
 .border-line {
     width: 100%;

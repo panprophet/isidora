@@ -1,7 +1,7 @@
 {% set Blog = fetch("Blog") %}
 <div class="blog-posts flex flex--xs-column justify-content-between margin-xxl--top-52 margin-xs--top-24 margin-xxl--bottom-52 margin-xs--bottom-24 margin-xxl--left-52 margin-xs--left-23 margin-xxl--right-52 margin-xs--right-23 menu_purple logo_purple" id="posts">
     {% for item in Blog %}
-    {% if loop.index > 1 and loop.index < 6 %}
+    {% if loop.revindex0 < 4 and item.Istaknut == 'false' %}
     <div class="blog-posts-post flex flex-column">
         <div class="blog-posts-post-image margin-xxl--bottom-32" style="background-image: url('img/{{item.Slika}}')"></div>
         <div class="w-70 w--l-100 font--xxl-24 font-purple margin-xxl--bottom-24">{{item.Naslov}}</div>
