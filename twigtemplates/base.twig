@@ -36,13 +36,13 @@
                 <div class="flex align-items-center display--1260-none">
                     <img src="assets/shared/date-white.png">
                     <div class="font--xxl-14 font-white margin-xxl--left-10">{{ Radionica.Datum | date("d.m.Y") }}</div>
-                    {# {% if Radionica.Otvorena == 'true' %} #}
-                    <div class="font--xxl-14 font-white margin-xxl--left-40">{{Radionica.Status}}</div>
+                    {% if Radionica.Otvorena == 'true' %}
+                    <div class="font--xxl-14 font-white margin-xxl--left-40">Radionica otvorena, ostalo još {{Radionica.Mesto}}</div>
                     <div class="font--xxl-14 font-white margin-xxl--left-10">{{ Radionica.Vreme }}</div>
-                    {# {% endif %} #}
-                    {# {% if Radionica.Otvorena == 'false' %}
+                    {% endif %}
+                    {% if Radionica.Otvorena == 'false' %}
                     <div class="font--xxl-14 font-white margin-xxl--left-40">Radionica zatvorena</div>
-                    {% endif %} #}
+                    {% endif %}
                 </div>
                 <div onClick="radionica_open()" class="radionica-info" style="cursor: pointer;">
                     <img src="assets/shared/date-white.png">
@@ -170,7 +170,7 @@
                 </span>
                 <span class="margin-xxl--left-10 display--xl-none"><a href="kontakt">Kontakt</a></span>
             </div>
-            <div class="display--xxl-none display--xl-flex align-items--xl-center">
+            <div class="display--xxl-none display--xl-flex">
                 <svg class="ham-white" xmlns="http://www.w3.org/2000/svg" width="23" height="8" viewBox="0 0 23 8" fill="none" id="ham" onClick="menu_toggle(true)">
                     <line y1="0.5" x2="23" y2="0.5" />
                     <line y1="7.5" x2="18" y2="7.5" />
@@ -312,7 +312,7 @@
                     <div class="font--xxl-18 font-purple font-bold margin-xxl--right-48 margin-xl--right-none margin-xxl--bottom-10 text--l-center">Socialne mreze</div>
                     <div class="flex align-items-center justify-content--l-center">
                         <a class="icon-purple flex align-items-center justify-content-start margin-xxl--right-18" href="#"><img src="./assets/shared/instagram_purple.svg"></a>
-                        <a class="icon-purple flex align-items-center justify-content-start" href="#"><img src="./assets/shared/facebook_purple.svg"></a>
+                        <a class="icon-purple flex align-items-center justify-content-start margin-xxl--right-18" href="#"><img src="./assets/shared/facebook_purple.svg"></a>
                         {# <a class="icon-purple flex align-items-center justify-content-start margin-xxl--right-18" href="#"><img src="./assets/shared/pinterest_purple.svg"></a> #}
                         {# <a class="icon-purple flex align-items-center justify-content-start margin-xxl--right-18 margin-xl--right-none" href="#"><img src="./assets/shared/linkedin_purple.svg"></a> #}
                     </div>
