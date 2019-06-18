@@ -5,13 +5,15 @@
 <div style="height: 3.71rem;"></div>
 <!-- blok1 -->
 <div class="blok1 logo_white" id="section1" style="background-image: url('img/{{Radionica.Info_o_radionici_slika}}')">
-    <div class="blok1-1">
-        <div class="blok1-1-2">
-            <div class="blok1-1-2-3">
-                <div class="blok1-1-2-3-all flex flex-column justify-content-center margin-xxl--left-135 margin-xl--left-70 margin-m--left-57 margin-xs--left-23">
-                    <div class="font--xxl-46 font--xl-42 font--xs-36 font-white font-bold margin-xxl--bottom-42 margin-xl--bottom-32">Info o radionici</div>
-                    <div class="blok1-1-2-3-all-text padding-xxl--left-25 font--xxl-14 font-white margin-xxl--bottom-42 margin-xl--bottom-32">{{Radionica.Grad}}  {{Radionica.Datum|date("d.m.Y")}}  {{Radionica.Vreme}}</div>
-                    <div class="font--xxl-14 font-white margin-xxl--bottom-42 margin-xl--bottom-32">{{Radionica.Info_o_radionici_text}}</div>
+    <div class="radionica-gr">
+        <div class="blok1-1">
+            <div class="blok1-1-2">
+                <div class="blok1-1-2-3">
+                    <div class="blok1-1-2-3-all flex flex-column justify-content-center margin-xxl--left-135 margin-xl--left-70 margin-m--left-57 margin-xs--left-23">
+                        <div class="font--xxl-46 font--xl-42 font--xs-36 font-white font-bold margin-xxl--bottom-42 margin-xl--bottom-32">Info o radionici</div>
+                        <div class="blok1-1-2-3-all-text padding-xxl--left-25 font--xxl-14 font-white margin-xxl--bottom-42 margin-xl--bottom-32">{{Radionica.Grad}}  {{Radionica.Datum|date("d.m.Y")}}  {{Radionica.Vreme}}</div>
+                        <div class="font--xxl-14 font-white margin-xxl--bottom-42 margin-xl--bottom-32">{{Radionica.Info_o_radionici_text}}</div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -24,14 +26,16 @@
 <div class="blok3 flex flex--l-column logo_white"  id="section2">
     <div class="blok3-left">
         <div class="blok3-left-1">
-            <div class="blok3-left-1-image" style="background-image: url('img/{{Radionica.Kome_je_namenjena_slika}}')"></div>
+            <div class="blok3-left-1-image" style="background-image: url('img/{{Radionica.Kome_je_namenjena_slika}}')">
+                <div class="radionica-gr-white"></div>
+            </div>
         </div>
     </div>
     <div class="blok3-right flex align-items-center" style="z-index:9;">
         <div class="blok3-right-all flex flex-column margin-xs--left-23 margin-l--bottom-50">
-            <div class="font--xxl-36 font-purple font-bold margin-xxl--bottom-42 margin-xl--bottom-32">Kome je namenjena</div>
-            <div class="blok3-right-all-line font--xxl-14 font-purple margin-xxl--bottom-42 margin-xl--bottom-32 padding-xxl--left-25">{{Radionica.Kome_je_namenjena_naslov}}</div>
-            <div class="font--xxl-14 font-purple margin-xxl--bottom-42 margin-xl--bottom-32">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the...</div>
+            <div class="font--xxl-36 font-purple font-bold margin-xxl--bottom-42 margin-xl--bottom-32">{{Radionica.Kome_je_namenjena_naslov}}</div>
+            <div class="blok3-right-all-line font--xxl-14 font-purple margin-xxl--bottom-42 margin-xl--bottom-32 padding-xxl--left-25">{{Radionica.Kome_je_namenjena_opis}}</div>
+            <div class="font--xxl-14 font-purple margin-xxl--bottom-42 margin-xl--bottom-32">{{Radionica.Kome_je_namenjena_text}}</div>
         </div>
     </div>
 </div>
@@ -45,8 +49,8 @@
         <div class="blok1-1-2">
             <div class="blok1-1-2-3">
                 <div class="blok1-1-2-3-all flex flex-column justify-content-center margin-xxl--left-135 margin-xl--left-70 margin-m--left-57 margin-xs--left-23">
-                    <div class="font--xxl-46 font--xl-42 font--xs-36 font-white font-bold margin-xxl--bottom-42 margin-xl--bottom-32">Benefit radionice</div>
-                    <div class="blok1-1-2-3-all-text padding-xxl--left-25 font--xxl-14 font-white margin-xxl--bottom-42 margin-xl--bottom-32">{{Radionica.Benefit_radionice_naslov}}</div>
+                    <div class="font--xxl-46 font--xl-42 font--xs-36 font-white font-bold margin-xxl--bottom-42 margin-xl--bottom-32">{{Radionica.Benefit_radionice_naslov}}</div>
+                    <div class="blok1-1-2-3-all-text padding-xxl--left-25 font--xxl-14 font-white margin-xxl--bottom-42 margin-xl--bottom-32">{{Radionica.Benefit_radionice_opis}}</div>
                     <div class="font--xxl-14 font-white margin-xxl--bottom-42 margin-xl--bottom-32">{{Radionica.Benefit_radionice_text}}</div>
                 </div>
             </div>
@@ -75,7 +79,7 @@
         </div>
         <div class="najnoviji_blog-all-left flex flex-column justify-content-center align-items-start margin-xxl--left-135 margin-xl--left-70 margin-m--left-57 margin-xs--left-23 margin-l--bottom-50">
             <div class="najnoviji_blog-all-left-all flex flex-column">
-                <div class="font--xxl-46 font--xl-42 font--xs-36 font-white font-bold margin-xxl--bottom-42 margin-xl--bottom-32">Vreme odrzavanja</div>
+                <div class="font--xxl-46 font--xl-42 font--xs-36 font-white font-bold margin-xxl--bottom-42 margin-xl--bottom-32">{{Radionica.Vreme_odrzavanja_naslov}}</div>
                 <div class="najnoviji_blog-all-left-all-text font--xxl-14 font-white flex padding-xxl--left-25 margin-xxl--bottom-42 margin-xl--bottom-32">{{Radionica.Grad}} {{Radionica.Datum|date("d.m.Y")}}  {{Radionica.Vreme}}</div>
                 <div class="font--xxl-14 font-white margin-xxl--bottom-42 margin-xl--bottom-32">{{Radionica.Vreme_odrzavanja_opis}}</div>
             </div>
@@ -86,7 +90,7 @@
 
 <!-- blok6 -->
 <div class="detaljnije-kk detaljnije-kk-bcg1 flex flex-column logo_purple" id="section6">
-    <div class="detaljnije-kk-top flex align-items-end justify-content-center font--xxl-46 font--xl-42 font--xs-36 font-purple font-bold text-center margin-l--top-100 margin-l--bottom-50 margin-xxl--left-24 margin-xxl--right-24">Koliko košta</div>
+    <div class="detaljnije-kk-top flex align-items-end justify-content-center font--xxl-46 font--xl-42 font--xs-36 font-purple font-bold text-center margin-l--top-100 margin-l--bottom-50 margin-xxl--left-24 margin-xxl--right-24">{{Radionica.Koliko_kosta_naslov}}</div>
     <div class="detaljnije-kk-bottom flex flex--l-column align-items-center justify-content-around padding-xxl--left-135 padding-xxl--right-135 padding-xl--left-70 padding-m--left-57 padding-xs--left-23 padding-xxl--right-135 padding-xl--right-70 padding-m--right-57 padding-xs--right-23">
         <div class="detaljnije-kk-bottom-all flex flex-column align-items-center margin-l--bottom-70">
             <img class="detaljnije-kk-bottom-all-img margin-xxl--bottom-48" src="./assets/images/radionica-kk-1.png">
@@ -113,9 +117,9 @@
 <!-- blok7 -->
 <div class="detaljnije-kk detaljnije-kk-bcg2 background-purple flex flex-column logo_white menu_white" id="section7">
     <div class="detaljnije-kk-top flex flex-column align-items-center justify-content-end margin-l--top-100 margin-l--bottom-50 margin-xxl--left-24 margin-xxl--right-24">
-        <div class="font--xxl-46 font--xl-42 font--xs-36 font-white font-bold text-center margin-xxl--bottom-24">Koncept radionice</div>
+        <div class="font--xxl-46 font--xl-42 font--xs-36 font-white font-bold text-center margin-xxl--bottom-24">{{Radionica.Koncept_radionice_naslov}}</div>
         <div class="detaljnije-kk-bottom-all-line background-white margin-xxl--bottom-24"></div>
-        <div class="font--xxl-16 font-white text-center">Lorem Ipsum is simply dummy text</div>
+        <div class="font--xxl-16 font-white text-center">{{Radionica.Koncept_radionice_opis}}</div>
     </div>
     <div class="detaljnije-kk-bottom flex flex--l-column align-items-center justify-content-around padding-xxl--left-135 padding-xxl--right-135 padding-xl--left-70 padding-m--left-57 padding-xs--left-23 padding-xxl--right-135 padding-xl--right-70 padding-m--right-57 padding-xs--right-23">
         <div class="detaljnije-kk-bottom-all flex flex-column align-items-center margin-l--bottom-70">
@@ -142,7 +146,7 @@
 
 <!-- blok8 -->
 <div class="flex flex-column align-items-center padding-xxl--left-40 padding-xxl--right-40 logo_purple menu_purple" id="section8">
-    <div class="flex font--xxl-46 font--xl-42 font--xs-36 font-purple font-bold text-center margin-xxl--top-150 margin-xxl--bottom-80">Šta dobijaš u radionici</div>
+    <div class="flex font--xxl-46 font--xl-42 font--xs-36 font-purple font-bold text-center margin-xxl--top-150 margin-xxl--bottom-80">{{Radionica.Sta_dobijas_naslov}}</div>
     <div class="flex flex--l-column align-items--l-center">
         <div class="detaljnije-blok8-text font--xxl-16 font-purple font-italic margin-xxl--left-40 margin-xxl--right-40">{{Radionica.Sta_dobijas1 | raw}}</div>
         <div class="detaljnije-blok8-text font--xxl-16 font-purple font-italic margin-xxl--left-40 margin-xxl--right-40 margin-l--top-50">{{Radionica.Sta_dobijas2 | raw}}</div>
