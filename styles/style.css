@@ -2756,6 +2756,16 @@ a:active {
     transform: translate3d(0, 0, 0);
   }
 }
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    transform: translate3d(-100%, 0, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
 @keyframes opacity {
   from {
     opacity: 0;
@@ -3155,6 +3165,7 @@ a:active {
   .home-blok4 {
     height: auto;
     background: #291644;
+    padding-top: 0;
   }
   .home-blok4-top {
     height: 55vw;
@@ -3714,18 +3725,27 @@ a:active {
   clip-path: circle(72% at 30% 74%);
   width: 65%;
   height: 100%;
+  animation-name: opacity;
+  animation-fill-mode: both;
+  animation-duration: 1.5s;
 }
 .blok1-1-2 {
   background-color: rgba(41, 22, 68, 0.2);
   clip-path: circle(72% at 30% 74%);
   width: 96%;
   height: 100%;
+  animation-name: opacity;
+  animation-fill-mode: both;
+  animation-duration: 1.8s;
 }
 .blok1-1-2-3 {
   background-color: rgba(41, 22, 68, 0.4);
   clip-path: circle(72% at 30% 74%);
   width: 96%;
   height: 100%;
+  animation-name: opacity;
+  animation-fill-mode: both;
+  animation-duration: 2s;
 }
 .blok1-1-2-3-all {
   width: 43%;
@@ -3763,12 +3783,19 @@ a:active {
   width: 60%;
   background-color: #2F1850;
   clip-path: circle(62% at 22% 42%);
+  animation-name: fadeInRight;
+  animation-fill-mode: both;
+  animation-duration: 0.6s;
   height: 100%;
 }
 .blok3-left-1 {
   width: 96%;
   background-color: #291644;
   clip-path: circle(62% at 22% 42%);
+  animation-name: fadeInRight;
+  animation-fill-mode: both;
+  animation-duration: 0.6s;
+  animation-delay: 0.2s;
   height: 100%;
 }
 .blok3-left-1-image {
@@ -3779,6 +3806,10 @@ a:active {
   background-repeat: no-repeat;
   clip-path: circle(62% at 22% 42%);
   height: 100%;
+  animation-name: opacity;
+  animation-fill-mode: both;
+  animation-duration: 2.5s;
+  animation-delay: 0.9s;
 }
 .blok3-right {
   width: 40%;
@@ -4179,18 +4210,27 @@ a:active {
   clip-path: circle(72% at 30% 74%);
   width: 65%;
   height: 100%;
+  animation-name: opacity;
+  animation-fill-mode: both;
+  animation-duration: 1.5s;
 }
 .psihoterapija-blok-1-2 {
   background-color: rgba(41, 22, 68, 0.2);
   clip-path: circle(72% at 30% 74%);
   width: 96%;
   height: 100%;
+  animation-name: opacity;
+  animation-fill-mode: both;
+  animation-duration: 1.8s;
 }
 .psihoterapija-blok-1-2-3 {
   background-color: rgba(41, 22, 68, 0.4);
   clip-path: circle(72% at 30% 74%);
   width: 96%;
   height: 100%;
+  animation-name: opacity;
+  animation-fill-mode: both;
+  animation-duration: 2s;
 }
 .psihoterapija-blok-1-2-3-all {
   width: 80%;
@@ -4405,18 +4445,27 @@ a:active {
   clip-path: circle(72% at 30% 74%);
   width: 65%;
   height: 100%;
+  animation-name: opacity;
+  animation-fill-mode: both;
+  animation-duration: 1.5s;
 }
 .radionica-1-2 {
   background-color: rgba(41, 22, 68, 0.2);
   clip-path: circle(72% at 30% 74%);
   width: 96%;
   height: 100%;
+  animation-name: opacity;
+  animation-fill-mode: both;
+  animation-duration: 1.8s;
 }
 .radionica-1-2-3 {
   background-color: rgba(41, 22, 68, 0.4);
   clip-path: circle(72% at 30% 74%);
   width: 96%;
   height: 100%;
+  animation-name: opacity;
+  animation-fill-mode: both;
+  animation-duration: 2s;
 }
 .radionica-1-2-3-all {
   width: 43%;
@@ -4458,6 +4507,11 @@ a:active {
   }
   .radionica-gr {
     background: linear-gradient(0deg, #291644 6.11%, rgba(41, 22, 68, 0) 71.18%);
+    height: 100%;
+    width: 100%;
+  }
+  .radionica-gr-white {
+    background: linear-gradient(0deg, #FFFFFF 6.11%, rgba(255, 255, 255, 0) 71.18%);
     height: 100%;
     width: 100%;
   }

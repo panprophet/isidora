@@ -21,18 +21,27 @@
   clip-path: circle(72% at 30% 74%);
   width: 65%;
   height: 100%;
+  animation-name: opacity;
+  animation-fill-mode: both;
+  animation-duration: 1.5s;
 }
 .blok1-1-2 {
   background-color: rgba(41, 22, 68, 0.2);
   clip-path: circle(72% at 30% 74%);
   width: 96%;
   height: 100%;
+  animation-name: opacity;
+  animation-fill-mode: both;
+  animation-duration: 1.8s;
 }
 .blok1-1-2-3 {
   background-color: rgba(41, 22, 68, 0.4);
   clip-path: circle(72% at 30% 74%);
   width: 96%;
   height: 100%;
+  animation-name: opacity;
+  animation-fill-mode: both;
+  animation-duration: 2s;
 }
 .blok1-1-2-3-all {
   width: 43%;
@@ -70,12 +79,19 @@
   width: 60%;
   background-color: #2F1850;
   clip-path: circle(62% at 22% 42%);
+  animation-name: fadeInRight;
+  animation-fill-mode: both;
+  animation-duration: 0.6s;
   height: 100%;
 }
 .blok3-left-1 {
   width: 96%;
   background-color: #291644;
   clip-path: circle(62% at 22% 42%);
+  animation-name: fadeInRight;
+  animation-fill-mode: both;
+  animation-duration: 0.6s;
+  animation-delay: 0.2s;
   height: 100%;
 }
 .blok3-left-1-image {
@@ -86,6 +102,10 @@
   background-repeat: no-repeat;
   clip-path: circle(62% at 22% 42%);
   height: 100%;
+  animation-name: opacity;
+  animation-fill-mode: both;
+  animation-duration: 2.5s;
+  animation-delay: 0.9s;
 }
 .blok3-right {
   width: 40%;
