@@ -151,16 +151,6 @@
     transform: translate3d(0, 0, 0);
   }
 }
-@keyframes fadeInRight {
-  from {
-    opacity: 0;
-    transform: translate3d(-100%, 0, 0);
-  }
-  to {
-    opacity: 1;
-    transform: translate3d(0, 0, 0);
-  }
-}
 @keyframes opacity {
   from {
     opacity: 0;
@@ -560,7 +550,6 @@
   .home-blok4 {
     height: auto;
     background: #291644;
-    padding-top: 0;
   }
   .home-blok4-top {
     height: 55vw;
