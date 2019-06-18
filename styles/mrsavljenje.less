@@ -25,16 +25,25 @@
         clip-path: circle(72% at 30% 74%);
         width: 65%;
         height: 100%;
+        animation-name: opacity;
+        animation-fill-mode: both;
+        animation-duration: 1.5s;
         &-2 {
             background-color: rgba(41, 22, 68, 0.2);
             clip-path: circle(72% at 30% 74%);
             width: 96%;
             height: 100%;
+            animation-name: opacity;
+            animation-fill-mode: both;
+            animation-duration: 1.8s;
             &-3 {
                 background-color: rgba(41, 22, 68, 0.4);
                 clip-path: circle(72% at 30% 74%);
                 width: 96%;
                 height: 100%;
+                animation-name: opacity;
+                animation-fill-mode: both;
+                animation-duration: 2s;
                 &-all {
                     width: 43%;
                     height: 100%;
@@ -78,11 +87,18 @@
         background-color: @purple-circle;
         clip-path: circle(62% at 22% 42%);
         height: 100%;
+        animation-name: fadeInRight;
+        animation-fill-mode: both; 
+        animation-duration: 0.6s;
         &-1 {
             width: 96%;
             background-color: @purple;
             clip-path: circle(62% at 22% 42%);
             height: 100%;
+            animation-name: fadeInRight;
+            animation-fill-mode: both; 
+            animation-duration: 0.6s;
+            animation-delay: 0.2s;
             &-image {
                 width: 96%;
                 background-image: url(../assets/images/mrsavljenje-blok5.jpg);
@@ -91,6 +107,10 @@
                 background-repeat: no-repeat;
                 clip-path: circle(62% at 22% 42%);
                 height: 100%;
+                animation-name: opacity;
+                animation-fill-mode: both;
+                animation-duration: 2.5s;
+                animation-delay: 0.9s;
             }
         }
     }
