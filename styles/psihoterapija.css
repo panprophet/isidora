@@ -11,18 +11,27 @@
   clip-path: circle(72% at 30% 74%);
   width: 65%;
   height: 100%;
+  animation-name: opacity;
+  animation-fill-mode: both;
+  animation-duration: 1.5s;
 }
 .psihoterapija-blok-1-2 {
   background-color: rgba(41, 22, 68, 0.2);
   clip-path: circle(72% at 30% 74%);
   width: 96%;
   height: 100%;
+  animation-name: opacity;
+  animation-fill-mode: both;
+  animation-duration: 1.8s;
 }
 .psihoterapija-blok-1-2-3 {
   background-color: rgba(41, 22, 68, 0.4);
   clip-path: circle(72% at 30% 74%);
   width: 96%;
   height: 100%;
+  animation-name: opacity;
+  animation-fill-mode: both;
+  animation-duration: 2s;
 }
 .psihoterapija-blok-1-2-3-all {
   width: 80%;
