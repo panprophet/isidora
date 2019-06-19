@@ -48,9 +48,9 @@
             <a href="video/svi-postovi#section2" class="font--xxl-32 font--m-16  font-grey--mid margin-xxl--left-12_5 margin-xxl--right-12_5 margin-xxl--bottom-24 {{('svi-postovi' == tip)?'font-blue':''}}">Svi Postovi</a>
             <a href="video/mrsavljenje#section2" class="font--xxl-32 font--m-16 font-grey--mid margin-xxl--left-12_5 margin-xxl--right-12_5 margin-xxl--bottom-24 {{('mrsavljenje' == tip)?'font-blue':''}}">Mršavljenje</a>
             <a href="video/psihoterapija#section2" class="font--xxl-32 font--m-16 font-grey--mid margin-xxl--left-12_5 margin-xxl--right-12_5 margin-xxl--bottom-24 {{('psihoterapija' == tip)?'font-blue':''}}">Radionica</a>
-            {% for tab in Blog_Tab %}
-            <a href="video/razno#section2" class="font--xxl-32 font--m-16 font-grey--mid margin-xxl--left-12_5 margin-xxl--right-12_5 margin-xxl--bottom-24 {{('razno' == tip)?'font-blue':''}}">{{tab.raznoVideo}}</a>
-            {% endfor %}
+            {# {% for tab in Blog_Tab %} #}
+            <a href="video/razno#section2" class="font--xxl-32 font--m-16 font-grey--mid margin-xxl--left-12_5 margin-xxl--right-12_5 margin-xxl--bottom-24 {{('razno' == tip)?'font-blue':''}}">{{Blog_Tab.raznoVideo}}</a>
+            {# {% endfor %} #}
         </div>
     </div>
     <!-- blok2 -->
