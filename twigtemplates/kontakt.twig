@@ -1,4 +1,6 @@
 {% extends "base.twig" %}
+{% set Descriptions = fetch("Descriptions") %}
+{% block description %}{{Descriptions.Kontakt}}{% endblock %}
 {% block content %}
 
 <div style="height: 3.71rem;"></div>

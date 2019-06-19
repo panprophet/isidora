@@ -1,4 +1,6 @@
 {% extends "base.twig" %}
+{% set Descriptions = fetch("Descriptions") %}
+{% block description %}{{Descriptions.Radionice}}{% endblock %}
 {% block content %}
 
 {% set Radionica = fetch("Radionica") %}
