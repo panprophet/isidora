@@ -1,4 +1,6 @@
 {% extends "base.twig" %}
+{% set Descriptions = fetch("Descriptions") %}
+{% block description %}{{Descriptions.Psihoterapija}}{% endblock %}
 {% block content %}
 
 <div style="height: 3.71rem;"></div>

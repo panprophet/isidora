@@ -1,4 +1,6 @@
 {% extends "base.twig" %}
+{% set Descriptions = fetch("Descriptions") %}
+{% block description %}{{Descriptions.Blog}}{% endblock %}
 {% block content %}
 
 {% set Blog = fetch("Blog") %}

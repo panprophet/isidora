@@ -1,5 +1,6 @@
 {% extends "base.twig" %}
 {% set Post = fetch("Blog", {"id": _GET['1']})[0] %}
+{% block description %}{{Post.description}}{% endblock %}
 {% block content %}
 
 <div class="post background-purple flex flex-column align-items-center logo_white menu_white" id="posthead">
