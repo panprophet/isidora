@@ -83,9 +83,11 @@
                 <div class="font--xxl-62 font--xl-46 font--xs-36 font-purple font-bold">{{item.NaslovBold}} </div>
                 <div class="font--xxl-62 font--xl-46 font--xs-36 font-purple margin-xxl--bottom-42 margin-s--bottom-32">{{item.Naslov}}</div>
                 <div class="upoznaj_sebe-left-all-text padding-xxl--left-25 font--xxl-16 font-purple margin-xxl--bottom-77 margin-l--bottom-50 margin-m--bottom-46 margin-s--bottom-32">{{item.Text}}</div>
+                {% if loop.index0 > 0 %}
                 <a href="{{item.Href}}">
                     <button class="button-midd font-white font--xxl-14 background-purple">SAZNAJ VIŠE</button>
                 </a>
+                {% endif %}
             </div>
         </div>
         {# <div class="upoznaj_sebe-hide"></div> #}
@@ -155,9 +157,14 @@
                 <div class="blok-all-left-all-text padding-xxl--left-25 font--xxl-14 font-purple margin-xxl--bottom-77 margin-xl--bottom-32 margin-m--bottom-46 margin-s--bottom-32">Lorem Ipsum is simply dummy text of the printing</div>
                 <div class="font--xxl-14 font-purple margin-xxl--bottom-42 margin-xl--bottom-32 padding-xxl--left-15">Trajno rešavanje prekomerne kilaže možete postići samo ako odklonite uzrok zašto se prejedate. Potrebno je stvarati zdravije navike a ne drzati dijetu. Sta god ste u svom zivotu drzali ono je bilo tu samo dok ga drzite. Isto je i sa dijetom. Dijetom resavamo samo trenutno posledicu. 15 godina sam pokusavla da smrsam, uskracivala sebi hranu i na kraju sam dosla do 110kg. Kao da sam bila na rezimu koji me je gojio.</div>
                 <a href="mrsavljenje" class="font-italic font-bold font--xxl-14 font-purple margin-xxl--bottom-42 margin-s--bottom-32">Saznaj više</a>
-                <a href="kontakt">
+                {% set Radionica = fetch("Radionica") %}
+                {% for item in Radionica %}
+                {% if item.Oznaci == 'true' %}
+                <a href="radionica/{{item.Slug}}#zakazi">
                     <button class="button-big font-white font--xxl-14 background-purple">ZAKAŽI SVOJ TERMIN</button>
                 </a>
+                {% endif %}
+                {% endfor %}
             </div>
         </div>
         {# <div class="index-blok-all-hide"></div> #}
@@ -228,7 +235,7 @@
                 <div class="font--xxl-14 font-purple margin-xxl--bottom-42 margin-xl--bottom-32">{{item.Opis}}</div>
                 <a href="radionica/{{item.Slug}}" class="font-italic font-bold font--xxl-14 font-purple margin-xxl--bottom-42 margin-s--bottom-32">Saznaj više</a>
                 <a href="radionica/{{item.Slug}}#zakazi">
-                    <button class="button-big font-white font--xxl-14 background-purple">ZAKAŽI SVOJ TERMIN</button>
+                    <button class="button-big font-white font--xxl-14 background-purple">PRIJAVI SE NA RADIONICU</button>
                 </a>
             {% endif %}
             {% endfor %}

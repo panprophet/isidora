@@ -6,19 +6,35 @@ let closeham = document.getElementById('closeham');
 function menu_toggle(state) {
   if(state === true) {
     dropdown.style.marginTop = "0px";
-    if(closeham.classList.contains('display--m-none')) {
-      closeham.classList.remove('display--m-none');
-      closeham.classList.add('display--m-flex');
+    if(closeham.classList.contains('display--xl-none')) {
+      closeham.classList.remove('display--xl-none');
+      closeham.classList.add('display--xl-flex');
     }
   }
   if(state === false) {
     dropdown.style.marginTop = "-" + (menuheight + 60) + "px";
-    if(closeham.classList.contains('display--m-flex')) {
-      closeham.classList.remove('display--m-flex');
-      closeham.classList.add('display--m-none');
+    if(closeham.classList.contains('display--xl-flex')) {
+      closeham.classList.remove('display--xl-flex');
+      closeham.classList.add('display--xl-none');
     }
   }
 }
+
+//menu scroll
+
+var lastScrollTop = 0;
+        $(window).scroll(function(event){
+          var st = $(this).scrollTop();
+          if (st<60) { $( ".menu-second" ).css( "top", "3.75rem" ); return }
+          if (st > lastScrollTop){
+            // downscroll code
+            $( ".menu-second" ).css( "top", "-7rem" );
+          } else {
+            // upscroll code
+            $( ".menu-second" ).css( "top", "3.75rem" );
+          }
+          lastScrollTop = st;
+        });
 
 
 let menuheight2 = document.getElementById('radionicaInfo').scrollHeight;
@@ -61,10 +77,7 @@ search.addEventListener('click', function(){
   else {
       pretraga.classList.add('radionica-info-res');
       pretraga.style.display = "flex";
-      // meni.classList.remove('radionica-info-res');
-      // console.log('radi2');
   }
-  // console.log('da li');
   prefetchSearch()
 });
 search_m.addEventListener('click', function(){
@@ -72,49 +85,37 @@ search_m.addEventListener('click', function(){
   
   if (pretraga.classList.contains('radionica-info-res')) {
       pretraga.classList.remove('radionica-info-res');
-      pretraga.style.display = "none";
-      // console.log('radi');
-      
+      pretraga.style.display = "none";  
   }
   else {
       pretraga.classList.add('radionica-info-res');
       pretraga.style.display = "flex";
-      // meni.classList.remove('radionica-info-res');
-      // console.log('radi2');
   }
-  // console.log('da li');
   prefetchSearch()
 });
 
 var serachArray = [];
 var substringMatcher = function() {
-  // console.log('radi3');
     return function findMatches(q, cb) {
         q = q.replace(/[-[\]{}()*+?.,\\^$|#\s]/g, '\\$&');
         var matches, substringRegex;
         matches = [];
         substrRegex = new RegExp(q, 'i');
         $.each(serachArray, function(i, item) {
-          // console.log('radi4', serachArray);
             if (substrRegex.test(item.Naslov) || substrRegex.test(item.Text)) {
-              // console.log('radi5');
                 matches.push(item);
             }
         });
-        // console.log('radi4', serachArray);
         cb(matches);
     };
 };
 var searchInit=false;
 function prefetchSearch(){
-  // console.log('ovo', searchInit);
     $('#typeahead_m')[0].focus();
     if (searchInit) return;
     searchInit=true;
-    // console.log('ovo2', searchInit);
     $.getJSON("cms/api.php/?query=_search", function(result){
-        serachArray = result   
-        // console.log('ovo3', serachArray);     
+        serachArray = result      
     });
 }
 
@@ -131,26 +132,3 @@ $('#typeahead_m').bind('typeahead:select', function(ev, suggestion) {
 });   
 
 
-// copy link
-
-// var clipboard = new Clipboard('.btn-copy', {
-//   text: function() {
-//       return document.querySelector('input[type=hidden]').value;
-//   }
-// });
-// $("#input-url").val(location.href);
-// //safari
-// if (navigator.vendor.indexOf("Apple")==0 && /\sSafari\//.test(navigator.userAgent)) {
-//    $('.btn-copy').on('click', function() {
-// var msg = window.prompt("Copy this link", location.href);
-
-// });
-//   }
-// function CopyURL() {
-//   var copyText = document.getElementById("input-url").value;
-//   // console.log(copyText);
-  
-//   // copyText.value();
-//   document.execCommand(this.copyText);
-//   alert (copyText);
-// }

@@ -176,83 +176,6 @@ a:active {
     display: flex;
   }
 }
-.font-12 {
-  font-size: 0.75rem;
-  line-height: 0.9rem;
-}
-.font-12 * {
-  font-size: inherit;
-  line-height: inherit;
-}
-.font-14 {
-  font-size: 0.875rem;
-  line-height: 1.5rem;
-}
-.font-14 * {
-  font-size: inherit;
-  line-height: inherit;
-}
-.font-16 {
-  font-size: 1rem;
-  line-height: 1.5rem;
-}
-.font-16 * {
-  font-size: inherit;
-  line-height: inherit;
-}
-.font-18 {
-  font-size: 1.125rem;
-  line-height: 1.35rem;
-}
-.font-18 * {
-  font-size: inherit;
-  line-height: inherit;
-}
-.font-24 {
-  font-size: 1.5rem;
-  line-height: 1.8rem;
-}
-.font-24 * {
-  font-size: inherit;
-  line-height: inherit;
-}
-.font-32 {
-  font-size: 2rem;
-  line-height: 2.7rem;
-}
-.font-32 * {
-  font-size: inherit;
-  line-height: inherit;
-}
-.font-36 {
-  font-size: 2.25rem;
-  line-height: 2.7rem;
-}
-.font-36 * {
-  font-size: inherit;
-  line-height: inherit;
-}
-.font-46 {
-  font-size: 2.875rem;
-  line-height: 3.7375rem;
-}
-.font-46 * {
-  font-size: inherit;
-  line-height: inherit;
-}
-.font-62 {
-  font-size: 3.875rem;
-  line-height: 3.875rem;
-  letter-spacing: 0.04rem;
-}
-.font-64 {
-  font-size: 4rem;
-  line-height: 4.4rem;
-}
-.font-64 * {
-  font-size: inherit;
-  line-height: inherit;
-}
 .font-italic {
   font-style: italic;
 }
@@ -1750,8 +1673,8 @@ a:active {
   .margin-l--top-10 {
     margin-top: 0.625rem;
   }
-  .margin-l--top-2_5-per {
-    margin-top: 2.5%;
+  .margin-l--top-7 {
+    margin-top: 0.438rem;
   }
   .margin-l--top-none {
     margin-top: 0px;
@@ -1878,6 +1801,9 @@ a:active {
   }
   .margin-l--right-24-per {
     margin-right: 1.25%;
+  }
+  .margin-l--right-12 {
+    margin-right: 0.75rem;
   }
   .margin-l--right-10 {
     margin-right: 0.625rem;
@@ -2182,6 +2108,9 @@ a:active {
   .margin-s--left-18 {
     margin-left: 1.125rem;
   }
+  .margin-s--left-10 {
+    margin-left: 0.625rem;
+  }
   .margin-s--left-none {
     margin-left: 0px;
   }
@@ -2482,25 +2411,33 @@ a:active {
 .border-purple-light {
   border: 1px solid #3D2A57;
 }
+.border--bottom {
+  border-bottom: 1px solid;
+}
 .border--bottom-grey {
   border-bottom: 1px solid #F6F6F6;
 }
 .border--bottom-grey-dark {
   border-bottom: 1px solid #383838;
 }
+.bottom-gradient {
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(to right, #291644 0%, #9B57FC 100%);
+}
 .menu-main {
   height: 3.75rem;
   width: 100%;
   position: fixed;
   z-index: 9999999;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 .menu-main--right {
   height: 100%;
 }
 .menu-main--right--search-icon {
-  height: 0.875rem;
-  width: 0.875rem;
-  padding: 7%;
+  height: 1.25rem;
+  width: 1.25rem;
   background: #FFFFFF;
   border-radius: 50%;
   border: 1px solid #291644;
@@ -2516,8 +2453,10 @@ a:active {
   height: 3.75rem;
   width: 100%;
   position: fixed;
-  z-index: 9999999;
+  z-index: 999999;
   top: 3.75rem;
+  background-color: #190E29;
+  transition: top 1s ease 0s;
 }
 .menu-dropdown {
   top: 3.75rem;
@@ -2605,7 +2544,7 @@ a:active {
 }
 .vertical_nav {
   position: fixed;
-  top: 60%;
+  top: 70%;
   right: 2%;
   z-index: 100000;
 }
@@ -3165,6 +3104,7 @@ a:active {
   .home-blok4 {
     height: auto;
     background: #291644;
+    padding-top: 0;
   }
   .home-blok4-top {
     height: 55vw;
