@@ -1,8 +1,8 @@
 .button-big {
   height: 2.813rem;
   width: 12.750rem;
-  background-color: #291644;
-  border: 1px solid #291644;
+  background-color: #22123A;
+  border: 1px solid #3d2a57;
   transition: all 0.4s ease-in-out;
 }
 .button-big a {
@@ -20,8 +20,8 @@
 .button-midd {
   height: 2.813rem;
   width: 9.750rem;
-  background-color: #291644;
-  border: 1px solid #291644;
+  background-color: #22123A;
+  border: 1px solid #3d2a57;
   transition: all 0.4s ease-in-out;
 }
 .button-midd a {
@@ -39,7 +39,7 @@
 .button-small {
   height: 2.813rem;
   width: 8.125rem;
-  background-color: #291644;
+  background-color: #22123A;
   transition: all 0.4s ease-in-out;
 }
 .button-small a {
@@ -74,6 +74,6 @@
   transition: all 0.4s ease-in-out;
 }
 .button-border-purple {
-  border: 1px solid #291644;
+  border: 1px solid #3d2a57;
   transition: all 0.4s ease-in-out;
 }

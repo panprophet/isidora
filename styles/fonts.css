@@ -94,6 +94,10 @@
   font-size: 1.375rem;
   line-height: 1.625rem;
 }
+.font--xxl-20 {
+  font-size: 1.25rem;
+  line-height: normal;
+}
 .font--xxl-18 {
   font-size: 1.125rem;
   line-height: 1.35rem;
@@ -149,6 +153,12 @@
 }
 .text-hover:hover * {
   color: #F6F6F6;
+}
+.hover-purple {
+  transition: color 0.6;
+}
+.hover-purple:hover {
+  color: #291644;
 }
 .icon-rotate-180 {
   -webkit-transform: rotate(180deg);

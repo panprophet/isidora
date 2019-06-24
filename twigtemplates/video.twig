@@ -45,11 +45,19 @@
     <div class="flex flex-column align-items-center logo_purple menu_purple padding-xxl--top-100">
         {% set tip = (_GET['1'])?_GET['1']:'svi-postovi' %}
         <div class="flex flex--m-column justify-content-center margin-xxl--bottom-42"> 
-            <a href="video/svi-postovi#section2" class="font--xxl-32 font--m-16  font-grey--mid margin-xxl--left-12_5 margin-xxl--right-12_5 margin-xxl--bottom-24 {{('svi-postovi' == tip)?'font-blue':''}}">Svi Postovi</a>
-            <a href="video/mrsavljenje#section2" class="font--xxl-32 font--m-16 font-grey--mid margin-xxl--left-12_5 margin-xxl--right-12_5 margin-xxl--bottom-24 {{('mrsavljenje' == tip)?'font-blue':''}}">Mršavljenje</a>
-            <a href="video/psihoterapija#section2" class="font--xxl-32 font--m-16 font-grey--mid margin-xxl--left-12_5 margin-xxl--right-12_5 margin-xxl--bottom-24 {{('psihoterapija' == tip)?'font-blue':''}}">Radionica</a>
+            <a href="video/svi-postovi#section2" class="hover-purple font--xxl-20 font--m-16  font-grey--mid margin-xxl--left-12_5 margin-xxl--right-12_5 margin-xxl--bottom-24 {{('svi-postovi' == tip)?'font-blue':''}}">Svi Postovi
+                <div class="margin-xxl--top-8 {{('svi-postovi' == tip)?'bottom-gradient':''}}"></div>
+            </a>
+            <a href="video/mrsavljenje#section2" class="hover-purple font--xxl-20 font--m-16 font-grey--mid margin-xxl--left-12_5 margin-xxl--right-12_5 margin-xxl--bottom-24 {{('mrsavljenje' == tip)?'font-blue':''}}">Mršavljenje
+                <div class="margin-xxl--top-8 {{('mrsavljenje' == tip)?'bottom-gradient':''}}"></div>
+            </a>
+            <a href="video/psihoterapija#section2" class="hover-purple font--xxl-20 font--m-16 font-grey--mid margin-xxl--left-12_5 margin-xxl--right-12_5 margin-xxl--bottom-24 {{('psihoterapija' == tip)?'font-blue':''}}">Psihoterapija
+                <div class="margin-xxl--top-8 {{('psihoterapija' == tip)?'bottom-gradient':''}}"></div>
+            </a>
             {# {% for tab in Blog_Tab %} #}
-            <a href="video/razno#section2" class="font--xxl-32 font--m-16 font-grey--mid margin-xxl--left-12_5 margin-xxl--right-12_5 margin-xxl--bottom-24 {{('razno' == tip)?'font-blue':''}}">{{Blog_Tab.raznoVideo}}</a>
+            <a href="video/razno#section2" class="hover-purple font--xxl-20 font--m-16 font-grey--mid margin-xxl--left-12_5 margin-xxl--right-12_5 margin-xxl--bottom-24 {{('razno' == tip)?'font-blue':''}}">{{Blog_Tab.raznoVideo}}
+                <div class="margin-xxl--top-8 {{('razno' == tip)?'bottom-gradient':''}}"></div>
+            </a>
             {# {% endfor %} #}
         </div>
     </div>

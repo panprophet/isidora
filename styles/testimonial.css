@@ -82,6 +82,10 @@
   padding: 0!important;
   font: inherit;
 }
+.owl-next span,
+.owl-prev span {
+  font-size: 24px;
+}
 .owl-carousel .tacka,
 .owl-carousel .owl-nav .owl-next,
 .owl-carousel .owl-nav .owl-prev {

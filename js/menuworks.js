@@ -25,13 +25,27 @@ function menu_toggle(state) {
 var lastScrollTop = 0;
         $(window).scroll(function(event){
           var st = $(this).scrollTop();
-          if (st<60) { $( ".menu-second" ).css( "top", "3.75rem" ); return }
-          if (st > lastScrollTop){
-            // downscroll code
-            $( ".menu-second" ).css( "top", "-7rem" );
-          } else {
-            // upscroll code
-            $( ".menu-second" ).css( "top", "3.75rem" );
+          // console.log(window.innerWidth);
+          
+          if (window.innerWidth > 1023) {
+            if (st<60) { $( ".menu-second" ).css( "top", "3.75rem" ); return }
+            if (st > lastScrollTop){
+              // downscroll code
+              $( ".menu-second" ).css( "top", "-7rem" );
+            } else {
+              // upscroll code
+              $( ".menu-second" ).css( "top", "3.75rem" );
+            }
+          }
+          if (window.innerWidth < 1023) {
+            if (st<60) { $( ".menu-second" ).css( "top", "0rem" ); return }
+            if (st > lastScrollTop){
+              // downscroll code
+              $( ".menu-second" ).css( "top", "-3.75rem" );
+            } else {
+              // upscroll code
+              $( ".menu-second" ).css( "top", "0rem" );
+            }
           }
           lastScrollTop = st;
         });

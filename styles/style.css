@@ -138,7 +138,7 @@ a:active {
 }
 @media only screen and (max-width: 1365px) {
   .display--xl-none {
-    display: none;
+    display: none!important;
   }
   .display--xl-flex {
     display: flex;
@@ -272,6 +272,10 @@ a:active {
   font-size: 1.375rem;
   line-height: 1.625rem;
 }
+.font--xxl-20 {
+  font-size: 1.25rem;
+  line-height: normal;
+}
 .font--xxl-18 {
   font-size: 1.125rem;
   line-height: 1.35rem;
@@ -327,6 +331,12 @@ a:active {
 }
 .text-hover:hover * {
   color: #F6F6F6;
+}
+.hover-purple {
+  transition: color 0.6;
+}
+.hover-purple:hover {
+  color: #291644;
 }
 .icon-rotate-180 {
   -webkit-transform: rotate(180deg);
@@ -992,8 +1002,8 @@ a:active {
 .button-big {
   height: 2.813rem;
   width: 12.750rem;
-  background-color: #291644;
-  border: 1px solid #291644;
+  background-color: #22123A;
+  border: 1px solid #3d2a57;
   transition: all 0.4s ease-in-out;
 }
 .button-big a {
@@ -1011,8 +1021,8 @@ a:active {
 .button-midd {
   height: 2.813rem;
   width: 9.750rem;
-  background-color: #291644;
-  border: 1px solid #291644;
+  background-color: #22123A;
+  border: 1px solid #3d2a57;
   transition: all 0.4s ease-in-out;
 }
 .button-midd a {
@@ -1030,7 +1040,7 @@ a:active {
 .button-small {
   height: 2.813rem;
   width: 8.125rem;
-  background-color: #291644;
+  background-color: #22123A;
   transition: all 0.4s ease-in-out;
 }
 .button-small a {
@@ -1065,7 +1075,7 @@ a:active {
   transition: all 0.4s ease-in-out;
 }
 .button-border-purple {
-  border: 1px solid #291644;
+  border: 1px solid #3d2a57;
   transition: all 0.4s ease-in-out;
 }
 .background-black {
@@ -1153,6 +1163,9 @@ a:active {
 }
 .margin-xxl--top-20 {
   margin-top: 1.25rem;
+}
+.margin-xxl--top-8 {
+  margin-top: 0.5rem;
 }
 .margin-xxl--bottom-200 {
   margin-bottom: 12.5rem;
@@ -2332,6 +2345,9 @@ a:active {
     width: auto;
   }
 }
+.height-100vh {
+  height: 100vh;
+}
 @media only screen and (max-width: 1365px) {
   .h-100-vh {
     height: 100vh;
@@ -2366,6 +2382,9 @@ a:active {
   }
   .w--l-auto {
     width: auto;
+  }
+  .height-100vh {
+    height: auto;
   }
 }
 @media only screen and (max-width: 960px) {
@@ -4212,6 +4231,15 @@ a:active {
     min-height: 50rem;
     width: auto;
   }
+  .psihoterapija-blok-icon {
+    bottom: 24px;
+    right: 24px;
+  }
+}
+@media screen and (max-width: 650px) {
+  .psihoterapija-blok-1-2-3-all {
+    margin-bottom: 80px;
+  }
 }
 @media screen and (max-width: 480px) {
   .psihoterapija-blok-1-2-3-all {
@@ -4634,6 +4662,10 @@ a:active {
   border: none;
   padding: 0!important;
   font: inherit;
+}
+.owl-next span,
+.owl-prev span {
+  font-size: 24px;
 }
 .owl-carousel .tacka,
 .owl-carousel .owl-nav .owl-next,
