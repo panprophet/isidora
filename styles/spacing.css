@@ -46,6 +46,9 @@
 .margin-xxl--top-20 {
   margin-top: 1.25rem;
 }
+.margin-xxl--top-8 {
+  margin-top: 0.5rem;
+}
 .margin-xxl--bottom-200 {
   margin-bottom: 12.5rem;
 }
@@ -565,8 +568,8 @@
   .margin-l--top-10 {
     margin-top: 0.625rem;
   }
-  .margin-l--top-2_5-per {
-    margin-top: 2.5%;
+  .margin-l--top-7 {
+    margin-top: 0.438rem;
   }
   .margin-l--top-none {
     margin-top: 0px;
@@ -693,6 +696,9 @@
   }
   .margin-l--right-24-per {
     margin-right: 1.25%;
+  }
+  .margin-l--right-12 {
+    margin-right: 0.75rem;
   }
   .margin-l--right-10 {
     margin-right: 0.625rem;
@@ -996,6 +1002,9 @@
   }
   .margin-s--left-18 {
     margin-left: 1.125rem;
+  }
+  .margin-s--left-10 {
+    margin-left: 0.625rem;
   }
   .margin-s--left-none {
     margin-left: 0px;

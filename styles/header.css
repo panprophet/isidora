@@ -3,14 +3,14 @@
   width: 100%;
   position: fixed;
   z-index: 9999999;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 .menu-main--right {
   height: 100%;
 }
 .menu-main--right--search-icon {
-  height: 0.875rem;
-  width: 0.875rem;
-  padding: 7%;
+  height: 1.25rem;
+  width: 1.25rem;
   background: #FFFFFF;
   border-radius: 50%;
   border: 1px solid #291644;
@@ -26,8 +26,10 @@
   height: 3.75rem;
   width: 100%;
   position: fixed;
-  z-index: 9999999;
+  z-index: 999999;
   top: 3.75rem;
+  background-color: #190E29;
+  transition: top 1s ease 0s;
 }
 .menu-dropdown {
   top: 3.75rem;

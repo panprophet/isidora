@@ -60,7 +60,7 @@
                 {# <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 13 13" fill="none">
                     <path class="loopa" d="M9.29102 8.1761H8.70383L8.49571 7.97541C9.22413 7.12807 9.66266 6.02802 9.66266 4.83133C9.66266 2.16295 7.49971 0 4.83133 0C2.16295 0 0 2.16295 0 4.83133C0 7.49971 2.16295 9.66266 4.83133 9.66266C6.02802 9.66266 7.12807 9.22413 7.97541 8.49571L8.1761 8.70383V9.29102L11.8925 13L13 11.8925L9.29102 8.1761ZM4.83133 8.1761C2.98056 8.1761 1.48656 6.6821 1.48656 4.83133C1.48656 2.98056 2.98056 1.48656 4.83133 1.48656C6.6821 1.48656 8.1761 2.98056 8.1761 4.83133C8.1761 6.6821 6.6821 8.1761 4.83133 8.1761Z" fill="#291644"/>
                 </svg> #}
-                <div id="js-search" style="margin-top: 5px; display: flex; align-items: center;" >
+                <div id="js-search" style="display: flex; align-items: center;" >
                     <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 13 13" fill="none">
                     <path class="loopa" d="M9.29102 8.1761H8.70383L8.49571 7.97541C9.22413 7.12807 9.66266 6.02802 9.66266 4.83133C9.66266 2.16295 7.49971 0 4.83133 0C2.16295 0 0 2.16295 0 4.83133C0 7.49971 2.16295 9.66266 4.83133 9.66266C6.02802 9.66266 7.12807 9.22413 7.97541 8.49571L8.1761 8.70383V9.29102L11.8925 13L13 11.8925L9.29102 8.1761ZM4.83133 8.1761C2.98056 8.1761 1.48656 6.6821 1.48656 4.83133C1.48656 2.98056 2.98056 1.48656 4.83133 1.48656C6.6821 1.48656 8.1761 2.98056 8.1761 4.83133C8.1761 6.6821 6.6821 8.1761 4.83133 8.1761Z" fill="#291644"/>
                     </svg>
@@ -86,7 +86,7 @@
         {% endif %}
         <div class="flex margin-xxl--top-48">
             <span><a href=""><img src="./assets/shared/instagram.svg"></a></span>
-            <span class="margin-xxl--left-24"><a href=""><img src="./assets/shared/facebook.svg"></a></span>
+            <span class="margin-xxl--left-24 flex align-items-center justify-content-center"><a href=""><img src="./assets/shared/facebook.svg"></a></span>
             {# <span class="margin-xxl--left-24"><a href=""><img src="./assets/shared/pinterest.svg"></a></span> #}
             {# <span class="margin-xxl--left-24"><a href=""><img src="./assets/shared/linkedin.svg"></a></span> #}
         </div>
@@ -98,17 +98,17 @@
 </div>
 
 <div class="menu-second font-14 font-white flex justify-content-between align-items-center" id="secondmenu">
-    <a href="index" class="menu-second--left flex align-items-center margin-xxl--left-52 margin-s--left-24">
-        <span class="margin-xxl--right-28 margin-l--right-10">
-            <svg class="{% if (_GET[0] == 'radionice') or (_GET[0] == 'radionica') or (_GET[0] == 'mrsavljenje') or (_GET[0] == 'psihoterapija') or (_GET[0] == 'video') or (_GET[0] == 'blog') or (_GET[0] == 'post') %} logo-white {% else %} logo-purple {% endif %} logo-l--white" id="logo" width="37" height="41" viewBox="0 0 37 41" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <a href="index" style="height: 41px;" class="menu-second--left flex align-items-center margin-xxl--left-52 margin-s--left-24">
+        <img style="max-height: 100%;" src="./assets/shared/logo-white-full.png">
+        {# <span class="flex margin-xxl--right-28 margin-l--right-12">
+            <svg class="color-white" id="logo" width="37" height="41" viewBox="0 0 37 41" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M14.8341 8.5037C17.2496 8.5037 19.2104 6.59865 19.2104 4.25185C19.2104 1.90505 17.2496 0 14.8341 0C12.4186 0 10.4578 1.90505 10.4578 4.25185C10.4578 6.59865 12.4186 8.5037 14.8341 8.5037Z"/>
                 <path d="M22.8763 14.5234C19.0684 14.5234 15.5161 16.042 12.9301 18.444C10.3441 20.8736 8.75269 24.1591 8.75269 27.6931C8.75269 31.2271 10.3441 34.5403 12.9301 36.9699C15.5161 39.3995 19.0684 40.9181 22.8763 40.9181C26.6843 40.9181 30.2366 39.3995 32.8226 36.9699C35.4086 34.5403 37 31.2271 37 27.6931C37 24.1591 35.4086 20.8736 32.8226 18.444C30.2366 16.0143 26.7127 14.5234 22.8763 14.5234ZM34.0161 27.6931C34.0161 30.7578 32.7657 33.5739 30.7481 35.617C28.7304 37.6601 25.9455 38.9578 22.8763 38.9854C19.7788 38.9854 16.9939 37.6878 14.9762 35.617C12.9585 33.5739 11.7081 30.7578 11.7081 27.6931C11.7081 24.6561 12.9585 21.8675 14.9762 19.8244C16.9939 17.7814 19.7788 16.4837 22.8763 16.4837C25.9455 16.5113 28.7304 17.7814 30.7481 19.8244C32.7657 21.8399 34.0161 24.6561 34.0161 27.6931Z" />
                 <path d="M4.00691 0.138672H0V41.0006H4.00691V0.138672Z" />
             </svg>
         </span>
-        <span>
-            <svg class="{% if (_GET[0] == 'radionice') or (_GET[0] == 'radionica') or (_GET[0] == 'mrsavljenje') or (_GET[0] == 'psihoterapija') or (_GET[0] == 'video') or (_GET[0] == 'blog') or (_GET[0] == 'post') %} logo-white {% else %} logo-purple {% endif %} logo-l--white" width="116" height="29" viewBox="0 0 116 29" fill="none" xmlns="http://www.w3.org/2000/svg" id="logo2">
-                {# <g clip-path="url(#clip0)"> #}
+        <span class="flex margin-l--top-7">
+            <svg class="color-white" width="116" height="29" viewBox="0 0 116 29" fill="none" xmlns="http://www.w3.org/2000/svg" id="logo2">
                     <path d="M58.161 16.4883H64.0047C66.0753 16.4883 67.5017 17.7394 67.5017 19.5268C67.5017 20.8226 66.8115 21.5823 65.6612 22.2078C67.1336 22.9228 68.0079 24.0399 68.0079 25.3804C68.0079 27.3465 66.4434 28.7317 64.2348 28.7317H58.161V16.4883ZM63.6366 21.7163C65.063 21.7163 66.0753 20.912 66.0753 19.7502C66.0753 18.5884 65.063 17.7841 63.6366 17.7841H59.5874V21.7163H63.6366ZM63.8667 27.5253C65.4311 27.5253 66.5815 26.5869 66.5815 25.2464C66.5815 23.9058 65.4772 22.9675 63.8667 22.9675H59.5874V27.5253H63.8667Z" fill="white"/>
                     <path d="M78.2229 19.5273V28.777H76.8425V27.3024C76.2903 28.2854 75.0479 29.0004 73.6675 29.0004C71.5509 29.0004 70.0785 27.5258 70.0785 25.4257V19.5273H71.4589V25.2469C71.4589 26.7662 72.4252 27.7939 73.8516 27.7939C75.4621 27.7939 76.8425 26.7215 76.8425 25.4257V19.5273H78.2229Z" fill="white"/>
                     <path d="M88.806 22.9221V28.8205H87.4256V23.1009C87.4256 21.5816 86.4593 20.5539 85.0329 20.5539C83.4224 20.5539 82.042 21.6263 82.042 22.9221V28.8205H80.6616V19.5262H82.042V21.0007C82.5942 20.0177 83.8365 19.3027 85.217 19.3027C87.2876 19.3474 88.806 20.822 88.806 22.9221Z" fill="white"/>
@@ -135,7 +135,6 @@
                     <path d="M53.4677 5.76376L53.9279 6.25528C53.4677 6.74681 52.5475 7.01491 51.8112 7.01491C50.4308 7.01491 49.1425 5.89781 49.1425 4.37855C49.1425 2.85929 50.2928 1.74219 51.7192 1.74219C53.2837 1.74219 54.2039 2.90397 54.2039 4.64666H49.9247C50.0167 5.62971 50.7529 6.34465 51.7652 6.34465C52.4554 6.38934 53.1456 6.12123 53.4677 5.76376ZM50.0167 4.02108H53.5137C53.4217 3.1274 52.8695 2.41245 51.8112 2.41245C50.891 2.41245 50.1548 3.03803 50.0167 4.02108Z" fill="white"/>
                     <path d="M59.6795 1.87695V6.88158H58.9433V6.07726C58.6212 6.61347 57.977 7.01563 57.2408 7.01563C56.0905 7.01563 55.2622 6.21131 55.2622 5.04953V1.87695H55.9984V4.96016C55.9984 5.76447 56.5506 6.34537 57.2868 6.34537C58.1611 6.34537 58.8973 5.76447 58.8973 5.04953V1.87695H59.6795Z" fill="white"/>
                     <path d="M63.6366 6.70328C63.3605 6.9267 63.0384 7.01607 62.6703 7.01607C61.9341 7.01607 61.3819 6.47986 61.3819 5.72023V2.54766H60.5537V1.8774H61.3819V0.492188H62.1182V1.8774H63.4065V2.54766H62.1182V5.76491C62.1182 6.12239 62.3942 6.39049 62.6703 6.39049C62.9004 6.39049 63.0844 6.30112 63.2225 6.16707L63.6366 6.70328Z" fill="white"/>
-                {# </g> #}
                 <defs>
                     <clipPath id="clip0">
                         <rect width="116" height="29" fill="white"/>
@@ -143,7 +142,7 @@
                 </defs>
             </svg>
 
-        </span>
+        </span> #}
     </a>
 
     <div class="flex">
@@ -153,14 +152,32 @@
         </div>
     {% endif %}
     </div>
-        <div class="menu-second--right {% if (_GET[0] == 'radionice') or (_GET[0] == 'radionica') or (_GET[0] == 'kontakt') %} font-purple--menu {% else %} font-white--menu {% endif %} flex align-items-center margin-xxl--right-52 " id="menusecond">
-            <div class="menu-second--right-links display--xl-none">
-                <span class="margin-xxl--left-52"><a href="o_meni">O meni</a></span>
-                <span class="margin-xxl--left-52 margin-xl--left-40"><a href="radionice">Radionica</a></span>
-                <span class="margin-xxl--left-52 margin-xl--left-40"><a href="mrsavljenje">Mršavljenje</a></span>
-                <span class="margin-xxl--left-52 margin-xl--left-40"><a href="psihoterapija">Psihoterapija</a></span>
-                <span class="margin-xxl--left-52 margin-xl--left-40"><a href="video">Video</a></span>
-                <span class="margin-xxl--left-52 margin-xl--left-40"><a href="blog">Blog</a></span>
+        <div class="menu-second--right color-white flex align-items-center margin-xxl--right-52 margin-s--right-24" id="menusecond">
+            <div class="menu-second--right-links flex display--xl-none" id="closeham">
+                <div class="margin-xxl--left-52 ">
+                    <a class="font--xxl-14" href="o_meni">O meni</a>
+                    <div class="{% if _GET[0] == 'o_meni' %} bottom-gradient {% endif %}"></div>
+                </div>
+                <div class="margin-xxl--left-52 margin-xl--left-40">
+                    <a class="font--xxl-14" href="radionice">Radionica</a>
+                    <div class="{% if _GET[0] == 'radionice' %} bottom-gradient {% endif %}"></div>
+                </div>
+                <div class="margin-xxl--left-52 margin-xl--left-40">
+                    <a class="font--xxl-14" href="mrsavljenje">Mršavljenje</a>
+                    <div class="{% if _GET[0] == 'mrsavljenje' %} bottom-gradient {% endif %}"></div>
+                </div>
+                <div class="margin-xxl--left-52 margin-xl--left-40">
+                    <a class="font--xxl-14" href="psihoterapija">Psihoterapija</a>
+                    <div class="{% if _GET[0] == 'psihoterapija' %} bottom-gradient {% endif %}"></div>
+                </div>
+                <div class="margin-xxl--left-52 margin-xl--left-40">
+                    <a class="font--xxl-14" href="video">Video</a>
+                    <div class="{% if _GET[0] == 'video' %} bottom-gradient {% endif %}"></div>
+                </div>
+                <div class="margin-xxl--left-52 margin-xl--left-40">
+                    <a class="font--xxl-14" href="blog">Blog</a>
+                    <div class="{% if _GET[0] == 'blog' %} bottom-gradient {% endif %}"></div>
+                </div>
             </div>
             <div class="menu-second--right-kontakt flex align-items-center margin-xxl--left-52 display--xl-none">
                 <span class="display--xl-none">
@@ -168,20 +185,20 @@
                         <path d="M18 6H8V12H6V4H12V0H4V6H2C0.9 6 0 6.9 0 8V20C0 21.1 0.9 22 2 22H18C19.1 22 20 21.1 20 20V8C20 6.9 19.1 6 18 6Z" />
                     </svg>
                 </span>
-                <span class="margin-xxl--left-10 display--xl-none"><a href="kontakt">Kontakt</a></span>
+                <span class="margin-xxl--left-10 display--xl-none">
+                    <a class="font--xxl-14" href="kontakt">Kontakt</a>
+                    <div class="{% if _GET[0] == 'kontakt' %} bottom-gradient {% endif %}"></div>
+                </span>
+                
             </div>
             <div class="display--xxl-none display--xl-flex align-items--xl-center">
-                <svg class="ham-white" xmlns="http://www.w3.org/2000/svg" width="23" height="8" viewBox="0 0 23 8" fill="none" id="ham" onClick="menu_toggle(true)">
-                    <line y1="0.5" x2="23" y2="0.5" />
-                    <line y1="7.5" x2="18" y2="7.5" />
-                </svg>
                 <div class="menu-main--right--search flex align-items-center justify-content-center">
                     <span class="display--xl-none">Pretraži</span>
-                    <span class="menu-main--right--search-icon flex align-items-center justify-content-center background-white margin-xxl--left-28">
+                    <span class="menu-main--right--search-icon flex align-items-center justify-content-center background-white">
                         {# <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 13 13" fill="none">
                             <path class="loopa" d="M9.29102 8.1761H8.70383L8.49571 7.97541C9.22413 7.12807 9.66266 6.02802 9.66266 4.83133C9.66266 2.16295 7.49971 0 4.83133 0C2.16295 0 0 2.16295 0 4.83133C0 7.49971 2.16295 9.66266 4.83133 9.66266C6.02802 9.66266 7.12807 9.22413 7.97541 8.49571L8.1761 8.70383V9.29102L11.8925 13L13 11.8925L9.29102 8.1761ZM4.83133 8.1761C2.98056 8.1761 1.48656 6.6821 1.48656 4.83133C1.48656 2.98056 2.98056 1.48656 4.83133 1.48656C6.6821 1.48656 8.1761 2.98056 8.1761 4.83133C8.1761 6.6821 6.6821 8.1761 4.83133 8.1761Z" fill="#291644"/>
                         </svg> #}
-                        <div id="js-search-m" style="margin-top: 5px; display: flex; align-items: center;" >
+                        <div id="js-search-m" style=" display: flex; align-items: center;" >
                             <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 13 13" fill="none">
                             <path class="loopa" d="M9.29102 8.1761H8.70383L8.49571 7.97541C9.22413 7.12807 9.66266 6.02802 9.66266 4.83133C9.66266 2.16295 7.49971 0 4.83133 0C2.16295 0 0 2.16295 0 4.83133C0 7.49971 2.16295 9.66266 4.83133 9.66266C6.02802 9.66266 7.12807 9.22413 7.97541 8.49571L8.1761 8.70383V9.29102L11.8925 13L13 11.8925L9.29102 8.1761ZM4.83133 8.1761C2.98056 8.1761 1.48656 6.6821 1.48656 4.83133C1.48656 2.98056 2.98056 1.48656 4.83133 1.48656C6.6821 1.48656 8.1761 2.98056 8.1761 4.83133C8.1761 6.6821 6.6821 8.1761 4.83133 8.1761Z" fill="#291644"/>
                             </svg>
@@ -189,23 +206,22 @@
 
                     </span>
                 </div>
+                <svg class="ham-white margin-xxl--left-24 margin-s--left-10" xmlns="http://www.w3.org/2000/svg" width="23" height="8" viewBox="0 0 23 8" fill="none" id="ham" onClick="menu_toggle(true)">
+                    <line y1="0.5" x2="23" y2="0.5" />
+                    <line y1="7.5" x2="18" y2="7.5" />
+                </svg>
+                
             </div>
         </div>
     </div>
 </div>
 <div class="menu-dropdown display--xxl-none display--xl-flex align-items--xl-center justify-content--xl-end flex--m-column justify-content--m-center" id="dropdown">
     <div class="menu-dropdown-top display--xxl-none display--m-flex align-items-center justify-content-between w--m-100">
-        <div class="menu-dropdown-top-left margin-xxl--left-52 flex align-items-center">
-            <span class="margin-xxl--right-28">
-                <svg class="logo-white" id="logo" width="37" height="41" viewBox="0 0 37 41" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M14.8341 8.5037C17.2496 8.5037 19.2104 6.59865 19.2104 4.25185C19.2104 1.90505 17.2496 0 14.8341 0C12.4186 0 10.4578 1.90505 10.4578 4.25185C10.4578 6.59865 12.4186 8.5037 14.8341 8.5037Z"/>
-                    <path d="M22.8763 14.5234C19.0684 14.5234 15.5161 16.042 12.9301 18.444C10.3441 20.8736 8.75269 24.1591 8.75269 27.6931C8.75269 31.2271 10.3441 34.5403 12.9301 36.9699C15.5161 39.3995 19.0684 40.9181 22.8763 40.9181C26.6843 40.9181 30.2366 39.3995 32.8226 36.9699C35.4086 34.5403 37 31.2271 37 27.6931C37 24.1591 35.4086 20.8736 32.8226 18.444C30.2366 16.0143 26.7127 14.5234 22.8763 14.5234ZM34.0161 27.6931C34.0161 30.7578 32.7657 33.5739 30.7481 35.617C28.7304 37.6601 25.9455 38.9578 22.8763 38.9854C19.7788 38.9854 16.9939 37.6878 14.9762 35.617C12.9585 33.5739 11.7081 30.7578 11.7081 27.6931C11.7081 24.6561 12.9585 21.8675 14.9762 19.8244C16.9939 17.7814 19.7788 16.4837 22.8763 16.4837C25.9455 16.5113 28.7304 17.7814 30.7481 19.8244C32.7657 21.8399 34.0161 24.6561 34.0161 27.6931Z" />
-                    <path d="M4.00691 0.138672H0V41.0006H4.00691V0.138672Z" />
-                </svg>
-            </span>
-            <span>
-                <svg class="logo-white" width="116" height="29" viewBox="0 0 116 29" fill="none" xmlns="http://www.w3.org/2000/svg" id="logo2">
-                    {# <g clip-path="url(#clip0)"> #}
+        <div class="menu-dropdown-top-left margin-xxl--left-52 margin-s--left-24 flex align-items-center">
+            <span style="height: 41px;">
+            <img style="max-height: 100%;" src="./assets/shared/logo-white-full.png">
+                {# <svg class="logo-white" width="116" height="29" viewBox="0 0 116 29" fill="none" xmlns="http://www.w3.org/2000/svg" id="logo2">
+                    
                         <path d="M58.161 16.4883H64.0047C66.0753 16.4883 67.5017 17.7394 67.5017 19.5268C67.5017 20.8226 66.8115 21.5823 65.6612 22.2078C67.1336 22.9228 68.0079 24.0399 68.0079 25.3804C68.0079 27.3465 66.4434 28.7317 64.2348 28.7317H58.161V16.4883ZM63.6366 21.7163C65.063 21.7163 66.0753 20.912 66.0753 19.7502C66.0753 18.5884 65.063 17.7841 63.6366 17.7841H59.5874V21.7163H63.6366ZM63.8667 27.5253C65.4311 27.5253 66.5815 26.5869 66.5815 25.2464C66.5815 23.9058 65.4772 22.9675 63.8667 22.9675H59.5874V27.5253H63.8667Z" fill="white"/>
                         <path d="M78.2229 19.5273V28.777H76.8425V27.3024C76.2903 28.2854 75.0479 29.0004 73.6675 29.0004C71.5509 29.0004 70.0785 27.5258 70.0785 25.4257V19.5273H71.4589V25.2469C71.4589 26.7662 72.4252 27.7939 73.8516 27.7939C75.4621 27.7939 76.8425 26.7215 76.8425 25.4257V19.5273H78.2229Z" fill="white"/>
                         <path d="M88.806 22.9221V28.8205H87.4256V23.1009C87.4256 21.5816 86.4593 20.5539 85.0329 20.5539C83.4224 20.5539 82.042 21.6263 82.042 22.9221V28.8205H80.6616V19.5262H82.042V21.0007C82.5942 20.0177 83.8365 19.3027 85.217 19.3027C87.2876 19.3474 88.806 20.822 88.806 22.9221Z" fill="white"/>
@@ -232,31 +248,31 @@
                         <path d="M53.4677 5.76376L53.9279 6.25528C53.4677 6.74681 52.5475 7.01491 51.8112 7.01491C50.4308 7.01491 49.1425 5.89781 49.1425 4.37855C49.1425 2.85929 50.2928 1.74219 51.7192 1.74219C53.2837 1.74219 54.2039 2.90397 54.2039 4.64666H49.9247C50.0167 5.62971 50.7529 6.34465 51.7652 6.34465C52.4554 6.38934 53.1456 6.12123 53.4677 5.76376ZM50.0167 4.02108H53.5137C53.4217 3.1274 52.8695 2.41245 51.8112 2.41245C50.891 2.41245 50.1548 3.03803 50.0167 4.02108Z" fill="white"/>
                         <path d="M59.6795 1.87695V6.88158H58.9433V6.07726C58.6212 6.61347 57.977 7.01563 57.2408 7.01563C56.0905 7.01563 55.2622 6.21131 55.2622 5.04953V1.87695H55.9984V4.96016C55.9984 5.76447 56.5506 6.34537 57.2868 6.34537C58.1611 6.34537 58.8973 5.76447 58.8973 5.04953V1.87695H59.6795Z" fill="white"/>
                         <path d="M63.6366 6.70328C63.3605 6.9267 63.0384 7.01607 62.6703 7.01607C61.9341 7.01607 61.3819 6.47986 61.3819 5.72023V2.54766H60.5537V1.8774H61.3819V0.492188H62.1182V1.8774H63.4065V2.54766H62.1182V5.76491C62.1182 6.12239 62.3942 6.39049 62.6703 6.39049C62.9004 6.39049 63.0844 6.30112 63.2225 6.16707L63.6366 6.70328Z" fill="white"/>
-                    {# </g> #}
+                  
                     <defs>
                         <clipPath id="clip0">
                             <rect width="116" height="29" fill="white"/>
                         </clipPath>
                     </defs>
-                </svg>
+                </svg> #}
 
             </span>
         </div>
-        <div class="menu-dropdown-top-right margin-xxl--right-52 display--xxl-none display--xl-flex">
-            <svg class="text-hover margin-xl--top-24" width="17" height="18" viewBox="0 0 17 18" fill="none" xmlns="http://www.w3.org/2000/svg" id="hamclose" onClick="menu_toggle(false)">
+        <div class="menu-dropdown-top-right margin-xxl--right-52 margin-s--right-24 display--xxl-none display--xl-flex">
+            <svg class="text-hover" width="17" height="18" viewBox="0 0 17 18" fill="none" xmlns="http://www.w3.org/2000/svg" id="hamclose" onClick="menu_toggle(false)">
                 <line x1="0.353553" y1="0.646447" x2="16.617" y2="16.9099" stroke="#60B709"/>
                 <line x1="0.646447" y1="15.6464" x2="13.3744" y2="2.91852" stroke="#60B709"/>
             </svg>
         </div>
     </div>
-    <div class="menu-dropdown--left flex align-items-center justify-content-end">
+    <div class="flex-1 flex align-items-center justify-content-end">
         <div class="menu-dropdown--left-links flex--m flex--m-column align-items--m-start">
-            <span class="margin-m--bottom-70 font-14 font-white"><a href="o_meni">O meni</a></span>
-            <span class="margin-xxl--left-52 margin-xl--left-70 margin-l--left-60 margin-m--left-none margin-m--bottom-70 font-14 font-white"><a href="radionice">Radionica</a></span>
-            <span class="margin-xxl--left-52 margin-xl--left-70 margin-l--left-60 margin-m--left-none margin-m--bottom-70 font-14 font-white"><a href="mrsavljenje">Mršavljenje</a></span>
-            <span class="margin-xxl--left-52 margin-xl--left-70 margin-l--left-60 margin-m--left-none margin-m--bottom-70 font-14 font-white"><a href="psihoterapija">Psihoterapija</a></span>
-            <span class="margin-xxl--left-52 margin-xl--left-70 margin-l--left-60 margin-m--left-none margin-m--bottom-70 font-14 font-white"><a href="video">Video</a></span>
-            <span class="margin-xxl--left-52 margin-xl--left-70 margin-l--left-60 margin-m--left-none font-14 font-white"><a href="blog">Blog</a></span>
+            <span class="margin-m--bottom-46 font-white"><a class="font--xxl-14" href="o_meni">O meni</a></span>
+            <span class="margin-xxl--left-52 margin-xl--left-70 margin-l--left-60 margin-m--left-none margin-m--bottom-46 font-white"><a class="font--xxl-14" href="radionice">Radionica</a></span>
+            <span class="margin-xxl--left-52 margin-xl--left-70 margin-l--left-60 margin-m--left-none margin-m--bottom-46 font-white"><a class="font--xxl-14" href="mrsavljenje">Mršavljenje</a></span>
+            <span class="margin-xxl--left-52 margin-xl--left-70 margin-l--left-60 margin-m--left-none margin-m--bottom-46 font-white"><a class="font--xxl-14" href="psihoterapija">Psihoterapija</a></span>
+            <span class="margin-xxl--left-52 margin-xl--left-70 margin-l--left-60 margin-m--left-none margin-m--bottom-46 font-white"><a class="font--xxl-14" href="video">Video</a></span>
+            <span class="margin-xxl--left-52 margin-xl--left-70 margin-l--left-60 margin-m--left-none font-white"><a class="font--xxl-14" href="blog">Blog</a></span>
         </div>
     </div>
     <div class="menu-dropdown--right margin-xl--left-70 margin-l--left-60 margin-xxl--right-52 flex align-items-center justify-content-end w--m-100">
@@ -266,7 +282,7 @@
                     <path d="M18 6H8V12H6V4H12V0H4V6H2C0.9 6 0 6.9 0 8V20C0 21.1 0.9 22 2 22H18C19.1 22 20 21.1 20 20V8C20 6.9 19.1 6 18 6Z" />
                 </svg>
             </span>
-            <span class="margin-xxl--left-10 font-white font-14"><a href="kontakt">Kontakt</a></span>
+            <span class="margin-xxl--left-10 font-white"><a class="font--xxl-14" href="kontakt">Kontakt</a></span>
         </div>
         <div class="menu-dropdown--right-close display--xxl-none display--xl-flex display--m-none margin-xl--left-40 align-items-start justify-content-start">
             <svg class="text-hover margin-xl--top-24" width="17" height="18" viewBox="0 0 17 18" fill="none" xmlns="http://www.w3.org/2000/svg" onClick="menu_toggle(false)">
@@ -309,7 +325,7 @@
         <div class="footer-container-top--left margin-xxl--left-135 margin-xl--left-70 margin-l--left-none margin-xl--right-70 margin-l--right-none w-40 w--l-100">
             <div class="footer-container-top--left-kontakt">
                 <div class="margin-xxl--bottom-60 margin-xl--bottom-24">
-                    <div class="font--xxl-18 font-purple font-bold margin-xxl--right-48 margin-xl--right-none margin-xxl--bottom-10 text--l-center">Socialne mreze</div>
+                    <div class="font--xxl-18 font-purple font-bold margin-xxl--right-48 margin-xl--right-none margin-xxl--bottom-10 text--l-center">Društvene mreze</div>
                     <div class="flex align-items-center justify-content--l-center">
                         <a class="icon-purple flex align-items-center justify-content-start margin-xxl--right-18" href="#"><img src="./assets/shared/instagram_purple.svg"></a>
                         <a class="icon-purple flex align-items-center justify-content-start" href="#"><img src="./assets/shared/facebook_purple.svg"></a>
@@ -321,6 +337,7 @@
                 <div class="flex flex-column">
                     <span class="font--xxl-16 font-purple-light margin-xxl--right-24 margin-xl--right-none text--l-center">Broj telefona</span>
                     <span class="text--l-center"><a class="font--xxl-16 font-purple-light" href="tel:0118789685">011 8789-685</a></span>
+                    <span class="font--xxl-16 font-purple-light margin-xxl--right-24 margin-xl--right-none text--l-center">isidora.buneta@gmail.com</span>
                 </div>
             </div>
         </div>
@@ -336,8 +353,8 @@
     </div>
     </div>
     <div class="footer-container-bottom flex flex-column justify-content-center w-100">
-        <div class="margin-xxl--left-135 margin-xxl--right-135 margin-xl--left-70 margin-xl--right-70 margin-xxl--top-48 margin-xl--top-32  margin-xxl--bottom-42 margin-xl--bottom-24 w-100 w--xl-auto font-purple font--xxl-18 font-bold text--l-center">Meni</div>
-        <div class="flex flex--l-column align-items-center margin-xxl--bottom-48 margin-xl--bottom-32 margin-xxl--left-135 margin-xl--left-70 margin-xl--right-70 w-100 w--xl-auto">
+        <div class="margin-xxl--left-135 margin-xxl--right-135 margin-xl--left-70 margin-xl--right-70 margin-xxl--top-32 margin-xl--top-32  margin-xxl--bottom-32 margin-xl--bottom-24 w-100 w--xl-auto font-purple font--xxl-18 font-bold text--l-center">Meni</div>
+        <div class="flex flex--l-column align-items-center margin-xxl--bottom-32  margin-xxl--left-135 margin-xl--left-70 margin-xl--right-70 w-100 w--xl-auto">
             <span class="margin-xxl--right-52 margin-l--right-none margin-l--bottom-24 font-purple--invert font--xxl-14"><a href="o_meni">O meni</a></span>
             <span class="margin-xxl--right-52 margin-l--right-none margin-l--bottom-24 font-purple--invert font--xxl-14"><a href="radionice">Radionica</a></span>
             <span class="margin-xxl--right-52 margin-l--right-none margin-l--bottom-24 font-purple--invert font--xxl-14"><a href="mrsavljenje">Mršavljenje</a></span>
@@ -346,6 +363,7 @@
             <span class="margin-xxl--right-52 margin-l--right-none margin-l--bottom-24 font-purple--invert font--xxl-14"><a href="kontakt">Kontakt</a></span>
             <span class="margin-xxl--right-52 margin-l--right-none margin-l--bottom-24 font-purple--invert font--xxl-14"><a href="psihoterapija">Psihoterapija</a></span>
         </div>
+        <div class="text-center margin-xxl--bottom-24 font-purple--invert font--xxl-14">© 2019 DIMIS creating & improving brands</div>
     </div>
     </div>
 </footer>

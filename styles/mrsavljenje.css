@@ -226,6 +226,7 @@
     width: 60%;
   }
   .blok3-right-all {
+    z-index: 10;
     margin-left: -2.5rem;
     width: 90%;
   }
@@ -362,12 +363,13 @@
   }
   .blok4-all {
     background-image: none;
+    background-color: #291644;
   }
   .blok4-all-left {
     width: 100%;
     animation-duration: 0s;
     height: auto;
-    margin-bottom: 9.375rem;
+    margin-bottom: 5.375rem;
   }
   .blok4-all-left-all {
     width: 60%;

@@ -74,6 +74,15 @@
     min-height: 50rem;
     width: auto;
   }
+  .psihoterapija-blok-icon {
+    bottom: 24px;
+    right: 24px;
+  }
+}
+@media screen and (max-width: 650px) {
+  .psihoterapija-blok-1-2-3-all {
+    margin-bottom: 80px;
+  }
 }
 @media screen and (max-width: 480px) {
   .psihoterapija-blok-1-2-3-all {

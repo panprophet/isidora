@@ -26,6 +26,21 @@ AOS.init({
 
 
 // owl carousel
+var owl4 = $('#owl4');
+    owl4.owlCarousel({
+        items:1,
+        loop:true,
+        autoplay:false,
+        autoplayTimeout:5000,
+        autoplayHoverPause:true,
+        nav:false,
+        dots:true,
+        dotsClass: 'kruzici',
+        dotClass: 'krug',
+        animateOut: 'fadeOut',
+        hideOnContentClick: 'false'
+    });
+
 var owl3 = $('#owl-3');
     // var dots = $('.owl-dots');
     owl3.owlCarousel({
