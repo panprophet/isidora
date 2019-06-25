@@ -3888,6 +3888,7 @@ a:active {
     width: 60%;
   }
   .blok3-right-all {
+    z-index: 10;
     margin-left: -2.5rem;
     width: 90%;
   }
@@ -4024,12 +4025,13 @@ a:active {
   }
   .blok4-all {
     background-image: none;
+    background-color: #291644;
   }
   .blok4-all-left {
     width: 100%;
     animation-duration: 0s;
     height: auto;
-    margin-bottom: 9.375rem;
+    margin-bottom: 5.375rem;
   }
   .blok4-all-left-all {
     width: 60%;
@@ -4691,6 +4693,56 @@ a:active {
 .owl-theme .tacke .tacka:hover span {
   background: #60B709;
 }
+.kruzici {
+  position: absolute;
+  bottom: 10%;
+  left: 135px;
+  text-align: center;
+  -webkit-tap-highlight-color: transparent;
+}
+.owl-theme .kruzici .krug {
+  display: inline-block;
+  zoom: 1;
+  *display: inline;
+}
+.owl-carousel .owl-nav button.owl-next,
+.owl-carousel .owl-nav button.owl-prev,
+.owl-carousel button.krug {
+  background: 0 0;
+  color: inherit;
+  border: none;
+  padding: 0!important;
+  font: inherit;
+}
+.owl-carousel .krug,
+.owl-carousel .owl-nav .owl-next,
+.owl-carousel .owl-nav .owl-prev {
+  cursor: pointer;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.owl-theme .kruzici .krug span {
+  width: 0.375rem;
+  height: 0.375rem;
+  margin: 0.438rem 0.875rem 0.438rem 0;
+  background: #919191;
+  display: block;
+  -webkit-backface-visibility: visible;
+  transition: opacity 200ms ease;
+  border-radius: 1.875rem;
+}
+.owl-theme .kruzici .krug.active span,
+.owl-theme .kruzici .krug:hover span {
+  background: #60B709;
+}
+@media screen and (max-width: 1440px) {
+  .kruzici {
+    left: 70px;
+  }
+}
 @media screen and (max-width: 1366px) {
   .testimonial-right {
     background-position: bottom;
@@ -4750,8 +4802,16 @@ a:active {
     bottom: 3%;
     left: 35%;
   }
+  .kruzici {
+    bottom: 6%;
+  }
   .owl-theme .owl-nav {
     display: none;
+  }
+}
+@media screen and (max-width: 960px) {
+  .kruzici {
+    left: 57px;
   }
 }
 @media screen and (max-width: 700px) {
@@ -4781,6 +4841,9 @@ a:active {
     width: 15.5rem;
     height: 15.5rem;
     margin-left: 0;
+  }
+  .kruzici {
+    left: 23px;
   }
 }
 .detaljnije-kk {

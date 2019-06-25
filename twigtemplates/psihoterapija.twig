@@ -25,13 +25,15 @@
 <!-- blok1 -->
 
 <!-- blok2 -->
-<div class="blok4 background-purple">
+{% set Primer = fetch("Primer") %}
+<div id="owl4" class="testimonial owl-carousel owl-theme owl-loaded blok4 background-purple logo_white menu_white" id="section4">
     <!-- psihoterapija -->
+    {% for item in Primer %}
     <div id="psihoterapija" class="blok4-all flex-direction-reverse flex--l-direction">
         <div class="blok4-all-right">
             <div class="blok4-all-right-1">
                 <div class="blok4-all-right-1-2">
-                    <div class="blok4-all-right-1-2-image" style="background-image: url('assets/images/mrsavljenje-blok5.jpg')">
+                    <div class="blok4-all-right-1-2-image" style="background-image: url('assets/images/mrsavljenje-blok3-1.jpg')">
                         <div class="blok4-all-right-1-2-image-gr"></div>
                     </div>
                 </div>
@@ -43,112 +45,24 @@
                     <div class="font--xxl-46 font--xl-42 font--xs-36 font-white font-bold margin-xxl--bottom-42 margin-xl--bottom-32">Isidorin&nbsp</div>
                     <div class="font--xxl-46 font--xl-42 font--xs-36 font-white margin-xxl--bottom-42 margin-xl--bottom-32">primer</div>
                 </div>
-                <div class="blok4-all-left-all-text font--xxl-14 font-white flex padding-xxl--left-25 margin-xxl--bottom-42 margin-xl--bottom-32">Text</div>
-                <div class="font--xxl-14 font-white margin-xxl--bottom-42 margin-xl--bottom-32">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. - s</div>
+                {# <div class="blok4-all-left-all-text font--xxl-14 font-white flex padding-xxl--left-25 margin-xxl--bottom-42 margin-xl--bottom-32">Text</div> #}
+                <div class="flex align-items-center margin-xxl--bottom-42 margin-xl--bottom-32">
+                    <div class="font-white font--xxl-36 font-bold padding-xxl--right-10">{{item.Broj}}</div>
+                    <div class="text font--xxl-14 font-green padding-xxl--left-10">{{item.Naziv}}</div>
+                </div>
+                <div class="font--xxl-14 font-white margin-xxl--bottom-42 margin-xl--bottom-32">{{item.Opis}}</div>
                 <div class="margin-xxl--bottom-42 flex flex--xs-column">
-                    <button class="button-midd font-white font--xxl-14 background-purple-darker margin-xxl--right-10 margin-xs--right-none margin-xs--bottom-10">ZAKAŽI SEANSU</button>
-                </div>
-                <div class="position flex flex--xs-column">
-                    <div class="position-1 flex align-items-center cursor-pointer" onClick="Blok1()">
-                        <div class="font-white font--xxl-36 font-bold padding-xxl--right-10">01</div>
-                        <div class="text font--xxl-12 font-green padding-xxl--left-10">Šta je Psihoterapija</div>
-                    </div>
-                    <div class="position-2 flex align-items-center cursor-pointer" onClick="Blok2()">
-                        <div class="opacity font--xxl-36 font-white font-bold padding-xxl--right-10">02</div>
-                        <div class="text font--xxl-12 font-white padding-xxl--left-10">Cilj</div>
-                    </div>
-                    <div class="position-3 flex align-items-center cursor-pointer" onClick="Blok3()">
-                        <div class="opacity font--xxl-36 font-white font-bold padding-xxl--right-10">03</div>
-                        <div class="text font--xxl-12 font-white padding-xxl--left-10">Rezultat</div>
-                    </div>
+                    <a href="{{item.Btn}}">
+                        <button class="button-midd font-white font--xxl-14 background-purple-darker margin-xxl--right-10 margin-xs--right-none margin-xs--bottom-10">ZAKAŽI SEANSU</button>
+                    </a>
+                    {# <a href="{{item.Btn2}}">
+                        <button class="button-midd font-white font--xxl-14 background-purple-darker">INDIVIDUALNA</button>
+                    </a> #}
                 </div>
             </div>
         </div>
-        {# <div class="blok4-all-hide"></div> #}
     </div>
-    <!-- psihoterapija -->
-    <!-- cilj -->
-    <div id="cilj" class="blok4-all flex flex-direction-reverse flex--l-direction">
-        <div class="blok4-all-right">
-            <div class="blok4-all-right-1">
-                <div class="blok4-all-right-1-2">
-                    <div class="blok4-all-right-1-2-image" style="background-image: url('assets/images/mrsavljenje-blok5.jpg')">
-                        <div class="blok4-all-right-1-2-image-gr"></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="blok4-all-left flex flex-column justify-content-center align-items-start margin-xxl--left-135 margin-xl--left-70 margin-m--left-57 margin-xs--left-23">
-            <div class="blok4-all-left-all flex flex-column">
-                <div class="flex">
-                    <div class="font--xxl-46 font--xl-42 font--xs-36 font-white font-bold margin-xxl--bottom-42 margin-xl--bottom-32">Isidorin&nbsp</div>
-                    <div class="font--xxl-46 font--xl-42 font--xs-36 font-white margin-xxl--bottom-42 margin-xl--bottom-32">primer</div>
-                </div>
-                <div class="blok4-all-left-all-text font--xxl-14 font-white flex padding-xxl--left-25 margin-xxl--bottom-42 margin-xl--bottom-32">Text</div>
-                <div class="font--xxl-14 font-white margin-xxl--bottom-42 margin-xl--bottom-32">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. - s</div>
-                <div class="margin-xxl--bottom-42 flex flex--xs-column">
-                    <button class="button-midd font-white font--xxl-14 background-purple-darker margin-xxl--right-10 margin-xs--right-none margin-xs--bottom-10">ZAKAŽI SEANSU</button>
-                </div>
-                <div class="position flex">
-                    <div class="position-1 flex align-items-center cursor-pointer" onClick="Blok1()">
-                        <div class="opacity font-white font--xxl-36 font-bold padding-xxl--right-10">01</div>
-                        <div class="text font--xxl-12 font-white padding-xxl--left-10">Šta je Psihoterapija</div>
-                    </div>
-                    <div class="position-2 flex align-items-center cursor-pointer" onClick="Blok2()">
-                        <div class=" font--xxl-36 font-white font-bold padding-xxl--right-10">02</div>
-                        <div class="text font--xxl-12 font-green padding-xxl--left-10">Cilj</div>
-                    </div>
-                    <div class="position-3 flex align-items-center cursor-pointer" onClick="Blok3()">
-                        <div class="opacity font--xxl-36 font-white font-bold padding-xxl--right-10">03</div>
-                        <div class="text font--xxl-12 font-white padding-xxl--left-10">Rezultat</div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        {# <div class="blok4-all-hide"></div> #}
-    </div>
-    <!-- cilj -->
-    <!-- rezultat -->
-    <div id="rezultat" class="blok4-all flex-direction-reverse flex--l-direction">
-        <div class="blok4-all-right">
-            <div class="blok4-all-right-1">
-                <div class="blok4-all-right-1-2">
-                    <div class="blok4-all-right-1-2-image" style="background-image: url('assets/images/mrsavljenje-blok5.jpg')">
-                        <div class="blok4-all-right-1-2-image-gr"></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="blok4-all-left flex flex-column justify-content-center align-items-start margin-xxl--left-135 margin-xl--left-70 margin-m--left-57 margin-xs--left-23">
-            <div class="blok4-all-left-all flex flex-column">
-                <div class="flex">
-                    <div class="font--xxl-46 font--xl-42 font--xs-36 font-white font-bold margin-xxl--bottom-42 margin-xl--bottom-32">Isidorin&nbsp</div>
-                    <div class="font--xxl-46 font--xl-42 font--xs-36 font-white margin-xxl--bottom-42 margin-xl--bottom-32">primer</div>
-                </div>
-                <div class="blok4-all-left-all-text font--xxl-14 font-white flex padding-xxl--left-25 margin-xxl--bottom-42 margin-xl--bottom-32">Text</div>
-                <div class="font--xxl-14 font-white margin-xxl--bottom-42 margin-xl--bottom-32">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. - s</div>
-                <a href="kontakt" class="margin-xxl--bottom-42 flex flex--xs-column">
-                    <button class="button-midd font-white font--xxl-14 background-purple-darker margin-xxl--right-10 margin-xs--right-none margin-xs--bottom-10">ZAKAŽI SEANSU</button>
-                </a>
-                <div class="position flex">
-                    <div class="position-1 flex align-items-center cursor-pointer" onClick="Blok1()">
-                        <div class="opacity font-white font--xxl-36 font-bold padding-xxl--right-10">01</div>
-                        <div class="text font--xxl-12 font-white padding-xxl--left-10">Šta je Psihoterapija</div>
-                    </div>
-                    <div class="position-2 flex align-items-center cursor-pointer" onClick="Blok2()">
-                        <div class="opacity font--xxl-36 font-white font-bold padding-xxl--right-10">02</div>
-                        <div class="text font--xxl-12 font-white padding-xxl--left-10">Cilj</div>
-                    </div>
-                    <div class="position-3 flex align-items-center cursor-pointer" onClick="Blok3()">
-                        <div class="font--xxl-36 font-white font-bold padding-xxl--right-10">03</div>
-                        <div class="text font--xxl-12 font-green padding-xxl--left-10">Rezultat</div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        {# <div class="blok4-all-hide"></div> #}
-    </div>
-    <!-- rezultat -->
+    {% endfor %}
 </div>
 <!-- blok2 -->
 
