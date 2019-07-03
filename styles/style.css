@@ -3593,8 +3593,8 @@ a:active {
 }
 .radionica_3-1 {
   width: 33.33%;
-  background: linear-gradient(180deg, rgba(41, 22, 68, 0) 33.43%, #291644 100%), url(../assets/images/radionica3-2.jpg);
-  background-position: left;
+  background: linear-gradient(180deg, rgba(41, 22, 68, 0) 33.43%, #291644 100%), url(../assets/images/o-meni-individualna.jpg);
+  background-position: right;
   background-size: cover;
   background-repeat: no-repeat;
   transition: width 2s;
@@ -3604,7 +3604,7 @@ a:active {
 }
 .radionica_3-2 {
   width: 33.33%;
-  background: linear-gradient(180deg, rgba(41, 22, 68, 0) 33.43%, #291644 100%), url(../assets/images/radionica3-1.jpg);
+  background: linear-gradient(180deg, rgba(41, 22, 68, 0) 33.43%, #291644 100%), url(../assets/images/o-meni-radionica.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -3615,7 +3615,7 @@ a:active {
 }
 .radionica_3-3 {
   width: 33.33%;
-  background: linear-gradient(180deg, rgba(41, 22, 68, 0) 33.43%, #291644 100%), url(../assets/images/pozovi-nas.jpg);
+  background: linear-gradient(180deg, rgba(41, 22, 68, 0) 33.43%, #291644 100%), url(../assets/images/o-meni-online.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -3758,7 +3758,7 @@ a:active {
 }
 .blok3-left-1-image {
   width: 96%;
-  background-image: url(../assets/images/mrsavljenje-blok5.jpg);
+  background-image: url(../assets/images/mrsavljenje-blok3.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -3956,14 +3956,17 @@ a:active {
     background: linear-gradient(0deg, #291644 6.11%, rgba(41, 22, 68, 0) 71.18%);
   }
   .blok1-1 {
+    background-color: rgba(41, 22, 68, 0);
     clip-path: circle(114% at 31% 226%);
     width: 100%;
   }
   .blok1-1-2 {
+    background-color: rgba(41, 22, 68, 0);
     clip-path: circle(114% at 31% 232%);
     width: 100%;
   }
   .blok1-1-2-3 {
+    background-color: rgba(41, 22, 68, 0);
     clip-path: circle(114% at 31% 237%);
     width: 100%;
     position: relative;
@@ -4159,7 +4162,7 @@ a:active {
 }
 .psihoterapija-blok {
   height: calc(100vh - 3.74rem);
-  background: linear-gradient(97.15deg, #291644 17.89%, rgba(41, 22, 68, 0) 62.24%), url(../assets/images/radionica3-2.jpg);
+  background: linear-gradient(97.15deg, #291644 17.89%, rgba(41, 22, 68, 0) 62.24%), url(../assets/images/psihoterapija-intro.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
