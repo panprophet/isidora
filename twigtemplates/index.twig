@@ -211,11 +211,14 @@
 
 <!-- blok5 -->
 <div id="section5" class="cd-section blok logo_purple menu_purple">
+{% set Radionica = fetch("Radionica") %}
+{% for item in Radionica %}
+{% if item.Oznaci == 'true' %}
     <div class="blok-all flex flex-direction-reverse flex--l-direction">
         <div class="blok-all-right">
             <div class="blok-all-right-1">
                 <div class="blok-all-right-1-2">
-                    <div class="blok-all-right-1-2-image" style="background-image: url('./assets/images/home-blok2-mobile.jpg')">
+                    <div class="blok-all-right-1-2-image" style="background-image: url('img/{{item.Slika}}')">
                         <div class="blok-all-right-1-2-image-gr"></div>
                     </div>
                 </div>
@@ -223,9 +226,9 @@
         </div>
         <div class="blok-all-left flex flex-column justify-content-center align-items-start margin-xxl--left-135 margin-xl--left-70 margin-m--left-57 margin-xs--left-23">
             <div class="blok-all-left-all flex flex-column">
-            {% set Radionica = fetch("Radionica") %}
+            {# {% set Radionica = fetch("Radionica") %}
             {% for item in Radionica %}
-            {% if item.Oznaci == 'true' %}
+            {% if item.Oznaci == 'true' %} #}
                 <div class="font--xxl-46 font--xl-42 font--xs-36 font-purple font-bold margin-xxl--bottom-42 margin-xl--bottom-32">Radionica</div>
                 <div class="blok-all-left-all-text flex padding-xxl--left-25 margin-xxl--bottom-77 margin-xl--bottom-32 margin-m--bottom-46 margin-s--bottom-32">
                     <img src="./assets/shared/date.png" >
@@ -237,12 +240,13 @@
                 <a href="radionica/{{item.Slug}}#zakazi">
                     <button class="button-big font-white font--xxl-14 background-purple">PRIJAVI SE NA RADIONICU</button>
                 </a>
-            {% endif %}
-            {% endfor %}
+            
             </div>
         </div>
         <div class="blok-all-hide margin-l--bottom-50"></div>
     </div>
+{% endif %}
+{% endfor %}
 </div>
 <!-- blok5 -->
 

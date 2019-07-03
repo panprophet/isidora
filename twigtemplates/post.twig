@@ -18,11 +18,7 @@
     <a href="http://www.linkedin.com/shareArticle?mini=true&amp;url={{Post.Slug | url_encode}}&amp;url={{_BASE | url_encode}}prost%2F{{post.Slug | url_encode}}" target="_blank">
         <img class="margin-xxl--right-48" src="./assets/shared/icon-linkedin.png">
     </a>
-    <img src="./assets/shared/icon-copy-link.png">
-    {# <a>
-        <input type="hidden" id="input-url" value="{{_BASE | url_encode}}post/{{Post.Slug}}">
-        <img onClick="CopyURL()" src="./assets/shared/icon-copy-link.png">
-    </a> #}
+    <img style="cursor:pointer;" onClick="navigator.clipboard.writeText(document.location)" src="./assets/shared/icon-copy-link.png">
 </div>
 <div class="flex justify-content-center margin-xxl--top-48 margin-xxl--bottom-48">
     <div class="post-text">{{Post.Text | raw}}</div>

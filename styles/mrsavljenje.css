@@ -96,7 +96,7 @@
 }
 .blok3-left-1-image {
   width: 96%;
-  background-image: url(../assets/images/mrsavljenje-blok5.jpg);
+  background-image: url(../assets/images/mrsavljenje-blok3.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -294,14 +294,17 @@
     background: linear-gradient(0deg, #291644 6.11%, rgba(41, 22, 68, 0) 71.18%);
   }
   .blok1-1 {
+    background-color: rgba(41, 22, 68, 0);
     clip-path: circle(114% at 31% 226%);
     width: 100%;
   }
   .blok1-1-2 {
+    background-color: rgba(41, 22, 68, 0);
     clip-path: circle(114% at 31% 232%);
     width: 100%;
   }
   .blok1-1-2-3 {
+    background-color: rgba(41, 22, 68, 0);
     clip-path: circle(114% at 31% 237%);
     width: 100%;
     position: relative;

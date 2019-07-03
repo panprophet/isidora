@@ -28,7 +28,7 @@
 <div class="menu-main background-purple font-14 font-white display--xxl-flex justify-content-between align-items-center display--m-none">
     <div class="menu-main--left flex justify-content-between align-items-center margin-xxl--left-52">
         <div class="menu-main--left--phone margin-xxl--right-70 margin-xl--right-40"><span class="margin-xxl--right-24">Broj telefona</span><span><a href="tel:0118789685">011 8789-685</a></span></div>
-        <div class="menu-main--left--newsletter display--m-none"><a href="">Newsletter</a></div>
+        <div style="cursor: pointer;" class="menu-main--left--newsletter display--m-none"><a class="cd-scroll-down" href="#section8">Newsletter</a></div>
     </div>
     <div class="menu-main--right flex justify-content-between align-items-center  margin-xxl--right-52">
             {% if _GET[0] == 'radionica' %}
@@ -344,7 +344,7 @@
         <div class="footer-container-top--right margin-xxl--left-135 margin-xl--left-70 margin-xl--right-70 margin-l--left-none margin-l--right-none w-60 w--l-100">
             <div class="footer-container-top--right-title"></div>
             <form class="footer-container-top--form flex--xl flex--xl-column align-items--l-center">
-                <div class="font--xxl-24 font-purple font-bold margin-xxl--bottom-48 margin-l--top-80 text--l-center">Newsletter</div>
+                <div id="section8" class="font--xxl-24 font-purple font-bold margin-xxl--bottom-48 margin-l--top-80 text--l-center">Newsletter</div>
                 <input class="input-form font--xxl-14 font-purple margin-xxl--bottom-24 w-60  text--l-center" name="email" type="email" placeholder="youremail@gmail.com"/>
                 <div class="footer-container-top--form-text font--xxl-16 font-purple margin-xxl--bottom-32 margin-xl--bottom-24 text--l-center">Prijavi se i prvi saznaj sve o najnovijim radionicama, kursevima i poklonima!</div>
                 <button class="button-midd"><a class="font-white font--xxl-14" href="#">Pošalji</a></button>
