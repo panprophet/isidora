@@ -187,7 +187,7 @@
                 <a href="kontakt">
                     <button class="button-big font-white font--xxl-14 background-purple-darker margin-xxl--right-24 margin-xs--bottom-24">ZAKAŽI SVOJ TERMIN</button>
                 </a>
-                <a data-fancybox  href="https://www.youtube.com/embed/2vb3tAajXIM">
+                <a data-fancybox  href="https://www.youtube.com/">
                     <button class="button-midd font-white font--xxl-14 background-purple-darker">VIDEO</button>
                 </a>
             </div>
@@ -232,7 +232,7 @@
             {# {% set Radionica = fetch("Radionica") %}
             {% for item in Radionica %}
             {% if item.Oznaci == 'true' %} #}
-                <div class="font--xxl-46 font--xl-42 font--xs-36 font-purple font-bold margin-xxl--bottom-42 margin-xl--bottom-32">Radionica</div>
+                <div class="font--xxl-46 font--xl-42 font--xs-36 font-purple font-bold margin-xxl--bottom-42 margin-xl--bottom-32">{{item.Naziv}}</div>
                 <div class="blok-all-left-all-text flex padding-xxl--left-25 margin-xxl--bottom-77 margin-xl--bottom-32 margin-m--bottom-46 margin-s--bottom-32">
                     <img src="./assets/shared/date.png" >
                     <span class="font--xxl-14 font-bold font-purple">{{item.Datum|date("d/m/Y")}} &nbsp</span>

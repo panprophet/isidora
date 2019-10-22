@@ -33,11 +33,11 @@
 }
 .menu-dropdown {
   top: 3.75rem;
-  height: 188px;
+  height: 3.75rem;
   width: 100%;
   position: fixed;
   z-index: 9999999;
-  background-color: #291644;
+  background-color: #190E29;
   margin-top: -248px;
 }
 .menu-dropdown--right {
