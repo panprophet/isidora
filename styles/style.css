@@ -2533,7 +2533,7 @@ a:active {
   .menu-dropdown {
     height: 100vh;
     top: 0px;
-    margin-top: -100vh;
+    margin-top: -200vh;
   }
   .menu-dropdown-top {
     height: 3.75rem;

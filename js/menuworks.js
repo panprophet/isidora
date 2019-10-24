@@ -12,7 +12,7 @@ function menu_toggle(state) {
     }
   }
   if(state === false) {
-    dropdown.style.marginTop = "-" + (menuheight + 60) + "px";
+    dropdown.style.marginTop = "-" + (menuheight + 620) + "px";
     if(closeham.classList.contains('display--xl-flex')) {
       closeham.classList.remove('display--xl-flex');
       closeham.classList.add('display--xl-none');
