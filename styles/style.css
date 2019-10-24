@@ -209,14 +209,12 @@ a:active {
 }
 .font-purple--invert {
   color: #291644;
-  opacity: 0.5;
 }
 .font-purple--invert a {
   color: #291644;
-  opacity: 0.5;
 }
 .font-purple--invert a:hover {
-  opacity: 1;
+  opacity: 0.5;
 }
 .font-white {
   color: #FFFFFF;
@@ -249,8 +247,8 @@ a:active {
   line-height: inherit;
 }
 .font--xxl-36 {
-  font-size: 2.250rem;
-  line-height: 2.250rem;
+  font-size: 2.25rem;
+  line-height: 2.25rem;
 }
 .font--xxl-32 {
   font-size: 2rem;
@@ -1001,7 +999,7 @@ a:active {
 }
 .button-big {
   height: 2.813rem;
-  width: 12.750rem;
+  width: 12.75rem;
   background-color: #22123A;
   border: 1px solid #3d2a57;
   transition: all 0.4s ease-in-out;
@@ -1020,7 +1018,7 @@ a:active {
 }
 .button-midd {
   height: 2.813rem;
-  width: 9.750rem;
+  width: 9.75rem;
   background-color: #22123A;
   border: 1px solid #3d2a57;
   transition: all 0.4s ease-in-out;
@@ -1977,7 +1975,7 @@ a:active {
     padding-top: 4.375rem;
   }
   .padding-m--top-60 {
-    padding-top: 3.750rem;
+    padding-top: 3.75rem;
   }
   .padding-m--top-46 {
     padding-top: 5.786vh;
@@ -2479,11 +2477,11 @@ a:active {
 }
 .menu-dropdown {
   top: 3.75rem;
-  height: 188px;
+  height: 3.75rem;
   width: 100%;
   position: fixed;
   z-index: 9999999;
-  background-color: #291644;
+  background-color: #190E29;
   margin-top: -248px;
 }
 .menu-dropdown--right {
@@ -2535,7 +2533,7 @@ a:active {
   .menu-dropdown {
     height: 100vh;
     top: 0px;
-    margin-top: -100vh;
+    margin-top: -200vh;
   }
   .menu-dropdown-top {
     height: 3.75rem;
@@ -3005,7 +3003,7 @@ a:active {
   }
   .upoznaj_sebe-right {
     width: 100%;
-    height: 55vw;
+    height: 75vw;
     clip-path: none;
     animation-duration: 0s;
     background-color: #FFFFFF;

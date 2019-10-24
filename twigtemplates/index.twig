@@ -78,7 +78,7 @@
                 </div>
             </div>
         </div>
-        <div class="upoznaj_sebe-left flex flex-column justify-content-center align-items-start margin-xxl--left-135 margin-xl--left-70 margin-m--left-57 margin-xs--left-23 margin-l--bottom-100">
+        <div class="upoznaj_sebe-left flex flex-column justify-content-center align-items-start margin-xxl--left-135 margin-xl--left-70 margin-m--left-57 margin-xs--left-23 margin-xs--right-23 margin-l--bottom-100">
             <div class="upoznaj_sebe-left-all">
                 <div class="font--xxl-62 font--xl-46 font--xs-36 font-purple font-bold">{{item.NaslovBold}} </div>
                 <div class="font--xxl-62 font--xl-46 font--xs-36 font-purple margin-xxl--bottom-42 margin-s--bottom-32">{{item.Naslov}}</div>
@@ -182,12 +182,12 @@
             <div class="font--xxl-46 font--xl-42 font--xs-36 font-white text-center text--l-left flex flex--m-column margin-xxl--bottom-32 margin-xl--bottom-24"><span class="font-bold font--xxl-46 font--xl-42 font--xs-36 font-white">Odnos je taj&nbsp</span> koji leči</div>
             <div class="home-blok4-top-all-line margin-xxl--bottom-10"></div>
             <div class="font-white font--xxl-16 text-center text--l-left margin-xxl--bottom-42 margin-xl--bottom-32">Podrška je ključna u stvaranju pozitivne slike o sebi</div>
-            <div class="font-white font--xxl-14 text-center text--l-left margin-xxl--bottom-32 margin-xl--bottom-24">Psihoterapija je intiman proces u kojem kao terapeut pomažem da zajedno rasvetlimo vaš problem i da konačno počnete da živite svoj autentični život. Kroz individualne i grupne terapije, radionice, kao i online konsultacije spoznaćete svoje barijere koje vas sprečavaju da živite život bez strahova. Pitanje nije samo šta nam se dešava, već i zašto. Psihoterapeut pomaže da pronađete odgovore, kao i svoje zdravlje.</div>
+            <div class="font-white font--xxl-14 text-center text--l-left margin-xxl--bottom-32 margin-xl--bottom-24">Psihoterapija je intiman proces u kojem kao terapeut pomažem da zajedno rasvetlimo vaš problem i da konačno počnete da živite svoj autentični život. Kroz individualne i grupne terapije, radionice, kao i online konsultacije spoznaćete svoje barijere koje vas sprečavaju da živite život bez strahova. Pitanje nije samo šta nam se dešava, već i zašto. Psihoterapija pomaže da dođete do pravih odgovora.</div>
             <div class="flex flex--xs-column">
                 <a href="kontakt">
                     <button class="button-big font-white font--xxl-14 background-purple-darker margin-xxl--right-24 margin-xs--bottom-24">ZAKAŽI SVOJ TERMIN</button>
                 </a>
-                <a data-fancybox  href="https://www.youtube.com/embed/2vb3tAajXIM">
+                <a data-fancybox  href="https://www.youtube.com/">
                     <button class="button-midd font-white font--xxl-14 background-purple-darker">VIDEO</button>
                 </a>
             </div>
@@ -198,7 +198,7 @@
             <div class="font--xxl-46 font--xl-42 font--xs-36 font-white text-center text--l-left flex flex--m-column margin-xxl--bottom-32 margin-xl--bottom-24"><span class="font-bold font--xxl-46 font--xl-42 font--xs-36 font-white">Odnos je taj&nbsp</span> koji leči</div>
             <div class="home-blok4-top-all-line margin-xxl--bottom-10"></div>
             <div class="font-white font--xxl-16 text-center text--l-left margin-xxl--bottom-42 margin-xl--bottom-32">Podrška je ključna u stvaranju pozitivne slike o sebi</div>
-            <div class="font-white font--xxl-14 text-center text--l-left margin-xxl--bottom-32 margin-xl--bottom-24">Psihoterapija je intiman proces u kojem kao terapeut pomažem da zajedno rasvetlimo vaš problem i da konačno počnete da živite svoj autentični život. Kroz individualne i grupne terapije, radionice, kao i online konsultacije spoznaćete svoje barijere koje vas sprečavaju da živite život bez strahova. Pitanje nije samo šta nam se dešava, već i zašto. Psihoterapeut pomaže da pronađete odgovore, kao i svoje zdravlje.</div>
+            <div class="font-white font--xxl-14 text-center text--l-left margin-xxl--bottom-32 margin-xl--bottom-24">Psihoterapija je intiman proces u kojem kao terapeut pomažem da zajedno rasvetlimo vaš problem i da konačno počnete da živite svoj autentični život. Kroz individualne i grupne terapije, radionice, kao i online konsultacije spoznaćete svoje barijere koje vas sprečavaju da živite život bez strahova. Pitanje nije samo šta nam se dešava, već i zašto. Psihoterapija pomaže da dođete do pravih odgovora.</div>
             <div class="flex flex--xs-column">
                 <a href="kontakt">
                     <button class="button-big font-white font--xxl-14 background-purple-darker margin-xxl--right-24 margin-xs--bottom-24">ZAKAŽI SVOJ TERMIN</button>
@@ -232,7 +232,7 @@
             {# {% set Radionica = fetch("Radionica") %}
             {% for item in Radionica %}
             {% if item.Oznaci == 'true' %} #}
-                <div class="font--xxl-46 font--xl-42 font--xs-36 font-purple font-bold margin-xxl--bottom-42 margin-xl--bottom-32">Radionica</div>
+                <div class="font--xxl-46 font--xl-42 font--xs-36 font-purple font-bold margin-xxl--bottom-42 margin-xl--bottom-32">{{item.Naziv}}</div>
                 <div class="blok-all-left-all-text flex padding-xxl--left-25 margin-xxl--bottom-77 margin-xl--bottom-32 margin-m--bottom-46 margin-s--bottom-32">
                     <img src="./assets/shared/date.png" >
                     <span class="font--xxl-14 font-bold font-purple">{{item.Datum|date("d/m/Y")}} &nbsp</span>

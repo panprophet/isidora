@@ -31,14 +31,12 @@
 }
 .font-purple--invert {
   color: #291644;
-  opacity: 0.5;
 }
 .font-purple--invert a {
   color: #291644;
-  opacity: 0.5;
 }
 .font-purple--invert a:hover {
-  opacity: 1;
+  opacity: 0.5;
 }
 .font-white {
   color: #FFFFFF;
@@ -71,8 +69,8 @@
   line-height: inherit;
 }
 .font--xxl-36 {
-  font-size: 2.250rem;
-  line-height: 2.250rem;
+  font-size: 2.25rem;
+  line-height: 2.25rem;
 }
 .font--xxl-32 {
   font-size: 2rem;
