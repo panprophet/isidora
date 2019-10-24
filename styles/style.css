@@ -209,14 +209,12 @@ a:active {
 }
 .font-purple--invert {
   color: #291644;
-  opacity: 0.5;
 }
 .font-purple--invert a {
   color: #291644;
-  opacity: 0.5;
 }
 .font-purple--invert a:hover {
-  opacity: 1;
+  opacity: 0.5;
 }
 .font-white {
   color: #FFFFFF;
