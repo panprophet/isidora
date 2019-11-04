@@ -10,9 +10,9 @@ var owl4 = $('#owl4');
     owl4.owlCarousel({
         items:1,
         loop:true,
-        autoplay:false,
+        autoplay:true,
         autoplayTimeout:5000,
-        autoplayHoverPause:true,
+        autoplayHoverPause:false,
         nav:false,
         dots:true,
         dotsClass: 'kruzici',
@@ -25,10 +25,10 @@ var owl3 = $('#owl-3');
     // var dots = $('.owl-dots');
     owl3.owlCarousel({
         items:1,
-        loop:false,
-        autoplay:false,
+        loop:true,
+        autoplay:true,
         autoplayTimeout:5000,
-        autoplayHoverPause:true,
+        autoplayHoverPause:false,
         nav: true,
         navContainerClass: 'owl-navigacija',
         navText: ["Prethodna","Sledeća"],
@@ -44,7 +44,7 @@ var owl = $('#owl-one');
         loop:true,
         autoplay:true,
         autoplayTimeout:5000,
-        autoplayHoverPause:true,
+        autoplayHoverPause:false,
         nav:false,
         dots:true,
         animateOut: 'fadeOut',
@@ -55,10 +55,10 @@ var owl = $('#owl-one');
     // var dots = $('.owl-dots');
     owl2.owlCarousel({
         items:1,
-        loop:false,
-        autoplay:false,
+        loop:true,
+        autoplay:true,
         autoplayTimeout:5000,
-        autoplayHoverPause:true,
+        autoplayHoverPause:false,
         nav:true,
         dots:true,
         dotsClass: 'tacke',

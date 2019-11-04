@@ -53,6 +53,9 @@
 .hide {
   display: none;
 }
+.hide-radionica {
+  display: none;
+}
 .blok2 {
   height: calc(100vh - 3.74rem);
   background-image: url(../assets/images/marsavljenje-blok2.jpg);
@@ -320,6 +323,14 @@
     height: 22.5rem;
     background-color: #291644;
   }
+  .hide-radionica {
+    display: flex;
+    height: auto;
+    background-color: #291644;
+  }
+  .hide-radionica-txt {
+    width: 65%;
+  }
   .blok2 {
     background-image: none;
     background-color: #291644;
@@ -462,6 +473,9 @@
   .hide {
     height: 30.625rem;
   }
+  .hide-radionica-txt {
+    width: 87%;
+  }
   .blok2-width {
     width: 100%;
   }
@@ -492,7 +506,7 @@
 }
 @media screen and (max-width: 360px) {
   .hide {
-    height: 34.625rem;
+    height: 36.625rem;
   }
   .blok3-right-all {
     margin-top: -1.875rem;

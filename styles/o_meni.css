@@ -1,16 +1,81 @@
-.mySlides {
-  display: none;
+.vertical_nav {
+  position: fixed;
+  top: 70%;
+  right: 2%;
+  z-index: 100000;
+}
+.vertical_nav-all .dot {
   position: relative;
-  height: 100%;
+  height: 5px;
+  width: 5px;
+  border-radius: 50%;
+  background-color: #FFFFFF;
+  margin-left: 20px;
+  transition: background-color 0.4s;
+}
+.vertical_nav-all .label {
+  opacity: 0;
+  font-size: 12px;
+  color: #FFFFFF;
+  transition: opacity 0.4s;
+}
+.vertical_nav-all:hover .label {
+  opacity: 1;
+}
+.vertical_nav-all:hover .dot {
+  background-color: #60B709;
+}
+.is-selected .label {
+  opacity: 1;
+}
+.is-selected .dot {
+  background-color: #60B709;
+}
+.owl-theme .owl-navigacija {
+  position: absolute;
+  bottom: 5%;
+  left: 135px;
+  text-align: center;
+  -webkit-tap-highlight-color: transparent;
+  color: #291644;
+}
+.owl-carousel .owl-navigacija button.owl-sledeca,
+.owl-carousel .owl-navigacija button.owl-prethodna,
+.owl-carousel {
+  background: 0 0;
+  color: inherit;
+  border: none;
+  padding: 0!important;
+}
+.owl-theme .owl-navigacija [class*='owl-'] {
+  color: #291644;
+  font-size: 14px;
+  margin: 5px;
+  padding: 4px 7px;
+  display: inline-block;
+  cursor: pointer;
+  border-radius: 3px;
 }
 .cursor-pointer {
   cursor: pointer;
 }
 .upoznaj_sebe {
   height: calc(100vh - 3.74rem);
-  padding-top: 3.71rem;
   position: relative;
   overflow: hidden;
+}
+.upoznaj_sebe-scroll {
+  position: absolute;
+  z-index: 10000;
+  top: 30%;
+  right: 0%;
+  transform: rotate(-90deg);
+  margin-right: -50px;
+}
+.upoznaj_sebe-scroll-line {
+  width: 80px;
+  height: 1px;
+  background-color: #FFFFFF;
 }
 .upoznaj_sebe-left {
   animation-name: fadeInLeft;
@@ -86,6 +151,16 @@
     transform: translate3d(0, 0, 0);
   }
 }
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    transform: translate3d(-100%, 0, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
 @keyframes opacity {
   from {
     opacity: 0;
@@ -95,7 +170,8 @@
   }
 }
 .blizak-odnos {
-  height: calc(100vh - 7.33rem);
+  height: calc(100vh - 3.74rem);
+  padding-top: 3.74rem;
   background-image: url('../assets/images/home-blok2.jpg');
   background-position: top;
   background-size: cover;
@@ -170,7 +246,7 @@
   height: auto;
 }
 .blok {
-  height: calc(100vh - 3.74rem);
+  height: 100vh;
   position: relative;
   overflow: hidden;
 }
@@ -243,6 +319,7 @@
 }
 .home-blok4 {
   height: calc(100vh - 3.74rem);
+  padding-top: 3.74rem;
   background: linear-gradient(360deg, #291644 2.41%, rgba(41, 22, 68, 0) 100%), url(../assets/images/home-blok4.jpg), #291644;
   background-position: center;
   background-size: cover;
@@ -260,12 +337,18 @@
   width: 2.688rem;
   background-color: #FFFFFF;
 }
+.home-blok4-hide {
+  display: none;
+}
 @media screen and (max-width: 1680px) {
   .blizak-odnos-right-text {
     width: 67%;
   }
 }
 @media screen and (max-width: 1440px) {
+  .owl-theme .owl-navigacija {
+    left: 70px;
+  }
   .blizak-odnos-right-text {
     width: 77%;
   }
@@ -340,9 +423,15 @@
   }
 }
 @media screen and (max-width: 1023px) {
+  .vertical_nav {
+    display: none;
+  }
   .upoznaj_sebe {
     flex-direction: column-reverse;
     height: auto;
+  }
+  .upoznaj_sebe-scroll {
+    display: none;
   }
   .upoznaj_sebe-left {
     width: 100%;
@@ -353,7 +442,7 @@
   }
   .upoznaj_sebe-right {
     width: 100%;
-    height: 55vw;
+    height: 75vw;
     clip-path: none;
     animation-duration: 0s;
     background-color: #FFFFFF;
@@ -471,6 +560,7 @@
   .home-blok4 {
     height: auto;
     background: #291644;
+    padding-top: 0;
   }
   .home-blok4-top {
     height: 55vw;
@@ -487,7 +577,13 @@
     display: none;
   }
   .home-blok4-hide {
+    display: flex;
     height: auto;
+  }
+}
+@media screen and (max-width: 960px) {
+  .owl-theme .owl-navigacija {
+    left: 57px;
   }
 }
 @media screen and (max-width: 800px) {
@@ -510,6 +606,9 @@
   }
 }
 @media screen and (max-width: 480px) {
+  .owl-theme .owl-navigacija {
+    left: 23px;
+  }
   .upoznaj_sebe-right {
     height: 74vw;
   }
@@ -537,8 +636,6 @@
   .home-blok4-top-all {
     width: 86%;
   }
-}
-@media screen and (max-width: 360px) {
 }
 .o_meni {
   height: calc(100vh - 3.74rem);
@@ -588,7 +685,7 @@
   }
   .o_meni-hide {
     display: flex;
-    height: 380px;
+    height: 400px;
   }
 }
 @media screen and (max-width: 800px) {
@@ -596,12 +693,12 @@
     width: 75%;
   }
   .o_meni-hide {
-    width: 330px;
+    width: auto;
   }
 }
 @media screen and (max-width: 680px) {
   .o_meni-hide {
-    height: 460px;
+    height: 550px;
   }
 }
 @media screen and (max-width: 480px) {
@@ -612,11 +709,11 @@
     width: 90%;
   }
   .o_meni-hide {
-    height: 440px;
+    height: 550px;
   }
 }
 @media screen and (max-width: 360px) {
   .o_meni-hide {
-    height: 570px;
+    height: 590px;
   }
 }
