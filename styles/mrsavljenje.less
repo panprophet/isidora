@@ -57,6 +57,9 @@
 }
 .hide {
     display: none;
+    &-radionica {
+        display: none;
+    }
 }
 
 .blok2 {
@@ -351,6 +354,14 @@
         display: flex;
         height: 22.5rem;
         background-color: rgba(41, 22, 68, 1);
+        &-radionica {
+            display: flex;
+            height: auto;
+            background-color: rgba(41, 22, 68, 1);
+            &-txt {
+                width: 65%;
+            }
+        }
     }
     .blok2 {
         background-image: none;
@@ -510,6 +521,11 @@
     }
     .hide {
         height: 30.625rem;
+        &-radionica {
+            &-txt {
+                width: 87%;
+            }
+        }
     }
     .blok2-width {
         width: 100%;
@@ -552,7 +568,7 @@
 
 @media screen and (max-width: 360px) {
     .hide {
-        height: 34.625rem;;
+        height: 36.625rem;;
     }
     .blok3-right-all {
         margin-top: -1.875rem;

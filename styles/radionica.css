@@ -12,7 +12,7 @@
   color: #FFFFFF;
 }
 .radionica {
-  height: calc(100vh  - 5.875rem - 3.71rem);
+  height: calc(100vh - 3.71rem);
   background-size: cover;
   background-position: top center;
   background-repeat: no-repeat;
@@ -102,6 +102,9 @@
   }
 }
 @media screen and (max-width: 1023px) {
+  .bgroung {
+    background: linear-gradient(0deg, #291644 6.11%, rgba(41, 22, 68, 0) 71.18%);
+  }
   .radionica {
     height: 55vw;
   }
