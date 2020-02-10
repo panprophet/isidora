@@ -85,20 +85,14 @@
                 <div style="width:65%;" class="upoznaj_sebe-left-all-text padding-xxl--left-25 padding-xxl--right-18 font--xxl-16 font-purple margin-xxl--bottom-77 margin-l--bottom-50 margin-m--bottom-46 margin-s--bottom-32">{{item.Text}}</div>
                 {% if loop.index0 > 0 %}
                 <a href="{{item.Href}}">
-                    <button class="button-midd font-white font--xxl-14 background-purple">SAZNAJ VIŠE</button>
+                    <button class="button-midd font-white font--xxl-14 background-purple">{{ item.CTA }}</button>
                 </a>
                 {% endif %}
             </div>
         </div>
-        {# <div class="upoznaj_sebe-hide"></div> #}
     </div>
     {% endfor %}
     </div>
-    {# <div class="upoznaj_sebe-buttons flex margin-xxl--left-135 margin-xl--left-70 margin-m--left-57 margin-xs--left-23">
-        <div class="font--xxl-14 font-purple margin-xxl--right-30 cursor-pointer" onclick="plusDivs(-1)">Prethodna</div>
-        <div class="font--xxl-14 font-purple cursor-pointer" onclick="plusDivs(1)">Sledeća</div>
-    </div> #}
-    {# </div> #}
 </div>
 <!-- blok1 -->
 
@@ -119,7 +113,6 @@
             <div class="blizak-odnos-right-border font--xxl-14 font-white margin-xxl--bottom-32 margin-xl--bottom-24 padding-xxl--left-24 flex align-items-center">Uspeh dolazi zajedničkim radom</div>
             <div class="blizak-odnos-right-text">
                 <div class="font--xxl-14 font-white margin-xxl--bottom-24 margin-xl--bottom-18">Ja sam Isidora Buneta, živim i radim u Beogradu. Psiholog-psihoterapeut, poznavalac zdravog načina ishrane, treninga iživota. Osnova mog rada sa klijentima je dobar odnos, pun saosećanja i razumevanja. Kroz takav odnos postizanje trajnog rešavanja problema je moguće, ali neophodno je posvetiti se podjednako i telu i glavi.</div>
-                {# <div class="font--xxl-14 font-white margin-xxl--bottom-32 margin-xl--bottom-24">Kroz prihoterapijski odnos pomažem ljudima da napuste obrasce koji nisu njihovi i da žive u skladu sa sobom. Uspela sam trajno da smršam 42kg. Rešila sam psihološke uzroke prejedanja i mnogo lakše promenila način ishrane.</div> #}
             </div>
             <a href="o_meni">
                 <button class="button-midd font-white font--xxl-14 background-purple-darker margin-xxl--bottom-32 margin-xl--bottom-24">SAZNAJ VIŠE</button>
@@ -170,7 +163,6 @@
                 {% endfor %}
             </div>
         </div>
-        {# <div class="index-blok-all-hide"></div> #}
     </div>
 </div>
 <!-- blok3 -->
@@ -229,9 +221,6 @@
         </div>
         <div class="blok-all-left flex flex-column justify-content-center align-items-start margin-xxl--left-135 margin-xl--left-70 margin-m--left-57 margin-xs--left-23">
             <div class="blok-all-left-all flex flex-column">
-            {# {% set Radionica = fetch("Radionica") %}
-            {% for item in Radionica %}
-            {% if item.Oznaci == 'true' %} #}
                 <div class="font--xxl-46 font--xl-42 font--xs-36 font-purple font-bold margin-xxl--bottom-42 margin-xl--bottom-32">{{item.Naziv}}</div>
                 <div class="blok-all-left-all-text flex padding-xxl--left-25 margin-xxl--bottom-77 margin-xl--bottom-32 margin-m--bottom-46 margin-s--bottom-32">
                     <img src="./assets/shared/date.png" >
@@ -264,5 +253,5 @@
 <!-- blok8 -->
 {% include 'pozovi_nas.twig' %}
 <!-- blok8 -->
-
+{% include 'footer.twig' %}
 {% endblock %}

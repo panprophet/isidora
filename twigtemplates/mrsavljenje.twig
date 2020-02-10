@@ -82,7 +82,7 @@
                     <div class="font-white font--xxl-36 font-bold padding-xxl--right-10">{{item.Broj}}</div>
                     <div class="text font--xxl-14 font-green padding-xxl--left-10">{{item.Naslov}}</div>
                 </div>
-                <div class="font--xxl-14 font-white margin-xxl--bottom-42 margin-xl--bottom-32">{{item.Opis}}</div>
+                <div style="white-space: pre-wrap;" class="font--xxl-14 font-white margin-xxl--bottom-42 margin-xl--bottom-32">{{item.Opis}}</div>
                 <div class="margin-xxl--bottom-42 flex flex--xs-column">
                     <a href="{{item.Btn1}}">
                         <button class="button-midd font-white font--xxl-14 background-purple-darker margin-xxl--right-10 margin-xs--right-none margin-xs--bottom-10">RADIONICA</button>
@@ -148,5 +148,5 @@
 <!-- blok9 -->
 {% include 'poslednji_postovi.twig' %}
 <!-- blok9 -->
-
+{% include 'footer.twig' %}
 {% endblock %}

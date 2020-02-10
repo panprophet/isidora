@@ -136,6 +136,19 @@ a:active {
 .tt-suggestion-hover {
   opacity: 0.4;
 }
+.error {
+  height: 43.75rem;
+  width: 43.75rem;
+  border-radius: 50%;
+  background-color: #291644;
+}
+.error-404 {
+  font-size: 8.5rem;
+  line-height: normal;
+}
+.error-color {
+  color: #ffffff;
+}
 @media only screen and (max-width: 1365px) {
   .display--xl-none {
     display: none!important;
@@ -153,11 +166,23 @@ a:active {
   }
 }
 @media only screen and (max-width: 960px) {
+  * {
+    font-size: 14px;
+  }
   .display--m-none {
     display: none;
   }
   .display--m-flex {
     display: flex;
+  }
+}
+@media screen and (max-width: 768px) {
+  .error {
+    height: 32.75rem;
+    width: 32.75rem;
+  }
+  .error-404 {
+    font-size: 6rem;
   }
 }
 @media only screen and (max-width: 600px) {
@@ -166,6 +191,17 @@ a:active {
   }
   .display--s-flex {
     display: flex;
+  }
+}
+@media screen and (max-width: 490px) {
+  .error {
+    height: 21rem;
+    width: 90%;
+    border-radius: 0;
+    background-color: transparent;
+  }
+  .error-color {
+    color: #291644;
   }
 }
 @media only screen and (max-width: 380px) {
@@ -4082,7 +4118,7 @@ a:active {
 }
 @media screen and (max-width: 800px) {
   .blok1-1-2-3-all {
-    top: 77%;
+    top: 90%;
   }
   .hide {
     height: 26.875rem;
@@ -4105,7 +4141,7 @@ a:active {
 }
 @media screen and (max-width: 580px) {
   .blok1-1-2-3-all {
-    top: 85%;
+    top: 90%;
   }
   .hide {
     height: 36.25rem;

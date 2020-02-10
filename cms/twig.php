@@ -93,8 +93,7 @@ $twig->addGlobal('_BASE', getBaseUrl());
 
 $templatename = isset($_GET['twig_file_name'])?$_GET['twig_file_name'].'.twig':'index.twig'; // from fs
 if ( !file_exists($TwigTemplatesDir.'/'.$templatename) ) {
-    http_response_code(404);
-    return;
+	$templatename = 'error-404.twig';
 }
 
 echo $twig->render($templatename);

@@ -21,7 +21,7 @@
                         </div>
                         <div class="radionica-1-2-3-all-text flex align-items-center font--xxl-14 font-white margin-xxl--bottom-20 margin-xl--bottom-20 margin-m--bottom-46 margin-s--bottom-32">
                             {# <img style="width: 1.125rem; height: 1.25rem;" src="./assets/shared/date-white.png" > #}
-                            <p class="font--xxl-14 font-bold font-white margin-xxl--left-20">Lorem Ipsum is simply dummy text of the printing</p>
+                            {# <p class="font--xxl-14 font-bold font-white margin-xxl--left-20">Lorem Ipsum is simply dummy text of the printing</p> #}
                             {# <p class="font--xxl-14 font-white"> {{item.Vreme}}</p> #}
                         </div>
                         <div class="font--xxl-14 font-white margin-xxl--bottom-42 margin-xl--bottom-32">{{item.Opis}}</div>
@@ -45,7 +45,7 @@
         </div>
         <div class="radionica-1-2-3-all-text flex align-items-center font--xxl-14 font-white margin-xxl--bottom-20 margin-xl--bottom-20 margin-m--bottom-46 margin-s--bottom-32">
             {# <img style="width: 1.125rem; height: 1.25rem;" src="./assets/shared/date-white.png" > #}
-            <p class="font--xxl-14 font-bold font-white margin-xxl--left-20">Lorem Ipsum is simply dummy text of the printing</p>
+            {# <p class="font--xxl-14 font-bold font-white margin-xxl--left-20">Lorem Ipsum is simply dummy text of the printing</p> #}
             {# <p class="font--xxl-14 font-white"> {{item.Vreme}}</p> #}
         </div>
         <div class="font--xxl-14 font-white margin-xxl--bottom-42 margin-xl--bottom-32">{{item.Opis}}</div>
@@ -58,11 +58,11 @@
     <a href="radionica/{{item.Slug}}#zakazi">
         <button class="button-small font-white font--xxl-14 border-purple-light">PRIJAVI SE</button>
     </a>
-    <div class="font--xxl-16 font-purple text-center margin-xxl--left-40 margin-m--left-none margin-m--bottom-24">Saznaj te više i prijavi se za radionicu</div>
+    <div class="font--xxl-16 font-purple text-center margin-xxl--left-40 margin-m--left-none margin-m--bottom-24">Upiši svoje podatke i pošalji prijavu. </div>
 </div>
 {# {% endif %} #}
 {% endfor %}
 
 
-
+{% include 'footer.twig' %}
 {% endblock %}
