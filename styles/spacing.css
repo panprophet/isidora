@@ -859,7 +859,7 @@
     padding-top: 4.375rem;
   }
   .padding-m--top-60 {
-    padding-top: 3.750rem;
+    padding-top: 3.75rem;
   }
   .padding-m--top-46 {
     padding-top: 5.786vh;
@@ -869,6 +869,9 @@
   }
   .padding-m--top-18 {
     padding-top: 1.125rem;
+  }
+  .padding-m--top-none {
+    padding-top: 0 !important;
   }
   .padding-m--bottom-100 {
     padding-bottom: 6.25rem;
