@@ -137,8 +137,8 @@ a:active {
   opacity: 0.4;
 }
 .error {
-  height: 43.75rem;
-  width: 43.75rem;
+  height: 40.75rem;
+  width: 40.75rem;
   border-radius: 50%;
   background-color: #291644;
 }
@@ -148,6 +148,12 @@ a:active {
 }
 .error-color {
   color: #ffffff;
+}
+@media screen and (max-width: 1366px) {
+  .error {
+    height: 34.75rem;
+    width: 34.75rem;
+  }
 }
 @media only screen and (max-width: 1365px) {
   .display--xl-none {
@@ -193,7 +199,7 @@ a:active {
     display: flex;
   }
 }
-@media screen and (max-width: 490px) {
+@media screen and (max-width: 960px) {
   .error {
     height: 21rem;
     width: 90%;
