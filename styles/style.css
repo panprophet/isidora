@@ -116,6 +116,30 @@ a:focus {
 a:active {
   background-color: transparent;
 }
+.preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: #fff;
+  z-index: 9999999999999;
+}
+.preloader .preloader-gif {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 37.5rem;
+  height: 37.5rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  background-color: #291644;
+  border-radius: 50%;
+}
 .container {
   width: 100%;
 }
@@ -164,6 +188,10 @@ a:active {
   }
 }
 @media only screen and (max-width: 1023px) {
+  .preloader .preloader-gif {
+    width: 35.5rem;
+    height: 35.5rem;
+  }
   .display--l-none {
     display: none;
   }
@@ -174,6 +202,10 @@ a:active {
 @media only screen and (max-width: 960px) {
   * {
     font-size: 14px;
+  }
+  .preloader .preloader-gif {
+    width: 25.5rem;
+    height: 25.5rem;
   }
   .display--m-none {
     display: none;
@@ -210,7 +242,11 @@ a:active {
     color: #291644;
   }
 }
-@media only screen and (max-width: 380px) {
+@media screen and (max-width: 380px) {
+  .preloader .preloader-gif {
+    width: 20.7rem;
+    height: 20.7rem;
+  }
   .display--xxs-none {
     display: none;
   }
@@ -538,6 +574,9 @@ a:active {
     font-size: inherit;
     line-height: inherit;
   }
+  .font--m-16 {
+    font-size: 1rem;
+  }
 }
 @media only screen and (max-width: 600px) {
   .text--s-center {
@@ -576,6 +615,9 @@ a:active {
   .font--xs-24 * {
     font-size: inherit;
     line-height: inherit;
+  }
+  .font--xs-14 {
+    font-size: 0.875rem;
   }
   .line-tiny {
     width: 2.1875rem;
