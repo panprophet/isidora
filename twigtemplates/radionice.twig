@@ -6,7 +6,6 @@
 {% set Radionica = fetch("Radionica") %}
 <div style="height: 3.71rem;"></div>
 {% for item in Radionica %}
-{# {% if item.Oznaci == 'true' %} #}
 <div class="radionica" style="background-image: url('img/{{item.Slika}}')">
     <div class="radionica-gr">
         <div class="radionica-1">
@@ -20,12 +19,8 @@
                             <p class="font--xxl-14 font-bold font-white margin-xxl--left-20">{{item.Grad}} {{item.Vreme}} {{item.Datum|date("d.m.Y")}} &nbsp</p>
                         </div>
                         <div class="radionica-1-2-3-all-text flex align-items-center font--xxl-14 font-white margin-xxl--bottom-20 margin-xl--bottom-20 margin-m--bottom-46 margin-s--bottom-32">
-                            {# <img style="width: 1.125rem; height: 1.25rem;" src="./assets/shared/date-white.png" > #}
-                            {# <p class="font--xxl-14 font-bold font-white margin-xxl--left-20">Lorem Ipsum is simply dummy text of the printing</p> #}
-                            {# <p class="font--xxl-14 font-white"> {{item.Vreme}}</p> #}
                         </div>
                         <div class="font--xxl-14 font-white margin-xxl--bottom-42 margin-xl--bottom-32">{{item.Opis}}</div>
-                        {# <a class="font-italic font-bold font--xxl-14 font-white margin-xxl--bottom-42 margin-s--bottom-32">Saznaj više</a> #}
                         <a href="radionica/{{item.Slug}}">
                             <button class="button-midd font-white font--xxl-14 border-purple-light">SAZNAJ VIŠE</button>
                         </a>
@@ -44,9 +39,6 @@
             <p class="font--xxl-14 font-bold font-white margin-xxl--left-20">{{item.Datum|date("d.m.Y")}} &nbsp</p>
         </div>
         <div class="radionica-1-2-3-all-text flex align-items-center font--xxl-14 font-white margin-xxl--bottom-20 margin-xl--bottom-20 margin-m--bottom-46 margin-s--bottom-32">
-            {# <img style="width: 1.125rem; height: 1.25rem;" src="./assets/shared/date-white.png" > #}
-            {# <p class="font--xxl-14 font-bold font-white margin-xxl--left-20">Lorem Ipsum is simply dummy text of the printing</p> #}
-            {# <p class="font--xxl-14 font-white"> {{item.Vreme}}</p> #}
         </div>
         <div class="font--xxl-14 font-white margin-xxl--bottom-42 margin-xl--bottom-32">{{item.Opis}}</div>
         <a href="radionica/{{item.Slug}}">
@@ -60,7 +52,6 @@
     </a>
     <div class="font--xxl-16 font-purple text-center margin-xxl--left-40 margin-m--left-none margin-m--bottom-24">Upiši svoje podatke i pošalji prijavu. </div>
 </div>
-{# {% endif %} #}
 {% endfor %}
 
 

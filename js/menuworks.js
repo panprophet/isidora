@@ -1,3 +1,9 @@
+
+// preloader
+$(window).on('load', function() { 
+	$('.preloader').delay(4000).fadeOut(200);
+});
+
 let menuheight = document.getElementById('dropdown').scrollHeight;
 
 let dropdown = document.getElementById('dropdown');
@@ -25,7 +31,6 @@ function menu_toggle(state) {
 var lastScrollTop = 0;
         $(window).scroll(function(event){
           var st = $(this).scrollTop();
-          // console.log(window.innerWidth);
           
           if (window.innerWidth > 1023) {
             if (st<60) { $( ".menu-second" ).css( "top", "3.75rem" ); return }
@@ -85,8 +90,6 @@ search.addEventListener('click', function(){
   if (pretraga.classList.contains('radionica-info-res')) {
       pretraga.classList.remove('radionica-info-res');
       pretraga.style.display = "none";
-      // console.log('radi');
-      
   }
   else {
       pretraga.classList.add('radionica-info-res');

@@ -6,234 +6,218 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="{% block description %}{% endblock %}"/>
-  {# <link rel="icon" href="images/credo-favicon.png"> #}
-  {# {% if _GET[0] == 'project'%} #}
-  {# <meta property="og:title" content="{% if _GET[0] == 'project'%}{% block ogtitle %}{% endblock %}{% else %}ISIDORA{% endif %}"/> #}
   <meta property="og:type" content="website" />
-  {# <meta property="og:image" content="{% if _GET[0] == 'project'%}{% block ogimage %}{% endblock %}{% else %}images/logo-c.svg{% endif %}"/> #}
-  {# <meta property="og:description" content="{% if _GET[0] == 'project'%}{% block ogdesc %}{% endblock %}{% else %}CREDO{% endif %}"/> #}
-  {# <meta property="og:url" content="{% if _GET[0] == 'project'%}{% block ogurl %}{% endblock %}{% else %}{{_BASE}}{% endif %}" /> #}
-  {# {% endif %} #}
 
-  {# <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous"> #}
   <link rel="stylesheet" href="owl/assets/owl.carousel.min.css" />
   <link rel="stylesheet" href="owl/assets/owl.theme.default.css" />
   <link rel="stylesheet" href="fancybox-master/dist/jquery.fancybox.min.css" />
-  {# <link href="fontawesome-free-5.6.3-web/css/all.css" rel="stylesheet"> #}
   <link href="aos-master/dist/aos.css" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="styles/style.css">
 </head>
 <body>
 
-<div class="menu-main background-purple font-14 font-white display--xxl-flex justify-content-between align-items-center display--m-none">
-    <div class="menu-main--left flex justify-content-between align-items-center margin-xxl--left-52">
-        <div class="menu-main--left--phone margin-xxl--right-70 margin-xl--right-40"><span class="margin-xxl--right-24">Broj telefona</span><span><a href="tel:+381638403020">+381 63 8 40 30 20</a></span></div>
-        <div style="cursor: pointer;" class="menu-main--left--newsletter display--m-none"><a class="cd-scroll-down" href="#section8">Newsletter</a></div>
-    </div>
-    <div class="menu-main--right flex justify-content-between align-items-center  margin-xxl--right-52">
-            {% if _GET[0] == 'radionica' %}
-                {% set Radionica = fetch("Radionica", {"id": _GET['1']})[0] %}
-                <div class="flex align-items-center display--1260-none">
-                    <img src="assets/shared/date-white.png">
-                    <div class="font--xxl-14 font-white margin-xxl--left-10">{{ Radionica.Datum | date("d.m.Y") }}</div>
-                    {# {% if Radionica.Otvorena == 'true' %} #}
-                    <div class="font--xxl-14 font-white margin-xxl--left-40">{{Radionica.Status}}</div>
-                    <div class="font--xxl-14 font-white margin-xxl--left-10">{{ Radionica.Vreme }}</div>
-                    {# {% endif %}
-                    {% if Radionica.Otvorena == 'false' %}
-                    <div class="font--xxl-14 font-white margin-xxl--left-40">Radionica zatvorena</div>
-                    {% endif %} #}
-                </div>
-                <div onClick="radionica_open()" class="radionica-info" style="cursor: pointer;">
-                    <img src="assets/shared/date-white.png">
-                </div>
-            {% endif %}
-        <div class="menu-main--right--social">
-            <span class="margin-xxl--left-24 display--l-none"><a href=""><img src="./assets/shared/instagram.svg"></a></span>
-            <span class="margin-xxl--left-24 display--l-none"><a href=""><img src="./assets/shared/facebook.svg"></a></span>
-            {# <span class="margin-xxl--left-24 display--l-none"><a href=""><img src="./assets/shared/pinterest.svg"></a></span> #}
-            {# <span class="margin-xxl--left-24 display--l-none"><a href=""><img src="./assets/shared/linkedin.svg"></a></span> #}
-        </div>
-        <div class="menu-main--right--search flex align-items-center justify-content-center">
-            <span class="display--xl-none margin-xxl--left-24">Pretraži</span>
-            <span class="menu-main--right--search-icon flex align-items-center justify-content-center background-white margin-xxl--left-28">
-                <div id="js-search" style="display: flex; align-items: center;" >
-                    <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 13 13" fill="none">
-                    <path class="loopa" d="M9.29102 8.1761H8.70383L8.49571 7.97541C9.22413 7.12807 9.66266 6.02802 9.66266 4.83133C9.66266 2.16295 7.49971 0 4.83133 0C2.16295 0 0 2.16295 0 4.83133C0 7.49971 2.16295 9.66266 4.83133 9.66266C6.02802 9.66266 7.12807 9.22413 7.97541 8.49571L8.1761 8.70383V9.29102L11.8925 13L13 11.8925L9.29102 8.1761ZM4.83133 8.1761C2.98056 8.1761 1.48656 6.6821 1.48656 4.83133C1.48656 2.98056 2.98056 1.48656 4.83133 1.48656C6.6821 1.48656 8.1761 2.98056 8.1761 4.83133C8.1761 6.6821 6.6821 8.1761 4.83133 8.1761Z" fill="#291644"/>
-                    </svg>
-                </div>
-            </span>
-        </div>
-    </div>
+<div class="preloader">
+	<span data-aos="zoom-in" class="preloader-gif font--xxl-24 font--m-16 font--xs-14 font-white text-center" style="font-style: italic">
+		Promena ne počinje prvim korakom, već <br> prepoznavanjem pravca u kojem treba koračati
+	</span>	
 </div>
 
-<div id="radionicaInfo" class="flex flex-column" style="display: none;">
-    <div onClick="radionica_close()" style="cursor: pointer;" class="flex justify-content-end margin-xxl--right-48 margin-xxl--top-24"><img src="assets/shared/close-icon.svg"></div>
-    <div class="w-100 flex flex-column flex-1 align-items-center justify-content-center">
-    {% set Radionica = fetch("Radionica", {"id": _GET['1']})[0] %}
-        {% if Radionica.Otvorena == 'true' %}
-        <div class="font--xxl-24 font-white font-bold margin-xxl--left-24 margin-xxl--right-24 text-center">Radionica otvorena, ostalo još {{Radionica.Mesto}}</div>
-        <div class="font--xxl-24 font-white margin-xxl--top-48">{{Radionica.Grad}}</div>
-        <div class="font--xxl-24 font-white margin-xxl--top-24">{{Radionica.Adresa}}</div>
-        <div class="font--xxl-62 font--s-32 font-white margin-xxl--top-24 margin-xxl--bottom-48">{{ Radionica.Vreme }}</div>
-        {% endif %}
-        {% if Radionica.Otvorena == 'false' %}
-        <div class="font--xxl-14 font-white font-bold">Radionica zatvorena</div>
-        {% endif %}
-        <div class="flex margin-xxl--top-48">
-            <span><a href=""><img src="./assets/shared/instagram.svg"></a></span>
-            <span class="margin-xxl--left-24 flex align-items-center justify-content-center"><a href=""><img src="./assets/shared/facebook.svg"></a></span>
-            {# <span class="margin-xxl--left-24"><a href=""><img src="./assets/shared/pinterest.svg"></a></span> #}
-            {# <span class="margin-xxl--left-24"><a href=""><img src="./assets/shared/linkedin.svg"></a></span> #}
-        </div>
-    </div>
-</div>
 
-<div id="js-pretraga" style="display: none;" class="w-100 flex align-items-center justify-content-center">
-    <input id="typeahead_m" type="text" placeholder="Search" class="pretraga isidora">
-</div>
+<div>
+	<div class="menu-main background-purple font-14 font-white display--xxl-flex justify-content-between align-items-center display--m-none">
+			<div class="menu-main--left flex justify-content-between align-items-center margin-xxl--left-52">
+					<div class="menu-main--left--phone margin-xxl--right-70 margin-xl--right-40"><span class="margin-xxl--right-24">Broj telefona</span><span><a href="tel:+381638403020">+381 63 8 40 30 20</a></span></div>
+					<div style="cursor: pointer;" class="menu-main--left--newsletter display--m-none"><a class="cd-scroll-down" href="#section8">Newsletter</a></div>
+			</div>
+			<div class="menu-main--right flex justify-content-between align-items-center  margin-xxl--right-52">
+							{% if _GET[0] == 'radionica' %}
+									{% set Radionica = fetch("Radionica", {"id": _GET['1']})[0] %}
+									<div class="flex align-items-center display--1260-none">
+											<img src="assets/shared/date-white.png">
+											<div class="font--xxl-14 font-white margin-xxl--left-10">{{ Radionica.Datum | date("d.m.Y") }}</div>
+											<div class="font--xxl-14 font-white margin-xxl--left-40">{{Radionica.Status}}</div>
+											<div class="font--xxl-14 font-white margin-xxl--left-10">{{ Radionica.Vreme }}</div>
+									</div>
+									<div onClick="radionica_open()" class="radionica-info" style="cursor: pointer;">
+											<img src="assets/shared/date-white.png">
+									</div>
+							{% endif %}
+					<div class="menu-main--right--social">
+							<span class="margin-xxl--left-24 display--l-none"><a href=""><img src="./assets/shared/instagram.svg"></a></span>
+							<span class="margin-xxl--left-24 display--l-none"><a href=""><img src="./assets/shared/facebook.svg"></a></span>
+					</div>
+					<div class="menu-main--right--search flex align-items-center justify-content-center">
+							<span class="display--xl-none margin-xxl--left-24">Pretraži</span>
+							<span class="menu-main--right--search-icon flex align-items-center justify-content-center background-white margin-xxl--left-28">
+									<div id="js-search" style="display: flex; align-items: center;" >
+											<svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 13 13" fill="none">
+											<path class="loopa" d="M9.29102 8.1761H8.70383L8.49571 7.97541C9.22413 7.12807 9.66266 6.02802 9.66266 4.83133C9.66266 2.16295 7.49971 0 4.83133 0C2.16295 0 0 2.16295 0 4.83133C0 7.49971 2.16295 9.66266 4.83133 9.66266C6.02802 9.66266 7.12807 9.22413 7.97541 8.49571L8.1761 8.70383V9.29102L11.8925 13L13 11.8925L9.29102 8.1761ZM4.83133 8.1761C2.98056 8.1761 1.48656 6.6821 1.48656 4.83133C1.48656 2.98056 2.98056 1.48656 4.83133 1.48656C6.6821 1.48656 8.1761 2.98056 8.1761 4.83133C8.1761 6.6821 6.6821 8.1761 4.83133 8.1761Z" fill="#291644"/>
+											</svg>
+									</div>
+							</span>
+					</div>
+			</div>
+	</div>
 
-<div class="menu-second font-14 font-white flex justify-content-between align-items-center" id="secondmenu">
-    <a href="index" style="height: 41px;" class="menu-second--left flex align-items-center margin-xxl--left-52 margin-s--left-24">
-        <img style="max-height: 100%;" src="./assets/shared/logo-white-full.png">
-    </a>
+	<div id="radionicaInfo" class="flex flex-column" style="display: none;">
+			<div onClick="radionica_close()" style="cursor: pointer;" class="flex justify-content-end margin-xxl--right-48 margin-xxl--top-24"><img src="assets/shared/close-icon.svg"></div>
+			<div class="w-100 flex flex-column flex-1 align-items-center justify-content-center">
+			{% set Radionica = fetch("Radionica", {"id": _GET['1']})[0] %}
+					{% if Radionica.Otvorena == 'true' %}
+					<div class="font--xxl-24 font-white font-bold margin-xxl--left-24 margin-xxl--right-24 text-center">Radionica otvorena, ostalo još {{Radionica.Mesto}}</div>
+					<div class="font--xxl-24 font-white margin-xxl--top-48">{{Radionica.Grad}}</div>
+					<div class="font--xxl-24 font-white margin-xxl--top-24">{{Radionica.Adresa}}</div>
+					<div class="font--xxl-62 font--s-32 font-white margin-xxl--top-24 margin-xxl--bottom-48">{{ Radionica.Vreme }}</div>
+					{% endif %}
+					{% if Radionica.Otvorena == 'false' %}
+					<div class="font--xxl-14 font-white font-bold">Radionica zatvorena</div>
+					{% endif %}
+					<div class="flex margin-xxl--top-48">
+							<span><a href=""><img src="./assets/shared/instagram.svg"></a></span>
+							<span class="margin-xxl--left-24 flex align-items-center justify-content-center"><a href=""><img src="./assets/shared/facebook.svg"></a></span>
+					</div>
+			</div>
+	</div>
 
-    <div class="flex">
-    {% if _GET[0] == 'radionica' %}
-        <div onClick="radionica_open()" class="radionica-info margin-xxl--left-24" style="cursor: pointer;">
-            <img src="assets/shared/date-white.png">
-        </div>
-    {% endif %}
-    </div>
-        <div class="menu-second--right color-white flex align-items-center margin-xxl--right-52 margin-s--right-24" id="menusecond">
-            <div class="menu-second--right-links flex display--xl-none" id="closeham">
-                <div class="margin-xxl--left-52 ">
-                    <a class="font--xxl-14" href="o_meni">O meni</a>
-                    <div class="{% if _GET[0] == 'o_meni' %} bottom-gradient {% endif %}"></div>
-                </div>
-                <div class="margin-xxl--left-52 margin-xl--left-40">
-                    <a class="font--xxl-14" href="radionice">Programi</a>
-                    <div class="{% if _GET[0] == 'radionice' %} bottom-gradient {% endif %}"></div>
-                </div>
-                <div class="margin-xxl--left-52 margin-xl--left-40">
-                    <a class="font--xxl-14" href="mrsavljenje">Mršavljenje</a>
-                    <div class="{% if _GET[0] == 'mrsavljenje' %} bottom-gradient {% endif %}"></div>
-                </div>
-                <div class="margin-xxl--left-52 margin-xl--left-40">
-                    <a class="font--xxl-14" href="psihoterapija">Psihoterapija</a>
-                    <div class="{% if _GET[0] == 'psihoterapija' %} bottom-gradient {% endif %}"></div>
-                </div>
-                <div class="margin-xxl--left-52 margin-xl--left-40">
-                    <a class="font--xxl-14" href="video">Video</a>
-                    <div class="{% if _GET[0] == 'video' %} bottom-gradient {% endif %}"></div>
-                </div>
-                <div class="margin-xxl--left-52 margin-xl--left-40">
-                    <a class="font--xxl-14" href="blog">Blog</a>
-                    <div class="{% if _GET[0] == 'blog' %} bottom-gradient {% endif %}"></div>
-                </div>
-            </div>
-            <div class="menu-second--right-kontakt flex align-items-center margin-xxl--left-52 display--xl-none">
-                <span class="display--xl-none">
-                    <svg class="logo-white" width="20" height="22" viewBox="0 0 20 22" fill="none" xmlns="http://www.w3.org/2000/svg" id="contacticon">
-                        <path d="M18 6H8V12H6V4H12V0H4V6H2C0.9 6 0 6.9 0 8V20C0 21.1 0.9 22 2 22H18C19.1 22 20 21.1 20 20V8C20 6.9 19.1 6 18 6Z" />
-                    </svg>
-                </span>
-                <span class="margin-xxl--left-10 display--xl-none">
-                    <a class="font--xxl-14" href="kontakt">Kontakt</a>
-                    <div class="{% if _GET[0] == 'kontakt' %} bottom-gradient {% endif %}"></div>
-                </span>
-                
-            </div>
-            <div class="display--xxl-none display--xl-flex align-items--xl-center">
-                <div class="display--xxl-none flex--m menu-main--right--search align-items-center justify-content-center">
-                    <span class="display--xl-none">Pretraži</span>
-                    <span class="menu-main--right--search-icon flex align-items-center justify-content-center background-white">
-                        <div id="js-search-m" style=" display: flex; align-items: center;" >
-                            <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 13 13" fill="none">
-                            <path class="loopa" d="M9.29102 8.1761H8.70383L8.49571 7.97541C9.22413 7.12807 9.66266 6.02802 9.66266 4.83133C9.66266 2.16295 7.49971 0 4.83133 0C2.16295 0 0 2.16295 0 4.83133C0 7.49971 2.16295 9.66266 4.83133 9.66266C6.02802 9.66266 7.12807 9.22413 7.97541 8.49571L8.1761 8.70383V9.29102L11.8925 13L13 11.8925L9.29102 8.1761ZM4.83133 8.1761C2.98056 8.1761 1.48656 6.6821 1.48656 4.83133C1.48656 2.98056 2.98056 1.48656 4.83133 1.48656C6.6821 1.48656 8.1761 2.98056 8.1761 4.83133C8.1761 6.6821 6.6821 8.1761 4.83133 8.1761Z" fill="#291644"/>
-                            </svg>
-                        </div>
-                    </span>
-                </div>
-                <svg class="ham-white margin-xxl--left-24 margin-s--left-10" xmlns="http://www.w3.org/2000/svg" width="23" height="8" viewBox="0 0 23 8" fill="none" id="ham" onClick="menu_toggle(true)">
-                    <line y1="0.5" x2="23" y2="0.5" />
-                    <line y1="7.5" x2="18" y2="7.5" />
-                </svg>
-                
-            </div>
-        </div>
-    </div>
-</div>
-<div class="menu-dropdown display--xxl-none display--xl-flex align-items--xl-center justify-content--xl-end flex--m-column justify-content--m-center" id="dropdown">
-    <div class="menu-dropdown-top display--xxl-none display--m-flex align-items-center justify-content-between w--m-100">
-        <div class="menu-dropdown-top-left margin-xxl--left-52 margin-s--left-24 flex align-items-center">
-            <span style="height: 41px;">
-            <img style="max-height: 100%;" src="./assets/shared/logo-white-full.png">
-            </span>
-        </div>
-        <div class="menu-dropdown-top-right margin-xxl--right-52 margin-s--right-24 display--xxl-none display--xl-flex">
-            <svg class="text-hover" width="17" height="18" viewBox="0 0 17 18" fill="none" xmlns="http://www.w3.org/2000/svg" id="hamclose" onClick="menu_toggle(false)">
-                <line x1="0.353553" y1="0.646447" x2="16.617" y2="16.9099" stroke="#60B709"/>
-                <line x1="0.646447" y1="15.6464" x2="13.3744" y2="2.91852" stroke="#60B709"/>
-            </svg>
-        </div>
-    </div>
-    <div class="flex-1 flex align-items-center justify-content-end">
-        <div class="menu-dropdown--left-links flex--m flex--m-column align-items--m-start">
-            <span class="margin-m--bottom-46 margin-xs--bottom-24 font-white"><a class="font--xxl-14" href="o_meni">O meni</a></span>
-            <span class="margin-xxl--left-52 margin-xl--left-70 margin-l--left-60 margin-m--left-none margin-m--bottom-46 margin-xs--bottom-24 font-white"><a class="font--xxl-14" href="radionice">Programi</a></span>
-            <span class="margin-xxl--left-52 margin-xl--left-70 margin-l--left-60 margin-m--left-none margin-m--bottom-46 margin-xs--bottom-24 font-white"><a class="font--xxl-14" href="mrsavljenje">Mršavljenje</a></span>
-            <span class="margin-xxl--left-52 margin-xl--left-70 margin-l--left-60 margin-m--left-none margin-m--bottom-46 margin-xs--bottom-24 font-white"><a class="font--xxl-14" href="psihoterapija">Psihoterapija</a></span>
-            <span class="margin-xxl--left-52 margin-xl--left-70 margin-l--left-60 margin-m--left-none margin-m--bottom-46 margin-xs--bottom-24 font-white"><a class="font--xxl-14" href="video">Video</a></span>
-            <span class="margin-xxl--left-52 margin-xl--left-70 margin-l--left-60 margin-m--left-none font-white"><a class="font--xxl-14" href="blog">Blog</a></span>
-        </div>
-    </div>
-    <div class="menu-dropdown--right margin-xl--left-70 margin-l--left-60 margin-xxl--right-52 flex align-items-center justify-content-end w--m-100">
-        <div class="menu-dropdown--right-kontakt display--xl-flex align-items--xl-center display--m-none">
-            <span class="flex align-items-center justify-content-end">
-                <svg class="logo-white" width="20" height="22" viewBox="0 0 20 22" fill="none" xmlns="http://www.w3.org/2000/svg" id="contacticon">
-                    <path d="M18 6H8V12H6V4H12V0H4V6H2C0.9 6 0 6.9 0 8V20C0 21.1 0.9 22 2 22H18C19.1 22 20 21.1 20 20V8C20 6.9 19.1 6 18 6Z" />
-                </svg>
-            </span>
-            <span class="margin-xxl--left-10 font-white"><a class="font--xxl-14" href="kontakt">Kontakt</a></span>
-        </div>
-        <div class="menu-dropdown--right-close display--xxl-none display--xl-flex display--m-none margin-xl--left-40 align-items-start justify-content-start">
-            <svg class="text-hover margin-xl--top-24" width="17" height="18" viewBox="0 0 17 18" fill="none" xmlns="http://www.w3.org/2000/svg" onClick="menu_toggle(false)">
-                <line x1="0.353553" y1="0.646447" x2="16.617" y2="16.9099" stroke="#60B709"/>
-                <line x1="0.646447" y1="15.6464" x2="13.3744" y2="2.91852" stroke="#60B709"/>
-            </svg>
-        </div>
-        <div class="menu-dropdown--right-bottom display--xxl-none display--m-flex align-items-m-center justify-content--m-between background-purple-dark">
-            <div class="menu-dropdown--right-bottom--social flex align-items-center margin-xxl--right-48 w--m-50 margin-xxl--left-52 ">
-                <span class=""><a href=""><img src="./assets/shared/instagram.svg"></a></span>
-                <span class="margin-xxl--left-24"><a href=""><img src="./assets/shared/facebook.svg"></a></span>
-                {# <span class="margin-xxl--left-24"><a href=""><img src="./assets/shared/pinterest.svg"></a></span> #}
-                {# <span class="margin-xxl--left-24"><a href=""><img src="./assets/shared/linkedin.svg"></a></span> #}
-            </div>
-            <div class="menu-dropdown--right-bottom--kontakt w--m-50 flex align-items-center justify-content-end margin-xxl--right-52">
-                <span class="flex align-items-center">
-                    <svg class="logo-white" width="20" height="22" viewBox="0 0 20 22" fill="none" xmlns="http://www.w3.org/2000/svg" id="contacticon">
-                        <path d="M18 6H8V12H6V4H12V0H4V6H2C0.9 6 0 6.9 0 8V20C0 21.1 0.9 22 2 22H18C19.1 22 20 21.1 20 20V8C20 6.9 19.1 6 18 6Z" />
-                    </svg>
-                </span>
-                <span class="margin-xxl--left-10 font-white font-14"><a href="kontakt">Kontakt</a></span>
-            </div>
-        </div>
-    </div>
-    
-</div>
+	<div id="js-pretraga" style="display: none;" class="w-100 flex align-items-center justify-content-center">
+			<input id="typeahead_m" type="text" placeholder="Search" class="pretraga isidora">
+	</div>
 
-<div id="content">
-{% block content %}{% endblock %}
-</div>
-{# {% if _GET[0] != 'error-404' %}
+	<div class="menu-second font-14 font-white flex justify-content-between align-items-center" id="secondmenu">
+			<a href="index" style="height: 41px;" class="menu-second--left flex align-items-center margin-xxl--left-52 margin-s--left-24">
+					<img style="max-height: 100%;" src="./assets/shared/logo-white-full.png">
+			</a>
 
-{% endif %} #}
+			<div class="flex">
+			{% if _GET[0] == 'radionica' %}
+					<div onClick="radionica_open()" class="radionica-info margin-xxl--left-24" style="cursor: pointer;">
+							<img src="assets/shared/date-white.png">
+					</div>
+			{% endif %}
+			</div>
+					<div class="menu-second--right color-white flex align-items-center margin-xxl--right-52 margin-s--right-24" id="menusecond">
+							<div class="menu-second--right-links flex display--xl-none" id="closeham">
+									<div class="margin-xxl--left-52 ">
+											<a class="font--xxl-14" href="o_meni">O meni</a>
+											<div class="{% if _GET[0] == 'o_meni' %} bottom-gradient {% endif %}"></div>
+									</div>
+									<div class="margin-xxl--left-52 margin-xl--left-40">
+											<a class="font--xxl-14" href="radionice">Programi</a>
+											<div class="{% if _GET[0] == 'radionice' %} bottom-gradient {% endif %}"></div>
+									</div>
+									<div class="margin-xxl--left-52 margin-xl--left-40">
+											<a class="font--xxl-14" href="mrsavljenje">Mršavljenje</a>
+											<div class="{% if _GET[0] == 'mrsavljenje' %} bottom-gradient {% endif %}"></div>
+									</div>
+									<div class="margin-xxl--left-52 margin-xl--left-40">
+											<a class="font--xxl-14" href="psihoterapija">Psihoterapija</a>
+											<div class="{% if _GET[0] == 'psihoterapija' %} bottom-gradient {% endif %}"></div>
+									</div>
+									<div class="margin-xxl--left-52 margin-xl--left-40">
+											<a class="font--xxl-14" href="video">Video</a>
+											<div class="{% if _GET[0] == 'video' %} bottom-gradient {% endif %}"></div>
+									</div>
+									<div class="margin-xxl--left-52 margin-xl--left-40">
+											<a class="font--xxl-14" href="blog">Blog</a>
+											<div class="{% if _GET[0] == 'blog' %} bottom-gradient {% endif %}"></div>
+									</div>
+							</div>
+							<div class="menu-second--right-kontakt flex align-items-center margin-xxl--left-52 display--xl-none">
+									<span class="display--xl-none">
+											<svg class="logo-white" width="20" height="22" viewBox="0 0 20 22" fill="none" xmlns="http://www.w3.org/2000/svg" id="contacticon">
+													<path d="M18 6H8V12H6V4H12V0H4V6H2C0.9 6 0 6.9 0 8V20C0 21.1 0.9 22 2 22H18C19.1 22 20 21.1 20 20V8C20 6.9 19.1 6 18 6Z" />
+											</svg>
+									</span>
+									<span class="margin-xxl--left-10 display--xl-none">
+											<a class="font--xxl-14" href="kontakt">Kontakt</a>
+											<div class="{% if _GET[0] == 'kontakt' %} bottom-gradient {% endif %}"></div>
+									</span>
+									
+							</div>
+							<div class="display--xxl-none display--xl-flex align-items--xl-center">
+									<div class="display--xxl-none flex--m menu-main--right--search align-items-center justify-content-center">
+											<span class="display--xl-none">Pretraži</span>
+											<span class="menu-main--right--search-icon flex align-items-center justify-content-center background-white">
+													<div id="js-search-m" style=" display: flex; align-items: center;" >
+															<svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 13 13" fill="none">
+															<path class="loopa" d="M9.29102 8.1761H8.70383L8.49571 7.97541C9.22413 7.12807 9.66266 6.02802 9.66266 4.83133C9.66266 2.16295 7.49971 0 4.83133 0C2.16295 0 0 2.16295 0 4.83133C0 7.49971 2.16295 9.66266 4.83133 9.66266C6.02802 9.66266 7.12807 9.22413 7.97541 8.49571L8.1761 8.70383V9.29102L11.8925 13L13 11.8925L9.29102 8.1761ZM4.83133 8.1761C2.98056 8.1761 1.48656 6.6821 1.48656 4.83133C1.48656 2.98056 2.98056 1.48656 4.83133 1.48656C6.6821 1.48656 8.1761 2.98056 8.1761 4.83133C8.1761 6.6821 6.6821 8.1761 4.83133 8.1761Z" fill="#291644"/>
+															</svg>
+													</div>
+											</span>
+									</div>
+									<svg class="ham-white margin-xxl--left-24 margin-s--left-10" xmlns="http://www.w3.org/2000/svg" width="23" height="8" viewBox="0 0 23 8" fill="none" id="ham" onClick="menu_toggle(true)">
+											<line y1="0.5" x2="23" y2="0.5" />
+											<line y1="7.5" x2="18" y2="7.5" />
+									</svg>
+									
+							</div>
+					</div>
+			</div>
+	</div>
+	<div class="menu-dropdown display--xxl-none display--xl-flex align-items--xl-center justify-content--xl-end flex--m-column justify-content--m-center" id="dropdown">
+			<div class="menu-dropdown-top display--xxl-none display--m-flex align-items-center justify-content-between w--m-100">
+					<div class="menu-dropdown-top-left margin-xxl--left-52 margin-s--left-24 flex align-items-center">
+							<span style="height: 41px;">
+							<img style="max-height: 100%;" src="./assets/shared/logo-white-full.png">
+							</span>
+					</div>
+					<div class="menu-dropdown-top-right margin-xxl--right-52 margin-s--right-24 display--xxl-none display--xl-flex">
+							<svg class="text-hover" width="17" height="18" viewBox="0 0 17 18" fill="none" xmlns="http://www.w3.org/2000/svg" id="hamclose" onClick="menu_toggle(false)">
+									<line x1="0.353553" y1="0.646447" x2="16.617" y2="16.9099" stroke="#60B709"/>
+									<line x1="0.646447" y1="15.6464" x2="13.3744" y2="2.91852" stroke="#60B709"/>
+							</svg>
+					</div>
+			</div>
+			<div class="flex-1 flex align-items-center justify-content-end">
+					<div class="menu-dropdown--left-links flex--m flex--m-column align-items--m-start">
+							<span class="margin-m--bottom-46 margin-xs--bottom-24 font-white"><a class="font--xxl-14" href="o_meni">O meni</a></span>
+							<span class="margin-xxl--left-52 margin-xl--left-70 margin-l--left-60 margin-m--left-none margin-m--bottom-46 margin-xs--bottom-24 font-white"><a class="font--xxl-14" href="radionice">Programi</a></span>
+							<span class="margin-xxl--left-52 margin-xl--left-70 margin-l--left-60 margin-m--left-none margin-m--bottom-46 margin-xs--bottom-24 font-white"><a class="font--xxl-14" href="mrsavljenje">Mršavljenje</a></span>
+							<span class="margin-xxl--left-52 margin-xl--left-70 margin-l--left-60 margin-m--left-none margin-m--bottom-46 margin-xs--bottom-24 font-white"><a class="font--xxl-14" href="psihoterapija">Psihoterapija</a></span>
+							<span class="margin-xxl--left-52 margin-xl--left-70 margin-l--left-60 margin-m--left-none margin-m--bottom-46 margin-xs--bottom-24 font-white"><a class="font--xxl-14" href="video">Video</a></span>
+							<span class="margin-xxl--left-52 margin-xl--left-70 margin-l--left-60 margin-m--left-none font-white"><a class="font--xxl-14" href="blog">Blog</a></span>
+					</div>
+			</div>
+			<div class="menu-dropdown--right margin-xl--left-70 margin-l--left-60 margin-xxl--right-52 flex align-items-center justify-content-end w--m-100">
+					<div class="menu-dropdown--right-kontakt display--xl-flex align-items--xl-center display--m-none">
+							<span class="flex align-items-center justify-content-end">
+									<svg class="logo-white" width="20" height="22" viewBox="0 0 20 22" fill="none" xmlns="http://www.w3.org/2000/svg" id="contacticon">
+											<path d="M18 6H8V12H6V4H12V0H4V6H2C0.9 6 0 6.9 0 8V20C0 21.1 0.9 22 2 22H18C19.1 22 20 21.1 20 20V8C20 6.9 19.1 6 18 6Z" />
+									</svg>
+							</span>
+							<span class="margin-xxl--left-10 font-white"><a class="font--xxl-14" href="kontakt">Kontakt</a></span>
+					</div>
+					<div class="menu-dropdown--right-close display--xxl-none display--xl-flex display--m-none margin-xl--left-40 align-items-start justify-content-start">
+							<svg class="text-hover margin-xl--top-24" width="17" height="18" viewBox="0 0 17 18" fill="none" xmlns="http://www.w3.org/2000/svg" onClick="menu_toggle(false)">
+									<line x1="0.353553" y1="0.646447" x2="16.617" y2="16.9099" stroke="#60B709"/>
+									<line x1="0.646447" y1="15.6464" x2="13.3744" y2="2.91852" stroke="#60B709"/>
+							</svg>
+					</div>
+					<div class="menu-dropdown--right-bottom display--xxl-none display--m-flex align-items-m-center justify-content--m-between background-purple-dark">
+							<div class="menu-dropdown--right-bottom--social flex align-items-center margin-xxl--right-48 w--m-50 margin-xxl--left-52 ">
+									<span class=""><a href=""><img src="./assets/shared/instagram.svg"></a></span>
+									<span class="margin-xxl--left-24"><a href=""><img src="./assets/shared/facebook.svg"></a></span>
+							</div>
+							<div class="menu-dropdown--right-bottom--kontakt w--m-50 flex align-items-center justify-content-end margin-xxl--right-52">
+									<span class="flex align-items-center">
+											<svg class="logo-white" width="20" height="22" viewBox="0 0 20 22" fill="none" xmlns="http://www.w3.org/2000/svg" id="contacticon">
+													<path d="M18 6H8V12H6V4H12V0H4V6H2C0.9 6 0 6.9 0 8V20C0 21.1 0.9 22 2 22H18C19.1 22 20 21.1 20 20V8C20 6.9 19.1 6 18 6Z" />
+											</svg>
+									</span>
+									<span class="margin-xxl--left-10 font-white font-14"><a href="kontakt">Kontakt</a></span>
+							</div>
+					</div>
+			</div>
+			
+	</div>
+
+	<div id="content">
+	{% block content %}{% endblock %}
+	</div>
+</div>
 
     <script src="https://code.jquery.com/jquery-3.3.1.js"  crossorigin="anonymous"></script>
-    {# <script src="./js/jquery-3.3.1.min.js"></script>  #}
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    {# <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script> #}
     <script src="./js/typeahead.bundle.min.js"></script>
     <script src="owl/owl.carousel.min.js"></script>
     <script src="fancybox-master/dist/jquery.fancybox.min.js"></script>
@@ -245,18 +229,9 @@
 
     <script>
         var page = "{{ _GET[0] }}";
-        {# console.log('page', page1); #}
     </script>
-    {# <script src="./js/menu-main.js"></script> #}
-    {# <script src="./js/mailer.js"></script> #}
-
-   {# <script>
-
-    </script> #}
 
     <!-- Ovo su novi skriptovi ad ne obrisemo slucajno pri ciscenju djubreta -->
     <script src="./js/menuworks.js"></script>
-    <script src="./js/logowork.js"> </script>
-    <script src="./js/footerwork.js"> </script>
 </body>
 </html>

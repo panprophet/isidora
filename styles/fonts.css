@@ -318,6 +318,9 @@
     font-size: inherit;
     line-height: inherit;
   }
+  .font--m-16 {
+    font-size: 1rem;
+  }
 }
 @media only screen and (max-width: 600px) {
   .text--s-center {
@@ -356,6 +359,9 @@
   .font--xs-24 * {
     font-size: inherit;
     line-height: inherit;
+  }
+  .font--xs-14 {
+    font-size: 0.875rem;
   }
   .line-tiny {
     width: 2.1875rem;

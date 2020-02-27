@@ -118,6 +118,32 @@ a:active{
     background-color: transparent;
 }
 
+.preloader{
+	position: fixed;
+	top:0;
+	left:0;
+	bottom: 0;
+	right: 0;
+	background: #fff;
+	z-index: 9999999999999;
+}
+
+.preloader .preloader-gif{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 37.5rem;
+	height: 37.5rem;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	margin: auto;  
+	background-color: #291644;
+	border-radius: 50%;
+}
+
 .container {
     width: 100%;
 }
@@ -176,6 +202,10 @@ a:active{
     }
 }
 @media only screen and (max-width: 1023px) {
+	.preloader .preloader-gif{
+		width: 35.5rem;
+		height: 35.5rem;
+	}
     .display {
         &--l {
             &-none {
@@ -190,6 +220,10 @@ a:active{
 @media only screen and (max-width: 960px) {
 	*{
 		font-size: 14px;
+	}
+	.preloader .preloader-gif{
+		width: 25.5rem;
+		height: 25.5rem;
 	}
     .display {
         &--m {
@@ -234,7 +268,11 @@ a:active{
 		}
 	}
 }
-@media only screen and (max-width: 380px) {
+@media screen and (max-width: 380px) {
+	.preloader .preloader-gif{
+		width: 20.7rem;
+		height: 20.7rem;
+	}
     .display {
         &--xxs {
             &-none {
@@ -269,4 +307,3 @@ a:active{
 @import 'kontakt';
 @import 'testimonial';
 @import 'detaljnije';
-// @import 'nav';
