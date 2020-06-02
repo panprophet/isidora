@@ -441,6 +441,9 @@ a:active {
 .line-marker:hover {
   cursor: pointer;
 }
+.transform-uppercase {
+  text-transform: uppercase;
+}
 @media screen and (max-width: 1440px) {
   .font--xl-62 {
     font-size: 3.875rem;
