@@ -2,13 +2,13 @@
 {% set Descriptions = fetch("Descriptions") %}
 {% block description %}{{Descriptions.Home}}{% endblock %}
 {% block content %}
-
+<!--
 <div class="preloader">
 	<span data-aos="zoom-in" id="preloader" class="preloader-gif font--xxl-24 font--m-16 font--xs-14 font-white text-center" style="font-style: italic">
 		Promena ne počinje prvim korakom, već <br> prepoznavanjem pravca u kojem treba koračati
 	</span>	
 </div>
-<!--<script>
+<script>
 if (sessionStorage.getItem('bijah')) document.getElementById('preloader').style.display="none"
 </script>-->
 
@@ -153,18 +153,24 @@ if (sessionStorage.getItem('bijah')) document.getElementById('preloader').style.
                 </div>
             </div>
         </div>
-        <div class="blok-all-left flex flex-column justify-content-center align-items-start margin-xxl--left-135 margin-xl--left-70 margin-m--left-57 margin-xs--left-23 margin-l--bottom-50">
+
+        <div class="blok-all-left flex flex-column justify-content-center align-items-start margin-xl--left-70 margin-m--left-57 margin-xs--left-23 margin-l--bottom-50">
             <div class="blok-all-left-all flex flex-column">
                 <div class="font--xxl-46 font--xl-42 font--xs-36 font-purple font-bold">Na stari način</div>
                 <div class="font--xxl-46 font--xl-42 font--xs-36 font-purple margin-xxl--bottom-42 margin-xl--bottom-32">nema novih rešenja</div>
                 <div class="blok-all-left-all-text padding-xxl--left-25 font--xxl-14 font-purple margin-xxl--bottom-77 margin-xl--bottom-32 margin-m--bottom-46 margin-s--bottom-32">Pokrenite promenu u sebi i na sebi</div>
-                <div class="font--xxl-14 font-purple margin-xxl--bottom-42 margin-xl--bottom-32 padding-xxl--left-15">Da li ste se ikada zapitali zašto vaša dijeta ponovo ne uspeva? Zašto se skinuti kilogrami vrlo brzo vraćaju, često uz dodavanje novih? Uskraćivanje hrane nije rešenje. Dijetama uklanjamo posledice, a ne bazične probleme. Unutrašnji mir, zdravlje i dobar izgled nisu dosežni samo dijetama, već je neophodno proniknuti duboko u sebe i pronaći problem. Put promena jeste težak, ali značajnoolakšan ako pored sebe imate stručnu osobu koja je i sama hodala tim putem. Podrška je snaga promene.</div>
+                <div class="font--xxl-14 font-purple margin-xxl--bottom-42 margin-xl--bottom-32 padding-xxl--left-15">
+                    Da li ste se ikada zapitali zašto vaša dijeta ponovo ne uspeva? Zašto se skinuti kilogrami vrlo brzo vraćaju, 
+                    često uz dodavanje novih? Uskraćivanje hrane nije rešenje. Dijetama uklanjamo posledice, a ne bazične probleme. 
+                    Unutrašnji mir, zdravlje i dobar izgled nisu dosežni samo dijetama, već je neophodno proniknuti duboko u sebe i pronaći problem. 
+                    Put promena jeste težak, ali značajnoolakšan ako pored sebe imate stručnu osobu koja je i sama hodala tim putem. Podrška je snaga promene.
+                </div>
                 <a href="mrsavljenje" class="font-italic font-bold font--xxl-14 font-purple margin-xxl--bottom-42 margin-s--bottom-32">Saznaj više</a>
                 {% set Radionica = fetch("Radionica") %}
                 {% for item in Radionica %}
                 {% if item.Oznaci == 'true' %}
                 <a href="radionica/{{item.Slug}}#zakazi">
-                    <button class="button-big font-white font--xxl-14 background-purple">ZAKAŽI SVOJ TERMIN</button>
+                    <button class="button-big font-white font--xxl-14">ZAKAŽI SVOJ TERMIN</button>
                 </a>
                 {% endif %}
                 {% endfor %}
@@ -237,7 +243,7 @@ if (sessionStorage.getItem('bijah')) document.getElementById('preloader').style.
                 <div class="font--xxl-14 font-purple margin-xxl--bottom-42 margin-xl--bottom-32">{{item.Opis}}</div>
                 <a href="radionica/{{item.Slug}}" class="font-italic font-bold font--xxl-14 font-purple margin-xxl--bottom-42 margin-s--bottom-32">Saznaj više</a>
                 <a href="radionica/{{item.Slug}}#zakazi">
-                    <button class="button-big font-white font--xxl-14 background-purple">PRIJAVI SE NA RADIONICU</button>
+                    <button class="button-big font-white font--xxl-14">PRIJAVI SE NA RADIONICU</button>
                 </a>
             
             </div>
