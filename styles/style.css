@@ -2821,7 +2821,7 @@ a:active {
   }
 }
 .blizak-odnos {
-  height: calc(100vh - 3.74rem);
+  min-height: calc(100vh - 3.74rem);
   padding-top: 3.74rem;
   background-image: url('../assets/images/home-blok2.jpg');
   background-position: top;
@@ -2831,6 +2831,7 @@ a:active {
 }
 .blizak-odnos-left {
   width: 50%;
+  height: 80vh;
   position: relative;
 }
 .blizak-odnos-left-image-1 {
@@ -3007,7 +3008,9 @@ a:active {
 @media screen and (max-width: 1366px) {
   .blizak-odnos-left {
     width: 45%;
+    height: 68vh;
     margin-top: -3.125rem;
+    margin-left: 2rem;
   }
   .blizak-odnos-left-image-1 {
     width: 26vw;
@@ -3137,6 +3140,7 @@ a:active {
     width: 100%;
     height: 56vw;
     margin-top: 0;
+    margin-left: 0;
   }
   .blizak-odnos-left-image-1 {
     display: none;
