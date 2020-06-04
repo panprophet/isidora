@@ -2471,9 +2471,9 @@ a:active {
   .w--l-auto {
     width: auto;
   }
-  .height-100vh {
+  /*.height-100vh {
     height: auto;
-  }
+  }*/
 }
 @media only screen and (max-width: 960px) {
   .w--m-100 {
@@ -3663,19 +3663,21 @@ a:active {
   }
 }
 @media screen and (max-width: 680px) {
-  .o_meni-hide {
-    height: 550px;
-  }
+  /*.o_meni {
+        &-hide {
+            height: 550px;
+        }
+    }*/
 }
 @media screen and (max-width: 480px) {
   .o_meni {
     height: 74vw;
+    /*&-hide {
+            height: 550px;
+        }*/
   }
   .o_meni-text {
     width: 90%;
-  }
-  .o_meni-hide {
-    height: 550px;
   }
 }
 @media screen and (max-width: 360px) {
@@ -4320,7 +4322,7 @@ a:active {
 @media screen and (max-width: 1023px) {
   .psihoterapija-blok {
     height: auto;
-    background: linear-gradient(0deg, #291644 6.11%, rgba(41, 22, 68, 0) 71.18%), url(../assets/images/radionica3-2.jpg);
+    background: linear-gradient(0deg, #291644 6.11%, rgba(41, 22, 68, 0) 71.18%), url(../assets/images/psihoteapija-prvi-blok-isidrora-buneta.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
