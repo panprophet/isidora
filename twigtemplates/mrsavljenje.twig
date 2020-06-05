@@ -58,7 +58,7 @@
 
 <!-- blok4 -->
 {% set IsidorinPrimer = fetch("IsidorinPrimer") %}
-<div id="owl4" class="testimonial owl-carousel owl-theme owl-loaded blok4 background-purple logo_white menu_white" id="section4">
+<div id="owl4" class="testimonial owl-carousel owl-theme owl-loaded blok4 background-purple logo_white menu_white"> <!--  id="section4" obrisan! -->
     <!-- psihoterapija -->
     {% for item in IsidorinPrimer %}
     <div id="psihoterapija" class="blok4-all flex-direction-reverse flex--l-direction">
@@ -148,4 +148,15 @@
 {% include 'poslednji_postovi.twig' %}
 <!-- blok9 -->
 {% include 'footer.twig' %}
+
+<script src="./js/in-view.min.js"></script>
+<script>
+inView('#owl4')
+    .on('enter', function(){
+        console.log('usao in view')
+         $(owl4).trigger('to.owl.carousel', 0)
+    })
+// autoplayHoverPause:true - na hover se slajd zaustavlja
+</script>
+
 {% endblock %}
