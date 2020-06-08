@@ -3610,12 +3610,18 @@ a:active {
   background-size: cover;
   background-repeat: no-repeat;
   position: relative;
+  animation-name: opacity;
+  animation-fill-mode: both;
+  animation-duration: 1.2s;
 }
 .o_meni-gr {
   display: none;
 }
 .o_meni-text {
   width: 30%;
+  animation-name: fadeInRight;
+  animation-fill-mode: both;
+  animation-duration: 1.5s;
 }
 .o_meni-text-border {
   border-left: 5px solid #291644;
@@ -3762,6 +3768,9 @@ a:active {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  animation-name: opacity;
+  animation-fill-mode: both;
+  animation-duration: 1.2s;
 }
 .blok1-a {
   padding-top: 3.71rem;
@@ -3780,7 +3789,7 @@ a:active {
   clip-path: circle(72% at 30% 74%);
   width: 65%;
   height: 100%;
-  animation-name: opacity;
+  animation-name: fadeInRight;
   animation-fill-mode: both;
   animation-duration: 1.5s;
 }
@@ -3789,7 +3798,7 @@ a:active {
   clip-path: circle(72% at 30% 74%);
   width: 96%;
   height: 100%;
-  animation-name: opacity;
+  animation-name: fadeInRight;
   animation-fill-mode: both;
   animation-duration: 1.8s;
 }
@@ -3798,7 +3807,7 @@ a:active {
   clip-path: circle(72% at 30% 74%);
   width: 96%;
   height: 100%;
-  animation-name: opacity;
+  animation-name: fadeInRight;
   animation-fill-mode: both;
   animation-duration: 2s;
 }
@@ -4278,13 +4287,16 @@ a:active {
   background-position: center;
   background-repeat: no-repeat;
   position: relative;
+  animation-name: opacity;
+  animation-fill-mode: both;
+  animation-duration: 1.2s;
 }
 .psihoterapija-blok-1 {
   background-color: rgba(41, 22, 68, 0.2);
   clip-path: circle(72% at 30% 74%);
   width: 65%;
   height: 100%;
-  animation-name: opacity;
+  animation-name: fadeInRight;
   animation-fill-mode: both;
   animation-duration: 1.5s;
 }
@@ -4293,7 +4305,7 @@ a:active {
   clip-path: circle(72% at 30% 74%);
   width: 96%;
   height: 100%;
-  animation-name: opacity;
+  animation-name: fadeInRight;
   animation-fill-mode: both;
   animation-duration: 1.8s;
 }
@@ -4302,7 +4314,7 @@ a:active {
   clip-path: circle(72% at 30% 74%);
   width: 96%;
   height: 100%;
-  animation-name: opacity;
+  animation-name: fadeInRight;
   animation-fill-mode: both;
   animation-duration: 2s;
 }
@@ -4499,6 +4511,9 @@ a:active {
   background-size: cover;
   background-position: top center;
   background-repeat: no-repeat;
+  animation-name: opacity;
+  animation-fill-mode: both;
+  animation-duration: 1.2s;
 }
 .radionica-info {
   display: none;
@@ -4528,7 +4543,7 @@ a:active {
   clip-path: circle(72% at 30% 74%);
   width: 65%;
   height: 100%;
-  animation-name: opacity;
+  animation-name: fadeInRight;
   animation-fill-mode: both;
   animation-duration: 1.5s;
 }
@@ -4537,7 +4552,7 @@ a:active {
   clip-path: circle(72% at 30% 74%);
   width: 96%;
   height: 100%;
-  animation-name: opacity;
+  animation-name: fadeInRight;
   animation-fill-mode: both;
   animation-duration: 1.8s;
 }
@@ -4546,7 +4561,7 @@ a:active {
   clip-path: circle(72% at 30% 74%);
   width: 96%;
   height: 100%;
-  animation-name: opacity;
+  animation-name: fadeInRight;
   animation-fill-mode: both;
   animation-duration: 2s;
 }
@@ -4675,6 +4690,16 @@ a:active {
 }
 .kontakt-side {
   width: 40%;
+}
+.l2r {
+  animation-name: fadeInLeft;
+  animation-fill-mode: both;
+  animation-duration: 1.3s;
+}
+.r2l {
+  animation-name: fadeInRight;
+  animation-fill-mode: both;
+  animation-duration: 1.6s;
 }
 .map-black-white {
   -webkit-filter: grayscale(100%);
