@@ -2729,6 +2729,8 @@ a:active {
   background-color: #FFFFFF;
 }
 .upoznaj_sebe-left {
+  background-image: url(../assets/images/bg-leaves.png);
+  background-position-x: right;
   animation-name: fadeInLeft;
   animation-fill-mode: both;
   animation-duration: 0.6s;
@@ -3093,6 +3095,7 @@ a:active {
   .upoznaj_sebe-left {
     width: 100%;
     animation-duration: 0s;
+    background-image: none;
   }
   .upoznaj_sebe-left-all {
     margin-top: -5.625rem;
@@ -3274,7 +3277,7 @@ a:active {
     height: 50vw;
   }
   .blizak-odnos-left {
-    height: 74vw;
+    height: 96vw;
   }
   .blizak-odnos-right-text {
     width: 100%;
