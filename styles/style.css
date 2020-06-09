@@ -3144,7 +3144,6 @@ a:active {
     background-position: center;
     background-repeat: no-repeat;
     width: 100%;
-    height: 56vw;
     margin-top: 0;
     margin-left: 0;
   }
@@ -3305,6 +3304,7 @@ a:active {
 }
 .najnoviji_blog-all {
   position: relative;
+  top: -1px;
   height: 100%;
   background-image: url('../assets/shared/luk-ljubicasti-desktop.jpg');
   background-position: center;
@@ -3608,9 +3608,12 @@ a:active {
 }
 .o_meni {
   height: calc(100vh - 3.74rem);
+  background-color: #291644;
   background-image: url(../assets/images/o-meni-intro.jpg);
-  background-position: top right;
-  background-size: cover;
+  /* background-position: top right; */
+  background-size: 100%;
+  background-position-y: center;
+  background-position-x: right;
   background-repeat: no-repeat;
   position: relative;
   animation-name: opacity;
@@ -4001,7 +4004,6 @@ a:active {
   }
   .blok3-right-all {
     z-index: 10;
-    margin-left: -2.5rem;
     width: 90%;
   }
 }
@@ -4460,7 +4462,7 @@ a:active {
   }
 }
 .post {
-  padding-top: 3.71rem;
+  padding-top: 4.71rem;
 }
 .post-image {
   width: 70%;
