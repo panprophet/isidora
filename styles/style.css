@@ -591,6 +591,10 @@ a:active {
   .text--s-right {
     text-align: right;
   }
+  .font--xxl-46 {
+    font-size: 2rem;
+    line-height: 2.7rem;
+  }
   .font--s-purple {
     color: #291644;
   }
@@ -627,7 +631,11 @@ a:active {
     height: 0.3125rem;
   }
 }
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 380px) {
+  .font--xs-36 {
+    font-size: 2rem;
+    line-height: 2.5rem;
+  }
 }
 .flex {
   display: -webkit-box;
@@ -1122,6 +1130,13 @@ a:active {
   border: 1px solid #9DC64F;
   transition: all 0.4s ease-in-out;
 }
+.button-midd-lighter:hover {
+  background-color: rgba(41, 22, 68, 0.02);
+  height: 2.813rem;
+  width: 9.75rem;
+  border: 1px solid rgba(41, 22, 68, 0.05);
+  transition: all 0.4s ease-in-out;
+}
 .button-small {
   height: 2.813rem;
   width: 8.125rem;
@@ -1177,6 +1192,12 @@ a:active {
 }
 .background-purple-darker {
   background-color: #060606;
+}
+.background-purple-light {
+  background-color: rgba(41, 22, 68, 0.05);
+}
+.background-purple-lighter {
+  background-color: rgba(41, 22, 68, 0.02);
 }
 .background-grey {
   background-color: #383838;
@@ -2349,8 +2370,14 @@ a:active {
   .padding-xs--left-23 {
     padding-left: 1.438rem;
   }
+  .padding-xs--left-14 {
+    padding-left: 0.875rem;
+  }
   .padding-xs--right-23 {
     padding-right: 1.438rem;
+  }
+  .padding-xs--right-14 {
+    padding-right: 0.875rem;
   }
 }
 .input-form {

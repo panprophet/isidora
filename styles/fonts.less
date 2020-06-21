@@ -498,6 +498,12 @@
   }
 
   .font{
+    &--xxl {
+      &-46 {
+        font-size: 2rem;
+        line-height: 2.7rem;
+      }
+    }
     &--s{
       &-purple{
         color: @purple;
@@ -543,7 +549,7 @@
     }
   }
 }
-@media screen and (max-width: 360px){
+@media screen and (max-width: 380px){
   // .font {
   //   &-16 {
   //     font-size: 0.875rem;
@@ -554,4 +560,10 @@
   //     }
   //   }
   // }
+  .font--xs{
+    &-36{
+      font-size: 2rem;
+      line-height: 2.5rem;
+    }
+  }
 }
