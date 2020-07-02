@@ -1491,6 +1491,9 @@ a:active {
 .padding-xxl--top-2_5-per {
   padding-top: 2.5%;
 }
+.padding-xxl--top-16 {
+  padding-top: 1rem;
+}
 .padding-xxl--bottom-200 {
   padding-bottom: 12.5rem;
 }
@@ -2641,7 +2644,7 @@ a:active {
 }
 @media screen and (max-width: 1023px) {
   .menu-dropdown {
-    height: 100vh;
+    height: calc(100vh - 1rem);
     top: 0px;
     margin-top: -200vh;
   }
@@ -4447,13 +4450,16 @@ a:active {
 .button-nogreen {
   height: 2.813rem;
   width: 9.75rem;
-  background-color: #22123A;
-  border: 1px solid #3d2a57;
+  background-color: transparent;
+  border: none !important;
   transition: all 0.4s ease-in-out;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .button-nogreen:hover {
-  background-color: rgba(41, 22, 68, 0.02);
-  border: 1px solid rgba(41, 22, 68, 0.05);
+  background-color: rgba(41, 22, 68, 0.2);
+  border: 1px solid #291644;
   transition: all 0.4s ease-in-out;
 }
 .border-line {

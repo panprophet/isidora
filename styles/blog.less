@@ -50,13 +50,16 @@
     &-nogreen {
     height: 2.813rem;
     width: 9.750rem; // izmenjeno
-    background-color: @purple-dark-circle;
-    border: 1px solid @purple-border;
+    background-color: transparent;
+    border:none !important;
     transition: all 0.4s ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     
     &:hover {
-      background-color: @purple-lighter;
-      border: 1px solid @purple-light;
+      background-color: @purple-medium;
+      border: 1px solid @purple;
       transition: all 0.4s ease-in-out;
     }
   }
