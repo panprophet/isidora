@@ -3681,7 +3681,7 @@ a:active {
   }
   .o_meni-text {
     position: absolute;
-    top: 90%;
+    top: 103%;
     width: 65%;
   }
   .o_meni-hide {
@@ -3703,6 +3703,11 @@ a:active {
             height: 550px;
         }
     }*/
+  .o_meni {
+    background-color: #291644;
+    background-image: url(../assets/images/O-meni---prvi-blok-mob.jpg);
+    background-position-y: top;
+  }
 }
 @media screen and (max-width: 480px) {
   .o_meni {
