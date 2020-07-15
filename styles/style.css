@@ -1126,7 +1126,7 @@ a:active {
   align-items: center;
 }
 .button-midd:hover {
-  background-color: #9DC64F;
+  background-color: #9DC64F !important;
   border: 1px solid #9DC64F;
   transition: all 0.4s ease-in-out;
 }
