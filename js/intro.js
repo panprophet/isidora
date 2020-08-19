@@ -27,7 +27,7 @@ var owl3 = $('#owl-3');
         items:1,
         loop:true,
         autoplay:true,
-        autoplayTimeout:6500,
+        autoplayTimeout:4500,
         autoplayHoverPause:true,
         nav: true,
         navContainerClass: 'owl-navigacija',
