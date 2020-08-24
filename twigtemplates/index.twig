@@ -170,7 +170,7 @@ if (sessionStorage.getItem('bijah')) document.getElementById('preloader').style.
             <div class="blok-all-left-all flex flex-column">
                 <div class="font--xxl-46 font--xl-42 font--xs-36 font-purple font-bold">{{HOMEPAGE_ODELJAK_3.Naslov_bold}}</div>
                 <div class="font--xxl-46 font--xl-42 font--xs-36 font-purple margin-xxl--bottom-42 margin-xl--bottom-32">{{HOMEPAGE_ODELJAK_3.MotivacioniText}}</div>
-                <div class="blok-all-left-all-text padding-xxl--left-25 font--xxl-14 font-purple margin-xxl--bottom-77 margin-xl--bottom-32 margin-m--bottom-46 margin-s--bottom-32">{{HOMEPAGE_ODELJAK_3.MotivacioniText}}</div>
+                {#<div class="blok-all-left-all-text padding-xxl--left-25 font--xxl-14 font-purple margin-xxl--bottom-77 margin-xl--bottom-32 margin-m--bottom-46 margin-s--bottom-32">{{HOMEPAGE_ODELJAK_3.MotivacioniText}}</div>#}
                 <div class="font--xxl-14 font-purple margin-xxl--bottom-42 margin-xl--bottom-32 padding-xxl--left-15">
                     {{HOMEPAGE_ODELJAK_3.Text}}
                 </div>
@@ -259,11 +259,11 @@ if (sessionStorage.getItem('bijah')) document.getElementById('preloader').style.
         <div class="blok-all-left flex flex-column justify-content-center align-items-start margin-xxl--left-135 margin-xl--left-70 margin-m--left-57 margin-xs--left-23">
             <div class="blok-all-left-all flex flex-column">
                 <div class="font--xxl-46 font--xl-42 font--xs-36 font-purple font-bold margin-xxl--bottom-42 margin-xl--bottom-32">{{item.Naziv}}</div>
-                <div class="blok-all-left-all-text flex padding-xxl--left-25 margin-xxl--bottom-77 margin-xl--bottom-32 margin-m--bottom-46 margin-s--bottom-32">
+                {#<div class="blok-all-left-all-text flex padding-xxl--left-25 margin-xxl--bottom-77 margin-xl--bottom-32 margin-m--bottom-46 margin-s--bottom-32">
                     <img src="./assets/shared/date.png" >
                     <span class="font--xxl-14 font-bold font-purple">{{item.Datum|date("d/m/Y")}} &nbsp</span>
                     <span class="font--xxl-14 font-purple"> {{item.Vreme}}</span>
-                </div>
+                </div>#}
                 <div class="font--xxl-14 font-purple margin-xxl--bottom-42 margin-xl--bottom-32">{{item.Opis}}</div>
                 <a href="radionica/{{item.Slug}}" class="font-italic font-bold font--xxl-14 font-purple margin-xxl--bottom-42 margin-s--bottom-32">Saznaj više</a>
                 <a href="radionica/{{item.Slug}}#zakazi">
