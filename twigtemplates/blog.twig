@@ -38,9 +38,13 @@
         <div class="blog-post flex flex-column justify-content-between margin-xxl--left-12_5 margin-xxl--right-12_5 margin-xxl--bottom-48">
             <div class="flex flex--640-column">
                 <div class="blog-post-width flex flex-column margin-xxl--right-20">
-                    <div class="blog-post-image" style="background-image: url('img/{{item.Slika}}')"></div>
+                    <a href="post/{{item.Slug}}">
+                      <div class="blog-post-image" style="background-image: url('img/{{item.Slika}}')"></div>
+                    </a>
                     <div class="flex flex-column padding-xxl--left-40 padding-left--640-20">
-                        <div class="font--xxl-22 font-bold margin-xxl--top-20">{{item.Naslov}}</div>
+                        <a href="post/{{item.Slug}}">
+                          <div class="font--xxl-22 font-bold margin-xxl--top-20">{{item.Naslov}}</div>
+                        </a>
                         <div class="blog-post-line margin-xxl--top-20"></div>
                     </div>
                 </div>
@@ -61,7 +65,7 @@
                         </a>
                     </div>
                 </div>
-                <a href="post/{{item.Slug}}" class="button-nogreen blog-post-text font--xxl-16  margin-xxl--top-20 margin-xxl--bottom-40">Saznaj više</a>
+                <a href="post/{{item.Slug}}" class="button-nogreen blog-post-text font--xxl-16  margin-xxl--top-20 margin-xxl--bottom-40">Saznaj više</a>
             </div>
         </div>
         {% endif %}

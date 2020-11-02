@@ -12,20 +12,25 @@
         <div class="font--xxl-16 font-purple text-center margin-xxl--top-24 margin-xxl--bottom-60">Nije potrebno videti celo stepenište da bi napravio prvi korak.</div>
     </div>
     <div >
-        <form id="contactform" class="flex justify-content-between flex--l-column align-items--l-center padding-xxl--left-135 padding-xxl--right-135 padding-xs--left-23 padding-xs--right-23">
+        <form id="contactform" onsubmit="return false;" class="flex justify-content-between flex--l-column align-items--l-center padding-xxl--left-135 padding-xxl--right-135 padding-xs--left-23 padding-xs--right-23">
           <div class="kontakt-side r2l flex flex-column">
             <div class="font-xxl--18 font-grey--form margin-xxl--bottom-10 text--l-center">Ime i Prezime</div>
-            <input class="kontakt-form margin-xxl--bottom-20" id="name" type="text"/>
+            <input class="kontakt-form margin-xxl--bottom-20" id="form-name" type="text"/>
             <div class="font-xxl--18 font-grey--form margin-xxl--bottom-10 text--l-center">Email</div>
-            <input class="kontakt-form margin-xxl--bottom-20" id="email" type="text"/>
+            <input class="kontakt-form margin-xxl--bottom-20" id="form-email" type="text"/>
             <div class="font-xxl--18 font-grey--form margin-xxl--bottom-10 text--l-center">Naslov</div>
-            <input class="kontakt-form margin-xxl--bottom-20" id="title" type="text"/>
+            <input class="kontakt-form margin-xxl--bottom-20" id="form-title" type="text"/>
           </div>
           <div class="kontakt-side l2r flex flex-column">
             <div class="font-xxl--18 font-grey--form margin-xxl--bottom-10 text--l-center">Poruka</div>
-            <textarea class="kontakt-form margin-xxl--bottom-24" id="message" type="text"></textarea>
+            <textarea class="kontakt-form margin-xxl--bottom-24" id="form-message" type="text"></textarea>
+
+            <div id="form-status-message" style="text-align: center; margin-bottom: 1rem; display:none">
+            Uspešno ste poslali poruku. Odgovor će biti poslat u najkaćem mogućem roku.
+            </div>
+
             <div class="w-100 flex justify-content-end justify-content--l-center">
-                <button class="button-midd font-white font--xxl-14 border-purple-light">POŠALJI</button>
+                <button onclick="submitForm()" class="button-midd font-white font--xxl-14 border-purple-light">POŠALJI</button>
             </div>
           </div>
         </form>

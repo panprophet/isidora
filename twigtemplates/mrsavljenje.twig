@@ -116,10 +116,10 @@
                 <div style="white-space: pre-wrap;" class="font--xxl-14 font-white margin-xxl--bottom-42 margin-xl--bottom-32">{{item.Opis}}</div>
                 <div class="margin-xxl--bottom-42 flex flex--xs-column">
                     <a href="{{item.Btn1}}">
-                        <button class="button-midd font-white font--xxl-14 background-purple-darker margin-xxl--right-10 margin-xs--right-none margin-xs--bottom-10">RADIONICA</button>
+                        <button class="button-midd font-white font--xxl-14 background-purple-darker margin-xxl--right-10 margin-xs--right-none margin-xs--bottom-10">INDIVIDUALNA</button>
                     </a>
                     <a href="{{item.Btn2}}">
-                        <button class="button-midd font-white font--xxl-14 background-purple-darker">INDIVIDUALNA</button>
+                        <button class="button-midd font-white font--xxl-14 background-purple-darker">KONTAKT</button>
                     </a>
                 </div>
             </div>
@@ -140,15 +140,17 @@
                 <div class="blok1-1-2-3">
                     <div class="blok1-1-2-3-all flex flex-column justify-content-center margin-xxl--left-135 margin-xl--left-70 margin-m--left-57 margin-xs--left-23">
                         <div class="font--xxl-46 font--xl-42 font--xs-36 font-white font-bold margin-xxl--bottom-42 margin-xl--bottom-32">{{item.Naziv}}</div>
+                        {#
                         <div class="blok1-1-2-3-all-text flex padding-xxl--left-25 font--xxl-14 font-white margin-xxl--bottom-77 margin-xl--bottom-32 margin-m--bottom-46 margin-s--bottom-32">
                             <img src="./assets/shared/date.png" >
                             <p class="font--xxl-14 font-bold font-white">{{item.Datum|date("d.m.Y")}} &nbsp</p>
                             <p class="font--xxl-14 font-white"> {{item.Vreme}}</p>
                         </div>
+                        #}
                         <div class="font--xxl-14 font-white margin-xxl--bottom-42 margin-xl--bottom-32">{{item.Opis}}</div>
                         <a href="radionica/{{item.Slug}}" class="font-italic font-bold font--xxl-14 font-white margin-xxl--bottom-42 margin-s--bottom-32">Saznaj više</a>
                         <a href="radionica/{{item.Slug}}#zakazi">
-                            <button class="button-big font-white font--xxl-14 background-purple-dark">PRIJAVI SE NA RADIONICU</button>
+                            <button class="button-big font-white font--xxl-14 background-purple-dark">ZAKAŽI SEANSU</button>
                         </a>
                     </div>
                 </div>
