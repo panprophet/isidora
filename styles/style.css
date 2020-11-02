@@ -4452,6 +4452,9 @@ a:active {
 .blog-post-share:hover .op {
   opacity: 1;
 }
+.blog-post-share:active .op {
+  opacity: 1;
+}
 .button-nogreen {
   height: 2.813rem;
   width: 9.75rem;
