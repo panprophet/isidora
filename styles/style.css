@@ -3805,6 +3805,7 @@ a:active {
   animation-name: opacity;
   animation-fill-mode: both;
   animation-duration: 1.2s;
+  margin-bottom: -2px;
 }
 .blok1-a {
   padding-top: 3.71rem;
@@ -4458,7 +4459,7 @@ a:active {
 .button-nogreen {
   height: 2.813rem;
   width: 9.75rem;
-  background-color: transparent;
+  background-color: transparent !important;
   border: none !important;
   transition: all 0.4s ease-in-out;
   display: flex;
@@ -4466,8 +4467,9 @@ a:active {
   align-items: center;
 }
 .button-nogreen:hover {
-  background-color: rgba(41, 22, 68, 0.2);
-  border: 1px solid #291644;
+  opacity: 0.5 !important;
+  background-color: transparent !important;
+  border: none;
   transition: all 0.4s ease-in-out;
 }
 .border-line {
