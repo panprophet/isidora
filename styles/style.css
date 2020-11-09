@@ -2909,6 +2909,7 @@ a:active {
 .blizak-odnos-right {
   width: 45%;
   padding-left: 5%;
+  margin-top: -1px;
 }
 .blizak-odnos-right-line {
   display: none;
@@ -2923,6 +2924,9 @@ a:active {
 .blizak-odnos-right-testimonial-text {
   width: 435px;
   height: auto;
+}
+.blizak-odnos-right img {
+  pointer-events: none;
 }
 .blok {
   height: 100vh;
