@@ -2769,9 +2769,9 @@ a:active {
 .upoznaj_sebe-right {
   background-color: rgba(41, 22, 68, 0.02);
   clip-path: circle(100% at 96% 25%);
-  animation-name: fadeInLeft;
-  animation-fill-mode: both;
-  animation-duration: 0.6s;
+  /*animation-name: fadeInLeft;
+        animation-fill-mode: both;
+        animation-duration: 0.6s;*/
   width: 65%;
 }
 .upoznaj_sebe-right-1 {
@@ -2780,10 +2780,10 @@ a:active {
   height: 100%;
   float: right;
   clip-path: circle(97.7% at 96% 25%);
-  animation-name: fadeInLeft;
-  animation-fill-mode: both;
-  animation-duration: 0.6s;
-  animation-delay: 0.2s;
+  /*animation-name: fadeInLeft;
+            animation-fill-mode: both;
+            animation-duration: 0.6s;
+            animation-delay: 0.2s;*/
 }
 .upoznaj_sebe-right-1-2 {
   background-color: #291644;
@@ -2791,10 +2791,10 @@ a:active {
   height: 100%;
   float: right;
   clip-path: circle(95.4% at 96% 25%);
-  animation-name: fadeInLeft;
-  animation-fill-mode: both;
-  animation-duration: 0.6s;
-  animation-delay: 0.4s;
+  /*animation-name: fadeInLeft;
+                animation-fill-mode: both;
+                animation-duration: 0.6s;
+                animation-delay: 0.4s;*/
 }
 .upoznaj_sebe-right-1-2-image {
   background-image: url('../assets/images/intro-slika-1.jpg');
@@ -2808,7 +2808,7 @@ a:active {
   animation-name: opacity;
   animation-fill-mode: both;
   animation-duration: 2.5s;
-  animation-delay: 0.9s;
+  animation-delay: 0s;
 }
 .upoznaj_sebe-right-1-2-image-gr {
   display: none;

@@ -1,9 +1,10 @@
 
-// preloader
+/* preloader
 $(window).on('load', function() { 
   sessionStorage.setItem('bijah' , '1');
 	$('.preloader').delay(2000).fadeOut(200);
 });
+*/
 
 let menuheight = document.getElementById('dropdown').scrollHeight;
 

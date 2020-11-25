@@ -23,7 +23,12 @@ var owl4 = $('#owl4');
 
 var owl3 = $('#owl-3');
     // var dots = $('.owl-dots');
-    owl3.owlCarousel({
+    setTimeout(sova3Start, 0)
+    //document.getElementById('owl-3').style.display="block"
+    function sova3Start(){
+      document.getElementById('owl-3').style.display="block"
+
+      owl3.owlCarousel({
         items:1,
         loop:true,
         autoplay:true,
@@ -36,8 +41,9 @@ var owl3 = $('#owl-3');
         dots:false,
         animateOut: 'fadeOut',
         hideOnContentClick: 'false',
+      })
+    }
 
-    });
 var owl = $('#owl-one');
     owl.owlCarousel({
         items:1,
